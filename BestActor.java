@@ -8,6 +8,7 @@ public class BestActor extends Nomination {
    private String percent;
    private boolean actress;
    private boolean supporting;
+   private boolean song;
    
    /**
    * @param nameIn is first and last name of actor/actress
@@ -17,14 +18,16 @@ public class BestActor extends Nomination {
    * @param percentIn is the actor/actress' chance of winning an Oscar
    * @param actressIn boolean to tell if actor or actress
    * @param supportingIn boolean to tell if actor/actress 
+   * @param songIn boolean is object is best song or actor
    * was in lead or supporting role
    */
    public BestActor(String nameIn, double coefficentIn, 
       String movieIn, String percentIn, 
-      boolean actressIn, boolean supportingIn) {
+      boolean actressIn, boolean supportingIn, boolean songIn) {
    super(nameIn, coefficentIn);
       movie = movieIn;
       percent = percentIn;
+      song = songIn;
    }
    /**
    * @return the movie actor/actress appeared in
@@ -81,19 +84,37 @@ public class BestActor extends Nomination {
       return supporting;
    }
    /**
+   * defines if it is best song or an actor.
+   * @param songIn boolean defines if is original song 
+   * true representing supporting role
+   */
+   public void setSong(boolean songIn) {
+      song = songIn;
+   }
+   /**
+   * @return if original song
+   */
+   public boolean getSong() {
+      return song;
+   }
+   /**
    *  prints out the actor/actress, the movie they were in 
    * and their chance of winning an Oscar.
    * @return string containing all data of actor/actress
    */
    public String toString() {
-      String hisHer = "his";
+      String hisHerSong = "his role in \"";
+      String output = "";
       String supportingStr = "Actor";
       if (actress) {
-         hisHer = "her";
+         hisHerSong = "her role in \"";
       }
-      String output = getName() + " has a " 
+      if (song) {
+         hisHerSong = "the song \"";
+      }
+      output = getName() + " has a " 
          + getPercent() + "% chance of winning for "
-         + hisHer + " role in \"" + getMovie() + "\"\n";
+         + hisHerSong + getMovie() + "\"\n";
       return output;
    }
 }

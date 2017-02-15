@@ -101,12 +101,13 @@ public class OscarGenieDriver {
       double totalCoeff = 0;
       double coeff = 0;
       Calculations c = new Calculations("", "", 0);
-      BestActor a = new BestActor("", 0, "", "", false, false);
+      BestActor a = new BestActor("", 0, "", "", false, false, false);
       BestPicture p = new BestPicture("", 0, "");
-      if (calcNameIn.compareTo("Best Actor") == 0
-            || calcNameIn.compareTo("Best Supporting Actor") == 0 
-            || calcNameIn.compareTo("Best Actress") == 0 
-            || calcNameIn.compareTo("best Supporting Actress") == 0) {
+      if (calcNameIn.compareTo("BEST ACTOR") == 0
+            || calcNameIn.compareTo("BEST SUPPORTING ACTOR") == 0 
+            || calcNameIn.compareTo("BEST ACTRESS") == 0 
+            || calcNameIn.compareTo("BEST SUPPORTING ACTRESS") == 0
+            || calcNameIn.compareTo("BEST ORIGINAL SONG") == 0) {
          for (int j = 0; j < countMap.get(calcNameIn); j++) {
             String countStringJ = String.valueOf(j);
             a = actorMap.get(calcNameIn + countStringJ);
@@ -156,20 +157,25 @@ public class OscarGenieDriver {
       double totalCoeff = 0;
       count = 0; 
       award = scanFile.nextLine();
+      boolean song = false;
       
-      if (award.compareTo("Best Actor,,") == 0
-         || award.compareTo("Best Supporting Actor,,") == 0 
-         || award.compareTo("Best Actress,,") == 0 
-         || award.compareTo("best Supporting Actress,,") == 0) {
+      if (award.compareTo("BEST ACTOR,,") == 0
+         || award.compareTo("BEST SUPPORTING ACTOR,,") == 0 
+         || award.compareTo("BEST ACTRESS,,") == 0 
+         || award.compareTo("BEST SUPPORTING ACTRESS,,") == 0
+         || award.compareTo("BEST ORIGINAL SONG,,") == 0) {
          award = award.substring(0, award.length() - 2);
          countMap.put(award, 0);
-         if (award.compareTo("Best Supporting Actor") == 0 
-            || award.compareTo("Best Supporting Actress") == 0) {
+         if (award.compareTo("BEST SUPPORTING ACTOR") == 0 
+            || award.compareTo("BEST SUPPORTING ACTRESS") == 0) {
             supporting = true;
          }
-         if (award.compareTo("Best Supporting Actres") == 0 
-            || award.compareTo("Best Actress") == 0) {
+         if (award.compareTo("BEST SUPPORTING ACTRESS") == 0 
+            || award.compareTo("BEST ACTRESS") == 0) {
             actress = true;
+         }
+         if (award.compareTo("BEST ORIGINAL SONG") == 0) {
+            song = true;
          }
          while (scanFile.hasNextLine()) {
             nominee = scanFile.nextLine(); 
@@ -180,12 +186,15 @@ public class OscarGenieDriver {
                movie = scanNominee.next();
                percent = "0";
                BestActor n = new BestActor(name, coefficent, movie, 
-                  percent, actress, supporting);
+                  percent, actress, supporting, song);
                if (actress) {
                   n.setActress(true);
                }
                if (supporting) {
                   n.setSupporting(true);
+               }
+               if (song) {
+                  n.setSong(true);
                }
                totalCoeff += coefficent;
                String countString = String.valueOf(count);
@@ -226,7 +235,7 @@ public class OscarGenieDriver {
       String output = "The odds for " + category + ":\n";
       DecimalFormat numFmt = new DecimalFormat("#00.00");
       for (int i = 0; i < countMap.get(category); i++) {
-         BestActor p = new BestActor("", 0, "", "", false, false);
+         BestActor p = new BestActor("", 0, "", "", false, false, false);
          p = actorMap.get(award + String.valueOf(i));
          perc = (p.getCoefficent() / totalMap.get(category)) * 100;  
          p.setPercent(numFmt.format(perc));
