@@ -15,7 +15,7 @@ public class Calculations {
    * @param coefficentIn is how good an orginization is at prediting Oscars
    */
    public Calculations(String nameIn, String orginizationIn,
-       double coefficentIn) {
+      double coefficentIn) {
       name = nameIn;
       orginization = orginizationIn;
       coefficent = coefficentIn;

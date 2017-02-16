@@ -4,11 +4,11 @@
 * @version 1.31.11
 */
 public class BestActor extends Nomination {
-   private String movie;
-   private String percent;
-   private boolean actress;
-   private boolean supporting;
-   private boolean song;
+   protected String movie;
+   protected String percent;
+   protected boolean actress;
+   protected boolean supporting;
+   protected boolean song;
    
    /**
    * @param nameIn is first and last name of actor/actress

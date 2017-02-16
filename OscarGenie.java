@@ -60,8 +60,7 @@ public class OscarGenie {
                   || award.equals("BEST DIRECTOR")
                   || award.equals("BEST COSTUME DESIGN")) {
                   myNoms.readNominee(award + "Nominations.csv");
-                  myNoms.readProbability(award + "Calculations.csv");
-                  myNoms.writeProbability(award);
+                  myNoms.getProbability(award + "Calculations.csv");
                   System.out.println(myNoms.generatePictureProbability(award));
                   do {
                      System.out.println("Press 'E' to enter different award");
@@ -75,8 +74,7 @@ public class OscarGenie {
                   || award.equals("BEST SUPPORTING ACTRESS")
                   || award.equals("BEST ORIGINAL SONG")) {
                   myNoms.readNominee(award + "Nominations.csv");
-                  myNoms.readProbability(award + "Calculations.csv");
-                  myNoms.writeProbability(award);
+                  myNoms.getProbability(award + "Calculations.csv");
                   System.out.println(myNoms.generateActorProbability(award));
                   do {
                      System.out.println("Press 'E' to enter different award");

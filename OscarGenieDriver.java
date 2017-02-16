@@ -12,10 +12,7 @@ import java.util.HashMap;
 */
 public class OscarGenieDriver {
    private double coefficent;
-   protected String name;
-   protected String award;
-   protected String movie;
-   protected String nominee;
+   protected String name, award, movie, nominee;
    private int count;
    private boolean actress, supporting;
    private HashMap<String, BestActor> actorMap;
@@ -24,7 +21,6 @@ public class OscarGenieDriver {
    private HashMap<String, BestPicture> pictureMap;
    private HashMap<String, Nomination> nomineeMap;
    private HashMap<String, Calculations> calcMap;
-   private HashMap<String, Integer> calcCount;
    private HashMap<String, File> yearHash;
    protected String percent;
    /**
@@ -49,8 +45,6 @@ public class OscarGenieDriver {
    * calcMap defines a hashmap of doubles of the 
    * individual coefficents that are summed to give 
    * each nominee their total coefficent used in calculations
-   * calcCount defines a hashmap that contains the count of 
-   * number of coefficents each nominee will have summed
    */
    public OscarGenieDriver() {
       actorMap = new HashMap<>();
@@ -58,8 +52,7 @@ public class OscarGenieDriver {
       totalMap = new HashMap<>();
       countMap = new HashMap<>();
       calcMap = new HashMap<>();
-      calcCount = new HashMap<>();
-      yearHash = new HashMap<String, File>();
+      yearHash = new HashMap<>();
    }
    /**
    * Takes reads all files in the folder of the specified year
@@ -86,10 +79,13 @@ public class OscarGenieDriver {
    * @param fileNameIn is the CSV file that will be read 
    * @throws IOException for scanner
    */
-   public void readProbability(String fileNameIn) throws IOException {  
+   public void getProbability(String fileNameIn) throws IOException {  
       Scanner scanFile = new Scanner((yearHash.get(fileNameIn)));
       String orginization = "";
       count = 0;
+      double totalCoeff = 0;
+      BestActor a = new BestActor("", 0, "", "", false, false, false);
+      BestPicture p = new BestPicture("", 0, "");
       award = scanFile.nextLine(); 
       award = award.substring(0, award.length() - 2);
       while (scanFile.hasNextLine()) {  
@@ -102,61 +98,33 @@ public class OscarGenieDriver {
             String countString = String.valueOf(count);
             Calculations n = new Calculations(name, orginization, coefficent);
             calcMap.put(award + countString, n);
+            totalCoeff += coefficent;
+            totalMap.put(award, totalCoeff);
+            if (award.compareTo("BEST ACTOR") == 0
+               || award.compareTo("BEST SUPPORTING ACTOR") == 0 
+               || award.compareTo("BEST ACTRESS") == 0 
+               || award.compareTo("BEST SUPPORTING ACTRESS") == 0
+               || award.compareTo("BEST ORIGINAL SONG") == 0) {  
+               for (int i = 0; i < countMap.get(award); i++) {
+                  String iString = String.valueOf(i);
+                  a = actorMap.get(award + iString);
+                  if (name.equals(a.getName())) {
+                     a.setCoefficent(a.getCoefficent() + coefficent);
+                  }
+               }
+            }  
+            else {
+               for (int i = 0; i < countMap.get(award); i++) {
+                  String iString = String.valueOf(i);
+                  p = pictureMap.get(award + iString);
+                  if (name.equals(p.getName())) {
+                     p.setCoefficent(p.getCoefficent() + coefficent);
+                  }
+               }
+            }
             count++; 
-            calcCount.put(award, count);      
          }
       }
-   }
-   /**
-   * uses calcCount to iterate through calcMap and the coefficent is 
-   * updated for each nminee.
-   * @param calcNameIn is name of the award that the 
-   * coefficents of the nominees will be added to
-   */
-   public void writeProbability(String calcNameIn) {
-      double totalCoeff = 0;
-      double coeff = 0;
-      Calculations c = new Calculations("", "", 0);
-      BestActor a = new BestActor("", 0, "", "", false, false, false);
-      BestPicture p = new BestPicture("", 0, "");
-      if (calcNameIn.compareTo("BEST ACTOR") == 0
-            || calcNameIn.compareTo("BEST SUPPORTING ACTOR") == 0 
-            || calcNameIn.compareTo("BEST ACTRESS") == 0 
-            || calcNameIn.compareTo("BEST SUPPORTING ACTRESS") == 0
-            || calcNameIn.compareTo("BEST ORIGINAL SONG") == 0) {
-         for (int j = 0; j < countMap.get(calcNameIn); j++) {
-            String countStringJ = String.valueOf(j);
-            a = actorMap.get(calcNameIn + countStringJ);
-            for (int i = 0; i < calcCount.get(calcNameIn); i++) {
-               String countStringI = String.valueOf(i);
-               c = calcMap.get(award + countStringI);
-               if (c.getName().compareTo(a.getName()) == 0) {
-                  coeff = a.getCoefficent();
-                  coeff += c.getCoefficent();
-                  totalCoeff += c.getCoefficent();
-                  a.setCoefficent(coeff);
-                  totalMap.put(calcNameIn, totalCoeff);
-               }
-            }
-         }  
-      }
-      else {
-         for (int j = 0; j < countMap.get(calcNameIn); j++) {
-            String countStringJ = String.valueOf(j);
-            p = pictureMap.get(calcNameIn + countStringJ);
-            for (int i = 0; i < calcCount.get(calcNameIn); i++) {
-               String countStringI = String.valueOf(i);
-               c = calcMap.get(award + countStringI);
-               if (c.getName().compareTo(p.getName()) == 0) {
-                  coeff = p.getCoefficent();
-                  coeff += c.getCoefficent();
-                  totalCoeff += c.getCoefficent();
-                  p.setCoefficent(coeff);
-                  totalMap.put(calcNameIn, totalCoeff);
-               }
-            }
-         }
-      }   
    }
    /**
    * reads CSV that contains the nominee and any info 
@@ -286,7 +254,6 @@ public class OscarGenieDriver {
       countMap.clear();
       totalMap.clear();
       calcMap.clear();
-      calcCount.clear();
    }  
    
 }
