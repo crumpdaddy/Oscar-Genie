@@ -1,0 +1,29 @@
+!1157;s
+J
+SAU0PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012-Run\012ADD_EXE_PATH==Y\012
+SCU0PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012-Run\012ADD_EXE_PATH==Y\012
+S+U0PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012-Run\012ADD_EXE_PATH==Y\012
+SJU0CLASSPATH=+%;%<EXTENSION_CLASSPATHS>\012CLASSPATH+=%<JGRASP_CLASSPATHS>%;\012File\012CLASSPATH+=.%;\012CLASSPATH+=%<SRC_CLASSPATHS>%;\012ProjectOrFile\012PATH+=%<JAVA_BIN_DIR>%;\012PATH+=%<JGRASP_PATHS>%;\012Debug +Debug_Applet\012CLASSPATH=+%;%<INJECTION_CLASSPATHS>\012Compile\012NOT_FOUND_MESSAGE==Make sure you have the full JDK, not just the JRE, installed.\\nThe JDK is available from http://www.oracle.com/technetwork/java/index.html.\012Run_Applet +Debug_Applet\012ADD_APPLETVIEWER_CLASSPATH==Y\012Document\012CLASSPATH=+%;%<TOOL_CLASSPATHS>\012CLASSPATH+=%<CLASSES_DIR>%;\012
+SOU0PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012-Run\012ADD_EXE_PATH==Y\012
+SyU0PATH+=%<PYTHON_PATH>%;\012PATH+=%<JGRASP_PATHS>%;\012CYGWIN=nodosfilewarning
+SPU0
+s#i0
+s#k0
+s#j0
+s#l0
+!212;g
+%\011Oscar-Genie%sBestActor.java
+%\011Oscar-Genie%sNomination.java
+%\011Oscar-Genie%sOscarGenie.java
+%\011Oscar-Genie%sOscarGenieDriver.java
+%\011Oscar-Genie%sCalculations.java
+%\011Oscar-Genie%sBestPicture.java
+!212;f
+%\011Oscar-Genie%sBestActor.java
+%\011Oscar-Genie%sNomination.java
+%\011Oscar-Genie%sOscarGenie.java
+%\011Oscar-Genie%sOscarGenieDriver.java
+%\011Oscar-Genie%sCalculations.java
+%\011Oscar-Genie%sBestPicture.java
+!326;t
+jgrCheckstyle0xr	%\011Oscar-Genie%sBestActor.java	1487280279850:P	%\011Oscar-Genie%sNomination.java	1487126722169:P	%\011Oscar-Genie%sOscarGenie.java	1487281048311:P	%\011Oscar-Genie%sOscarGenieDriver.java	1487281054802:P	%\011Oscar-Genie%sCalculations.java	1487280275243:P	%\011Oscar-Genie%sBestPicture.java	1487126713174:P	

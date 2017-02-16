@@ -5,7 +5,6 @@
 */
 public class BestActor extends Nomination {
    protected String movie;
-   protected String percent;
    protected boolean actress;
    protected boolean supporting;
    protected boolean song;
@@ -22,9 +21,9 @@ public class BestActor extends Nomination {
    * was in lead or supporting role
    */
    public BestActor(String nameIn, double coefficentIn, 
-      String movieIn, String percentIn, 
-      boolean actressIn, boolean supportingIn, boolean songIn) {
-   super(nameIn, coefficentIn);
+      String percentIn, String movieIn, boolean actressIn, 
+      boolean supportingIn, boolean songIn) {
+   super(nameIn, coefficentIn, percentIn);
       movie = movieIn;
       percent = percentIn;
       song = songIn;
@@ -41,19 +40,6 @@ public class BestActor extends Nomination {
    */
    public void setMovie(String movieIn) {
       movie = movieIn;
-   }
-   /**
-   * @return the chance of actor/actress winning an Oscar.
-   */
-   public String getPercent() {
-      return percent;
-   }
-   /**
-   * sets chance of actor/actress winning an Oscar.
-   * @param percentIn is percent chance of winning as calculated
-   */
-   public void setPercent(String percentIn) {
-      percent = percentIn;
    }
    /**
    * defines person as actor or actress.

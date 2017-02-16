@@ -15,10 +15,8 @@ public class OscarGenieDriver {
    protected String name, award, movie, nominee;
    private int count;
    private boolean actress, supporting;
-   private HashMap<String, BestActor> actorMap;
    private HashMap<String, Integer> countMap;
    private HashMap<String, Double> totalMap;
-   private HashMap<String, BestPicture> pictureMap;
    private HashMap<String, Nomination> nomineeMap;
    private HashMap<String, Calculations> calcMap;
    private HashMap<String, File> yearHash;
@@ -36,8 +34,7 @@ public class OscarGenieDriver {
    * calculate percent chance of winning.
    * The number of nominees is kept in a hashmap and 
    * this is used to iterate through nomine hashmaps.
-   * actorMap defines a hashmap of bestActor objects
-   * pictureMap defines a hashmap of bestPicture objects
+   * nomineeMap defines a hashmap of Nomination objects
    * countMap defines a hashmap of that contains the total 
    * number of nominees for each category
    * totalMap defines a hashmap containing the sum of coefficents for
@@ -47,12 +44,11 @@ public class OscarGenieDriver {
    * each nominee their total coefficent used in calculations
    */
    public OscarGenieDriver() {
-      actorMap = new HashMap<>();
-      pictureMap = new HashMap<>();
       totalMap = new HashMap<>();
       countMap = new HashMap<>();
       calcMap = new HashMap<>();
       yearHash = new HashMap<>();
+      nomineeMap = new HashMap<>();
    }
    /**
    * Takes reads all files in the folder of the specified year
@@ -84,8 +80,8 @@ public class OscarGenieDriver {
       String orginization = "";
       count = 0;
       double totalCoeff = 0;
-      BestActor a = new BestActor("", 0, "", "", false, false, false);
-      BestPicture p = new BestPicture("", 0, "");
+      Nomination a = new BestActor("", 0, "", "", false, false, false);
+      Nomination p = new Nomination("", 0, "");
       award = scanFile.nextLine(); 
       award = award.substring(0, award.length() - 2);
       while (scanFile.hasNextLine()) {  
@@ -107,7 +103,7 @@ public class OscarGenieDriver {
                || award.compareTo("BEST ORIGINAL SONG") == 0) {  
                for (int i = 0; i < countMap.get(award); i++) {
                   String iString = String.valueOf(i);
-                  a = actorMap.get(award + iString);
+                  a = nomineeMap.get(award + iString);
                   if (name.equals(a.getName())) {
                      a.setCoefficent(a.getCoefficent() + coefficent);
                   }
@@ -116,7 +112,7 @@ public class OscarGenieDriver {
             else {
                for (int i = 0; i < countMap.get(award); i++) {
                   String iString = String.valueOf(i);
-                  p = pictureMap.get(award + iString);
+                  p = nomineeMap.get(award + iString);
                   if (name.equals(p.getName())) {
                      p.setCoefficent(p.getCoefficent() + coefficent);
                   }
@@ -169,8 +165,8 @@ public class OscarGenieDriver {
                coefficent = Double.parseDouble(scanNominee.next());
                movie = scanNominee.next();
                percent = "0";
-               BestActor n = new BestActor(name, coefficent, movie, 
-                  percent, actress, supporting, song);
+               BestActor n = new BestActor(name, coefficent, percent, 
+                  movie, actress, supporting, song);
                if (actress) {
                   n.setActress(true);
                }
@@ -182,7 +178,7 @@ public class OscarGenieDriver {
                }
                totalCoeff += coefficent;
                String countString = String.valueOf(count);
-               actorMap.put(award + countString, n);
+               nomineeMap.put(award + countString, n);
                totalMap.put(award, totalCoeff);
                count++;
                countMap.put(award, count);   
@@ -198,10 +194,10 @@ public class OscarGenieDriver {
             while (scanNominee.hasNextLine()) {
                name = scanNominee.next();
                coefficent = Double.parseDouble(scanNominee.next());
-               BestPicture n = new BestPicture(name, coefficent, percent);
+               Nomination n = new Nomination(name, coefficent, percent);
                totalCoeff += coefficent;
                String countString = String.valueOf(count);
-               pictureMap.put(award + countString, n);
+               nomineeMap.put(award + countString, n);
                totalMap.put(award, totalCoeff);
                count++;
                countMap.put(award, count);   
@@ -219,8 +215,8 @@ public class OscarGenieDriver {
       String output = "The odds for " + category + ":\n";
       DecimalFormat numFmt = new DecimalFormat("#00.00");
       for (int i = 0; i < countMap.get(category); i++) {
-         BestActor p = new BestActor("", 0, "", "", false, false, false);
-         p = actorMap.get(award + String.valueOf(i));
+         Nomination p = new BestActor("", 0, "", "", false, false, false);
+         p = nomineeMap.get(award + String.valueOf(i));
          perc = (p.getCoefficent() / totalMap.get(category)) * 100;  
          p.setPercent(numFmt.format(perc));
          output += p.toString();
@@ -232,13 +228,13 @@ public class OscarGenieDriver {
    * @param category defines category of award to be calculated
    * @return string of all objects and their probability
    */
-   public String generatePictureProbability(String category) {
+   public String generateNomineeProbability(String category) {
       double perc = 0;
       String output = "The odds for " + category + ":\n";
       DecimalFormat numFmt = new DecimalFormat("#00.00");
       for (int i = 0; i < countMap.get(category); i++) {
-         BestPicture p = new BestPicture("", 0, "");
-         p = pictureMap.get(category + String.valueOf(i));
+         Nomination p = new Nomination("", 0, "");
+         p = nomineeMap.get(category + String.valueOf(i));
          perc = (p.getCoefficent() / totalMap.get(category)) * 100;  
          p.setPercent(numFmt.format(perc));
          output += p.toString();
@@ -249,8 +245,7 @@ public class OscarGenieDriver {
    clears all hashmaps, used when calculating different years.
    */
    public void clearAll() {
-      actorMap.clear();
-      pictureMap.clear();
+      nomineeMap.clear();
       countMap.clear();
       totalMap.clear();
       calcMap.clear();

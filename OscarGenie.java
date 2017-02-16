@@ -61,7 +61,7 @@ public class OscarGenie {
                   || award.equals("BEST COSTUME DESIGN")) {
                   myNoms.readNominee(award + "Nominations.csv");
                   myNoms.getProbability(award + "Calculations.csv");
-                  System.out.println(myNoms.generatePictureProbability(award));
+                  System.out.println(myNoms.generateNomineeProbability(award));
                   do {
                      System.out.println("Press 'E' to enter different award");
                      goBack = scan.nextLine();
