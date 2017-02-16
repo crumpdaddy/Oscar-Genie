@@ -25,7 +25,7 @@ public class OscarGenie {
          year = scan.nextLine();
          myNoms.clearAll();
          if (year.equals("2016") || year.equals("2017")) {
-            
+            myNoms.yearSet(year);  
             do {
                System.out.println("Enter award you want to predict:\n"
                   + "Best Picture\nBest Actor\nBest "
@@ -59,8 +59,8 @@ public class OscarGenie {
                   || award.equals("BEST ADAPTED SCREENPLAY")
                   || award.equals("BEST DIRECTOR")
                   || award.equals("BEST COSTUME DESIGN")) {
-                  myNoms.readNominee(year + award + "Nominations.csv");
-                  myNoms.readProbability(year + award + "Calculations.csv");
+                  myNoms.readNominee(award + "Nominations.csv");
+                  myNoms.readProbability(award + "Calculations.csv");
                   myNoms.writeProbability(award);
                   System.out.println(myNoms.generatePictureProbability(award));
                   do {
@@ -74,8 +74,8 @@ public class OscarGenie {
                   || award.equals("BEST ACTRESS")
                   || award.equals("BEST SUPPORTING ACTRESS")
                   || award.equals("BEST ORIGINAL SONG")) {
-                  myNoms.readNominee(year + award + "Nominations.csv");
-                  myNoms.readProbability(year + award + "Calculations.csv");
+                  myNoms.readNominee(award + "Nominations.csv");
+                  myNoms.readProbability(award + "Calculations.csv");
                   myNoms.writeProbability(award);
                   System.out.println(myNoms.generateActorProbability(award));
                   do {

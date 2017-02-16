@@ -25,6 +25,7 @@ public class OscarGenieDriver {
    private HashMap<String, Nomination> nomineeMap;
    private HashMap<String, Calculations> calcMap;
    private HashMap<String, Integer> calcCount;
+   private HashMap<String, File> yearHash;
    protected String percent;
    /**
    * This program reads a CSV file that shows the category 
@@ -58,6 +59,21 @@ public class OscarGenieDriver {
       countMap = new HashMap<>();
       calcMap = new HashMap<>();
       calcCount = new HashMap<>();
+      yearHash = new HashMap<String, File>();
+   }
+   /**
+   * Takes reads all files in the folder of the specified year
+   * and adds all file names to a hash map.
+   * @param yearIn is the folder that will have its contents read
+   * @throws IOException for scanner
+   */
+   public void yearSet(String yearIn) throws IOException {
+      File folder = new File(yearIn);
+      File[] fileList = folder.listFiles();
+      for (int i = 0; i < fileList.length; i++) {
+         File file = fileList[i];
+         yearHash.put(file.getName(), file);
+      }
    }
    /**
    * Reads CSV file that contains award in first line followed
@@ -70,8 +86,8 @@ public class OscarGenieDriver {
    * @param fileNameIn is the CSV file that will be read 
    * @throws IOException for scanner
    */
-   public void readProbability(String fileNameIn) throws IOException {
-      Scanner scanFile = new Scanner(new File(fileNameIn));
+   public void readProbability(String fileNameIn) throws IOException {  
+      Scanner scanFile = new Scanner((yearHash.get(fileNameIn)));
       String orginization = "";
       count = 0;
       award = scanFile.nextLine(); 
@@ -153,7 +169,7 @@ public class OscarGenieDriver {
    * @throws IOException for scanner
    */
    public void readNominee(String fileNameIn) throws IOException {
-      Scanner scanFile = new Scanner(new File(fileNameIn));
+      Scanner scanFile = new Scanner((yearHash.get(fileNameIn)));
       double totalCoeff = 0;
       count = 0; 
       award = scanFile.nextLine();
