@@ -17,6 +17,7 @@ public class OscarGenie {
       String year = "";
       String award = "";
       String goBack = "";
+      String info = "";
       Scanner scan = new Scanner(System.in);
       OscarGenieDriver myNoms = new OscarGenieDriver();
       System.out.println("Welcome to Oscar Genie by Ryan Crumpler \n"); 
@@ -63,10 +64,20 @@ public class OscarGenie {
                   myNoms.getProbability(award + "Calculations.csv");
                   System.out.println(myNoms.generateNomineeProbability(award));
                   do {
+                     System.out.println("Press 'I' for more info");
                      System.out.println("Press 'E' to enter different award");
-                     goBack = scan.nextLine();
+                     info = scan.nextLine().toUpperCase();
+                     if (info.equals("I")) {
+                        do {
+                           System.out.println(myNoms.generateDetails(award));
+                           System.out.println("Press 'E to go Back");
+                           goBack = scan.nextLine().toUpperCase();
+                        }
+                        while (!goBack.equals("E"));
+                     }
+                     goBack = info;
                   }
-                  while (!goBack.equalsIgnoreCase("E"));
+                  while (!goBack.equals("E"));
                }
                else if (award.equalsIgnoreCase("BEST ACTOR")
                   || award.equals("BEST SUPPORTING ACTOR")
@@ -77,10 +88,20 @@ public class OscarGenie {
                   myNoms.getProbability(award + "Calculations.csv");
                   System.out.println(myNoms.generateActorProbability(award));
                   do {
+                     System.out.println("Press 'I' for more info");
                      System.out.println("Press 'E' to enter different award");
-                     goBack = scan.nextLine();
+                     info = scan.nextLine().toUpperCase();
+                     if (info.equals("I")) {
+                        do {
+                           System.out.println(myNoms.generateDetails(award));
+                           System.out.println("Press 'E to go Back");
+                           goBack = scan.nextLine().toUpperCase();
+                        }
+                        while (!goBack.equals("E"));
+                     }
+                     goBack = info;
                   }
-                  while (!goBack.equalsIgnoreCase("E"));        
+                  while (!goBack.equals("E"));        
                }
                else if (award.equalsIgnoreCase("help")) {
                   do {
@@ -90,9 +111,10 @@ public class OscarGenie {
                         + "spelled correctly.");
                      System.out.println("Press 'B' to go "
                         + "back to award selection");
-                     goBack = scan.nextLine();
+                     goBack = scan.nextLine().toUpperCase();
+                     
                   }
-                  while (!goBack.equalsIgnoreCase("b"));
+                  while (!goBack.equals("B"));
                }
                else if (award.equalsIgnoreCase("info")) {
                   do {
@@ -119,9 +141,9 @@ public class OscarGenie {
                         + "Generall an output of\n"
                         + "0.00% indicates insufficent\n"
                         + "data for that nominee");
-                     goBack = scan.nextLine();
+                     goBack = scan.nextLine().toUpperCase();
                   }
-                  while (!goBack.equalsIgnoreCase("b"));
+                  while (!goBack.equals("E"));
                }     
             }    
             while (!award.equalsIgnoreCase("Year"));         

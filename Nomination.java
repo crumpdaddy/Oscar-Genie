@@ -58,7 +58,7 @@ public class Nomination {
       percent = percentIn;
    }
    /**
-   *  prints out the info of film, the title of the film
+   * prints out the info of film, the title of the film
    * and its chance of winning an Oscar.
    * @return string containing all data of film
    */
