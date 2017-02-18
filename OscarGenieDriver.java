@@ -24,7 +24,8 @@ public class OscarGenieDriver {
    protected String percent;
    protected Nomination highestNominee;
    protected Nomination highestActor;
-   private ArrayList<Calculations> calcList;
+   private HashMap<String, Nomination> winnerMap;
+   protected String[] awardList;
    /**
    * This program reads a CSV file that shows the category 
    * of the award and all the nominees and stores all the nominees as 
@@ -55,7 +56,15 @@ public class OscarGenieDriver {
       nomineeMap = new HashMap<>();
       highestNominee = new Nomination("", 0, "");
       highestActor = new BestActor("", 0, "", "", false, false, false);
-      calcList = new ArrayList<Calculations>();
+      winnerMap = new HashMap<>();
+      awardList = new String[]{"BEST PICTURE", "BEST ACTOR", 
+         "BEST ACTRESS", "BEST SUPPORTING ACTOR", "BEST SUPPORTING ACTRESS", 
+         "BEST ANIMATED FEATURE", "BEST CINEMATOGRAPHY", "BEST COSTUME DESIGN", 
+         "BEST DIRECTOR", "BEST DOCUMENTARY FEATURE", "BEST FILM EDITING",
+         "BEST FOREIGN LANGUAGE FILM", "BEST MAKEUP AND HAIRSTYLING", 
+         "BEST ORIGINAL SCORE", "BEST ORIGINAL SONG", "BEST PRODUCTION DESIGN", 
+         "BEST VISUAL EFFECTS", "BEST ORIGINAL SCREENPLAY", 
+         "BEST ADAPTED SCREENPLAY"};
    }
    /**
    * Takes reads all files in the folder of the specified year
@@ -83,11 +92,11 @@ public class OscarGenieDriver {
    * @throws IOException for scanner
    */
    public void getProbability(String fileNameIn) throws IOException {  
-      calcList.clear();
       Scanner scanFile = new Scanner((yearHash.get(fileNameIn)));
       String orginization = "";
       count = 0;
       double totalCoeff = 0;
+      ArrayList<Calculations> calcList = new ArrayList<Calculations>();
       Nomination a = new BestActor("", 0, "", "", false, false, false);
       Nomination p = new Nomination("", 0, ""); 
       award = scanFile.nextLine(); 
@@ -104,6 +113,7 @@ public class OscarGenieDriver {
             calcList.add(n);
             totalCoeff += coefficent;
             totalMap.put(award, totalCoeff);
+            calcMap.put(award, calcList);
             if (award.compareTo("BEST ACTOR") == 0
                || award.compareTo("BEST SUPPORTING ACTOR") == 0 
                || award.compareTo("BEST ACTRESS") == 0 
@@ -115,6 +125,15 @@ public class OscarGenieDriver {
                   if (name.equals(a.getName())) {
                      a.setCoefficent(a.getCoefficent() + coefficent);
                   }
+                  if (i == 0) {
+                     highestActor = a;
+                     winnerMap.put(award, a);
+                  }
+                  else if (p.getCoefficent()
+                     >= highestNominee.getCoefficent()) {
+                     highestActor = a;
+                     winnerMap.put(award, a);
+                  }
                }
             }  
             else {
@@ -124,12 +143,21 @@ public class OscarGenieDriver {
                   if (name.equals(p.getName())) {
                      p.setCoefficent(p.getCoefficent() + coefficent);
                   }
+                  if (i == 0) {
+                     highestNominee = p;
+                     winnerMap.put(award, p);
+                  }
+                  else if (p.getCoefficent() > highestNominee.getCoefficent()) {
+                     highestNominee = p;
+                     winnerMap.put(award, p);
+                  }
                }
             }
             count++; 
+
          }
       }
-      calcMap.put(award, calcList);
+      
    }
    /**
    * reads CSV that contains the nominee and any info 
@@ -147,11 +175,11 @@ public class OscarGenieDriver {
       count = 0; 
       award = scanFile.nextLine();
       boolean song = false;
-      if (award.compareTo("BEST ACTOR,,") == 0
-         || award.compareTo("BEST SUPPORTING ACTOR,,") == 0 
-         || award.compareTo("BEST ACTRESS,,") == 0 
-         || award.compareTo("BEST SUPPORTING ACTRESS,,") == 0
-         || award.compareTo("BEST ORIGINAL SONG,,") == 0) {
+      if (award.equals("BEST ACTOR,,")
+         || award.equals("BEST SUPPORTING ACTOR,,") 
+         || award.equals("BEST ACTRESS,,")
+         || award.equals("BEST SUPPORTING ACTRESS,,")
+         || award.equals("BEST ORIGINAL SONG,,")) {
          award = award.substring(0, award.length() - 2);
          countMap.put(award, 0);
          if (award.compareTo("BEST SUPPORTING ACTOR") == 0 
@@ -216,50 +244,34 @@ public class OscarGenieDriver {
    /**
    Prints out bestActor objects and their probability of winning an Oscar.
    * @param category defines category of award to be calculated
-   * @return string of all objects and their probability
    */
-   public String generateActorProbability(String category) {
+   public void generateActorProbability(String category) {
       double perc = 0;
       String output = "The odds for " + category + ":\n";
       DecimalFormat numFmt = new DecimalFormat("#00.00");
       for (int i = 0; i < countMap.get(category); i++) {
          Nomination p = new BestActor("", 0, "", "", false, false, false);
          p = nomineeMap.get(award + String.valueOf(i));
-         perc = (p.getCoefficent() / totalMap.get(category)) * 100; 
-         if (i == 0) {
-            highestActor = p;
-         }
-         else if (p.getCoefficent() >= highestNominee.getCoefficent()) {
-            highestActor = p;
-         } 
+         perc = (p.getCoefficent() / totalMap.get(category)) * 100;  
          p.setPercent(numFmt.format(perc));
          output += p.toString();
       }   
-      return output;
    }
    /**
    Prints out bestPicture objects and their probability of winning an Oscar.
    * @param category defines category of award to be calculated
-   * @return string of all objects and their probability
    */
-   public String generateNomineeProbability(String category) {
+   public void generateNomineeProbability(String category) {
       double perc = 0;
       String output = "The odds for " + category + ":\n";
       DecimalFormat numFmt = new DecimalFormat("#00.00");
       for (int i = 0; i < countMap.get(category); i++) {
          Nomination p = new Nomination("", 0, "");
          p = nomineeMap.get(category + String.valueOf(i));
-         if (i == 0) {
-            highestNominee = p;
-         }
-         else if (p.getCoefficent() > highestNominee.getCoefficent()) {
-            highestNominee = p;
-         }
          perc = (p.getCoefficent() / totalMap.get(category)) * 100;  
          p.setPercent(numFmt.format(perc));
          output += p.toString();
       }      
-      return output;
    }
    /**
    Prints actor/nomination and all awards it won based off calculations.
@@ -268,36 +280,52 @@ public class OscarGenieDriver {
    */
    public String generateDetails(String category) {
       String output = "";
-      Nomination x = highestNominee;
-      String heShe = "he";
-      ArrayList<Calculations> calc = new ArrayList<Calculations>();
-      calc = calcMap.get(category);
+      Nomination x = winnerMap.get(category);
+      ArrayList<Calculations> cal = new ArrayList<Calculations>();
+      cal = calcMap.get(category);
       if (category.equals("BEST ACTOR")
          || category.equals("BEST SUPPORTING ACTOR")
          || category.equals("BEST ACTRESS") 
          || category.equals("BEST SUPPORTING ACTRESS")
          || category.equals("BEST ORIGINAL SONG")) {
-         output = highestActor.getName() + " is most "
+         output = x.getName() + " is most "
                + "likely to win an Oscar because they"
                + " also won awards this year from:\n";
-         for (int i = 0; i < calc.size(); i++) {
-            if (calc.get(i).getName().equals(highestActor.getName())) {
-               output += calc.get(i).getOrginization() + "\n";
+         for (int i = 0; i < cal.size(); i++) {
+            if (cal.get(i).getName().equals(x.getName())) {
+               output += cal.get(i).getOrginization() + "\n";
             }     
-         }
-       
+         }   
       }
       else {
-         output = "The film " + highestNominee.getName()
+         output = "The film " + x.getName()
             + " is likely to win because it also won awards this year from:\n";
-         for (int i = 0; i < calc.size(); i++) {
-            if (calc.get(i).getName().equals(highestNominee.getName())) {
-               output += calc.get(i).getOrginization() + "\n";
-            }
-            
+         for (int i = 0; i < cal.size(); i++) {
+            if (cal.get(i).getName().equals(x.getName())) {
+               output += cal.get(i).getOrginization() + "\n";
+            }          
          }
       }
       return output;
+   }
+   /**
+   * generates a list of all winners.
+   * @return string of winners
+   */
+   public String generateAll() {
+      String output = "";
+      double perc = 0;
+      for (int i = 0; i < awardList.length; i++) {
+         Nomination n = winnerMap.get(awardList[i]);
+         output += n.toString() + " an Oscar for " + awardList[i];
+      }
+      return output;
+   }
+   /**
+   * @return String[[] of list of awards
+   */
+   public String[] getAwardList() {
+      return awardList;
    }
    /**
    clears all hashmaps, used when calculating different years.
@@ -307,6 +335,19 @@ public class OscarGenieDriver {
       countMap.clear();
       totalMap.clear();
       calcMap.clear();
-   }  
+   }
+   /** 
+   * @param category is award category
+   * @return toString of all nominees
+   */
+   public String returnResults(String category) {
+      String output = "";
+      for (int i = 0; i < countMap.get(category); i++) {
+         Nomination p = new Nomination("", 0, "");
+         p = nomineeMap.get(category + String.valueOf(i));
+         output += p.toString();
+      } 
+      return output;
+   } 
    
 }

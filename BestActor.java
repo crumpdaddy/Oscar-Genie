@@ -98,9 +98,9 @@ public class BestActor extends Nomination {
       if (song) {
          hisHerSong = "the song \"";
       }
-      output = getName() + " has a " 
+      output = "\n" + getName() + " has a " 
          + getPercent() + "% chance of winning for "
-         + hisHerSong + getMovie() + "\"\n";
+         + hisHerSong + getMovie() + "\"";
       return output;
    }
 }

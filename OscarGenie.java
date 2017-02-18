@@ -27,6 +27,12 @@ public class OscarGenie {
          myNoms.clearAll();
          if (year.equals("2016") || year.equals("2017")) {
             myNoms.yearSet(year);  
+            String[] awardList = myNoms.getAwardList();
+            for (int i = 0; i < awardList.length; i++) {
+               myNoms.readNominee(awardList[i] + "Nominations.csv");
+               myNoms.getProbability(awardList[i] + "Calculations.csv");
+               myNoms.generateActorProbability(awardList[i]);
+            }
             do {
                System.out.println("Enter award you want to predict:\n"
                   + "Best Picture\nBest Actor\nBest "
@@ -41,13 +47,14 @@ public class OscarGenie {
                   + "Best Visual Effect\n"
                   + "Best Film Editing\nBest Production Design\n"
                   + "Best Original Screenplay\n"
-                  + "Best Adapted Screenplay\nYear to Enter new Year\n"
+                  + "Best Adapted Screenplay\n"
+                  + "All for all winners\nYear to Enter new Year\n"
                   + "Help for help\nInfo for additional Info\n");
                award = scan.nextLine();
                award = award.toUpperCase();
                if (award.equalsIgnoreCase("BEST PICTURE")
                   || award.equals("BEST CINEMATOGRAPHY")
-                  || award.equals("BEST DOCUMENTARyY FEATURE")
+                  || award.equals("BEST DOCUMENTARY FEATURE")
                   || award.equals("BEST ANIMATED FEATURE")
                   || award.equals("BEST FOREIGN LANGUAGE FILM")
                   || award.equals("BEST MAKEUP AND HAIRSTYLING")
@@ -59,10 +66,13 @@ public class OscarGenie {
                   || award.equals("BEST ORIGINAL SCREENPLAY")
                   || award.equals("BEST ADAPTED SCREENPLAY")
                   || award.equals("BEST DIRECTOR")
-                  || award.equals("BEST COSTUME DESIGN")) {
-                  myNoms.readNominee(award + "Nominations.csv");
-                  myNoms.getProbability(award + "Calculations.csv");
-                  System.out.println(myNoms.generateNomineeProbability(award));
+                  || award.equals("BEST COSTUME DESIGN")
+                  || award.equals("BEST ACTOR")
+                  || award.equals("BEST SUPPORTING ACTOR")
+                  || award.equals("BEST ACTRESS")
+                  || award.equals("BEST SUPPORTING ACTRESS")
+                  || award.equals("BEST ORIGINAL SONG")) {
+                  System.out.println(myNoms.returnResults(award));
                   do {
                      System.out.println("Press 'I' for more info");
                      System.out.println("Press 'E' to enter different award");
@@ -79,31 +89,15 @@ public class OscarGenie {
                   }
                   while (!goBack.equals("E"));
                }
-               else if (award.equalsIgnoreCase("BEST ACTOR")
-                  || award.equals("BEST SUPPORTING ACTOR")
-                  || award.equals("BEST ACTRESS")
-                  || award.equals("BEST SUPPORTING ACTRESS")
-                  || award.equals("BEST ORIGINAL SONG")) {
-                  myNoms.readNominee(award + "Nominations.csv");
-                  myNoms.getProbability(award + "Calculations.csv");
-                  System.out.println(myNoms.generateActorProbability(award));
+               else if (award.equals("ALL")) {
                   do {
-                     System.out.println("Press 'I' for more info");
-                     System.out.println("Press 'E' to enter different award");
-                     info = scan.nextLine().toUpperCase();
-                     if (info.equals("I")) {
-                        do {
-                           System.out.println(myNoms.generateDetails(award));
-                           System.out.println("Press 'E to go Back");
-                           goBack = scan.nextLine().toUpperCase();
-                        }
-                        while (!goBack.equals("E"));
-                     }
-                     goBack = info;
+                     System.out.println(myNoms.generateAll()); 
+                     System.out.println("Press 'E to go Back");
+                     goBack = scan.nextLine().toUpperCase();
                   }
-                  while (!goBack.equals("E"));        
+                  while (!goBack.equals("E"));  
                }
-               else if (award.equalsIgnoreCase("help")) {
+               else if (award.equals("HELP")) {
                   do {
                      System.out.println("Case does not matter "
                         + "when entering award "
@@ -111,8 +105,7 @@ public class OscarGenie {
                         + "spelled correctly.");
                      System.out.println("Press 'B' to go "
                         + "back to award selection");
-                     goBack = scan.nextLine().toUpperCase();
-                     
+                     goBack = scan.nextLine().toUpperCase();          
                   }
                   while (!goBack.equals("B"));
                }
