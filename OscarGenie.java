@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.io.IOException;
 import java.io.File;
 /** This program is the driver that carries out all methods 
-* to determine chance ofwinning an oscar.
+* to determine chance of winning an oscar.
 * 
 * @author Ryan Crumpler
 * @version 1.31.11
@@ -13,83 +13,110 @@ public class OscarGenie {
    * @param args coomand line arguments
    */
    public static void main(String[] args) throws IOException {
-      File file = new File("bestActressNominations.csv");
+      File file = new File("");
       String year = "";
-      String award = "";
       String goBack = "";
       String info = "";
+      String category = "";
+      int award = 0;
+      String awardString = "";
       Scanner scan = new Scanner(System.in);
       OscarGenieDriver myNoms = new OscarGenieDriver();
       System.out.println("Welcome to Oscar Genie by Ryan Crumpler \n"); 
       do {
-         System.out.println("Please enter a year 2016-2017 to predict");
+         System.out.println("Please enter a year 2016-2017 to predict"
+           + "Press 'Q' to Quit");
          year = scan.nextLine();
          myNoms.clearAll();
-         if (year.equals("2016") || year.equals("2017")) {
+         if (year.equals("2017") || year.equals("2016")) {
             myNoms.yearSet(year);  
             String[] awardList = myNoms.getAwardList();
             for (int i = 0; i < awardList.length; i++) {
                myNoms.readNominee(awardList[i] + "Nominations.csv");
                myNoms.getProbability(awardList[i] + "Calculations.csv");
-               myNoms.generateActorProbability(awardList[i]);
+               myNoms.generateProbability(awardList[i]);
             }
             do {
-               System.out.println("Enter award you want to predict:\n"
-                  + "Best Picture\nBest Actor\nBest "
-                  + "Actress\nBest Supporting Actor\n"
-                  + "Best Supporting Actress\nBest "
-                  + "Director\nBest Cinematography\n"
-                  + "Best Costume Design\nBest Documentary "
-                  + "Feature\nBest Animated Feature\n"
-                  + "Best Foreign Language Film\nBest Makeup "
-                  + "and Hairstyling\n"
-                  + "Best Original Score\nBest Original Song\n"
-                  + "Best Visual Effect\n"
-                  + "Best Film Editing\nBest Production Design\n"
-                  + "Best Original Screenplay\n"
-                  + "Best Adapted Screenplay\n"
-                  + "All for all winners\nYear to Enter new Year\n"
-                  + "Help for help\nInfo for additional Info\n");
-               award = scan.nextLine();
-               award = award.toUpperCase();
-               if (award.equalsIgnoreCase("BEST PICTURE")
-                  || award.equals("BEST CINEMATOGRAPHY")
-                  || award.equals("BEST DOCUMENTARY FEATURE")
-                  || award.equals("BEST ANIMATED FEATURE")
-                  || award.equals("BEST FOREIGN LANGUAGE FILM")
-                  || award.equals("BEST MAKEUP AND HAIRSTYLING")
-                  || award.equals("BEST COSTUME DESIGN")
-                  || award.equals("BEST ORIGINAL SCORE")
-                  || award.equals("BEST VISUAL EFFECTS")
-                  || award.equals("BEST FILM EDITING")
-                  || award.equals("BEST PRODUCTION DESIGN")
-                  || award.equals("BEST ORIGINAL SCREENPLAY")
-                  || award.equals("BEST ADAPTED SCREENPLAY")
-                  || award.equals("BEST DIRECTOR")
-                  || award.equals("BEST COSTUME DESIGN")
-                  || award.equals("BEST ACTOR")
-                  || award.equals("BEST SUPPORTING ACTOR")
-                  || award.equals("BEST ACTRESS")
-                  || award.equals("BEST SUPPORTING ACTRESS")
-                  || award.equals("BEST ORIGINAL SONG")) {
-                  System.out.println(myNoms.returnResults(award));
+               System.out.println("Enter number for award you "
+                  + "want to predict:\n"
+                  + "1 - Best Picture\n2 - Best Actor\n"
+                  + "3 - Best Actress\n4 - Best Supporting Actor\n"
+                  + "5 - Best Supporting Actress\n6 - Best Animated Feature\n"
+                  + "7 - Best Cinematography\n8 - Best Costume Design\n" 
+                  + "9 - Best Director\n10 - Best Documentary Feature\n" 
+                  + "11 - Best Film Editing\n12 - Best Foreign Language Film\n" 
+                  + "13 - Best Makeup and Hairstyling\n"
+                  + "14 - Best Original Score\n" 
+                  + "15 - Best Original Song\n16 - Best Production Design\n" 
+                  + "17 - Best Visual Effects\n18 - Best Original Screenplay\n"
+                  + "19 - Best Adapted Screenplay\n"
+                  + "20 - All to generate all winners\n"
+                  + "21 - Help for Help\n22 - Info for Info\n"
+                  + "23 - Select new Year");
+               awardString = scan.nextLine();
+               try {
+                  award = Integer.parseInt(awardString);     
+               }
+               catch (NumberFormatException e) {
+                  boolean isAward = false;
+                  if (awardString.equalsIgnoreCase("All")) {
+                     award = 20;
+                     isAward = true;
+                  }
+                  if (awardString.equalsIgnoreCase("Help)")) {
+                     award = 21;
+                     isAward = true;
+                  }
+                  if (awardString.equalsIgnoreCase("Info)")) {
+                     award = 22;
+                     isAward = true;
+                  }
+                  if (awardString.equalsIgnoreCase("Year)")) {
+                     award = 23;
+                     isAward = true;
+                  }
+                  if (!isAward && awardString.length() > 4) {
+                     String awardSub = awardString.substring(5);
+                     if (awardString.substring(0, 
+                        5).equalsIgnoreCase("Best ")) {
+                        awardString = awardString.substring(5, 
+                           awardString.length());
+                     }
+                      
+                     while (!isAward) {
+                        for (int i = 0; i < awardList.length; i++) {
+                           String listSubString = awardList[i].substring(5);
+                           if (awardString.equalsIgnoreCase(listSubString)) {
+                              isAward = true;
+                              award = i + 1;
+                           }   
+                        }
+                     }
+                  }
+                  if (!isAward) {
+                     System.out.println("Error: Please enter number "
+                        + "corresponding to command");
+                  }
+               }
+               if (award >= 1 && award <= 19) {
+                  category = awardList[award - 1 ];
+                  System.out.println(myNoms.returnResults(category));
                   do {
                      System.out.println("Press 'I' for more info");
                      System.out.println("Press 'E' to enter different award");
                      info = scan.nextLine().toUpperCase();
                      if (info.equals("I")) {
                         do {
-                           System.out.println(myNoms.generateDetails(award));
+                           System.out.println(myNoms.generateDetails(category));
                            System.out.println("Press 'E to go Back");
                            goBack = scan.nextLine().toUpperCase();
                         }
                         while (!goBack.equals("E"));
                      }
-                     goBack = info;
                   }
                   while (!goBack.equals("E"));
                }
-               else if (award.equals("ALL")) {
+               else if (award == 20) {
                   do {
                      System.out.println(myNoms.generateAll()); 
                      System.out.println("Press 'E to go Back");
@@ -97,19 +124,18 @@ public class OscarGenie {
                   }
                   while (!goBack.equals("E"));  
                }
-               else if (award.equals("HELP")) {
+               else if (award == 21) {
                   do {
-                     System.out.println("Case does not matter "
-                        + "when entering award "
-                        + "but make sure input is "
-                        + "spelled correctly.");
+                     System.out.println("Enter just the number for the "
+                        + "selection  you wish to make with no spaces\n"
+                         + "please email any bugs to rjcrumpler@gmail.com");
                      System.out.println("Press 'B' to go "
                         + "back to award selection");
                      goBack = scan.nextLine().toUpperCase();          
                   }
                   while (!goBack.equals("B"));
                }
-               else if (award.equalsIgnoreCase("info")) {
+               else if (award == 22) {
                   do {
                      System.out.println("This program was "
                         + "written by Ryan Crumpler\n"
@@ -137,14 +163,18 @@ public class OscarGenie {
                      goBack = scan.nextLine().toUpperCase();
                   }
                   while (!goBack.equals("E"));
-               }     
+               }    
             }    
-            while (!award.equalsIgnoreCase("Year"));         
+            while (award != 23 
+               || !awardString.equalsIgnoreCase("year"));         
+         }
+         if (year.equalsIgnoreCase("Q"))  {
+            System.exit(0);
          }  
          else {
             System.out.println("Invalid Year");      
-         }       
-      } 
-      while (!year.equalsIgnoreCase("Q"));      
+         }
+      }     
+      while (!year.equalsIgnoreCase("Q")); 
    }
 }
