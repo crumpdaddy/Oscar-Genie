@@ -25,7 +25,7 @@ public class OscarGenie {
       System.out.println("Welcome to Oscar Genie by Ryan Crumpler \n"); 
       do {
          System.out.println("Please enter a year 2016-2017 to predict"
-           + "Press 'Q' to Quit");
+           + " Press 'Q' to Quit");
          year = scan.nextLine();
          myNoms.clearAll();
          if (year.equals("2017") || year.equals("2016")) {
