@@ -336,7 +336,7 @@ public class OscarGenieDriver {
          for (int i = 0; i < countMap.get(category); i++) {
             Nomination p = new Nomination("", 0, "");
             p = nomineeMap.get(category + String.valueOf(i));
-            output += p.toString();
+            output += p.toString() +  " an Oscar for " + category;
          } 
       }
       return output;

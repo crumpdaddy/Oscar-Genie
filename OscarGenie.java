@@ -25,7 +25,7 @@ public class OscarGenie {
       System.out.println("Welcome to Oscar Genie by Ryan Crumpler \n"); 
       do {
          System.out.println("Please enter a year 2016-2017 to predict"
-           + " Press 'Q' to Quit");
+            + " Press 'Q' to Quit");
          year = scan.nextLine();
          myNoms.clearAll();
          if (year.equals("2017") || year.equals("2016")) {
@@ -37,8 +37,8 @@ public class OscarGenie {
                myNoms.generateProbability(awardList[i]);
             }
             do {
-               System.out.println("Enter number for award you "
-                  + "want to predict:\n"
+               System.out.println("Enter title of the award or its "
+                  + "corresponding number you want to predict:\n"
                   + "1 - Best Picture\n2 - Best Actor\n"
                   + "3 - Best Actress\n4 - Best Supporting Actor\n"
                   + "5 - Best Supporting Actress\n6 - Best Animated Feature\n"
@@ -51,8 +51,8 @@ public class OscarGenie {
                   + "17 - Best Visual Effects\n18 - Best Original Screenplay\n"
                   + "19 - Best Adapted Screenplay\n"
                   + "20 - All to generate all winners\n"
-                  + "21 - Help for Help\n22 - Info for Info\n"
-                  + "23 - Select new Year");
+                  + "21 - Help for Help\n22 - Info for Info about this program\n"
+                  + "23 - Year to select a new year");
                awardString = scan.nextLine();
                try {
                   award = Integer.parseInt(awardString);     
@@ -63,15 +63,15 @@ public class OscarGenie {
                      award = 20;
                      isAward = true;
                   }
-                  if (awardString.equalsIgnoreCase("Help)")) {
+                  if (awardString.equalsIgnoreCase("Help")) {
                      award = 21;
                      isAward = true;
                   }
-                  if (awardString.equalsIgnoreCase("Info)")) {
+                  if (awardString.equalsIgnoreCase("Info")) {
                      award = 22;
                      isAward = true;
                   }
-                  if (awardString.equalsIgnoreCase("Year)")) {
+                  if (awardString.equalsIgnoreCase("Year")) {
                      award = 23;
                      isAward = true;
                   }
@@ -94,8 +94,13 @@ public class OscarGenie {
                      }
                   }
                   if (!isAward) {
-                     System.out.println("Error: Please enter number "
-                        + "corresponding to command");
+                     String back = "";
+                     do {
+                        System.out.println("Error: Please enter number "
+                           + "corresponding to command\nPress 'E' to go back");
+                        back = scan.nextLine().toUpperCase();
+                     }
+                     while (!back.equals("E"));
                   }
                }
                if (award >= 1 && award <= 19) {
@@ -126,9 +131,11 @@ public class OscarGenie {
                }
                else if (award == 21) {
                   do {
-                     System.out.println("Enter just the number for the "
-                        + "selection  you wish to make with no spaces\n"
-                         + "please email any bugs to rjcrumpler@gmail.com");
+                     System.out.println("Enter either the number corresponding to the "
+                        + "selection  you wish to predict or you can enter "
+                        + "the name of the award\nYou don't have to add the word 'best'"
+                        + " before every award. Case does not matter\n"
+                         + "please email any bugs or errors to rjcrumpler@gmail.com");
                      System.out.println("Press 'B' to go "
                         + "back to award selection");
                      goBack = scan.nextLine().toUpperCase();          
@@ -159,16 +166,17 @@ public class OscarGenie {
                         + "to insufficent data\n"
                         + "Generall an output of\n"
                         + "0.00% indicates insufficent\n"
-                        + "data for that nominee");
+                        + "data for that nominee\nPless 'E' to go back");
                      goBack = scan.nextLine().toUpperCase();
                   }
+
                   while (!goBack.equals("E"));
                }    
             }    
             while (award != 23 
                || !awardString.equalsIgnoreCase("year"));         
          }
-         if (year.equalsIgnoreCase("Q"))  {
+         else if (year.equalsIgnoreCase("Q"))  {
             System.exit(0);
          }  
          else {
