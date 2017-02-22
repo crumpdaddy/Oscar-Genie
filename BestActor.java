@@ -89,18 +89,21 @@ public class BestActor extends Nomination {
    * @return string containing all data of actor/actress
    */
    public String toString() {
-      String hisHerSong = "his role in \"";
+      String hisHer = "his role in \"";
       String output = "";
       String supportingStr = "Actor";
       if (actress) {
-         hisHerSong = "her role in \"";
+         hisHer = "her role in \"";
       }
       if (song) {
-         hisHerSong = "the song \"";
+         output = "\nThe Song \"" + getName() + "\" in the movie "
+            + getMovie() + " has a " + getPercent() + "% chance of winning";
       }
-      output = "\n" + getName() + " has a " 
-         + getPercent() + "% chance of winning for "
-         + hisHerSong + getMovie() + "\"";
+      else {
+         output = "\n" + getName() + " has a " 
+            + getPercent() + "% chance of winning for "
+            + hisHer + getMovie() + "\"";
+      }
       return output;
    }
 }
