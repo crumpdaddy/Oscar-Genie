@@ -113,13 +113,13 @@ public class OscarGenie {
                      if (info.equals("I")) {
                         do {
                            System.out.println(myNoms.generateDetails(category));
-                           System.out.println("Press 'E to go Back");
+                           System.out.println("Press 'E' to go Back");
                            goBack = scan.nextLine().toUpperCase();
                         }
                         while (!goBack.equals("E"));
                      }
                   }
-                  while (!goBack.equals("E"));
+                  while (!info.equals("E"));
                }
                else if (award == 20) {
                   do {
