@@ -24,11 +24,12 @@ public class OscarGenie {
       OscarGenieDriver myNoms = new OscarGenieDriver();
       System.out.println("Welcome to Oscar Genie by Ryan Crumpler \n"); 
       do {
-         System.out.println("Please enter a year 2016-2017 to predict"
+         System.out.println("Please enter a year 2015-2017 to predict"
             + " Press 'Q' to Quit");
          year = scan.nextLine();
          myNoms.clearAll();
-         if (year.equals("2017") || year.equals("2016")) {
+         if (year.equals("2017") || year.equals("2016")
+            || year.equals("2015")) {
             myNoms.yearSet(year);  
             String[] awardList = myNoms.getAwardList();
             for (int i = 0; i < awardList.length; i++) {
@@ -50,8 +51,8 @@ public class OscarGenie {
                   + "15 - Best Original Song\n16 - Best Production Design\n" 
                   + "17 - Best Visual Effects\n18 - Best Original Screenplay\n"
                   + "19 - Best Adapted Screenplay\n"
-                  + "20 - All to generate all winners\n"
-                  + "21 - Help for Help\n22 - Info for Info about this program\n"
+                  + "20 - All to generate all winners\n21 - Help for Help"
+                  + "\n22 - Info for Info about this program\n"
                   + "23 - Year to select a new year");
                awardString = scan.nextLine();
                try {
@@ -124,18 +125,20 @@ public class OscarGenie {
                else if (award == 20) {
                   do {
                      System.out.println(myNoms.generateAll()); 
-                     System.out.println("Press 'E to go Back");
+                     System.out.println("Press 'E' to go Back");
                      goBack = scan.nextLine().toUpperCase();
                   }
                   while (!goBack.equals("E"));  
                }
                else if (award == 21) {
                   do {
-                     System.out.println("Enter either the number corresponding to the "
-                        + "selection  you wish to predict or you can enter "
-                        + "the name of the award\nYou don't have to add the word 'best'"
+                     System.out.println("Enter either the number "
+                        + "corresponding to the selection you wish to "
+                        + "predict or you can enter the name of the award\n"
+                        + "You don't have to add the word 'best'"
                         + " before every award. Case does not matter\n"
-                         + "please email any bugs or errors to rjcrumpler@gmail.com");
+                        + "please email any bugs or errors "
+                        + "to rjcrumpler@gmail.com");
                      System.out.println("Press 'B' to go "
                         + "back to award selection");
                      goBack = scan.nextLine().toUpperCase();          
