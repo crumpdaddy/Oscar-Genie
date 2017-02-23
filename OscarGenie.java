@@ -24,12 +24,12 @@ public class OscarGenie {
       OscarGenieDriver myNoms = new OscarGenieDriver();
       System.out.println("Welcome to Oscar Genie by Ryan Crumpler \n"); 
       do {
-         System.out.println("Please enter a year 2015-2017 to predict"
+         System.out.println("Please enter a year 2014-2017 to predict"
             + " Press 'Q' to Quit");
          year = scan.nextLine();
          myNoms.clearAll();
          if (year.equals("2017") || year.equals("2016")
-            || year.equals("2015")) {
+            || year.equals("2015") || year.equals("2014")) {
             myNoms.yearSet(year);  
             String[] awardList = myNoms.getAwardList();
             for (int i = 0; i < awardList.length; i++) {

@@ -270,7 +270,7 @@ public class OscarGenieDriver {
          Nomination n = winnerMap.get(awardList[i]);
          if (Double.parseDouble(n.getPercent()) == 0) {
             output += "\nCannot calculate winners because there is "
-               + "insufficent date";
+               + "insufficent data " + awardList[i];
          }
          else {
             output += n.toString() + " an Oscar for " + awardList[i];
