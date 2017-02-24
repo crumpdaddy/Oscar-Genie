@@ -96,12 +96,12 @@ public class BestActor extends Nomination {
          hisHer = "her role in \"";
       }
       if (song) {
-         output = "\nThe Song \"" + getName() + "\" in the movie "
+         output = "The Song \"" + getName() + "\" in the movie "
             + getMovie() + " has a " + getPercent() + "% chance of winning";
       }
       else {
-         output = "\n" + getName() + " has a " 
-            + getPercent() + "% chance of winning for "
+         output = getName() + " has a " 
+            + getPercent() + "% chance of winning an Oscar for "
             + hisHer + getMovie() + "\"";
       }
       return output;

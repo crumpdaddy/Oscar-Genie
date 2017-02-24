@@ -63,8 +63,8 @@ public class Nomination {
    * @return string containing all data of film
    */
    public String toString() {
-      String output = "\n\"" + getName() + "\" has a "
-          + getPercent() + "% chance of winning";
+      String output = "\"" + getName() + "\" has a "
+          + getPercent() + "% chance of winning an Oscar";
       return output;
    }
 }
