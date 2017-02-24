@@ -91,7 +91,6 @@ public class BestActor extends Nomination {
    public String toString() {
       String hisHer = "his role in \"";
       String output = "";
-      String supportingStr = "Actor";
       if (actress) {
          hisHer = "her role in \"";
       }

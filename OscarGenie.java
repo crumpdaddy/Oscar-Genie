@@ -82,8 +82,7 @@ public class OscarGenie {
                         5).equalsIgnoreCase("Best ")) {
                         awardString = awardString.substring(5, 
                            awardString.length());
-                     }
-                      
+                     }                   
                      while (!isAward) {
                         for (int i = 0; i < awardList.length; i++) {
                            String listSubString = awardList[i].substring(5);
