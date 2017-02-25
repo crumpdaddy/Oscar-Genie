@@ -178,11 +178,12 @@ public class OscarGenie {
             while (award != 23 
                || !awardString.equalsIgnoreCase("year"));         
          }
-         else if (year.equalsIgnoreCase("Q"))  {
-            System.exit(0);
-         }  
+         
          else {
             System.out.println("Invalid Year");      
+         }
+         if (year.equalsIgnoreCase("Q"))  {
+            System.exit(0);
          }
       }     
       while (!year.equalsIgnoreCase("Q")); 
