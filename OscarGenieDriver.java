@@ -94,15 +94,16 @@ public class OscarGenieDriver {
       boolean nextLine = true;
       award = scanFile.nextLine();
       String a = award;
+      coefficent = 0;
       boolean song = false;
       boolean actress = false;
       boolean supporting = false;
-      if (award.equals("Best Actor,,")
-         || award.equals("Best Supporting Actor,,") 
-         || award.equals("Best Actress,,")
-         || award.equals("Best Supporting Actress,,")
-         || award.equals("Best Original Song,,")) {
-         award = award.substring(0, award.length() - 2);
+      if (award.equals("Best Actor,")
+         || award.equals("Best Supporting Actor,") 
+         || award.equals("Best Actress,")
+         || award.equals("Best Supporting Actress,")
+         || award.equals("Best Original Song,")) {
+         award = award.substring(0, award.length() - 1);
          if (award.equals("Best Supporting Actor") 
             || award.equals("Best Supporting Actress")) {
             supporting = true;
@@ -119,7 +120,6 @@ public class OscarGenieDriver {
             Scanner scanNominee = new Scanner(nominee).useDelimiter(",");
             while (scanNominee.hasNextLine()) {
                name = scanNominee.next();
-               coefficent = Double.parseDouble(scanNominee.next());
                movie = scanNominee.next();
                percent = "0";
                BestActor n = new BestActor(name, coefficent, percent, 
@@ -139,13 +139,11 @@ public class OscarGenieDriver {
          }
       }
       else {
-         award = award.substring(0, award.length() - 1);
          while (scanFile.hasNextLine()) {
             nominee = scanFile.nextLine(); 
             Scanner scanNominee = new Scanner(nominee).useDelimiter(",");
             while (scanNominee.hasNextLine()) {
                name = scanNominee.next();
-               coefficent = Double.parseDouble(scanNominee.next());
                Nomination n = new Nomination(name, coefficent, percent);
                nomMap.put(name, n);
                nomineeMap.put(award, nomMap);
