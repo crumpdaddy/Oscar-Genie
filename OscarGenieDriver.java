@@ -305,5 +305,5 @@ public class OscarGenieDriver {
       totalMap.clear();
       calcMap.clear();
       winnerMap.clear();
-   }   
+   }          
 }
