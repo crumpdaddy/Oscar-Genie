@@ -1,14 +1,13 @@
 /** This program defines the abstract nomination object.
 *  This is used for actors as well as film objects
 * @author Ryan Crumpler
-* @version 1.31.11
+* @version 2.26.17
 */
 public class Nomination {
    
-   protected String name;
+   protected String name, percent;
    protected double coefficent;
-   protected String percent;
-    /**
+   /**
    * @param nameIn is title of film or name of actor/actress
    * @param coefficentIn is constant used to determine  
    * liklihood of winning calculated through other awards

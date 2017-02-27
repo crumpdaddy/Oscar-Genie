@@ -1,14 +1,11 @@
 /** This program defines the actor object.
 * 
 * @author Ryan Crumpler
-* @version 1.31.11
+* @version 2.26.17
 */
 public class BestActor extends Nomination {
    protected String movie;
-   protected boolean actress;
-   protected boolean supporting;
-   protected boolean song;
-   
+   protected boolean actress, supporting, song;
    /**
    * @param nameIn is first and last name of actor/actress
    * @param coefficentIn is constant used to determine actors 

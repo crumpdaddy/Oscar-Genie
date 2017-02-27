@@ -1,11 +1,11 @@
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.File;
-/** This program is the driver that carries out all methods 
-* to determine chance of winning an oscar.
+/** This has the main class that has UI and runs 
+* OscarGenieDriver methods and outpus results. 
 * 
 * @author Ryan Crumpler
-* @version 1.31.11
+* @version 2.26.17
 */
 public class OscarGenie {
    /**
@@ -133,7 +133,7 @@ public class OscarGenie {
                   do {
                      System.out.println("Enter either the number "
                         + "corresponding to the selection you wish to "
-                        + "predict or you can enter the name of the award\n"
+                        + "predict or\nyou can enter the name of the award\n"
                         + "You don't have to add the word 'best'"
                         + " before every award. Case does not matter\n"
                         + "please email any bugs or errors "
@@ -153,8 +153,8 @@ public class OscarGenie {
                         + "assosciationsx\n and determining "
                         + "how effective each source "
                         + "is at predicting the Oscar "
-                        + "winners\nfor each category."
-                        + "It then weights each "
+                        + "winners\nfor each category based on past"
+                        + " results. It then weights each "
                         + "source and makes a prediction\n"
                         + "based on all the sources "
                         + "and outputs the results.\n"

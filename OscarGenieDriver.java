@@ -6,22 +6,29 @@ import java.util.HashMap;
 import java.util.ArrayList;
 
 /** This program is the driver that carries out all methods 
-* to determine chance ofwinning an oscar.
+* to determine chance of winning an oscar.
 * 
 * @author Ryan Crumpler
-* @version 1.31.11
+* @version 2.26.17
 */
 public class OscarGenieDriver {
    private double coefficent;
-   protected String name, award, movie, nominee;
+   protected String name, award, movie, nominee, orginization, percent;
    private HashMap<String, Double> totalMap;
    private HashMap<String, ArrayList<Calculations>> calcMap;
    private HashMap<String, HashMap<String, Nomination>> nomineeMap;
    private HashMap<String, File> yearHash;
-   protected String percent;
    protected Nomination highestNominee;
    private HashMap<String, Nomination> winnerMap;
-   protected String[] awardList;
+   protected static String[] awardList = new String[]{"Best Picture",  
+      "Best Actor", "Best Actress", "Best Supporting Actor",  
+      "Best Supporting Actress", "Best Animated Feature",   
+      "Best Cinematography", "Best Director", "Best Documentary Feature", 
+      "Best Costume Design", "Best Film Editing", "Best Foreign Language Film",
+      "Best Makeup and Hairstyling", "Best Original Score",  
+      "Best Original Song", "Best Production Design",   
+      "Best Visual Effects", "Best Original Screenplay",
+      "Best Adapted Screenplay"};
    /**
    * This program reads a CSV file that shows the category 
    * of the award and all the nominees and stores all the nominees as 
@@ -29,20 +36,20 @@ public class OscarGenieDriver {
    * shows a list of criteria used to measure oscar nominee chance of winning as
    * well as how effective that metric is at 
    * predicting oscar winners. It stores 
-   * all nominee objects in an ArrarList and puts that ArrayList in a hashMap
-   * and the hashmap of ArrayLists in a hashmap 
-   * it stores the total coefficent
+   * all nominee objects in a hashMap with the key being their name
+   * and puts that that hashmap in a hashmap with a key being the award, this 
+   * ensures O(N) efficancy across all methods. 
+   * It stores the total coefficent
    * for each category in a hashmap, this is used to 
    * calculate percent chance of winning.
-   * The number of nominees is kept in a hashmap and 
-   * this is used to iterate through nomine hashmaps.
-   * nomineeMap defines a hashmap of Nomination ArrayList objects
+   * nomineeMap defines a hashmap of a hashmap of Nomination  objects
    * totalMap defines a hashmap containing the sum of coefficents for
    * each category
    * calcMap defines a hashmap of doubles of the 
    * individual coefficents that are summed to give 
    * each nominee their total coefficent used in calculations
    * winnerMap is a hashMap of all projected winners for each category
+   * awardList is a static String[] that contains all the award categories
    */
    public OscarGenieDriver() {
       totalMap = new HashMap<>();
@@ -51,14 +58,6 @@ public class OscarGenieDriver {
       nomineeMap = new HashMap<>();
       highestNominee = new Nomination("", 0, "");
       winnerMap = new HashMap<>();
-      awardList = new String[]{"Best Picture", "Best Actor", 
-         "Best Actress", "Best Supporting Actor", "Best Supporting Actress", 
-         "Best Animated Feature", "Best Cinematography", "Best Costume Design", 
-         "Best Director", "Best Documentary Feature", "Best Film Editing",
-         "Best Foreign Language Film", "Best Makeup and Hairstyling", 
-         "Best Original Score", "Best Original Song", "Best Production Design", 
-         "Best Visual Effects", "Best Original Screenplay", 
-         "Best Adapted Screenplay"};
    }
    /**
    * Takes reads all files in the folder of the specified year
@@ -76,6 +75,7 @@ public class OscarGenieDriver {
    }
    /**
    * @return String[[] of list of awards
+   * used in OscarGenie to iterate through awards
    */
    public String[] getAwardList() {
       return awardList;
@@ -83,8 +83,8 @@ public class OscarGenieDriver {
    /**
    * reads CSV that contains the nominee and any info 
    * exclusive to bestActor objects.
-   * Adds nominees to an arrayList and stores that list in a hashmap 
-   * and adds that hashmap to another hashMap nomineeMap
+   * Adds nominees to a hashmap with the key being the actor/film name 
+   * and adds that hashmap to another hashMap nomineeMap with a key of the award
    * @param fileNameIn is the CSV file that will be read 
    * @throws IOException for scanner
    */
@@ -93,8 +93,6 @@ public class OscarGenieDriver {
       HashMap <String, Nomination> nomMap = new HashMap<String, Nomination>();
       boolean nextLine = true;
       award = scanFile.nextLine();
-      String a = award;
-      coefficent = 0;
       boolean song = false;
       boolean actress = false;
       boolean supporting = false;
@@ -122,7 +120,7 @@ public class OscarGenieDriver {
                name = scanNominee.next();
                movie = scanNominee.next();
                percent = "0";
-               BestActor n = new BestActor(name, coefficent, percent, 
+               BestActor n = new BestActor(name, 0, percent, 
                   movie, actress, supporting, song);
                if (actress) {
                   n.setActress(true);
@@ -144,7 +142,7 @@ public class OscarGenieDriver {
             Scanner scanNominee = new Scanner(nominee).useDelimiter(",");
             while (scanNominee.hasNextLine()) {
                name = scanNominee.next();
-               Nomination n = new Nomination(name, coefficent, percent);
+               Nomination n = new Nomination(name, 0, percent);
                nomMap.put(name, n);
                nomineeMap.put(award, nomMap);
             }
@@ -157,13 +155,17 @@ public class OscarGenieDriver {
    * and the coefficent that is a percent that shows how often the 
    * the institutional award winner receives an oscar.
    * The coefficents each nominee receives are summed and stored in
-   * the calcMap hashmap and 
+   * a calcList and at the end of scanning a file that list is added to
+   * calcMap with a key of the award
+   * also determines the most probable nominee by getting the nominee
+   * with the highest coefficent.
+   * All the coefficents are summed in totalCoefficent and 
+   * the totalCoefficent is put in to totalMap which has a key of the award.
    * @param fileNameIn is the CSV file that will be read 
    * @throws IOException for scanner
    */
    public void getProbability(String fileNameIn) throws IOException {  
       Scanner scanFile = new Scanner((yearHash.get(fileNameIn)));
-      String orginization = "";
       boolean isNom = false;
       double totalCoeff = 0;
       ArrayList<Calculations> calcList = new ArrayList<Calculations>();
@@ -203,7 +205,9 @@ public class OscarGenieDriver {
       }      
    }
    /**
-   * Prints out bestActor objects and their probability of winning an Oscar.
+   * Iterates through the award category and sets the probability
+   * that a nominee will win based on their coefficent divided by the
+   * totalCoefficent for that category * 100 to get a perent.
    * @param category defines category of award to be calculated
    */
    public void generateProbability(String category) {
@@ -223,12 +227,13 @@ public class OscarGenieDriver {
       }
    }
    /**
-   * generates a list of all winners.
+   * Output all contents of nominees in winnerMap toString()
+   * if there is no winner for a category it outputs that it can't
+   * predict a winner.
    * @return string of winners
    */
    public String generateAll() {
       String output = "";
-      double perc = 0;
       for (int i = 0; i < awardList.length; i++) {
          Nomination n = winnerMap.get(awardList[i]);
          output += awardList[i] + ": ";
@@ -278,6 +283,8 @@ public class OscarGenieDriver {
       return output;
    }
    /** 
+   * returns string of each nominee toString() for a given category
+   * If there are no winners the user is notified.
    * @param category is award category
    * @return toString of all nominees
    */

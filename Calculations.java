@@ -2,12 +2,11 @@
 * to determine chance ofwinning an oscar.
 * 
 * @author Ryan Crumpler
-* @version 1.31.11
+* @version 2.26.17
 */
 public class Calculations {
-   protected String name;
+   protected String name, orginization;
    protected double coefficent;
-   protected String orginization;
    /**
    * Difines a Calculation object that is used in calculation total coefficents.
    * @param nameIn is name of nominee
