@@ -29,7 +29,8 @@ public class OscarGenie {
          year = scan.nextLine();
          myNoms.clearAll();
          if (year.equals("2017") || year.equals("2016")
-            || year.equals("2015") || year.equals("2014")) {
+            || year.equals("2015") || year.equals("2014")
+            || year.equals("2013")) {
             myNoms.yearSet(year);  
             String[] awardList = myNoms.getAwardList();
             for (int i = 0; i < awardList.length; i++) {
