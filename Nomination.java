@@ -1,4 +1,4 @@
-/** This program defines the abstract nomination object.
+/** This program defines the  nomination object.
 *  This is used for actors as well as film objects
 * @author Ryan Crumpler
 * @version 2.26.17

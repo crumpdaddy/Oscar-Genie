@@ -22,9 +22,11 @@ public class OscarGenie {
       String awardString = "";
       Scanner scan = new Scanner(System.in);
       OscarGenieDriver myNoms = new OscarGenieDriver();
+      myNoms.scanCoefficents();
+      String[] awardList = myNoms.getAwardList();
       System.out.println("Welcome to Oscar Genie by Ryan Crumpler \n"); 
       do {
-         System.out.println("Please enter a year 2014-2017 to predict"
+         System.out.println("Please enter a year 2013-2017 to predict"
             + " Press 'Q' to Quit");
          year = scan.nextLine();
          myNoms.clearAll();
@@ -32,7 +34,6 @@ public class OscarGenie {
             || year.equals("2015") || year.equals("2014")
             || year.equals("2013")) {
             myNoms.yearSet(year);  
-            String[] awardList = myNoms.getAwardList();
             for (int i = 0; i < awardList.length; i++) {
                myNoms.readNominee(awardList[i] + "Nominations.csv");
                myNoms.getProbability(awardList[i] + "Calculations.csv");
@@ -61,6 +62,7 @@ public class OscarGenie {
                }
                catch (NumberFormatException e) {
                   boolean isAward = false;
+                  boolean isFound = true;
                   if (awardString.equalsIgnoreCase("All")) {
                      award = 20;
                      isAward = true;
@@ -84,13 +86,16 @@ public class OscarGenie {
                         awardString = awardString.substring(5, 
                            awardString.length());
                      }                   
-                     while (!isAward) {
+                     while (!isAward || isFound) {
                         for (int i = 0; i < awardList.length; i++) {
                            String listSubString = awardList[i].substring(5);
                            if (awardString.equalsIgnoreCase(listSubString)) {
                               isAward = true;
                               award = i + 1;
-                           }   
+                           }  
+                           if (i == 18) {
+                              isFound = false;
+                           } 
                         }
                      }
                   }

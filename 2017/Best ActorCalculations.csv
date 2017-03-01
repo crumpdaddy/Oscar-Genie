@@ -1,11 +1,12 @@
-Best Actor,,
-Casey Affleck,New York Film Cirtics,0.2941
-Casey Affleck,DC Film Critics,0.3571
-Casey Affleck,Boston Film Critics,0.4706
-Casey Affleck,Las Vegas Critics,0.4118
-Casey Affleck,Houston Critics,0.375
-Casey Affleck,Natrional Society of Film Critics,0.4118
-Casey Affleck,Critics Choice,0.7647
-Casey Affleck,Golden Globes,0.5882
-Denzel Washington,San Francisco Critics,0.3179
-Denzel Washington,Screen Actors Guild,1.235
+Best Actor,
+Casey Affleck,New York Film Critics
+Casey Affleck,DC Film Critics
+Casey Affleck,Boston Film Critics
+Casey Affleck,Las Vegas Critics
+Casey Affleck,Houston Critics
+Casey Affleck,National Society of Film Critics
+Casey Affleck,Critics Choice
+Casey Affleck-Drama,Golden Globes-Drama
+Denzel Washington,San Francisco Critics
+Denzel Washington,Screen Actors Guild
+Ryan Gosline,Golden Globes-Comedy or Musical

@@ -20,6 +20,7 @@ public class OscarGenieDriver {
    private HashMap<String, File> yearHash;
    protected Nomination highestNominee;
    private HashMap<String, Nomination> winnerMap;
+   private HashMap<String, CoefficentCalculator> coeffMap;
    protected static String[] awardList = new String[]{"Best Picture",  
       "Best Actor", "Best Actress", "Best Supporting Actor",  
       "Best Supporting Actress", "Best Animated Feature",   
@@ -58,6 +59,7 @@ public class OscarGenieDriver {
       nomineeMap = new HashMap<>();
       highestNominee = new Nomination("", 0, "");
       winnerMap = new HashMap<>();
+      coeffMap = new HashMap<>();
    }
    /**
    * Takes reads all files in the folder of the specified year
@@ -79,6 +81,31 @@ public class OscarGenieDriver {
    */
    public String[] getAwardList() {
       return awardList;
+   }
+   /**
+   * Reads CSV that contains every award orginization and their 
+   * coefficent for predicting a particular Oscar category.
+   * Each line is read and added to a CoefficentCalculator object and
+   * those objects are added to a hashMap coeffMap that contains
+   * the CoefficentCalculatior objects and uses the 
+   * award + orginizations as a key
+   * @throws IOException for scanner
+   */
+   public void scanCoefficents() throws IOException {
+      Scanner scanFile = new Scanner(new File("CoefficentList.csv"));
+      String line = "";
+      int count = 0;
+      while (scanFile.hasNextLine()) {
+         line = scanFile.nextLine();
+         Scanner scanLine = new Scanner(line).useDelimiter(",");
+         award = scanLine.next();
+         String prevAward = "";
+         orginization = scanLine.next();
+         coefficent = Double.parseDouble(scanLine.next());
+         CoefficentCalculator n = new CoefficentCalculator(award, 
+            orginization, coefficent);
+         coeffMap.put(award + orginization, n);      
+      }
    }
    /**
    * reads CSV that contains the nominee and any info 
@@ -168,10 +195,11 @@ public class OscarGenieDriver {
       Scanner scanFile = new Scanner((yearHash.get(fileNameIn)));
       boolean isNom = false;
       double totalCoeff = 0;
+      HashMap<String, CoefficentCalculator> x = coeffMap;
       ArrayList<Calculations> calcList = new ArrayList<Calculations>();
       Nomination p = new Nomination("", 0, ""); 
       award = scanFile.nextLine(); 
-      award = award.substring(0, award.length() - 2);
+      award = award.substring(0, award.length() - 1);
       HashMap <String, Nomination> nomMap = nomineeMap.get(award);
       while (scanFile.hasNextLine()) {  
          nominee = scanFile.nextLine();
@@ -179,7 +207,12 @@ public class OscarGenieDriver {
          while (scanProbability.hasNextLine()) { 
             name = scanProbability.next();
             orginization = scanProbability.next();
-            coefficent = Double.parseDouble(scanProbability.next());
+            if (coeffMap.containsKey(award + orginization)) {
+               coefficent = coeffMap.get(award + orginization).getCoefficent();
+            }
+            else {
+               coefficent = 0;
+            }
             Calculations n = new Calculations(name, 
                orginization, coefficent);          
             if (nomMap.containsKey(name)) {
@@ -212,6 +245,7 @@ public class OscarGenieDriver {
    */
    public void generateProbability(String category) {
       double perc = 0;
+      
       HashMap<String, Nomination> nomMap = nomineeMap.get(category);
       ArrayList<String> keyList = new ArrayList<String>(nomMap.keySet());
       for (int i = 0; i < keyList.size(); i++) {

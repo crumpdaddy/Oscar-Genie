@@ -1,5 +1,4 @@
-/** This program is the driver that carries out all methods 
-* to determine chance ofwinning an oscar.
+/** This program defines the Nomination object.
 * 
 * @author Ryan Crumpler
 * @version 2.26.17
