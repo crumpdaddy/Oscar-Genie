@@ -51,6 +51,7 @@ public class OscarGenieDriver {
    * each nominee their total coefficent used in calculations
    * winnerMap is a hashMap of all projected winners for each category
    * awardList is a static String[] that contains all the award categories
+   * coeffMap is hashMap of CoefficentCalculation objects
    */
    public OscarGenieDriver() {
       totalMap = new HashMap<>();
@@ -193,9 +194,7 @@ public class OscarGenieDriver {
    */
    public void getProbability(String fileNameIn) throws IOException {  
       Scanner scanFile = new Scanner((yearHash.get(fileNameIn)));
-      boolean isNom = false;
       double totalCoeff = 0;
-      HashMap<String, CoefficentCalculator> x = coeffMap;
       ArrayList<Calculations> calcList = new ArrayList<Calculations>();
       Nomination p = new Nomination("", 0, ""); 
       award = scanFile.nextLine(); 
@@ -231,7 +230,6 @@ public class OscarGenieDriver {
                      highestNominee = p;
                      winnerMap.put(award, p);
                   } 
-                  isNom = true;
                } 
             }      
          }
