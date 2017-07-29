@@ -17,30 +17,36 @@ public class OscarGenie {
       int award = 0;
       Scanner scan = new Scanner(System.in);
       OscarGenieDriver myNoms = new OscarGenieDriver();
-      myNoms.scanCoefficents();
+      myNoms.readWinners("all_winners.csv");
+      myNoms.readNominee("all_nominations.csv");
+      myNoms.readCalculations("all_calculations.csv"); 
+      myNoms.setCoefficents(); 
+      myNoms.kalmanFilter(1, 1992, 2017); 
+      myNoms.getProbability(1992, 2017);
       String[] awardList = myNoms.getAwardList();
       System.out.println("Welcome to Oscar Genie by Ryan Crumpler \n"); 
       do {
-         System.out.println("Please enter a year 2013-2017 to predict"
+         System.out.println("Please enter a year 1992-2017 to predict"
             + " Press 'Q' to Quit");
          year = scan.nextLine();
-         myNoms.clearAll();
-         if (year.equals("2017") || year.equals("2016") || year.equals("2015") 
-            || year.equals("2014") || year.equals("2013")) {
-            myNoms.yearSet(year); 
+         int yearInt = 0;
+         try {
+            yearInt = Integer.parseInt(year);
+         }
+         catch (NumberFormatException e) {
+            System.out.println("Enter a number");
+         }
+         if (yearInt >= 1991 && yearInt <= 2017) {
             String menu = "";
             menu += "Enter title of the award or its "
                   + "corresponding number you want to predict:\n"; 
             for (int i = 0; i < awardList.length; i++) {
-               myNoms.readNominee(awardList[i] + "Nominations.csv");
-               myNoms.getProbability(awardList[i] + "Calculations.csv");
-               myNoms.generateProbability(awardList[i]);
                menu += i + 1 + " - " + awardList[i] + "\n";
             }
-            do {
-               menu += "20 - All to generate all winners\n21 - Help for Help"
+            menu += "20 - All to generate all winners\n21 - Help for Help"
                   + "\n22 - Info for Info about this program\n"
                   + "23 - Year to select a new year";
+            do {
                System.out.println(menu);
                aString = scan.nextLine();
                try {
@@ -68,7 +74,7 @@ public class OscarGenie {
                      }                   
                      while (!isFound) {
                         for (int i = 0; i < awardList.length; i++) {
-                           String listSubString = awardList[i].substring(5);
+                           String listSubString = awardList[i];
                            if (aString.equalsIgnoreCase(listSubString)) {
                               isAward = true;
                               isFound = true;
@@ -91,29 +97,53 @@ public class OscarGenie {
                }
                if (award >= 1 && award <= 19) {
                   category = awardList[award - 1 ];
-                  System.out.println(myNoms.returnResults(category));
+                  boolean start = true;
+                  if (start) {
+                     System.out.println(myNoms.returnResults(yearInt, category));
+                     start = false;
+                  }
                   do {
                      System.out.println("Press 'I' for more info");
                      System.out.println("Press 'E' to enter different award");
                      info = scan.nextLine().toUpperCase();
                      if (info.equals("I")) {
                         do {
-                           System.out.println(myNoms.generateDetails(category));
+                           System.out.println(myNoms.generateDetails(
+                              yearInt, category));
                            System.out.println("Press 'E' to go Back");
-                           goBack = scan.nextLine().toUpperCase();
+                           info = scan.nextLine().toUpperCase();
                         }
-                        while (!goBack.equals("E"));
+                        while (!info.equals("E"));
+                     }
+                     if (info.equals("E")) {
+                        start = true;
                      }
                   }
                   while (!info.equals("E"));
                }
                else if (award == 20) {
-                  do {
-                     System.out.println(myNoms.generateAll()); 
-                     System.out.println("Press 'E' to go Back");
-                     goBack = scan.nextLine().toUpperCase();
+                  boolean start = true;
+                  if (start) {
+                     System.out.println(myNoms.generateAll(yearInt)); 
+                     System.out.println("Press 'I' to to see correct " 
+                        + "winners and to see Oscar Genie accuracy");
+                     start = false;
                   }
-                  while (!goBack.equals("E"));  
+                  do {
+                     System.out.println("Press 'E' to go Back");
+                     info = scan.nextLine().toUpperCase();                                  
+                     if (info.equals("I")) {
+                        start = false;
+                        do {
+                           System.out.println(
+                              myNoms.allDetails(yearInt));
+                           System.out.println("Press 'E' to go Back");
+                           info = scan.nextLine().toUpperCase();
+                        }
+                        while (!info.equals("E"));
+                     }
+                  }
+                  while (!info.equals("E"));  
                }
                else if (award == 21) {
                   do {
@@ -126,7 +156,8 @@ public class OscarGenie {
                         + "to rjcrumpler@gmail.com");
                      System.out.println("Press 'B' to go "
                         + "back to award selection");
-                     goBack = scan.nextLine().toUpperCase();          
+                     goBack = scan.nextLine().toUpperCase(); 
+                     info = goBack;         
                   }
                   while (!goBack.equals("B"));
                }
