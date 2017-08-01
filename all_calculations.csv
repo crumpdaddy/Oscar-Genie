@@ -662,6 +662,7 @@ Year,Award,Name,Issuer
 2013,Filler Data,Filler Data,Filler Data
 2012,Actor - Leading Role,Brad Pitt,Boston Film Critics
 2012,Actor - Leading Role,George Clooney,Critics Choice
+2012,Actor - Leading Role,Jean Dujardin,Las Vegas Critics
 2012,Actor - Leading Role,George Clooney,DC Film Critics
 2012,Actor - Leading Role,George Clooney,Golden Globes-Drama
 2012,Actor - Leading Role,Jean Dujardin,Golden Globes-Musical or Comedy
@@ -674,12 +675,14 @@ Year,Award,Name,Issuer
 2012,Actor - Supporting Role,Christopher Plummer,Critics Choice
 2012,Actor - Supporting Role,Albert Brooks,DC Film Critics
 2012,Actor - Supporting Role,Christopher Plummer,Golden Globes
+2012,Actor - Supporting Role,Albert Brooks,Las Vegas Critics
 2012,Actor - Supporting Role,Albert Brooks,Houston Critics
 2012,Actor - Supporting Role,Christopher Plummer,LA Film Critics
 2012,Actor - Supporting Role,Albert Brooks,New York Film Critics
 2012,Actor - Supporting Role,Albert Brooks,San Francisco Critics
 2012,Actor - Supporting Role,Christopher Plummer,Screen Actors Guild
 2012,Actress - Leading Role,Michelle Williams,Boston Film Critics
+2012,Actress - Leading Role,Michelle Williams,Las Vegas Critics
 2012,Actress - Leading Role,Viola Davis,Critics Choice
 2012,Actress - Leading Role,Michelle Williams,DC Film Critics
 2012,Actress - Leading Role,Meryl Streep,Golden Globes-Drama
@@ -690,6 +693,7 @@ Year,Award,Name,Issuer
 2012,Actress - Leading Role,Tilda Swinton,San Francisco Critics
 2012,Actress - Leading Role,Viola Davis,Screen Actors Guild
 2012,Actress - Supporting Role,Melissa McCarthy,Boston Film Critics
+2012,Actress - Supporting Role,Melissa McCarthy,Las Vegas Critics
 2012,Actress - Supporting Role,Octavia Spencer,Critics Choice
 2012,Actress - Supporting Role,Octavia Spencer,DC Film Critics
 2012,Actress - Supporting Role,Octavia Spencer,Golden Globes
@@ -705,6 +709,7 @@ Year,Award,Name,Issuer
 2012,Animated Feature,Rango,San Francisco Critics
 2012,Best Picture,The Artist,Boston Film Critics
 2012,Best Picture,The Artist,Critics Choice
+2012,Best Picture,The Artist,Las Vegas Critics
 2012,Best Picture,The Artist,DC Film Critics
 2012,Best Picture,The Descendants,Houston Critics
 2012,Best Picture,The Descendants,LA Film Critics
@@ -721,10 +726,12 @@ Year,Award,Name,Issuer
 2012,Cinematography,The Tree of Life,Houston Critics
 2012,Cinematography,The Tree of Life,LA Film Critics
 2012,Cinematography,The Tree of Life,New York Film Critics
+2012,Costume Design,The Artist,Las Vegas Critics
 2012,Costume Design,The Artist,Critics Choice
 2012,Director,Hugo,Boston Film Critics
 2012,Director,The Artist,Critics Choice
 2012,Director,Hugo,DC Film Critics
+2012,Director,Drive,Las Vegas Critics
 2012,Director,The Artist,Directors Guild
 2012,Director,Hugo,Golden Globes
 2012,Director,Drive,Houston Critics
@@ -733,6 +740,7 @@ Year,Award,Name,Issuer
 2012,Director,The Tree of Life,San Francisco Critics
 2012,Documentary,George Harrison Living in the Material World,Critics Choice
 2012,Documentary,Cave of Forgotten Dreams,DC Film Critics
+2012,Documentary,Project Nim,Las Vegas Critics
 2012,Documentary,Project Nim,Directors Guild
 2012,Documentary,Cave of Forgotten Dreams,LA Film Critics
 2012,Documentary,Cave of Forgotten Dreams,New York Film Critics
@@ -740,17 +748,20 @@ Year,Award,Name,Issuer
 2012,Film Editing,The Clock,Boston Film Critics
 2012,Film Editing,The Girl With the Dragon Tattoo,Critics Choice
 2012,Foreign Language Film,Incendites,Boston Film Critics
+2012,Foreign Language Film,13 Assassins,Las Vegas Critics
 2012,Foreign Language Film,A Seperation,Critics Choice
 2012,Foreign Language Film,A Seperation,Golden Globes
 2012,Foreign Language Film,City of Life and Death,LA Film Critics
 2012,Foreign Language Film,A Seperation,New York Film Critics
 2012,Foreign Language Film,Certified Copy,San Francisco Critics
 2012,Makeup and Hairstyling,Harry Potter and the Deathly Hallows Part 2,Critics Choice
+2012,Production Design,The Artist,Las Vegas Critics
 2012,Production Design,Hugo,Critics Choice
 2012,Production Design,Hugo,DC Film Critics
 2012,Production Design,Hugo,LA Film Critics
 2012,Score,Drive,Boston Film Critics
 2012,Score,The Artist,Boston Film Critics
+2012,Score,The Artist,Las Vegas Critics
 2012,Score,The Artist,Critics Choice
 2012,Score,The Artist,DC Film Critics
 2012,Score,The Artist,Golden Globes
@@ -759,6 +770,7 @@ Year,Award,Name,Issuer
 2012,Screenplay - Adapted,Moneyball,Critics Choice
 2012,Screenplay - Adapted,The Descendants,DC Film Critics
 2012,Screenplay - Adapted,A Seperation,LA Film Critics
+2012,Screenplay - Adapted,Moneyball,Las Vegas Critics
 2012,Screenplay - Adapted,Moneyball,New York Film Critics
 2012,Screenplay - Adapted,Tinker Tailor Soldier Spy,San Francisco Critics
 2012,Screenplay - Adapted,The Descendants,Writers Guild
@@ -768,6 +780,8 @@ Year,Award,Name,Issuer
 2012,Screenplay - Original,The Descendants,Houston Critics
 2012,Screenplay - Original,Margin Call,San Francisco Critics
 2012,Screenplay - Original,Midnight in Paris,Writers Guild
+2012,Song,Man or Muppet,Las Vegas Critics
+2012,Visual Effects,Rise of the Planet of the Apes,Las Vegas Critics
 2012,Visual Effects,Rise of the Planet of the Apes,Critics Choice
 2012,Filler Data,Filler Data,Filler Data
 2011,Actor - Leading Role,Jesse Eisenberg,Boston Film Critics
@@ -777,10 +791,12 @@ Year,Award,Name,Issuer
 2011,Actor - Leading Role,Paul Giamatti,Golden Globes-Musical or Comedy
 2011,Actor - Leading Role,Jesse Eisenberg,Houston Critics
 2011,Actor - Leading Role,Colin Firth,LA Film Critics
+2011,Actor - Leading Role,James Franco,Las Vegas Critics
 2011,Actor - Leading Role,Colin Firth,New York Film Critics
 2011,Actor - Leading Role,Colin Firth,San Francisco Critics
 2011,Actor - Leading Role,Colin Firth,Screen Actors Guild
 2011,Actor - Supporting Role,Christian Bale,Boston Film Critics
+2011,Actor - Supporting Role,Christian Bale,Las Vegas Critics
 2011,Actor - Supporting Role,Christian Bale,Critics Choice
 2011,Actor - Supporting Role,Christian Bale,DC Film Critics
 2011,Actor - Supporting Role,Christian Bale,Golden Globes
@@ -790,6 +806,7 @@ Year,Award,Name,Issuer
 2011,Actor - Supporting Role,John Hawkins,San Francisco Critics
 2011,Actor - Supporting Role,Christian Bale,Screen Actors Guild
 2011,Actress - Leading Role,Natalie Portman,Boston Film Critics
+2011,Actress - Leading Role,Natalie Portman,Las Vegas Critics
 2011,Actress - Leading Role,Natalie Portman,Critics Choice
 2011,Actress - Leading Role,Jennifer Lawrence,DC Film Critics
 2011,Actress - Leading Role,Natalie Portman,Golden Globes-Drama
@@ -803,6 +820,7 @@ Year,Award,Name,Issuer
 2011,Actress - Supporting Role,Melissa Lee,Critics Choice
 2011,Actress - Supporting Role,Melissa Leo,DC Film Critics
 2011,Actress - Supporting Role,Melissa Leo,Golden Globes
+2011,Actress - Supporting Role,Amy Adams,Las Vegas Critics
 2011,Actress - Supporting Role,Hailee Steinfield,Houston Critics
 2011,Actress - Supporting Role,Jacki Weaver,LA Film Critics
 2011,Actress - Supporting Role,Melissa Leo,New York Film Critics
@@ -812,11 +830,13 @@ Year,Award,Name,Issuer
 2011,Animated Feature,Toy Story 3,Golden Globes
 2011,Animated Feature,Toy Story 3,LA Film Critics
 2011,Animated Feature,The Illusionist,New York Film Critics
+2011,Animated Feature,Toy Story 3,Las Vegas Critics
 2011,Animated Feature,The Adventures of Tintin,Producers Guild
 2011,Animated Feature,Toy Story 3,San Francisco Critics
 2011,Best Picture,The Social Network,Boston Film Critics
 2011,Best Picture,The Social Network,Critics Choice
 2011,Best Picture,The Social Network,DC Film Critics
+2011,Best Picture,The Social Network,Las Vegas Critics
 2011,Best Picture,The Social Network,Houston Critics
 2011,Best Picture,The Social Network,LA Film Critics
 2011,Best Picture,The Social Network,New York Film Critics
@@ -828,43 +848,52 @@ Year,Award,Name,Issuer
 2011,Cinematography,True Grit,Boston Film Critics
 2011,Cinematography,Inception,Critics Choice
 2011,Cinematography,Inception,DC Film Critics
+2011,Cinematography,Inception,Las Vegas Critics
 2011,Cinematography,Inception,Houston Critics
 2011,Cinematography,Black Swan,LA Film Critics
 2011,Cinematography,Black Swan,New York Film Critics
+2011,Costume Design,Alice in Wonderland,Las Vegas Critics
 2011,Costume Design,Alice in Wonderland,Critics Choice
 2011,Director,The Social Network,Boston Film Critics
 2011,Director,The Social Network,Critics Choice
 2011,Director,The Social Network,DC Film Critics
 2011,Director,The King's Speech,Directors Guild
+2011,Director,The Social Network,Las Vegas Critics
 2011,Director,The Social Network,Golden Globes
 2011,Director,The Social Network,Houston Critics
 2011,Director,The Social Network,LA Film Critics
 2011,Director,The Social Network,New York Film Critics
 2011,Director,The Social Network,San Francisco Critics
 2011,Director,Black Swan,San Francisco Critics
+2011,Documentary,Waiting for Superman,Las Vegas Critics
 2011,Documentary,Waiting for Superman,Critics Choice
 2011,Documentary,Exit Through The Gift Shop,DC Film Critics
 2011,Documentary,Inside Job,Directors Guild
 2011,Documentary,Last Train Home,LA Film Critics
 2011,Documentary,Inside Job,New York Film Critics
 2011,Documentary,The Tillman Story,San Francisco Critics
+2011,Film Editing,Inception,Las Vegas Critics
 2011,Film Editing,Black Swan,Boston Film Critics
 2011,Film Editing,Inception,Critics Choice
 2011,Foreign Language Film,Mother,Boston Film Critics
 2011,Foreign Language Film,The Girl With the Dragon Tattoo,Critics Choice
+2011,Foreign Language Film,The Girl With the Dragon Tattoo,Las Vegas Critics
 2011,Foreign Language Film,In a Better World,Golden Globes
 2011,Foreign Language Film,Carlos,LA Film Critics
 2011,Foreign Language Film,Carlos,New York Film Critics
 2011,Foreign Language Film,Mother,San Francisco Critics
 2011,Makeup and Hairstyling,Alice in Wonderland,Critics Choice
 2011,Production Design,Inception,Critics Choice
+2011,Production Design,Black Swan,Las Vegas Critics
 2011,Production Design,Inception,DC Film Critics
 2011,Production Design,Inception,LA Film Critics
 2011,Score,The Social Network,Boston Film Critics
+2011,Score,The Social Network,Las Vegas Critics
 2011,Score,Up,Critics Choice
 2011,Score,Inception,DC Film Critics
 2011,Score,The Social Network,Golden Globes
 2011,Score,The Social Network,LA Film Critics
+2011,Screenplay - Adapted,The Social Network,Las Vegas Critics
 2011,Screenplay - Adapted,The Social Network,Boston Film Critics
 2011,Screenplay - Adapted,The Social Network,DC Film Critics
 2011,Screenplay - Adapted,The Social Network,Golden Globes
@@ -878,9 +907,13 @@ Year,Award,Name,Issuer
 2011,Screenplay - Original,The King's Speech,San Francisco Critics
 2011,Screenplay - Original,The King's Speech,Critics Choice
 2011,Screenplay - Original,Inception,Writers Guild
+2011,Song,I See theLight,Las Vegas Critics
+2011,Song,Filler Data,Filler Data
+2011,Visual Effects,Inception,Las Vegas Critics
 2011,Visual Effects,Inception,Critics Choice
 2011,Filler Data,Filler Data,Filler Data
 2010,Actor - Leading Role,Jeremy Renner,Boston Film Critics
+2010,Actor - Leading Role,Jeremy Renner,Las Vegas Critics
 2010,Actor - Leading Role,Jeff Bridges,Critics Choice
 2010,Actor - Leading Role,George Clooney,DC Film Critics
 2010,Actor - Leading Role,Jeff Bridges,Golden Globes-Drama
@@ -891,6 +924,7 @@ Year,Award,Name,Issuer
 2010,Actor - Leading Role,Colin Firth,San Francisco Critics
 2010,Actor - Leading Role,Jeff Bridges,Screen Actors Guild
 2010,Actor - Supporting Role,Christoph Waltz,Boston Film Critics
+2010,Actor - Supporting Role,Christoph Waltz,Las Vegas Critics
 2010,Actor - Supporting Role,Christoph Waltz,Critics Choice
 2010,Actor - Supporting Role,Christoph Waltz,DC Film Critics
 2010,Actor - Supporting Role,Christoph Waltz,Golden Globes
@@ -902,6 +936,7 @@ Year,Award,Name,Issuer
 2010,Actress - Leading Role,Meryl Streep,Boston Film Critics
 2010,Actress - Leading Role,Meryl Streep,Critics Choice
 2010,Actress - Leading Role,Carey Mulligan,DC Film Critics
+2010,Actress - Leading Role,Gabourey Sidibe,Las Vegas Critics
 2010,Actress - Leading Role,Sandra Bullock,Golden Globes-Drama
 2010,Actress - Leading Role,Meryl Streep,Golden Globes-Musical or Comedy
 2010,Actress - Leading Role,Carey Mulligan,Houston Critics
@@ -911,6 +946,7 @@ Year,Award,Name,Issuer
 2010,Actress - Leading Role,Sandra Bullock,Screen Actors Guild
 2010,Actress - Supporting Role,Mo'Nique,Boston Film Critics
 2010,Actress - Supporting Role,Mo'Nique,Critics Choice
+2010,Actress - Supporting Role,Mo'Nique,Las Vegas Critics
 2010,Actress - Supporting Role,Mo'Nique,DC Film Critics
 2010,Actress - Supporting Role,Mo'Nique,Golden Globes
 2010,Actress - Supporting Role,Anna Kendrick,Houston Critics
@@ -921,6 +957,7 @@ Year,Award,Name,Issuer
 2010,Animated Feature,Up in the Air,DC Film Critics
 2010,Animated Feature,Up,Golden Globes
 2010,Animated Feature,Fantastic Mr Fox,LA Film Critics
+2010,Animated Feature,Fantastic Mr Fox,Las Vegas Critics
 2010,Animated Feature,Fantastic Mr Fox,New York Film Critics
 2010,Animated Feature,Toy Story 3,Producers Guild
 2010,Animated Feature,Coraline,San Francisco Critics
@@ -928,6 +965,7 @@ Year,Award,Name,Issuer
 2010,Best Picture,The Hurt Locker,Critics Choice
 2010,Best Picture,Up in the Air,DC Film Critics
 2010,Best Picture,The Hurt Locker,Houston Critics
+2010,Best Picture,The Hurt Locker,Las Vegas Critics
 2010,Best Picture,The Hurt Locker,LA Film Critics
 2010,Best Picture,The Hurt Locker,New York Film Critics
 2010,Best Picture,The Hurt Locker,New York Film Critics
@@ -936,12 +974,15 @@ Year,Award,Name,Issuer
 2010,Best Picture,Avatar,Golden Globes-Drama
 2010,Best Picture,The Hangover,Golden Globes-Musical or Comedy
 2010,Cinematography,The Hurt Locker,Boston Film Critics
+2010,Cinematography,The Hurt Locker,Las Vegas Critics
 2010,Cinematography,Avatar,Critics Choice
 2010,Cinematography,The Hurt Locker,Houston Critics
 2010,Cinematography,The White Ribbon,LA Film Critics
 2010,Cinematography,The White Ribbon,New York Film Critics
+2010,Costume Design,Inglorious Bastards,Las Vegas Critics
 2010,Costume Design,The Young Victoria,Critics Choice
 2010,Director,The Hurt Locker,Boston Film Critics
+2010,Director,The Hurt Locker,Las Vegas Critics
 2010,Director,The Hurt Locker,Critics Choice
 2010,Director,The Hurt Locker,DC Film Critics
 2010,Director,The Hurt Locker,Directors Guild
@@ -955,10 +996,13 @@ Year,Award,Name,Issuer
 2010,Documentary,The Cove,Directors Guild
 2010,Documentary,The Cove,LA Film Critics
 2010,Documentary,Our Time and the City,New York Film Critics
+2010,Documentary,Anvill The Story of Anvil,Las Vegas Critics
 2010,Documentary,Anvill The Story of Anvil,San Francisco Critics
+2010,Film Editing,The Hurt Locker,Las Vegas Critics
 2010,Film Editing,The Hurt Locker,Boston Film Critics
 2010,Film Editing,Avatar,Critics Choice
 2010,Foreign Language Film,Summer Hours,Boston Film Critics
+2010,Foreign Language Film,Red Cliff,Las Vegas Critics
 2010,Foreign Language Film,Broken Embrace,Critics Choice
 2010,Foreign Language Film,The White Ribbon,Golden Globes
 2010,Foreign Language Film,Summer Hours,LA Film Critics
@@ -966,9 +1010,11 @@ Year,Award,Name,Issuer
 2010,Foreign Language Film,You the Living,San Francisco Critics
 2010,Makeup and Hairstyling,District 9,Critics Choice
 2010,Production Design,Avatar,Critics Choice
+2010,Production Design,Avatar,Las Vegas Critics
 2010,Production Design,Nine,DC Film Critics
 2010,Production Design,District 9,LA Film Critics
 2010,Score,Crazy Heart,Boston Film Critics
+2010,Score,Star Trek,Las Vegas Critics
 2010,Score,Slumdog Millionare,Critics Choice
 2010,Score,Up,Golden Globes
 2010,Score,Crazy Heart,LA Film Critics
@@ -985,10 +1031,14 @@ Year,Award,Name,Issuer
 2010,Screenplay - Original,Inglorious Bastards,San Francisco Critics
 2010,Screenplay - Original,Inglorious Bastards,Critics Choice
 2010,Screenplay - Original,The Hurt Locker,Writers Guild
+2010,Song,The Weary Kind,Las Vegas Critics
+2010,Song,Filler Data,Filler Data
+2010,Visual Effects,Star Trek,LAs Vegas Critics
 2010,Visual Effects,Avatar,Critics Choice
 2010,Filler Data,Filler Data,Filler Data
 2009,Actor - Leading Role,Sean Penn,Boston Film Critics
 2009,Actor - Leading Role,Sean Penn,Critics Choice
+2009,Actor - Leading Role,Frank Langella,Las Vegas Critics
 2009,Actor - Leading Role,Mickey Rourke,DC Film Critics
 2009,Actor - Leading Role,Mickey Rourke,Golden Globes-Drama
 2009,Actor - Leading Role,Colin Ferrell,Golden Globes-Musical or Comedy
@@ -1000,6 +1050,7 @@ Year,Award,Name,Issuer
 2009,Actor - Supporting Role,Heath Ledger,Boston Film Critics
 2009,Actor - Supporting Role,Heath Ledger,Critics Choice
 2009,Actor - Supporting Role,Heath Ledger,DC Film Critics
+2009,Actor - Supporting Role,Heath Ledger,Las Vegas Critics
 2009,Actor - Supporting Role,Heath Ledger,Golden Globes
 2009,Actor - Supporting Role,Heath Ledger,Houston Critics
 2009,Actor - Supporting Role,Heath Ledger,LA Film Critics
@@ -1008,6 +1059,7 @@ Year,Award,Name,Issuer
 2009,Actor - Supporting Role,Heath Ledger,Screen Actors Guild
 2009,Actress - Leading Role,Sally Hawkins,Boston Film Critics
 2009,Actress - Leading Role,Meryl Streep,Critics Choice
+2009,Actress - Leading Role,Kate Winslet,Las Vegas Critics
 2009,Actress - Leading Role,Meryl Streep,DC Film Critics
 2009,Actress - Leading Role,Kate Winslet,Golden Globes-Drama
 2009,Actress - Leading Role,Sally Hawkins,Golden Globes-Musical or Comedy
@@ -1016,6 +1068,7 @@ Year,Award,Name,Issuer
 2009,Actress - Leading Role,Sally Hawkins,New York Film Critics
 2009,Actress - Leading Role,Sally Hawkins,San Francisco Critics
 2009,Actress - Leading Role,Meryl Streep,Screen Actors Guild
+2009,Actress - Leading Role,Marisa Tomel,Las Vegas Critics
 2009,Actress - Supporting Role,Penelope Cruz,Boston Film Critics
 2009,Actress - Supporting Role,Kate Winslet,Critics Choice
 2009,Actress - Supporting Role,Rosemarie DeWitt,DC Film Critics
@@ -1025,12 +1078,14 @@ Year,Award,Name,Issuer
 2009,Actress - Supporting Role,Penelope Cruz,New York Film Critics
 2009,Actress - Supporting Role,Marisa Tomel,San Francisco Critics
 2009,Animated Feature,WALL E,Critics Choice
+2009,Animated Feature,WALL E,Las Vegas Critics
 2009,Animated Feature,WALL E,DC Film Critics
 2009,Animated Feature,WALL E,Golden Globes
 2009,Animated Feature,Walz with Bashir,LA Film Critics
 2009,Animated Feature,WALL E,New York Film Critics
 2009,Animated Feature,Up,Producers Guild
 2009,Best Picture,Slumdog Millionare,Boston Film Critics
+2009,Best Picture,Frost/Nixon,Las Vegas Critics
 2009,Best Picture,Slumdog Millionare,Critics Choice
 2009,Best Picture,Slumdog Millionare,DC Film Critics
 2009,Best Picture,The Curious Case of Benjamin Button,Houston Critics
@@ -1042,11 +1097,14 @@ Year,Award,Name,Issuer
 2009,Best Picture,Slumdog Millionare,Golden Globes-Drama
 2009,Best Picture,Vicky Christina Barcelona,Golden Globes-Musical or Comedy
 2009,Cinematography,Paranoid Park,Boston Film Critics
+2009,Cinematography,The Curious Case of Benjamin Button,Las Vegas Critics
 2009,Cinematography,The Curious Case of Benjamin Button,Houston Critics
 2009,Cinematography,Still Life,LA Film Critics
 2009,Cinematography,Slumdog Millionare,New York Film Critics
+2009,Costume Design,The Curious Case of Banjamin Button,Las Vegas Critics
 2009,Director,Milk,Boston Film Critics
 2009,Director,Slumdog Millionare,Critics Choice
+2009,Director,Frost/Nixon,Las Vegas Critics
 2009,Director,Slumdog Millionare,DC Film Critics
 2009,Director,Slumdog Millionare,Directors Guild
 2009,Director,Slumdog Millionare,Golden Globes
@@ -1056,26 +1114,32 @@ Year,Award,Name,Issuer
 2009,Director,Milk,San Francisco Critics
 2009,Documentary,Man of Wire,Critics Choice
 2009,Documentary,Man of Wire,DC Film Critics
+2009,Documentary,Man of Wire,Las Vegas Critics
 2009,Documentary,Vals im Bashir,Directors Guild
 2009,Documentary,Man of Wire,LA Film Critics
 2009,Documentary,Man of Wire,New York Film Critics
 2009,Documentary,My Winnipeg,San Francisco Critics
+2009,Film Editing,Frost/Nixon,Las Vegas Critics
 2009,Film Editing,Slumdog Millionare,Boston Film Critics
+2009,Foreign Language Film,Mongol The Rise of Ghengis Khan,Las Vegas Critics
 2009,Foreign Language Film,Let the Right One In,Boston Film Critics
 2009,Foreign Language Film,Waltz with Bashir,Critics Choice
 2009,Foreign Language Film,Walk the Line,Golden Globes
 2009,Foreign Language Film,Still Life,LA Film Critics
 2009,Foreign Language Film,4 Months 3 Weeks and 2 Days,New York Film Critics
 2009,Foreign Language Film,Let the Right One In,San Francisco Critics
+2009,Production Design,The Curious Case of Banjamin Button,Las Vegas Critics
 2009,Production Design,The Curious Case of Banjamin Button,DC Film Critics
 2009,Production Design,Synecdoche New York,LA Film Critics
 2009,Score,There Will Be Blood,Critics Choice
+2009,Score,Defiance,Las Vegas Critics
 2009,Score,Slumdog Millionare,Golden Globes
 2009,Score,Slumdog Millionare,LA Film Critics
 2009,Screenplay - Adapted,Slumdog Millionare,Critics Choice
 2009,Screenplay - Adapted,Slumdog Millionare,DC Film Critics
 2009,Screenplay - Adapted,Slumdog Millionare,Golden Globes
 2009,Screenplay - Adapted,Slumdog Millionare,Houston Critics
+2009,Screenplay - Adapted,Frost/Nixon,Las Vegas Critics
 2009,Screenplay - Adapted,Frost/Nixon,San Francisco Critics
 2009,Screenplay - Adapted,Slumdog Millionare,Writers Guild
 2009,Screenplay - Original,Milk,San Francisco Critics
@@ -1086,6 +1150,7 @@ Year,Award,Name,Issuer
 2008,Actor - Leading Role,Frank Langella,Boston Film Critics
 2008,Actor - Leading Role,Daniel Day-Lewis,Critics Choice
 2008,Actor - Leading Role,George Clooney,DC Film Critics
+2008,Actor - Leading Role,Daniel Day-Lewis,Las Vegas Critics
 2008,Actor - Leading Role,Daniel Day-Lewis,Golden Globes-Drama
 2008,Actor - Leading Role,Johnny Depp,Golden Globes-Musical or Comedy
 2008,Actor - Leading Role,Daniel Day-Lewis,Houston Critics
@@ -1094,6 +1159,7 @@ Year,Award,Name,Issuer
 2008,Actor - Leading Role,George Clooney,San Francisco Critics
 2008,Actor - Leading Role,Daniel Day-Lewis,Screen Actors Guild
 2008,Actor - Supporting Role,Javier Bardem,Boston Film Critics
+2008,Actor - Supporting Role,Javier Bardem,Las Vegas Critics
 2008,Actor - Supporting Role,Javier Bardem,Critics Choice
 2008,Actor - Supporting Role,Javier Bardem,DC Film Critics
 2008,Actor - Supporting Role,Javier Bardem,Golden Globes
@@ -1106,6 +1172,7 @@ Year,Award,Name,Issuer
 2008,Actress - Leading Role,Julie Christie,Critics Choice
 2008,Actress - Leading Role,Julie Christie,DC Film Critics
 2008,Actress - Leading Role,Julie Christie,Golden Globes-Drama
+2008,Actress - Leading Role,Ellen Page,Las Vegas Critics
 2008,Actress - Leading Role,Marion Cotillard,Golden Globes-Musical or Comedy
 2008,Actress - Leading Role,Julie Christie,Houston Critics
 2008,Actress - Leading Role,Marion Cotillard,LA Film Critics
@@ -1115,12 +1182,14 @@ Year,Award,Name,Issuer
 2008,Actress - Supporting Role,Amy Ryan,Boston Film Critics
 2008,Actress - Supporting Role,Amy Ryan,Critics Choice
 2008,Actress - Supporting Role,Amy Ryan,DC Film Critics
+2008,Actress - Supporting Role,Cate Blanchett,Las Vegas Critics
 2008,Actress - Supporting Role,Cate Blanchett,Golden Globes
 2008,Actress - Supporting Role,Amy Ryan,Houston Critics
 2008,Actress - Supporting Role,Amy Ryan,LA Film Critics
 2008,Actress - Supporting Role,Amy Ryan,New York Film Critics
 2008,Actress - Supporting Role,Amy Ryan,San Francisco Critics
 2008,Animated Feature,Ratatouille,Critics Choice
+2008,Animated Feature,Ratatouille,Las Vegas Critics
 2008,Animated Feature,Ratatouille,DC Film Critics
 2008,Animated Feature,Ratatouille,Golden Globes
 2008,Animated Feature,Ratatouille,LA Film Critics
@@ -1128,6 +1197,7 @@ Year,Award,Name,Issuer
 2008,Animated Feature,WALL E,Producers Guild
 2008,Best Picture,No Country For Old Men,Boston Film Critics
 2008,Best Picture,No Country For Old Men,Critics Choice
+2008,Best Picture,No Country For Old Men,Las Vegas Critics
 2008,Best Picture,No Country For Old Men,DC Film Critics
 2008,Best Picture,No Country For Old Men,Houston Critics
 2008,Best Picture,There Will Be Blood,LA Film Critics
@@ -1138,9 +1208,11 @@ Year,Award,Name,Issuer
 2008,Best Picture,Attonement,Golden Globes-Drama
 2008,Best Picture,Sweeney Todd The Demon Barber of Fleet Street,Golden Globes-Musical or Comedy
 2008,Cinematography,The Diving BelLAnd the Butterfly,Boston Film Critics
+2008,Cinematography,There Will Be Blood,Las Vegas Critics
 2008,Cinematography,The Assassination of Jesse Jones by the Coward Robert Ford,Houston Critics
 2008,Cinematography,The Diving BelLAnd the Butterfly,LA Film Critics
 2008,Cinematography,There Will Be Blood,New York Film Critics
+2008,Director,No Country For Old Men,Las Vegas Critics
 2008,Director,The Diving BelLAnd the Butterfly,Boston Film Critics
 2008,Director,No Country For Old Men,Critics Choice
 2008,Director,No Country For Old Men,DC Film Critics
@@ -1150,6 +1222,7 @@ Year,Award,Name,Issuer
 2008,Director,There Wil be Blood,LA Film Critics
 2008,Director,No Country For Old Men,New York Film Critics
 2008,Director,No Country For Old Men,San Francisco Critics
+2008,Documentary,Sicko,Las Vegas Critics
 2008,Documentary,Sicko,Critics Choice
 2008,Documentary,Sicko,DC Film Critics
 2008,Documentary,Ghosts of Cite Soleil,Directors Guild
@@ -1157,6 +1230,7 @@ Year,Award,Name,Issuer
 2008,Documentary,No End in Sight,New York Film Critics
 2008,Documentary,No End in Sight,San Francisco Critics
 2008,Foreign Language Film,The Diving BelLAnd the Butterfly,Boston Film Critics
+2008,Foreign Language Film,The Diving BelLAnd the Butterfly,Las Vegas Critics
 2008,Foreign Language Film,The Diving BelLAnd the Butterfly,Critics Choice
 2008,Foreign Language Film,The Diving BelLAnd the Butterfly,Golden Globes
 2008,Foreign Language Film,4 Months 3 Weeks and 2 Days,LA Film Critics
@@ -1166,11 +1240,13 @@ Year,Award,Name,Issuer
 2008,Production Design,There Will Be Blood,LA Film Critics
 2008,Score,The Illusionist,Critics Choice
 2008,Score,Attonement,Golden Globes
+2008,Score,There Wil be Blood,Las Vegas Critics
 2008,Score,Once,LA Film Critics
 2008,Screenplay - Adapted,No Country For Old Men,Golden Globes
 2008,Screenplay - Adapted,No Country For Old Men,New York Film Critics
 2008,Screenplay - Adapted,Away From Her,San Francisco Critics
 2008,Screenplay - Adapted,No Country For Old Men,Writers Guild
+2008,Screenplay - Original,Juno,Las Vegas Critics
 2008,Screenplay - Original,Juno,DC Film Critics
 2008,Screenplay - Original,Ratatouille,Boston Film Critics
 2008,Screenplay - Original,Juno,Critics Choice
@@ -1182,6 +1258,7 @@ Year,Award,Name,Issuer
 2008,Filler Data,Filler Data,Filler Data
 2007,Actor - Leading Role,Forest Whitaker,Boston Film Critics
 2007,Actor - Leading Role,Forest Whitaker,Critics Choice
+2007,Actor - Leading Role,Forest Whitaker,Las Vegas Critics
 2007,Actor - Leading Role,Forest Whitaker,DC Film Critics
 2007,Actor - Leading Role,Forest Whitaker,Golden Globes-Drama
 2007,Actor - Leading Role,Sacha Baron Cohen,Golden Globes-Musical or Comedy
@@ -1191,6 +1268,7 @@ Year,Award,Name,Issuer
 2007,Actor - Leading Role,Forest Whitaker,Screen Actors Guild
 2007,Actor - Supporting Role,Mark Wahlberg,Boston Film Critics
 2007,Actor - Supporting Role,Eddie Murphy,Critics Choice
+2007,Actor - Supporting Role,Djimon Jounsou,Las Vegas Critics
 2007,Actor - Supporting Role,Djimon Jounsou,DC Film Critics
 2007,Actor - Supporting Role,Eddie Murphy,Golden Globes
 2007,Actor - Supporting Role,Michael Sheen,LA Film Critics
@@ -1198,6 +1276,7 @@ Year,Award,Name,Issuer
 2007,Actor - Supporting Role,Jackie Earle Haley,San Francisco Critics
 2007,Actor - Supporting Role,Eddie Murphy,Screen Actors Guild
 2007,Actress - Leading Role,Helen Mirren,Boston Film Critics
+2007,Actress - Leading Role,Helen Mirren,Las Vegas Critics
 2007,Actress - Leading Role,Helen Mirren,Critics Choice
 2007,Actress - Leading Role,Helen Mirren,DC Film Critics
 2007,Actress - Leading Role,Helen Mirren,Golden Globes-Drama
@@ -1208,11 +1287,13 @@ Year,Award,Name,Issuer
 2007,Actress - Leading Role,Helen Mirren,Screen Actors Guild
 2007,Actress - Supporting Role,Shareeka Epps,Boston Film Critics
 2007,Actress - Supporting Role,Jennifer Hudson,Critics Choice
+2007,Actress - Supporting Role,Jennifer Hudson,Las Vegas Critics
 2007,Actress - Supporting Role,Jennifer Hudson,DC Film Critics
 2007,Actress - Supporting Role,Jennifer Hudson,Golden Globes
 2007,Actress - Supporting Role,Luminita Gheorghiu,LA Film Critics
 2007,Actress - Supporting Role,Jennifer Hudson,New York Film Critics
 2007,Actress - Supporting Role,Adriana Barraza,San Francisco Critics
+2007,Animated Feature,Monzter House,Las Vegas Critics
 2007,Animated Feature,Cars,Critics Choice
 2007,Animated Feature,Happy Feet,DC Film Critics
 2007,Animated Feature,Cars,Golden Globes
@@ -1223,18 +1304,21 @@ Year,Award,Name,Issuer
 2007,Best Picture,The Departed,Critics Choice
 2007,Best Picture,United 93,DC Film Critics
 2007,Best Picture,Letters from Iwo Jima,LA Film Critics
-2007,Best Picture,Untitled 93,New York Film Critics
-2007,Best Picture,Untitled 93,New York Film Critics
+2007,Best Picture,The Departed,Las Vegas Critics
+2007,Best Picture,United 93,New York Film Critics
+2007,Best Picture,United 93,New York Film Critics
 2007,Best Picture,Little Miss Sunshine,Producers Guild
 2007,Best Picture,Little Children,San Francisco Critics
 2007,Best Picture,Babel,Golden Globes-Drama
 2007,Best Picture,Dreamgirls,Golden Globes-Musical or Comedy
 2007,Cinematography,Pan's Labyrinth,Boston Film Critics
+2007,Cinematography,Children of Men,Las Vegas Critics
 2007,Cinematography,Children of Men,LA Film Critics
 2007,Cinematography,Pan's Labyrinth,New York Film Critics
 2007,Director,The Departed,Boston Film Critics
 2007,Director,The Departed,Critics Choice
 2007,Director,The Departed,DC Film Critics
+2007,Director,The Departed,Las Vegas Critics
 2007,Director,The Departed,Directors Guild
 2007,Director,The Departed,Golden Globes
 2007,Director,United 93,LA Film Critics
@@ -1242,6 +1326,7 @@ Year,Award,Name,Issuer
 2007,Director,United 93,San Francisco Critics
 2007,Documentary,An Inconvient Truth,Critics Choice
 2007,Documentary,An Inconvient Truth,DC Film Critics
+2007,Documentary,An Inconvient Truth,Las Vegas Critics
 2007,Documentary,Before Flying Back to Earth,Directors Guild
 2007,Documentary,An Inconvient Truth,LA Film Critics
 2007,Documentary,Deliver Us From Evil,New York Film Critics
@@ -1249,15 +1334,19 @@ Year,Award,Name,Issuer
 2007,Foreign Language Film,Pan's Labyrinth,Boston Film Critics
 2007,Foreign Language Film,Letters from Iwo Jima,Critics Choice
 2007,Foreign Language Film,Letters from Iwo Jima,Golden Globes
+2007,Foreign Language Film,Pan's Labyrinth,Las Vegas Critics
 2007,Foreign Language Film,The Lives of Others,LA Film Critics
 2007,Foreign Language Film,Army of Shadows,New York Film Critics
 2007,Foreign Language Film,Pan's Labyrinth,San Francisco Critics
+2007,Production Design,Marie Antoinette,Las Vegas Critics
 2007,Production Design,Marie Antoinette,DC Film Critics
 2007,Production Design,Pan's Labyrinth,LA Film Critics
 2007,Score,Memours in a Geisha,Critics Choice
+2007,Score,The Good German,Las Vegas Critics
 2007,Score,The Panted Veil,Golden Globes
 2007,Score,The Queen,LA Film Critics
 2007,Screenplay - Adapted,The Departed,Boston Film Critics
+2007,Screenplay - Adapted,Thank You For Smoking,Las Vegas Critics
 2007,Screenplay - Adapted,Thank You For Smoking,DC Film Critics
 2007,Screenplay - Adapted,Little Children,San Francisco Critics
 2007,Screenplay - Adapted,Brick,San Francisco Critics
@@ -1276,11 +1365,13 @@ Year,Award,Name,Issuer
 2006,Actor - Leading Role,Joaquin Phoenix,Golden Globes-Musical or Comedy
 2006,Actor - Leading Role,Phillip Seymour Hoffman,LA Film Critics
 2006,Actor - Leading Role,Heath Ledger,New York Film Critics
+2006,Actor - Leading Role,Heath Ledger,Las Vegas Critics
 2006,Actor - Leading Role,Heath Ledger,San Francisco Critics
 2006,Actor - Leading Role,Phillip Seymour Hoffman,Screen Actors Guild
 2006,Actor - Supporting Role,Paul Giamatti,Boston Film Critics
 2006,Actor - Supporting Role,Paul Giamatti,Critics Choice
 2006,Actor - Supporting Role,Paul Giamatti,DC Film Critics
+2006,Actor - Supporting Role,Matt Dilon,Las Vegas Critics
 2006,Actor - Supporting Role,George Clooney,Golden Globes
 2006,Actor - Supporting Role,William Hurt,LA Film Critics
 2006,Actor - Supporting Role,William Hurt,New York Film Critics
@@ -1290,6 +1381,7 @@ Year,Award,Name,Issuer
 2006,Actress - Leading Role,Reese Witherspoon,Critics Choice
 2006,Actress - Leading Role,Reese Witherspoon,DC Film Critics
 2006,Actress - Leading Role,Felicity Huffman,Golden Globes-Drama
+2006,Actress - Leading Role,Reese Witherspoon,Las Vegas Critics
 2006,Actress - Leading Role,Reese Witherspoon,Golden Globes-Musical or Comedy
 2006,Actress - Leading Role,Vera Farmiga,LA Film Critics
 2006,Actress - Leading Role,Reese Witherspoon,New York Film Critics
@@ -1297,6 +1389,7 @@ Year,Award,Name,Issuer
 2006,Actress - Leading Role,Reese Witherspoon,Screen Actors Guild
 2006,Actress - Supporting Role,Catherine Keener,Boston Film Critics
 2006,Actress - Supporting Role,Michelle Williams,Critics Choice
+2006,Actress - Supporting Role,Frances McDormand,Las Vegas Critics
 2006,Actress - Supporting Role,Amy ADams,DC Film Critics
 2006,Actress - Supporting Role,Rachel Weisz,Golden Globes
 2006,Actress - Supporting Role,Catherine Keener,LA Film Critics
@@ -1304,6 +1397,7 @@ Year,Award,Name,Issuer
 2006,Actress - Supporting Role,Ama Adams,San Francisco Critics
 2006,Animated Feature,Wallace and Gromit The Curse of the Were Rabbit,Critics Choice
 2006,Animated Feature,Wallace and Gromit The Curse of the Were Rabbit,DC Film Critics
+2006,Animated Feature,Wallace and Gromit The Curse of the Were Rabbit,Las Vegas Critics
 2006,Animated Feature,Wallace and Gromit The Curse of the Were Rabbit,LA Film Critics
 2006,Animated Feature,Howl's Moving Castle,New York Film Critics
 2006,Animated Feature,Cars,Producers Guild
@@ -1311,6 +1405,7 @@ Year,Award,Name,Issuer
 2006,Best Picture,Brokeback Mountain,Critics Choice
 2006,Best Picture,Munich,DC Film Critics
 2006,Best Picture,Brokeback Mountain,LA Film Critics
+2006,Best Picture,Brokeback Mountain,Las Vegas Critics
 2006,Best Picture,Brokeback Mountain,New York Film Critics
 2006,Best Picture,Brokeback Mountain,New York Film Critics
 2006,Best Picture,Brokeback Mountain,Producers Guild
@@ -1320,14 +1415,17 @@ Year,Award,Name,Issuer
 2006,Cinematography,Good Night and Good Luck,Boston Film Critics
 2006,Cinematography,Good Night and Good Luck,LA Film Critics
 2006,Cinematography,2046,New York Film Critics
+2006,Cinematography,King Kong,Las Vegas Critics
 2006,Director,Brokeback Mountain,Boston Film Critics
 2006,Director,Brokeback Mountain,Critics Choice
 2006,Director,Munich,DC Film Critics
+2006,Director,Brokeback Mountain,Las Vegas Critics
 2006,Director,Brokeback Mountain,Directors Guild
 2006,Director,Brokeback Mountain,Golden Globes
 2006,Director,Brokeback Mountain,LA Film Critics
 2006,Director,Brokeback Mountain,New York Film Critics
 2006,Director,Brokeback Mountain,San Francisco Critics
+2006,Documentary,March of the Penguins,Las Vegas Critics
 2006,Documentary,March of the Penguins,Critics Choice
 2006,Documentary,Enron The Smartest Guys in the Room,DC Film Critics
 2006,Documentary,Grizzly Man,Directors Guild
@@ -1335,18 +1433,22 @@ Year,Award,Name,Issuer
 2006,Documentary,The White Diamond,New York Film Critics
 2006,Documentary,Grizzly Man,San Francisco Critics
 2006,Foreign Language Film,Kung Fu Hustle,Boston Film Critics
+2006,Foreign Language Film,Kung Fu Hustle,Las Vegas Critics
 2006,Foreign Language Film,Kung Fu Hustle,Critics Choice
 2006,Foreign Language Film,Paradise Now,Golden Globes
 2006,Foreign Language Film,Hidden,LA Film Critics
 2006,Foreign Language Film,2046,New York Film Critics
 2006,Foreign Language Film,Hidden,San Francisco Critics
+2006,Production Design,King Kong,Las Vegas Critics
 2006,Production Design,The Chronicles of Narnia The Lion The Witch and the Wardrobe,DC Film Critics
 2006,Production Design,2046,LA Film Critics
 2006,Score,The Aviator,Critics Choice
 2006,Score,Memours in a Geisha,Golden Globes
+2006,Score,Brokeback Mountain,Las Vegas Critics
 2006,Score,Howl's Moving Castle,LA Film Critics
 2006,Screenplay - Adapted,Crash,DC Film Critics
 2006,Screenplay - Adapted,Capote,Boston Film Critics
+2006,Screenplay - Adapted,Crash,Las Vegas Critics
 2006,Screenplay - Adapted,Crash,Critics Choice
 2006,Screenplay - Adapted,Capote,DC Film Critics
 2006,Screenplay - Adapted,Brokeback Mountain,Golden Globes
