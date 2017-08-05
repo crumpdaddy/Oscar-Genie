@@ -28,8 +28,8 @@ public class OscarGenieDriver {
       "Actor - Supporting Role",  
       "Actress - Supporting Role", "Animated Feature",   
       "Cinematography", "Director", "Documentary", 
-      "Costume Design", "Film Editing", "Foreign Language Film",
-      "Makeup and Hairstyling", "Score",  
+      "Costume Design", "Film Editing", 
+      "Foreign Language Film", "Score",  
       "Song", "Production Design",   
       "Visual Effects", "Screenplay - Original",
       "Screenplay - Adapted"};
@@ -341,14 +341,15 @@ public class OscarGenieDriver {
    * @param kalKey is the kalmanKey that stores the coefficent 
    * in the kalmanMap hashmap
    * @param initial is used to set how the coefficent is adjusted.
+   * @param scalar defines how much to scale kalman filter
    */
-   public void adjustKalmanFilter(String kalKey, int initial) {
+   public void adjustKalmanFilter(double scalar, String kalKey, int initial) {
       double kalmanCoeff = 0;
       double newCoeff = 0;
       try {
          kalmanCoeff = kalmanMap.get(kalKey);
          if (initial < 0) {          
-            newCoeff = kalmanCoeff / 1.5;
+            newCoeff = kalmanCoeff / scalar;
             if (kalmanCoeff == 0) {
                kalmanMap.put(kalKey, kalmanCoeff);
             }
@@ -357,7 +358,7 @@ public class OscarGenieDriver {
             }             
          }
          if (initial > 0) {
-            newCoeff = kalmanCoeff * 1.5;
+            newCoeff = kalmanCoeff * scalar;
             if (kalmanCoeff == 0) {
                kalmanMap.put(kalKey, kalmanCoeff);
             }
@@ -595,7 +596,7 @@ public class OscarGenieDriver {
                   highestCoeff = n;
                }
             }
-            if (highestCoeff.getCoefficent() == 0) {
+            if (highestCoeff.getCoefficent() <= .25) {
                highestCoeff.setName("");
             }
             output.put(awardList[i], highestCoeff.getName());
@@ -628,7 +629,7 @@ public class OscarGenieDriver {
          prevCalcCount = calcCount;
          for (int k = 0; k < orgList.length; k++) {
             kalKey = orgList[k] + " " + awardList[j];
-            adjustKalmanFilter(kalKey, 1);
+            adjustKalmanFilter(1.5, kalKey, 1);
             setCalculationsCoeff(awardList[j], minYear, maxYear);
             winners = generateWinbyAward(awardList[j], minYear, maxYear);
             calcCount = findAccuracy(awardList[j], winners, 
@@ -636,14 +637,13 @@ public class OscarGenieDriver {
             if (calcCount >= prevCalcCount) {              
                while (calcCount > prevCalcCount) {
                   prevCalcCount = calcCount;
-                  kalKey = orgList[k] + " " + awardList[j];
-                  adjustKalmanFilter(kalKey, 1);
+                  adjustKalmanFilter(1.5, kalKey, 1);
                   setCalculationsCoeff(awardList[j], minYear, maxYear);
                   winners = generateWinbyAward(awardList[j], minYear, maxYear);
                   calcCount = findAccuracy(awardList[j], 
                         winners, minYear, maxYear);
                }
-               adjustKalmanFilter(kalKey, -1);           
+               adjustKalmanFilter(1.5, kalKey, -1);           
                setCalculationsCoeff(awardList[j], minYear, maxYear);
                winners = generateWinbyAward(awardList[j], 
                   minYear, maxYear);
@@ -651,9 +651,9 @@ public class OscarGenieDriver {
                   winners, minYear, maxYear);
                prevCalcCount = calcCount;
             }
-            else if (calcCount < prevCalcCount) {              
+            else if (calcCount <= prevCalcCount) {              
                prevCalcCount = calcCount;
-               adjustKalmanFilter(kalKey, -1);
+               adjustKalmanFilter(1.5, kalKey, -1);
                setCalculationsCoeff(awardList[j], minYear, maxYear);
                winners = generateWinbyAward(awardList[j], 
                   minYear, maxYear);
@@ -661,15 +661,14 @@ public class OscarGenieDriver {
                   minYear, maxYear);
                while (calcCount > prevCalcCount) {
                   prevCalcCount = calcCount;
-                  kalKey = orgList[k] + " " + awardList[j];
-                  adjustKalmanFilter(kalKey, -1);
+                  adjustKalmanFilter(1.5, kalKey, -1);
                   setCalculationsCoeff(awardList[j], minYear, maxYear);
                   winners = generateWinbyAward(awardList[j], 
                      minYear, maxYear);
                   calcCount = findAccuracy(awardList[j], winners, 
                      minYear, maxYear);
                }
-               adjustKalmanFilter(kalKey, 1);
+               adjustKalmanFilter(1.5, kalKey, 1);
                setCalculationsCoeff(awardList[j], minYear, maxYear);
                winners = generateWinbyAward(awardList[j], 
                   minYear, maxYear);
@@ -715,8 +714,13 @@ public class OscarGenieDriver {
                double perc = 0;
                for (String key : nominations.keySet()) {
                   n = nominations.get(key);
-                  perc = n.getCoefficent() / totalCoeff;
-                  perc = perc * 100;
+                  if (n.getCoefficent() < 1) {
+                     perc = n.getCoefficent() * 100;
+                  }
+                  else {
+                     perc = n.getCoefficent() / totalCoeff;
+                     perc = perc * 100;
+                  }
                   n.setPercent(numFmt.format(perc));
                   if (n.getCoefficent() > highestNominee.getCoefficent()) {
                      highestNominee = n;
@@ -783,9 +787,16 @@ public class OscarGenieDriver {
          || category.equals("Best Actress") 
          || category.equals("Best Supporting Actress")
          || category.equals("Best Original Song")) {
-         output = x.getName() + " is most "
+         if (x.getCoefficent() <= .25) {
+            output = "Oscar Genie cannot accurately predict the winner " 
+               + "due to lack of data.\nThe best guess is: " + x.getName()
+               + "as it also won awards from:\n";  
+         }
+         else {
+            output = x.getName() + " is most "
                + "likely to win an Oscar because they"
                + " also won awards this year from:\n";
+         }
          for (String key : calcByOrg.keySet()) {
             if (calcByOrg.get(key).getName().equals(x.getName())) {
                output += calcByOrg.get(key).getOrginization() + "\n";
@@ -793,8 +804,15 @@ public class OscarGenieDriver {
          }   
       }
       else {
-         output = "The film " + x.getName()
-            + " is likely to win because it also won awards this year from:\n";
+         if (x.getCoefficent() <= .25) {
+            output = "Oscar Genie cannot accurately predict the winner " 
+               + "due to lack of data.\nThe best guess is: " + x.getName()
+               + "as it also won awards from:\n"; 
+         }
+         else {
+            output = "The film " + x.getName()
+               + " is likely to win because it also won awards this year from:\n";
+         }
          for (String key : calcByOrg.keySet()) {
             if (calcByOrg.get(key).getName().equals(x.getName())) {
                output += calcByOrg.get(key).getOrginization() + "\n";
@@ -875,7 +893,8 @@ public class OscarGenieDriver {
       }
       perc = correct / count;
       perc = perc * 100;
-      output += "Oscar Genie was able to predict " + numFmt.format(perc) 
+      output += "Oscar Genie was able to predict " + correct + " out of "
+         + count + " which is " + numFmt.format(perc) 
          + "% of winners it had data for\n";
       return output;
    } 
@@ -906,9 +925,12 @@ public class OscarGenieDriver {
          + "how effective each source is at predicting Oscar "
          + "winners\nfor each category It then weights each "
          + "source and makes a prediction\nbased on all the "
-         + "sources and outputs the results.\n***Please Note: "
+         + "sources and outputs the results.\n***Please Note***\n"
          + "Generally an output of\n0.00% indicates insufficent"
-         + "\ndata for that nominee";
+         + "\ndata for that nominee\nIF Oscar Genie only has 1"
+         + "nominee with data and\nthe nominee has less than a 25%"
+         + " chance of winning Oscar Genie consideres\nthat award"
+         + "to have insufficent data";
       return output;
    }
    

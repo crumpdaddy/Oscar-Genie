@@ -20,7 +20,7 @@ public class OscarGenie {
       myNoms.readNominee("all_nominations.csv", 2017);
       myNoms.readCalculations("all_calculations.csv", 2017); 
       myNoms.setCoefficents(); 
-      myNoms.kalmanFilter(1991, 2017); 
+      myNoms.kalmanFilter(1991, 2017);
       myNoms.getProbability(1991, 2017);
       String[] awardList = myNoms.getAwardList();
       System.out.println("Welcome to Oscar Genie by Ryan Crumpler\n"); 
@@ -44,8 +44,8 @@ public class OscarGenie {
             for (int i = 0; i < awardList.length; i++) {
                menu += i + 1 + " - " + awardList[i] + "\n";
             }
-            menu += "20 - All to generate all winners\n"
-               + "21 - Year to select new year";
+            menu += "19 - All to generate all winners\n"
+               + "20 - Year to select new year";
             do {
                System.out.println(menu);
                aString = scan.nextLine();
@@ -55,10 +55,10 @@ public class OscarGenie {
                catch (NumberFormatException e) {
                   boolean isAward = false;
                   if (aString.equalsIgnoreCase("All")) {
-                     award = 20; isAward = true;
+                     award = 19; isAward = true;
                   }
                   if (aString.equalsIgnoreCase("Year")) {
-                     award = 21; isAward = true;
+                     award = 20; isAward = true;
                   }
                   if (!isAward) {                  
                      for (int i = 0; i < awardList.length; i++) {
@@ -77,10 +77,10 @@ public class OscarGenie {
                      while (!back.equals("E"));
                   }
                }
-               if (award == 21) {
+               if (award == 20) {
                   aString = "year";
                }
-               if (award >= 1 && award <= 19) {
+               if (award >= 1 && award <= 18) {
                   category = awardList[award - 1];
                   boolean start = true;
                   if (start) {
@@ -105,7 +105,7 @@ public class OscarGenie {
                   }
                   while (!info.equals("E"));
                }
-               else if (award == 20) {
+               else if (award == 19) {
                   boolean start = true;
                   if (start) {
                      System.out.println(myNoms.generateAll(year)); 
@@ -130,7 +130,7 @@ public class OscarGenie {
                }
                    
             }    
-            while (award != 21 || !aString.equalsIgnoreCase("year"));         
+            while (award != 20 || !aString.equalsIgnoreCase("year"));         
          }
          else if (yearIn.equalsIgnoreCase("H")) {
             System.out.println(myNoms.printHelp());
