@@ -810,8 +810,8 @@ public class OscarGenieDriver {
                + "as it also won awards from:\n"; 
          }
          else {
-            output = "The film " + x.getName()
-               + " is likely to win because it also won awards this year from:\n";
+            output = "The film " + x.getName() + " is likely to win because"
+               + " it also won awards this year from:\n";
          }
          for (String key : calcByOrg.keySet()) {
             if (calcByOrg.get(key).getName().equals(x.getName())) {
