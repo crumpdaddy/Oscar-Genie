@@ -4,28 +4,32 @@ import java.io.File;
 /** This has the main class that has UI and runs 
 * OscarGenieDriver methods and outpus results. 
 * @author Ryan Crumpler
-* @version 2.26.17
+* @version 8.8.17
 */
-public class OscarGenie {
+public class OscarGenie {  
+   private static int maxYear = 2017;
+   private static int minYear = 1991; 
    /**
    * @throws IOException for scanner
    * @param args coomand line arguments
-   */
+   */ 
    public static void main(String[] args) throws IOException {
       File file = new File("");
       String yearIn, goBack, info, category, aString, back = "";
-      int award = 0;
+      int award = 0; 
       Scanner scan = new Scanner(System.in);
       OscarGenieDriver myNoms = new OscarGenieDriver();
-      myNoms.readNominee("all_nominations.csv", 2017);
-      myNoms.readCalculations("all_calculations.csv", 2017); 
+      myNoms.setThreshhold(.3);
+      myNoms.readNominee("all_nominations.csv", maxYear);
+      myNoms.readCalculations("all_calculations.csv", maxYear); 
       myNoms.setCoefficents(); 
-      myNoms.kalmanFilter(1991, 2017);
-      myNoms.getProbability(1991, 2017);
+      myNoms.kalmanFilter(minYear, maxYear);
+      myNoms.getProbability(minYear, maxYear);
       String[] awardList = myNoms.getAwardList();
       System.out.println("Welcome to Oscar Genie by Ryan Crumpler\n"); 
       do {
-         System.out.println("Please enter a year 1991-2017 to predict"
+         System.out.println("Please enter a year " + minYear + "-" 
+            + maxYear + " to predict"
             + "\n Press 'I' for Info about this program\n"
             + "Press 'H' for Help\nPress 'Q' to Quit");
          boolean invalid = true;
@@ -35,17 +39,16 @@ public class OscarGenie {
             year = Integer.parseInt(yearIn);
          }
          catch (NumberFormatException e) {
-         }
-         
-         if (year >= 1991 && year <= 2017) {
+         }        
+         if (year >= minYear && year <= maxYear) {
             String menu = "";
             menu += "Enter title of the award or its "
                   + "corresponding number you want to predict:\n"; 
             for (int i = 0; i < awardList.length; i++) {
                menu += i + 1 + " - " + awardList[i] + "\n";
             }
-            menu += "19 - All to generate all winners\n"
-               + "20 - Year to select new year";
+            menu += (awardList.length + 1) + " - All to generate all winners\n"
+               + (awardList.length + 2) + " - Year to select new year";
             do {
                System.out.println(menu);
                aString = scan.nextLine();
@@ -55,10 +58,12 @@ public class OscarGenie {
                catch (NumberFormatException e) {
                   boolean isAward = false;
                   if (aString.equalsIgnoreCase("All")) {
-                     award = 19; isAward = true;
+                     award = awardList.length + 1; 
+                     isAward = true;
                   }
                   if (aString.equalsIgnoreCase("Year")) {
-                     award = 20; isAward = true;
+                     award = awardList.length + 2;
+                     isAward = true;
                   }
                   if (!isAward) {                  
                      for (int i = 0; i < awardList.length; i++) {
@@ -77,16 +82,12 @@ public class OscarGenie {
                      while (!back.equals("E"));
                   }
                }
-               if (award == 20) {
+               if (award == awardList.length + 2) {
                   aString = "year";
                }
-               if (award >= 1 && award <= 18) {
+               if (award >= 1 && award <= awardList.length) {
                   category = awardList[award - 1];
-                  boolean start = true;
-                  if (start) {
-                     System.out.println(myNoms.returnResults(year, category));
-                     start = false;
-                  }
+                  System.out.println(myNoms.returnResults(year, category));
                   do {
                      System.out.println("Press 'I' for more info");
                      System.out.println("Press 'E' to enter different award");
@@ -99,25 +100,17 @@ public class OscarGenie {
                         }
                         while (!info.equals("E"));
                      }
-                     if (info.equals("E")) {
-                        start = true;
-                     }
                   }
                   while (!info.equals("E"));
                }
-               else if (award == 19) {
-                  boolean start = true;
-                  if (start) {
-                     System.out.println(myNoms.generateAll(year)); 
-                     System.out.println("Press 'I' to to see correct " 
-                        + "winners and to see Oscar Genie accuracy");
-                     start = false;
-                  }
+               else if (award == awardList.length + 1) {
+                  System.out.println(myNoms.generateAll(year)); 
+                  System.out.println("Press 'I' to to see correct " 
+                      + "winners and to see Oscar Genie accuracy");
                   do {
                      System.out.println("Press 'E' to go Back");
                      info = scan.nextLine().toUpperCase();          
                      if (info.equals("I")) {
-                        start = false;
                         do {
                            System.out.println(myNoms.allDetails(year));
                            System.out.println("Press 'E' to go Back");
@@ -127,10 +120,10 @@ public class OscarGenie {
                      }
                   }
                   while (!info.equals("E"));  
-               }
-                   
+               }                  
             }    
-            while (award != 20 || !aString.equalsIgnoreCase("year"));         
+            while (award != awardList.length + 2 
+               || !aString.equalsIgnoreCase("year"));         
          }
          else if (yearIn.equalsIgnoreCase("H")) {
             System.out.println(myNoms.printHelp());
@@ -142,7 +135,7 @@ public class OscarGenie {
             while (!yearIn.equals("E"));
          } 
          else if (yearIn.equalsIgnoreCase("I")) {
-            System.out.println(myNoms.printInfo());
+            System.out.println(myNoms.printInfo(minYear, maxYear));
             invalid = false;
             do {         
                System.out.println("Press 'E' to go Back");
