@@ -1,24 +1,22 @@
 /** This program defines the Nomination object.
 * 
 * @author Ryan Crumpler
-* @version 9.8.17
+* @version 13.8.17
 */
 public class Calculations {
    protected String name, organization;
    protected double coefficient;
-
    /**
-    * Difines a Calculation object that is used in calculation total coefficients.
+    * Defines a Calculation object that is used in calculation total coefficents.
     * @param nameIn is name of nominee
     * @param organizationIn is name of organization that gave award to nominee
-    * @param coefficientIn is how good an organization is at predicting Oscars
+    * @param coefficientIn is how good an orginization is at prediting Oscars
     */
    public Calculations(String nameIn, String organizationIn, double coefficientIn) {
       name = nameIn;
       organization = organizationIn;
       coefficient = coefficientIn;
    }
-
    /**
     * @return the title of film or actor
     */
@@ -42,9 +40,10 @@ public class Calculations {
    }
 
    /**
-    * @param organizationIn is the title of organization that gave award to film
-    * */
-   public void setOrganization(String organizationIn) {
+    * @param organizationIn is the title of
+    * organization that gave award to film
+    */
+   public void setOrginization(String organizationIn) {
       organization = organizationIn;
    }
 
@@ -58,7 +57,7 @@ public class Calculations {
    /**
     * sets the coefficient used to calculate chance of winning.
     * @param coefficientIn is coefficient for calculations
-    * */
+    */
    public void setCoefficient(double coefficientIn) {
       coefficient = coefficientIn;
    }

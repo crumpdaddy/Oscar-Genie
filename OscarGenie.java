@@ -2,24 +2,31 @@ import java.util.Scanner;
 import java.io.IOException;
 import java.io.File;
 /** This has the main class that has UI and runs 
-* OscarGenieDriver methods and output results.
+* OscarGenieDriver methods and outpus results. 
 * @author Ryan Crumpler
-* @version 9.8.17
+* @version 13.8.17
 */
 public class OscarGenie {
     private static int maxYear = 2017;
     private static int minYear = 1991;
     /**
-     * @throws IOException for scanner
-     * @param args command line arguments
-     */
+     * * @throws IOException for scanner
+     * * @param args command line arguments
+     * */
     public static void main(String[] args) throws IOException {
         File file = new File("");
         String yearIn, goBack, info, category, aString, back = "";
         int award = 0;
         Scanner scan = new Scanner(System.in);
         OscarGenieDriver myNoms = new OscarGenieDriver();
-        myNoms.initialSetup(minYear, maxYear);
+        myNoms.setMinMaxYear(1991, 2017);
+        myNoms.setScalar(.05);
+        myNoms.setThreshold(.3);
+        myNoms.readNominee("all_nominations.csv", maxYear);
+        myNoms.readCalculations("all_calculations.csv", maxYear);
+        myNoms.setCoefficients();
+        myNoms.kalmanFilter();
+        myNoms.getProbability();
         String[] awardList = myNoms.getAwardList();
         System.out.println("Welcome to Oscar Genie by Ryan Crumpler\n");
         do {
@@ -37,8 +44,7 @@ public class OscarGenie {
             }
             if (year >= minYear && year <= maxYear) {
                 String menu = "";
-                menu += "Enter title of the award or its "
-                        + "corresponding number you want to predict:\n";
+                menu += "Enter title of the award or its corresponding number you want to predict:\n";
                 for (int i = 0; i < awardList.length; i++) {
                     menu += i + 1 + " - " + awardList[i] + "\n";
                 }

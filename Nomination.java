@@ -1,28 +1,28 @@
 /** This program defines the  nomination object.
-*  This is used for actors as well as film objects
-* @author Ryan Crumpler
-* @version 9.8.17
-*/
+ *  This is used for actors as well as film objects
+ * @author Ryan Crumpler
+ * @version 13.8.17
+ */
 public class Nomination {
 
-    protected String name, percent;
-    protected double coefficient;
-    /**
-     * @param nameIn is title of film or name of actor/actress
-     * @param coefficientIn is constant used to determine
-     * likelihood of winning calculated through other awards
-     * @param percentIn is percent chance of winning
-     */
-    public Nomination(String nameIn, double coefficientIn, String percentIn) {
-        name = nameIn;
-        coefficient = coefficientIn;
-    }
+   protected String name, percent;
+   protected double coefficient;
+   /**
+    * @param nameIn is title of film or name of actor/actress
+    * @param coefficientIn is constant used to determine
+    * likelihood of winning calculated through other awards
+    * @param percentIn is percent chance of winning
+    */
+   public Nomination(String nameIn, double coefficientIn, String percentIn) {
+      name = nameIn;
+      coefficient = coefficientIn;
+   }
 
-    /**
-     * @return the title of film or actor
-     */
-    public String getName() {
-        return name;
+   /**
+    * @return the title of film or actor
+    */
+   public String getName() {
+      return name;
    }
 
    /**
@@ -30,14 +30,14 @@ public class Nomination {
     * @param nameIn is movie nominated.
     */
    public void setName(String nameIn) {
-       name = nameIn;
+      name = nameIn;
    }
 
    /**
     * @return the coefficient used to calculate chance of winning
     */
    public double getCoefficient() {
-       return coefficient;
+      return coefficient;
    }
 
    /**
@@ -45,14 +45,14 @@ public class Nomination {
     * @param coefficientIn is coefficient for calculations
     */
    public void setCoefficient(double coefficientIn) {
-       coefficient = coefficientIn;
+      coefficient = coefficientIn;
    }
 
    /**
     * @return the percent chance of winning
     */
    public String getPercent() {
-       return percent;
+      return percent;
    }
 
    /**
@@ -60,7 +60,7 @@ public class Nomination {
     * @param percentIn is percent chance of winning
     */
    public void setPercent(String percentIn) {
-       percent = percentIn;
+      percent = percentIn;
    }
 
    /**
@@ -69,8 +69,8 @@ public class Nomination {
     * @return string containing all data of film
     */
    public String toString() {
-       String output = "\"" + getName() + "\" has a "
-               + getPercent() + "% chance of winning an Oscar";
-       return output;
+      String output = "\"" + getName() + "\" has a "
+              + getPercent() + "% chance of winning an Oscar";
+      return output;
    }
 }
