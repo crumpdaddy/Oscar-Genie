@@ -19,14 +19,7 @@ public class OscarGenie {
         int award = 0;
         Scanner scan = new Scanner(System.in);
         OscarGenieDriver myNoms = new OscarGenieDriver();
-        myNoms.setMinMaxYear(1991, 2017);
-        myNoms.setScalar(.05);
-        myNoms.setThreshold(.3);
-        myNoms.readNominee("all_nominations.csv", maxYear);
-        myNoms.readCalculations("all_calculations.csv", maxYear);
-        myNoms.setCoefficients();
-        myNoms.kalmanFilter();
-        myNoms.getProbability();
+        myNoms.setup(minYear,maxYear);
         String[] awardList = myNoms.getAwardList();
         System.out.println("Welcome to Oscar Genie by Ryan Crumpler\n");
         do {

@@ -38,14 +38,14 @@ public class OscarGenieDriver {
     /**
      * Static int that defines the max number of times the program will adjust the filter
      */
-    private static int maxCount = 20;
+    private static int maxCount = 25;
 
     /**
      * integers to define years to begin and end calculations on.
      */
     private int minYear, maxYear;
 
-    private double threshold, coefficent, scalar;
+    private double threshold, coefficent, scalar, calcCount;
     protected String name, award, movie, nominee, organization, percent;
 
     /**
@@ -96,6 +96,24 @@ public class OscarGenieDriver {
         kalmanMap = new HashMap<>();
         orgCount = new HashMap<>();
         calculatedWinners = new HashMap<>();
+    }
+
+    /**
+     * Method to run the initial setup for driver program.
+     * Calls on all required methods to produce accurate results.
+     * @param minYear first year to start predicting results for
+     * @param maxYear last year to predict results for
+     * @throws IOException for scanner
+     */
+    public void setup(int minYear, int maxYear) throws IOException{
+        setMinMaxYear(1991, 2017);
+        setScalar(.07);
+        setThreshold(.2);
+        readNominee("all_nominations.csv");
+        readCalculations("all_calculations.csv");
+        setCoefficients();
+        kalmanFilter();
+        getProbability();
     }
 
 
@@ -158,7 +176,7 @@ public class OscarGenieDriver {
      *
      * @throws IOException for scanner
      */
-    public void readNominee(String fileNameIn, int yearIn) throws IOException {
+    public void readNominee(String fileNameIn) throws IOException {
         Scanner scanFile = new Scanner(new File(fileNameIn));
         HashMap<String, Nomination> nomMap = new HashMap<String, Nomination>();
         HashMap<String, Nomination> cloneMap = new HashMap<String, Nomination>();
@@ -170,15 +188,15 @@ public class OscarGenieDriver {
         award = scanFile.nextLine();
         String won = "";
         String notes = "";
-        int year = yearIn;
-        int pastYear = yearIn;
+        int year = minYear;
+        int pastYear = minYear;
         String prevAward = "";
         while (scanFile.hasNextLine()) {
             nominee = scanFile.nextLine();
             Scanner scanNominee = new Scanner(nominee).useDelimiter(",");
             while (scanNominee.hasNext()) {
                 year = Integer.parseInt(scanNominee.next());
-                if (year < pastYear) {
+                if (year != pastYear) {
                     winnersClone = new HashMap<String, String>(winners);
                     allWinners.put(pastYear, winnersClone);
                     cloneMap2 = new HashMap<String, HashMap<String, Nomination>>(nomineeMap);
@@ -239,15 +257,15 @@ public class OscarGenieDriver {
      * @param fileNameIn is the CSV file that will be read
      * @throws IOException for scanner
      */
-    public void readCalculations(String fileNameIn, int yearIn) throws IOException {
+    public void readCalculations(String fileNameIn) throws IOException {
         Scanner scanFile = new Scanner(new File(fileNameIn));
         HashMap<String, Calculations> calculationByOrg = new HashMap<String, Calculations>();
         HashMap<String, HashMap<String, Calculations>> calculationByAward = new HashMap<String, HashMap<String, Calculations>>();
         HashMap<String, Calculations> cloneMap1 = new HashMap<String, Calculations>();
         HashMap<String, HashMap<String, Calculations>> cloneMap2 = new HashMap<String, HashMap<String, Calculations>>();
         HashMap<String, String> winners = new HashMap<String, String>();
-        int year = yearIn;
-        int prevYear = yearIn;
+        int year = minYear;
+        int prevYear = minYear;
         award = scanFile.nextLine();
         String kalKey = "";
         double kal = 0;
@@ -259,7 +277,7 @@ public class OscarGenieDriver {
             Scanner scanProbability = new Scanner(nominee).useDelimiter(",");
             while (scanProbability.hasNext()) {
                 year = Integer.parseInt(scanProbability.next());
-                if (year < prevYear) {
+                if (year != prevYear) {
                     cloneMap2 = new HashMap<String, HashMap<String, Calculations>>(calculationByAward);
                     calculationByYear.put(prevYear, cloneMap2);
                     prevYear = year;
@@ -452,7 +470,6 @@ public class OscarGenieDriver {
 
 
     // KalMan Filtering Methods
-    
 
     /**
      * Recursive method to adjust the initial coefficients to better predict the winners.
@@ -463,68 +480,112 @@ public class OscarGenieDriver {
      * The while loops use maxCount to prevent infinite loops
      */
     public void kalmanFilter() {
-        ArrayList<HashMap<String, Double>> iterationList = new ArrayList<HashMap<String, Double>>();
         HashMap<Integer, String> winners = new HashMap<Integer, String>();
-        double calcCount = 0;
         double prevCalcCount = 0;
+        boolean adjusted = true;
         String kalKey = "";
+        int count = 0;
         for (int j = 0; j < awardList.length; j++) {
+            award = awardList[j];
             setCalculationsCoef(awardList[j]);
             winners = generateWinByAward(awardList[j]);
             calcCount = findAccuracy(awardList[j], winners);
             prevCalcCount = calcCount;
             for (int k = 0; k < orgList.length; k++) {
                 kalKey = orgList[k] + " " + awardList[j];
-                adjustKalmanMap(scalar, kalKey, true);
+                adjusted = adjustKalmanMap(kalKey, true);
                 setCalculationsCoef(awardList[j]);
                 winners = generateWinByAward(awardList[j]);
                 calcCount = findAccuracy(awardList[j], winners);
-                if (calcCount >= prevCalcCount) {
-                    while (calcCount > prevCalcCount) {
+                count = 0;
+                boolean go = true;
+                while (go) {
+                    if (calcCount == prevCalcCount) {
+                        while (calcCount == prevCalcCount && count <= maxCount) {
+                            prevCalcCount = calcCount;
+                            adjusted = adjustKalmanMap(kalKey, true);
+                            setCalculationsCoef(awardList[j]);
+                            winners = generateWinByAward(awardList[j]);
+                            calcCount = findAccuracy(awardList[j], winners);
+                            count++;
+                        }
+                        if (calcCount < prevCalcCount) {
+                            prevCalcCount = calcCount;
+                            adjusted = adjustKalmanMap(kalKey, false);
+                            setCalculationsCoef(awardList[j]);
+                            winners = generateWinByAward(awardList[j]);
+                            calcCount = findAccuracy(awardList[j], winners);
+                            count = 0;
+                            while (calcCount >= prevCalcCount && adjusted) {
+                                prevCalcCount = calcCount;
+                                adjusted = adjustKalmanMap(kalKey, false);
+                                setCalculationsCoef(awardList[j]);
+                                winners = generateWinByAward(awardList[j]);
+                                calcCount = findAccuracy(awardList[j], winners);
+                                count++;
+                            }
+                            if (adjusted) {
+                                adjusted = adjustKalmanMap(kalKey, true);
+                                setCalculationsCoef(awardList[j]);
+                                winners = generateWinByAward(awardList[j]);
+                                calcCount = findAccuracy(awardList[j], winners);
+                            }
+                            prevCalcCount = calcCount;
+                        } else if (calcCount > prevCalcCount) {
+                            count = 0;
+                            while (calcCount >= prevCalcCount && count < maxCount) {
+                                prevCalcCount = calcCount;
+                                adjusted = adjustKalmanMap(kalKey, true);
+                                setCalculationsCoef(awardList[j]);
+                                winners = generateWinByAward(awardList[j]);
+                                calcCount = findAccuracy(awardList[j], winners);
+                                count++;
+                            }
+                            adjusted = adjustKalmanMap(kalKey, false);
+                            setCalculationsCoef(awardList[j]);
+                            winners = generateWinByAward(awardList[j]);
+                            calcCount = findAccuracy(awardList[j], winners);
+                            prevCalcCount = calcCount;
+                        }
+                    } else if (calcCount > prevCalcCount) {
+                        count = 0;
+                        while (calcCount >= prevCalcCount && count < maxCount) {
+                            prevCalcCount = calcCount;
+                            adjusted = adjustKalmanMap(kalKey, true);
+                            setCalculationsCoef(awardList[j]);
+                            winners = generateWinByAward(awardList[j]);
+                            calcCount = findAccuracy(awardList[j], winners);
+                            count++;
+                        }
+                        adjusted = adjustKalmanMap(kalKey, false);
+                        setCalculationsCoef(awardList[j]);
+                        winners = generateWinByAward(awardList[j]);
+                        calcCount = findAccuracy(awardList[j], winners);
                         prevCalcCount = calcCount;
-                        adjustKalmanMap(scalar, kalKey, true);
-                        setCalculationsCoef(awardList[j]);
-                        winners = generateWinByAward(awardList[j]);
-                        calcCount = findAccuracy(awardList[j], winners);
-                    }
-                    adjustKalmanMap(scalar, kalKey, false);
-                    setCalculationsCoef(awardList[j]);
-                    winners = generateWinByAward(awardList[j]);
-                    calcCount = findAccuracy(awardList[j], winners);
-                    prevCalcCount = calcCount;
-                } else if (calcCount <= prevCalcCount) {
-                    prevCalcCount = calcCount;
-                    adjustKalmanMap(scalar, kalKey, false);
-                    setCalculationsCoef(awardList[j]);
-                    winners = generateWinByAward(awardList[j]);
-                    calcCount = findAccuracy(awardList[j], winners);
-                    while (calcCount > prevCalcCount) {
+                    } else if (calcCount < prevCalcCount) {
                         prevCalcCount = calcCount;
-                        adjustKalmanMap(scalar, kalKey, false);
+                        adjusted = adjustKalmanMap(kalKey, false);
                         setCalculationsCoef(awardList[j]);
                         winners = generateWinByAward(awardList[j]);
                         calcCount = findAccuracy(awardList[j], winners);
+                        count = 0;
+                        while (calcCount >= prevCalcCount && adjusted) {
+                            prevCalcCount = calcCount;
+                            adjusted = adjustKalmanMap(kalKey, false);
+                            setCalculationsCoef(awardList[j]);
+                            winners = generateWinByAward(awardList[j]);
+                            calcCount = findAccuracy(awardList[j], winners);
+                            count++;
+                        }
+                        if (adjusted) {
+                            adjusted = adjustKalmanMap(kalKey, true);
+                            setCalculationsCoef(awardList[j]);
+                            winners = generateWinByAward(awardList[j]);
+                            calcCount = findAccuracy(awardList[j], winners);
+                        }
+                        prevCalcCount = calcCount;
                     }
-                    adjustKalmanMap(scalar, kalKey, true);
-                    setCalculationsCoef(awardList[j]);
-                    winners = generateWinByAward(awardList[j]);
-                    calcCount = findAccuracy(awardList[j], winners);
-                    prevCalcCount = calcCount;
-                }
-                try {
-                    double kalmanData = kalmanMap.get(kalKey);
-                    kalmanMap.put(kalKey, 0.0);
-                    prevCalcCount = calcCount;
-                    setCalculationsCoef(awardList[j]);
-                    winners = generateWinByAward(awardList[j]);
-                    calcCount = findAccuracy(awardList[j], winners);
-                    if (prevCalcCount > calcCount) {
-                        kalmanMap.put(kalKey, kalmanData);
-                        setCalculationsCoef(awardList[j]);
-                        winners = generateWinByAward(awardList[j]);
-                        calcCount = findAccuracy(awardList[j], winners);
-                    }
-                } catch (NullPointerException e) {
+                    go = false;
                 }
             }
         }
@@ -537,7 +598,7 @@ public class OscarGenieDriver {
      * @param increase is used to set how the coefficient is adjuste true = increase false = decrease
      * @return a boolean that is true if coefficient was adjusted and false if coefficients 0
      */
-    public void adjustKalmanMap(double scalar, String kalKey, boolean increase) {
+    public boolean adjustKalmanMap(String kalKey, boolean increase) {
         double kalmanCoeff = 0;
         double newCoeff = 0;
         try {
@@ -546,20 +607,25 @@ public class OscarGenieDriver {
                 newCoeff = kalmanCoeff - scalar;
                 if (kalmanCoeff <= 0.0) {
                     kalmanMap.put(kalKey, 0.0);
+                    return false;
                 } else {
                     kalmanMap.put(kalKey, newCoeff);
+                    return true;
                 }
             }
             if (increase) {
                 newCoeff = kalmanCoeff + scalar;
                 if (kalmanCoeff == 0) {
                     kalmanMap.put(kalKey, kalmanCoeff);
+                    return false;
                 } else {
                     kalmanMap.put(kalKey, newCoeff);
+                    return true;
                 }
             }
         } catch (NullPointerException e) {
         }
+        return false;
     }
 
     /**
@@ -960,7 +1026,7 @@ public class OscarGenieDriver {
                 + "\ndata for that nominee\nIf there is only data for 1"
                 + " nominee and\nthe nominee has less than a "
                 + numFmt.format(threshold)
-                + "% chance of winning Oscar Genie considers\nthat award "
+                + "%coefficient Oscar Genie considers\nthat award "
                 + "to have insufficient data";
         return output;
     }
