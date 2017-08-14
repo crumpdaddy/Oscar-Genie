@@ -1,11 +1,16 @@
+import java.util.ArrayList;
+
 /** This program defines the actor object.
  *
  * @author Ryan Crumpler
- * @version 13.8.17
+ * @version 14.8.17
  */
+import java.util.ArrayList;
+
 public class BestActor extends Nomination {
    protected String movie;
    protected boolean actress, supporting, song;
+   protected ArrayList<String> awardOrg;
    /**
     * @param nameIn is first and last name of actor/actress
     * @param coefficientIn is constant used to determine actors
@@ -15,9 +20,9 @@ public class BestActor extends Nomination {
     * @param actressIn boolean to tell if actor or actress
     * @param songIn boolean is object is best song or actorwas in lead or supporting role
     */
-   public BestActor(String nameIn, double coefficientIn, String percentIn,
+   public BestActor(String nameIn, double coefficientIn, String percentIn, ArrayList<String> awardOrgIn,
                     String movieIn, boolean actressIn, boolean songIn) {
-      super(nameIn, coefficientIn, percentIn);
+      super(nameIn, coefficientIn, percentIn, awardOrgIn);
       movie = movieIn;
       percent = percentIn;
       song = songIn;

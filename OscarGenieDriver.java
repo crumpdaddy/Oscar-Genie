@@ -4,12 +4,13 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /** This program is the driver that carries out all methods 
 * to determine chance of winning an oscar.
 * 
 * @author Ryan Crumpler
-* @version 13.8.17
+* @version 14.8.17
 */
 public class OscarGenieDriver {
     /**
@@ -32,7 +33,7 @@ public class OscarGenieDriver {
             "San Francisco Critics", "Las Vegas Critics", "Houston Critics",
             "Screen Actors Guild", "Writers Guild", "Producers Guild",
             "Directors Guild", "Visual Effects Society", "Critics Choice",
-            "Golden Globes", "Golden Globes-Comedy or Musical",
+            "Golden Globes", "Golden Globes-Musical or Comedy",
             "Golden Globes-Drama"};
 
     /**
@@ -58,7 +59,6 @@ public class OscarGenieDriver {
      * The key to the 3rd level Calculation HashMap the name of the organization,
      * with the data being the Calculation object
      */
-    private HashMap<Integer, HashMap<String, HashMap<String, Calculations>>> calculationByYear;
     private HashMap<Integer, HashMap<String, HashMap<String, Nomination>>> nomineesByYear;
 
     /**
@@ -82,6 +82,7 @@ public class OscarGenieDriver {
      */
     private HashMap<String, Double> orgCount;
 
+
     /**
      * This program reads a CSV file that contains every Oscar nominee and winner
      * it then reads a CSV that contains a set of calculations based off of which
@@ -91,11 +92,11 @@ public class OscarGenieDriver {
      */
     public OscarGenieDriver() {
         nomineesByYear = new HashMap<>();
-        calculationByYear = new HashMap<>();
         allWinners = new HashMap<>();
         kalmanMap = new HashMap<>();
         orgCount = new HashMap<>();
         calculatedWinners = new HashMap<>();
+
     }
 
     /**
@@ -105,10 +106,10 @@ public class OscarGenieDriver {
      * @param maxYear last year to predict results for
      * @throws IOException for scanner
      */
-    public void setup(int minYear, int maxYear) throws IOException{
+    public void setup(int minYear, int maxYear, double threshold) throws IOException{
         setMinMaxYear(1991, 2017);
         setScalar(.07);
-        setThreshold(.2);
+        setThreshold(threshold);
         readNominee("all_nominations.csv");
         readCalculations("all_calculations.csv");
         setCoefficients();
@@ -184,6 +185,7 @@ public class OscarGenieDriver {
         HashMap<String, String> winnersClone = new HashMap<String, String>();
         HashMap<String, HashMap<String, Nomination>> nomineeMap = new HashMap<String, HashMap<String, Nomination>>();
         HashMap<String, HashMap<String, Nomination>> cloneMap2 = new HashMap<String, HashMap<String, Nomination>>();
+        ArrayList<String> awardOrg = new ArrayList<String>();
         boolean nextLine = true;
         award = scanFile.nextLine();
         String won = "";
@@ -223,14 +225,15 @@ public class OscarGenieDriver {
                         song = true;
                     }
                     percent = "0.0";
-                    BestActor n = new BestActor(name, 0, percent, movie, actress, song);
+                    BestActor n = new BestActor(name, 0, percent, awardOrg,  movie, actress, song);
                     if (award.compareTo("Actress - Supporting Role") == 0
                             || award.compareTo("Actress - Leading Role") == 0) {
                         n.setActress(true);
                     }
                     nomMap.put(name, n);
-                } else {
-                    Nomination n = new Nomination(name, 0, percent);
+                }
+                else {
+                    Nomination n = new Nomination(name, 0, percent, awardOrg);
                     nomMap.put(name, n);
                 }
                 won = scanNominee.next();
@@ -259,11 +262,14 @@ public class OscarGenieDriver {
      */
     public void readCalculations(String fileNameIn) throws IOException {
         Scanner scanFile = new Scanner(new File(fileNameIn));
-        HashMap<String, Calculations> calculationByOrg = new HashMap<String, Calculations>();
-        HashMap<String, HashMap<String, Calculations>> calculationByAward = new HashMap<String, HashMap<String, Calculations>>();
-        HashMap<String, Calculations> cloneMap1 = new HashMap<String, Calculations>();
-        HashMap<String, HashMap<String, Calculations>> cloneMap2 = new HashMap<String, HashMap<String, Calculations>>();
+        HashMap<String, Nomination> nominees = new HashMap<String, Nomination>();
+        HashMap<String, HashMap<String, Nomination>> nominationsByAward = new HashMap<String, HashMap<String, Nomination>>();
         HashMap<String, String> winners = new HashMap<String, String>();
+        HashMap<String, Nomination> cloneMap1 = new HashMap<String, Nomination>();
+        HashMap<String, HashMap<String, Nomination>> cloneMap2 = new HashMap<String, HashMap<String, Nomination>>();
+        ArrayList<String> tempArr = new ArrayList<String>();
+        ArrayList<String> awardOrg = new ArrayList<String>();
+        awardOrg = new ArrayList<>();
         int year = minYear;
         int prevYear = minYear;
         award = scanFile.nextLine();
@@ -271,51 +277,67 @@ public class OscarGenieDriver {
         double kal = 0;
         double kalCount = 0;
         String prevAward = "Actor - Leading Role";
-        Nomination p = new Nomination("", 0, "");
         while (scanFile.hasNextLine()) {
             nominee = scanFile.nextLine();
             Scanner scanProbability = new Scanner(nominee).useDelimiter(",");
             while (scanProbability.hasNext()) {
                 year = Integer.parseInt(scanProbability.next());
+                nominationsByAward = nomineesByYear.get(year);
                 if (year != prevYear) {
-                    cloneMap2 = new HashMap<String, HashMap<String, Calculations>>(calculationByAward);
-                    calculationByYear.put(prevYear, cloneMap2);
                     prevYear = year;
-                    calculationByAward.clear();
                 }
-                HashMap<String, HashMap<String, Nomination>> map1 = new HashMap<String, HashMap<String, Nomination>>();
-                HashMap<String, Nomination> map2 = new HashMap<String, Nomination>();
-                map1 = nomineesByYear.get(year);
                 award = scanProbability.next();
                 if (!award.equalsIgnoreCase(prevAward)) {
-                    cloneMap1 = new HashMap<String, Calculations>(calculationByOrg);
-                    calculationByAward.put(prevAward, cloneMap1);
-                    calculationByOrg.clear();
+                    try {
+                        cloneMap1 = new HashMap<String, Nomination>(nominees);
+                        nominationsByAward.put(prevAward, cloneMap1);
+                        nominees.clear();
+                    }
+                    catch (NullPointerException e) {
+                    }
                     prevAward = award;
                 }
+                if (award.equalsIgnoreCase("Z Filler Data")) {
+                    try {
+                        cloneMap2 = new HashMap<String, HashMap<String, Nomination>>(nominationsByAward);
+                        nomineesByYear.put(prevYear, cloneMap2);
+                        nominationsByAward.clear();
+                    }
+                    catch (NullPointerException e) {
+                    }
+                }
                 try {
-                    map2 = map1.get(award);
-                } catch (NullPointerException e) {
+                    nominees = nominationsByAward.get(award);
+                }
+                catch (NullPointerException e) {
                 }
                 name = scanProbability.next();
                 organization = scanProbability.next();
-                Calculations c = new Calculations(name, organization, 0);
                 kalKey = organization + " " + award;
                 try {
                     kalCount = orgCount.get(kalKey);
                     kalCount += 1;
-                } catch (NullPointerException e) {
+                }
+                catch (NullPointerException e) {
                     kalCount = 1;
                 }
                 orgCount.put(kalKey, kalCount);
-                if (map2 != null && map2.containsKey(name)) {
-                    calculationByOrg.put(organization, c);
+                if (nominees != null && nominees.containsKey(name)) {
+                    Nomination n = new Nomination("", 0, "", awardOrg);
+                    n = nominees.get(name);
+                    awardOrg = n.getAwardOrg();
+                    awardOrg.add(organization);
+                    tempArr = new ArrayList<String>(awardOrg);
+                    n.setAwardOrg(tempArr);
+                    nominees.put(name, n);
+                    awardOrg.clear();
                     winners = allWinners.get(year);
                     if (!award.equals("AA Filler Data") && winners.get(award).equalsIgnoreCase(name)) {
                         try {
                             kal = kalmanMap.get(kalKey);
                             kal += 1;
-                        } catch (NullPointerException e) {
+                        }
+                        catch (NullPointerException e) {
                             kal = 1;
                         }
                         kalmanMap.put(kalKey, kal);
@@ -323,8 +345,12 @@ public class OscarGenieDriver {
                 }
             }
         }
-        cloneMap2 = new HashMap<String, HashMap<String, Calculations>>(calculationByAward);
-        calculationByYear.put(prevYear, cloneMap2);
+        try {
+            cloneMap2 = new HashMap<String, HashMap<String, Nomination>>(nominationsByAward);
+            nomineesByYear.put(year, cloneMap2);
+        }
+        catch (NullPointerException e) {
+        }
     }
 
 
@@ -347,7 +373,8 @@ public class OscarGenieDriver {
                     kalmanCoeff = kalmanMap.get(kalKey);
                     kalmanCoeff = kalmanCoeff / kalCount;
                     kalmanMap.put(kalKey, kalmanCoeff);
-                } catch (NullPointerException e) {
+                }
+                catch (NullPointerException e) {
                 }
             }
         }
@@ -355,92 +382,40 @@ public class OscarGenieDriver {
 
     /**
      * Sets all the calculations in a given year by
-     * scanning both the calculations HashMaps and setting the coefficients
+     * scanning both the Nominations awardOrg ArrayLists and setting the coefficients
      * to their respective nominee.
-     *
-     * @param awardIn is the  awad to set
+     * @param awardIn is the award to set
      */
     public void setCalculationsCoef(String awardIn) {
         String kalKey = "";
         double getCoeff = 0;
         double kalmanCoeff = 0;
-        HashMap<String, Calculations> coeffByOrg = new HashMap<String, Calculations>();
-        HashMap<String, HashMap<String, Calculations>> coeffByAward = new HashMap<String, HashMap<String, Calculations>>();
         HashMap<String, Nomination> nominations = new HashMap<String, Nomination>();
         HashMap<String, HashMap<String, Nomination>> nominationsByAward = new HashMap<String, HashMap<String, Nomination>>();
+        ArrayList<String> awardOrg = new ArrayList<String>();
         for (int i = minYear; i <= maxYear; i++) {
-            resetNominees(awardIn, i);
-            coeffByAward = calculationByYear.get(i);
+            //resetNominees(awardIn, i);
             nominationsByAward = nomineesByYear.get(i);
-            coeffByOrg = coeffByAward.get(awardIn);
+            nominationsByAward = nomineesByYear.get(i);
             nominations = nominationsByAward.get(awardIn);
-            for (int j = 0; j < orgList.length; j++) {
-                kalKey = orgList[j] + " " + awardIn;
-                Calculations c = new Calculations("", "", 0);
-                Nomination n = new Nomination("", 0, "");
-                try {
-                    c = coeffByOrg.get(orgList[j]);
-                    double coef = kalmanMap.get(kalKey);
-                    kalmanCoeff = coef + c.getCoefficient();
-                    c.setCoefficient(coef);
-                    coeffByOrg.put(orgList[j], c);
-                    try {
-                        name = c.getName();
-                        n = nominations.get(name);
-                        double totalCoeff = n.getCoefficient() + coef;
-                        n.setCoefficient(totalCoeff);
-                    } catch (NullPointerException e) {
+            try {
+                for (String key : nominations.keySet()) {
+                    Nomination n = new Nomination("", 0, "", null);
+                    n = nominations.get(key);
+                    awardOrg = n.getAwardOrg();
+                    double coef = 0;
+                    for (int j = 0; j < awardOrg.size(); j++) {
+                        kalKey = awardOrg.get(j) + " " + awardIn;
+                        coef += kalmanMap.get(kalKey);
                     }
-                } catch (NullPointerException e) {
+                    n.setCoefficient(coef);
+                    nominations.put(n.getName(), n);
                 }
-                coeffByAward.put(awardIn, coeffByOrg);
             }
-            calculationByYear.put(i, coeffByAward);
-        }
-    }
-
-    /**
-     * Sets all the calculations in a given year by
-     * scanning both the calculations HashMaps and setting the coefficients
-     * to their respective nominee.
-     *
-     * @param year is the year of the calculations to set
-     */
-    public void setAllCalculationsCoef(int year) {
-        String kalKey = "";
-        double getCoeff = 0;
-        double kalmanCoeff = 0;
-        HashMap<String, Calculations> coeffByOrg = new HashMap<String, Calculations>();
-        HashMap<String, HashMap<String, Calculations>> coeffByAward = new HashMap<String, HashMap<String, Calculations>>();
-        coeffByAward = calculationByYear.get(year);
-        HashMap<String, Nomination> nominations = new HashMap<String, Nomination>();
-        HashMap<String, HashMap<String, Nomination>> nominationsByAward = new HashMap<String, HashMap<String, Nomination>>();
-        coeffByAward = calculationByYear.get(year);
-        nominationsByAward = nomineesByYear.get(year);
-        for (int i = 0; i < awardList.length; i++) {
-            coeffByOrg = coeffByAward.get(awardList[i]);
-            nominations = nominationsByAward.get(awardList[i]);
-            for (int j = 0; j < orgList.length; j++) {
-                kalKey = orgList[j] + " " + awardList[i];
-                Calculations c = new Calculations("", "", 0);
-                Nomination n = new Nomination("", 0, "");
-                try {
-                    c = coeffByOrg.get(orgList[j]);
-                    kalmanCoeff = kalmanMap.get(kalKey);
-                    kalmanCoeff = kalmanCoeff + c.getCoefficient();
-                    c.setCoefficient(kalmanCoeff);
-                    coeffByOrg.put(orgList[j], c);
-                    try {
-                        name = c.getName();
-                        n = nominations.get(name);
-                        n.setCoefficient(kalmanCoeff);
-                    } catch (NullPointerException e) {
-                    }
-                } catch (NullPointerException e) {
-                }
-                coeffByAward.put(awardList[i], coeffByOrg);
+            catch (NullPointerException e) {
             }
-            calculationByYear.put(year, coeffByAward);
+            nominationsByAward.put(awardIn, nominations);
+            nomineesByYear.put(i, nominationsByAward);
         }
     }
 
@@ -457,12 +432,13 @@ public class OscarGenieDriver {
         nominations = nominationsByAward.get(awardIn);
         try {
             for (String key : nominations.keySet()) {
-                Nomination n = new Nomination("", 0, "");
+                Nomination n = new Nomination("", 0, "", null);
                 n = nominations.get(key);
                 n.setCoefficient(0);
                 nominations.put(key, n);
             }
-        } catch (NullPointerException e) {
+        }
+        catch (NullPointerException e) {
         }
         nominationsByAward.put(awardIn, nominations);
         nomineesByYear.put(year, nominationsByAward);
@@ -531,7 +507,8 @@ public class OscarGenieDriver {
                                 calcCount = findAccuracy(awardList[j], winners);
                             }
                             prevCalcCount = calcCount;
-                        } else if (calcCount > prevCalcCount) {
+                        }
+                        else if (calcCount > prevCalcCount) {
                             count = 0;
                             while (calcCount >= prevCalcCount && count < maxCount) {
                                 prevCalcCount = calcCount;
@@ -547,7 +524,8 @@ public class OscarGenieDriver {
                             calcCount = findAccuracy(awardList[j], winners);
                             prevCalcCount = calcCount;
                         }
-                    } else if (calcCount > prevCalcCount) {
+                    }
+                    else if (calcCount > prevCalcCount) {
                         count = 0;
                         while (calcCount >= prevCalcCount && count < maxCount) {
                             prevCalcCount = calcCount;
@@ -562,7 +540,8 @@ public class OscarGenieDriver {
                         winners = generateWinByAward(awardList[j]);
                         calcCount = findAccuracy(awardList[j], winners);
                         prevCalcCount = calcCount;
-                    } else if (calcCount < prevCalcCount) {
+                    }
+                    else if (calcCount < prevCalcCount) {
                         prevCalcCount = calcCount;
                         adjusted = adjustKalmanMap(kalKey, false);
                         setCalculationsCoef(awardList[j]);
@@ -608,7 +587,8 @@ public class OscarGenieDriver {
                 if (kalmanCoeff <= 0.0) {
                     kalmanMap.put(kalKey, 0.0);
                     return false;
-                } else {
+                }
+                else {
                     kalmanMap.put(kalKey, newCoeff);
                     return true;
                 }
@@ -618,12 +598,14 @@ public class OscarGenieDriver {
                 if (kalmanCoeff == 0) {
                     kalmanMap.put(kalKey, kalmanCoeff);
                     return false;
-                } else {
+                }
+                else {
                     kalmanMap.put(kalKey, newCoeff);
                     return true;
                 }
             }
-        } catch (NullPointerException e) {
+        }
+        catch (NullPointerException e) {
         }
         return false;
     }
@@ -642,10 +624,10 @@ public class OscarGenieDriver {
         for (int j = minYear; j <= maxYear; j++) {
             nominationsByAward = nomineesByYear.get(j);
             nominations = nominationsByAward.get(awardIn);
-            Nomination highestCoeff = new Nomination("", 0, "");
+            Nomination highestCoeff = new Nomination("", 0, "", null);
             try {
                 for (String key : nominations.keySet()) {
-                    Nomination n = new Nomination("", 0, "");
+                    Nomination n = new Nomination("", 0, "", null);
                     n = nominations.get(key);
                     if (highestCoeff.getName().equals("")) {
                         highestCoeff = n;
@@ -655,7 +637,8 @@ public class OscarGenieDriver {
                     }
                 }
                 output.put(j, highestCoeff.getName());
-            } catch (NullPointerException e) {
+            }
+            catch (NullPointerException e) {
             }
         }
         return output;
@@ -672,7 +655,6 @@ public class OscarGenieDriver {
      */
     public double findAccuracy(String awardIn, HashMap<Integer, String> calcInput) {
         HashMap<String, String> winners = new HashMap<String, String>();
-        Nomination n = new Nomination("", 0, "");
         String calcName = "";
         double calcCount = 0;
         for (int i = minYear; i <= maxYear; i++) {
@@ -682,7 +664,8 @@ public class OscarGenieDriver {
                 if (calcName.equalsIgnoreCase(winners.get(awardIn))) {
                     calcCount++;
                 }
-            } catch (NullPointerException e) {
+            }
+            catch (NullPointerException e) {
             }
         }
         double range = maxYear - minYear + 1;
@@ -709,10 +692,10 @@ public class OscarGenieDriver {
         nominationsByAward = nomineesByYear.get(year);
         for (int i = 0; i < awardList.length; i++) {
             nominations = nominationsByAward.get(awardList[i]);
-            Nomination highestCoeff = new Nomination("", 0, "");
+            Nomination highestCoeff = new Nomination("", 0, "", null);
             try {
                 for (String key : nominations.keySet()) {
-                    Nomination n = new Nomination("", 0, "");
+                    Nomination n = new Nomination("", 0, "", null);
                     n = nominations.get(key);
                     if (highestCoeff.getName().equals("")) {
                         highestCoeff = n;
@@ -725,7 +708,8 @@ public class OscarGenieDriver {
                     highestCoeff.setName("");
                 }
                 output.put(awardList[i], highestCoeff.getName());
-            } catch (NullPointerException e) {
+            }
+            catch (NullPointerException e) {
             }
         }
         return output;
@@ -737,33 +721,34 @@ public class OscarGenieDriver {
     public void getProbability() {
         HashMap<String, Nomination> nominations = new HashMap<String, Nomination>();
         HashMap<String, HashMap<String, Nomination>> nominationsByAward = new HashMap<String, HashMap<String, Nomination>>();
-        HashMap<String, Calculations> calcByOrg = new HashMap<String, Calculations>();
-        HashMap<String, HashMap<String, Calculations>> calcByAward = new HashMap<String, HashMap<String, Calculations>>();
+        ArrayList<String> awardOrg = new ArrayList<String>();
         DecimalFormat numFmt = new DecimalFormat("#00.00");
         for (int i = minYear; i <= maxYear; i++) {
-            calcByAward = calculationByYear.get(i);
             nominationsByAward = nomineesByYear.get(i);
             HashMap<String, Nomination> highest = new HashMap<String, Nomination>();
             for (int j = 0; j < awardList.length; j++) {
                 nominations = nominationsByAward.get(awardList[j]);
-                Nomination n = new Nomination("", 0, "");
-                Nomination highestNominee = new Nomination("", 0, "");
+                Nomination n = new Nomination("", 0, "", null);
+                Nomination highestNominee = new Nomination("", 0, "", null);
                 double totalcoef = 0;
                 try {
                     for (String key : nominations.keySet()) {
                         n = nominations.get(key);
                         totalcoef += n.getCoefficient();
                     }
-                } catch (NullPointerException e) {
+                }
+                catch (NullPointerException e) {
                 }
                 try {
                     double perc = 0;
                     for (String key : nominations.keySet()) {
                         n = nominations.get(key);
-                        if (calcByOrg.size() == 1 && n.getCoefficient() < 1) {
+                        awardOrg = n.getAwardOrg();
+                        if (awardOrg.size() == 1 && n.getCoefficient() < 1) {
                             perc = n.getCoefficient() * 100;
                             n.setPercent(numFmt.format(perc));
-                        } else {
+                        }
+                        else {
                             perc = n.getCoefficient() / totalcoef;
                             perc = perc * 100;
                         }
@@ -888,31 +873,29 @@ public class OscarGenieDriver {
      * Prints actor/nomination and all awards it won based off calculations.
      *
      * @param category defines category of award to be calculated
-     * @param year     is the year to calculate
+     * @param year is the year to calculate
      * @return string projected  winner and all previous awards
      */
     public String getDetail(int year, String category) {
         String output = "";
         HashMap<String, Nomination> highest = new HashMap<String, Nomination>();
+        ArrayList<String> awardOrg = new ArrayList<String>();
         highest = calculatedWinners.get(year);
-        HashMap<String, Calculations> calcByOrg = new HashMap<String, Calculations>();
-        HashMap<String, HashMap<String, Calculations>> calcByAward = new HashMap<String, HashMap<String, Calculations>>();
-        calcByAward = calculationByYear.get(year);
         Nomination x = highest.get(category);
-        calcByOrg = calcByAward.get(category);
+        awardOrg = x.getAwardOrg();
         if (x.getCoefficient() < threshold) {
             output = "Oscar Genie cannot accurately predict the winner "
                     + "due to lack of data.\nThe best guess is: " + x.getName()
                     + "as it also won awards from:\n";
-        } else {
+        }
+        else {
             output = x.getName() + " is most "
                     + "likely to win an Oscar\n" + x.getName()
                     + " also won awards this year from:\n\n";
         }
-        for (String key : calcByOrg.keySet()) {
-            if (calcByOrg.get(key).getName().equals(x.getName())) {
-                output += calcByOrg.get(key).getOrganization() + "\n";
-            }
+
+        for (int i = 0; i < awardOrg.size(); i++) {
+            output += awardOrg.get(i) + "\n";
         }
         return output;
     }
@@ -1013,7 +996,7 @@ public class OscarGenieDriver {
     public String printInfo() {
         DecimalFormat numFmt = new DecimalFormat("#00.00");
         String output = "This program was written by Ryan "
-                + "Crumpler\nIt can predict each category with the given accuracies "
+                + "Crumpler\nIt can predict each category with the given accuracies:\n"
                 + awardAccuracy() + "\n"
                 + getTotalPercent()
                 + "It works by scanning sources such "

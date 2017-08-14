@@ -1,21 +1,23 @@
+import java.util.ArrayList;
 /** This program defines the  nomination object.
  *  This is used for actors as well as film objects
  * @author Ryan Crumpler
- * @version 13.8.17
+ * @version 14.8.17
  */
 public class Nomination {
 
    protected String name, percent;
    protected double coefficient;
+   protected ArrayList<String> awardOrg;
    /**
     * @param nameIn is title of film or name of actor/actress
-    * @param coefficientIn is constant used to determine
-    * likelihood of winning calculated through other awards
+    * @param coefficientIn is constant used to determine the likelihood of winning calculated through other awards
     * @param percentIn is percent chance of winning
     */
-   public Nomination(String nameIn, double coefficientIn, String percentIn) {
+   public Nomination(String nameIn, double coefficientIn, String percentIn, ArrayList<String> awardOrgIn) {
       name = nameIn;
       coefficient = coefficientIn;
+      awardOrg = awardOrgIn;
    }
 
    /**
@@ -72,5 +74,19 @@ public class Nomination {
       String output = "\"" + getName() + "\" has a "
               + getPercent() + "% chance of winning an Oscar";
       return output;
+   }
+
+   /**
+    * @param  awardOrgIn is an ArrayList of all award organizations that picked a nomination
+    */
+   public void setAwardOrg(ArrayList<String> awardOrgIn) {
+      awardOrg = awardOrgIn;
+   }
+
+   /**
+    * @return ArrayList of all award organizations that picked a nomination
+    */
+   public ArrayList<String> getAwardOrg() {
+      return awardOrg;
    }
 }
