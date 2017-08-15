@@ -3,20 +3,25 @@ Year,Award,Name,Issuer
 1991,Actor - Leading Role,Jeremy Irons,Boston Film Critics
 1991,Actor - Leading Role,Jeremy Irons,Golden Globes-Drama
 1991,Actor - Leading Role,Jeremy Irons,LA Film Critics
+1991,Actor - Leading Role,Kevin Costner,Dallas Fort Worth Critics
 1991,Actor - Leading Role,Robert De Niro,New York Film Critics
 1991,Actor - Supporting Role,Bruce Davidson,Golden Globes
 1991,Actor - Supporting Role,Bruce Davidson,New York Film Critics
 1991,Actor - Supporting Role,Joe Pesci,Boston Film Critics
+1991,Actor - Supporting Role,Joe Pesci,Dallas Fort Worth Critics
 1991,Actor - Supporting Role,Joe Pesci,LA Film Critics
 1991,Actress - Leading Role,Anjelica Huston,Boston Film Critics
 1991,Actress - Leading Role,Anjelica Huston,LA Film Critics
 1991,Actress - Leading Role,Joanne Woodward,New York Film Critics
 1991,Actress - Leading Role,Julia Roberts,Golden Globes-Musical or Comedy
+1991,Actress - Leading Role,Kathy Bates,Dallas Fort Worth Critics
 1991,Actress - Leading Role,Kathy Bates,Golden Globes-Drama
 1991,Actress - Supporting Role,Jennifer Jason Leigh,Boston Film Critics
 1991,Actress - Supporting Role,Jennifer Jason Leigh,New York Film Critics
 1991,Actress - Supporting Role,Lorraine Bracco,LA Film Critics
+1991,Actress - Supporting Role,Whoopi Goldberg,Dallas Fort Worth Critics
 1991,Actress - Supporting Role,Whoopi Goldberg,Golden Globes
+1991,Best Picture,Dances With Wolves,Dallas Fort Worth Critics
 1991,Best Picture,Dances With Wolves,Golden Globes-Drama
 1991,Best Picture,Dances With Wolves,Producers Guild
 1991,Best Picture,Goodfellas,Boston Film Critics
@@ -24,20 +29,24 @@ Year,Award,Name,Issuer
 1991,Best Picture,Goodfellas,New York Film Critics
 1991,Best Picture,Goodfellas,New York Film Critics
 1991,Best Picture,Green Card,Golden Globes-Musical or Comedy
+1991,Cinematography,Dances With Wolves,Dallas Fort Worth Critics
 1991,Cinematography,Goodfellas,LA Film Critics
 1991,Cinematography,The Sheltering Sky,New York Film Critics
+1991,Director,Dances With Wolves,Dallas Fort Worth Critics
 1991,Director,Dances With Wolves,Directors Guild
 1991,Director,Dances With Wolves,Golden Globes
 1991,Director,Goodfellas,Boston Film Critics
 1991,Director,Goodfellas,LA Film Critics
 1991,Director,Goodfellas,New York Film Critics
 1991,Documentary,Paris is Burning,LA Film Critics
+1991,Foreign Language Film,Cinema Paradiso,Dallas Fort Worth Critics
 1991,Foreign Language Film,Cyrano de Bergerac,Golden Globes
 1991,Foreign Language Film,Life and Nothing But,LA Film Critics
 1991,Foreign Language Film,Mr Hire,Boston Film Critics
 1991,Foreign Language Film,The Nasty Girl,New York Film Critics
 1991,Score,The Shattering Sky,LA Film Critics
 1991,Score,The Sheltering Sky,Golden Globes
+1991,Screenplay - Adapted,Dances With Wolves,Dallas Fort Worth Critics
 1991,Screenplay - Adapted,Dances With Wolves,Golden Globes
 1991,Screenplay - Adapted,Dances With Wolves,Writers Guild
 1991,Screenplay - Adapted,Reversal of Fortune,Boston Film Critics
@@ -45,6 +54,7 @@ Year,Award,Name,Issuer
 1991,Screenplay - Original,Avalon,Writers Guild
 1991,Screenplay - Original,Mr and Mrs Bvridge,New York Film Critics
 1992,AA Filler Data,AA Filler Data,AA Filler Data
+1992,Actor - Leading Role,Anthony Hopkins,Dallas Fort Worth Critics
 1992,Actor - Leading Role,Anthony Hopkins,New York Film Critics
 1992,Actor - Leading Role,Nick Nolte,Boston Film Critics
 1992,Actor - Leading Role,Nick Nolte,Golden Globes-Drama
@@ -54,8 +64,10 @@ Year,Award,Name,Issuer
 1992,Actor - Supporting Role,Jack Palance,Golden Globes
 1992,Actor - Supporting Role,Michael Lerner,LA Film Critics
 1992,Actor - Supporting Role,Samuel L Jackson,New York Film Critics
+1992,Actor - Supporting Role,Tommy Lee Jones,Dallas Fort Worth Critics
 1992,Actress - Leading Role,Bette Midler,Golden Globes-Musical or Comedy
 1992,Actress - Leading Role,Geena Davis,Boston Film Critics
+1992,Actress - Leading Role,Jodie Foster,Dallas Fort Worth Critics
 1992,Actress - Leading Role,Jodie Foster,Golden Globes-Drama
 1992,Actress - Leading Role,Jodie Foster,New York Film Critics
 1992,Actress - Leading Role,Merceder Ruehl,LA Film Critics
@@ -63,17 +75,21 @@ Year,Award,Name,Issuer
 1992,Actress - Supporting Role,Judy Davis,New York Film Critics
 1992,Actress - Supporting Role,Merceder Ruehl,Boston Film Critics
 1992,Actress - Supporting Role,Merceder Ruehl,Golden Globes
+1992,Actress - Supporting Role,Mercedes Ruehl,Dallas Fort Worth Critics
 1992,Best Picture,Beauty and the Beast,Golden Globes-Musical or Comedy
 1992,Best Picture,Bugsy,Golden Globes-Drama
 1992,Best Picture,Bugsy,LA Film Critics
+1992,Best Picture,JFK,Dallas Fort Worth Critics
 1992,Best Picture,The Silence of the Lambs,Boston Film Critics
 1992,Best Picture,The Silence of the Lambs,New York Film Critics
 1992,Best Picture,The Silence of the Lambs,New York Film Critics
 1992,Best Picture,The Silence of the Lambs,Producers Guild
 1992,Cinematography,Barton Fink,New York Film Critics
 1992,Cinematography,Homicide,LA Film Critics
+1992,Cinematography,JFK,Dallas Fort Worth Critics
 1992,Cinematography,The Silence of the Lambs,Boston Film Critics
 1992,Director,Bugsy,LA Film Critics
+1992,Director,JFK,Dallas Fort Worth Critics
 1992,Director,JFK,Golden Globes
 1992,Director,The Silence of the Lambs,Boston Film Critics
 1992,Director,The Silence of the Lambs,Directors Guild
@@ -85,32 +101,39 @@ Year,Award,Name,Issuer
 1992,Foreign Language Film,Europa Europa,New York Film Critics
 1992,Foreign Language Film,Eurpoa Europa,Boston Film Critics
 1992,Foreign Language Film,The Beautiful Troublemaker,LA Film Critics
+1992,Foreign Language Film,The Double Life of Veronique,Dallas Fort Worth Critics
 1992,Score,Beauty and the Beast,Golden Globes
 1992,Score,Eurpoa Europa,LA Film Critics
 1992,Screenplay - Adapted,Bugsy,LA Film Critics
 1992,Screenplay - Adapted,Naked Lunch,New York Film Critics
+1992,Screenplay - Adapted,The Silence of the Lambs,Dallas Fort Worth Critics
 1992,Screenplay - Adapted,The Silence of the Lambs,Writers Guild
 1992,Screenplay - Original,Naked Lunch,Boston Film Critics
 1992,Screenplay - Original,Thelma and Louisse,Golden Globes
 1992,Screenplay - Original,Thelma and Louisse,Writers Guild
+1992,Screenplay - Original,Thelma Louise,Dallas Fort Worth Critics
 1992,Z Filler Data,Z Filler Data,Z Filler Data
 1993,AA Filler Data,AA Filler Data,AA Filler Data
 1993,Actor - Leading Role,Al Pachino,Golden Globes-Drama
 1993,Actor - Leading Role,Clint Eastwood,LA Film Critics
 1993,Actor - Leading Role,Denzel Washington,Boston Film Critics
+1993,Actor - Leading Role,Denzel Washington,Dallas Fort Worth Critics
 1993,Actor - Leading Role,Denzel Washington,New York Film Critics
 1993,Actor - Leading Role,Tim Robbins,Golden Globes-Musical or Comedy
 1993,Actor - Supporting Role,Gene Hackman,Boston Film Critics
+1993,Actor - Supporting Role,Gene Hackman,Dallas Fort Worth Critics
 1993,Actor - Supporting Role,Gene Hackman,Golden Globes
 1993,Actor - Supporting Role,Gene Hackman,LA Film Critics
 1993,Actor - Supporting Role,Gene Hackman,New York Film Critics
 1993,Actress - Leading Role,Emma Thompson,Boston Film Critics
+1993,Actress - Leading Role,Emma Thompson,Dallas Fort Worth Critics
 1993,Actress - Leading Role,Emma Thompson,Golden Globes-Drama
 1993,Actress - Leading Role,Emma Thompson,LA Film Critics
 1993,Actress - Leading Role,Emma Thompson,New York Film Critics
 1993,Actress - Leading Role,Miranda Richardson,Golden Globes-Musical or Comedy
 1993,Actress - Supporting Role,Joan Plowright,Golden Globes
 1993,Actress - Supporting Role,Judy Davis,Boston Film Critics
+1993,Actress - Supporting Role,Judy Davis,Dallas Fort Worth Critics
 1993,Actress - Supporting Role,Judy Davis,LA Film Critics
 1993,Actress - Supporting Role,Miranda Richardson,New York Film Critics
 1993,Best Picture,Scent of a Woman,Golden Globes-Drama
@@ -119,18 +142,22 @@ Year,Award,Name,Issuer
 1993,Best Picture,The Player,New York Film Critics
 1993,Best Picture,The Player,New York Film Critics
 1993,Best Picture,Unforgiven,Boston Film Critics
+1993,Best Picture,Unforgiven,Dallas Fort Worth Critics
 1993,Best Picture,Unforgiven,LA Film Critics
 1993,Cinematography,Raise the Red Lantern,LA Film Critics
 1993,Cinematography,The Player,New York Film Critics
 1993,Cinematography,Unforgiven,Boston Film Critics
+1993,Cinematography,Unforgiven,Dallas Fort Worth Critics
 1993,Director,The Player,Boston Film Critics
 1993,Director,The Player,New York Film Critics
+1993,Director,Unforgiven,Dallas Fort Worth Critics
 1993,Director,Unforgiven,Directors Guild
 1993,Director,Unforgiven,Golden Globes
 1993,Director,Unforgiven,LA Film Critics
 1993,Documentary,Black Harvest,LA Film Critics
 1993,Documentary,Brother's Lee[er,New York Film Critics
 1993,Documentary,Bruce J Sinofsky Brother's Keeper,Directors Guild
+1993,Foreign Language Film,Indochine,Dallas Fort Worth Critics
 1993,Foreign Language Film,Indochine,Golden Globes
 1993,Foreign Language Film,Raise the Red Lantern,New York Film Critics
 1993,Foreign Language Film,The Crying Game,LA Film Critics
@@ -141,38 +168,46 @@ Year,Award,Name,Issuer
 1993,Screenplay - Original,The Crying Game,Boston Film Critics
 1993,Screenplay - Original,The Crying Game,New York Film Critics
 1993,Screenplay - Original,The Crying Game,Writers Guild
+1993,Screenplay - Original,Unforgiven,Dallas Fort Worth Critics
 1993,Screenplay - Original,Unforgiven,LA Film Critics
 1993,Z Filler Data,Z Filler Data,Z Filler Data
 1994,AA Filler Data,AA Filler Data,AA Filler Data
+1994,Actor - Leading Role,Anthony Hopkins,Dallas Fort Worth Critics
 1994,Actor - Leading Role,Anthony Hopkins,LA Film Critics
 1994,Actor - Leading Role,Daniel Day Lewis,Boston Film Critics
 1994,Actor - Leading Role,David Thewis,New York Film Critics
 1994,Actor - Leading Role,Robin Williams,Golden Globes-Musical or Comedy
 1994,Actor - Leading Role,Tom Hanks,Golden Globes-Drama
 1994,Actor - Supporting Role,Ralph Fiennes,Boston Film Critics
+1994,Actor - Supporting Role,Ralph Fiennes,Dallas Fort Worth Critics
 1994,Actor - Supporting Role,Ralph Fiennes,New York Film Critics
 1994,Actor - Supporting Role,Tommy Lee Jones,Golden Globes
 1994,Actor - Supporting Role,Tommy Lee Jones,LA Film Critics
 1994,Actress - Leading Role,Angela Bassett,Golden Globes-Musical or Comedy
 1994,Actress - Leading Role,Holly Hunter,Boston Film Critics
+1994,Actress - Leading Role,Holly Hunter,Dallas Fort Worth Critics
 1994,Actress - Leading Role,Holly Hunter,Golden Globes-Drama
 1994,Actress - Leading Role,Holly Hunter,LA Film Critics
 1994,Actress - Leading Role,Holly Hunter,New York Film Critics
 1994,Actress - Supporting Role,Gong Li,New York Film Critics
 1994,Actress - Supporting Role,Rosie Perez,Boston Film Critics
+1994,Actress - Supporting Role,Rosie Perez,Dallas Fort Worth Critics
 1994,Actress - Supporting Role,Rosie Perez,LA Film Critics
 1994,Actress - Supporting Role,Winona Ryder,Golden Globes
 1994,Best Picture,Mrs Boubtfire,Golden Globes-Musical or Comedy
 1994,Best Picture,Schindler's List,Boston Film Critics
+1994,Best Picture,Schindler's List,Dallas Fort Worth Critics
 1994,Best Picture,Schindler's List,Golden Globes-Drama
 1994,Best Picture,Schindler's List,LA Film Critics
 1994,Best Picture,Schindler's List,New York Film Critics
 1994,Best Picture,Schindler's List,New York Film Critics
 1994,Best Picture,Schindler's List,Producers Guild
 1994,Cinematography,Schindler's List,Boston Film Critics
+1994,Cinematography,Schindler's List,Dallas Fort Worth Critics
 1994,Cinematography,Schindler's List,New York Film Critics
 1994,Cinematography,The Piano,LA Film Critics
 1994,Director,Schindler's List,Boston Film Critics
+1994,Director,Schindler's List,Dallas Fort Worth Critics
 1994,Director,Schindler's List,Directors Guild
 1994,Director,Schindler's List,Golden Globes
 1994,Director,The Piano,LA Film Critics
@@ -184,9 +219,11 @@ Year,Award,Name,Issuer
 1994,Foreign Language Film,Farewell My Concubine,Golden Globes
 1994,Foreign Language Film,Farewell My Concubine,LA Film Critics
 1994,Foreign Language Film,Farewell My Concubine,New York Film Critics
+1994,Foreign Language Film,Farewell My Concuine,Dallas Fort Worth Critics
 1994,Production Design,Schindler's List,LA Film Critics
 1994,Score,Heaven and Earth,Golden Globes
 1994,Score,Oliver Oliver,LA Film Critics
+1994,Screenplay - Adapted,Schindler's List,Dallas Fort Worth Critics
 1994,Screenplay - Adapted,Schindler's List,Golden Globes
 1994,Screenplay - Adapted,Schindler's List,Writers Guild
 1994,Screenplay - Adapted,Short Cuts,Boston Film Critics
@@ -199,9 +236,11 @@ Year,Award,Name,Issuer
 1995,Actor - Leading Role,Hugh Grant,Golden Globes-Musical or Comedy
 1995,Actor - Leading Role,John Travolta,LA Film Critics
 1995,Actor - Leading Role,Paul Newman,New York Film Critics
+1995,Actor - Leading Role,Tom Hanks,Dallas Fort Worth Critics
 1995,Actor - Leading Role,Tom Hanks,Golden Globes-Drama
 1995,Actor - Leading Role,Tom Hanks,Screen Actors Guild
 1995,Actor - Supporting Role,Martin Landau,Boston Film Critics
+1995,Actor - Supporting Role,Martin Landau,Dallas Fort Worth Critics
 1995,Actor - Supporting Role,Martin Landau,Golden Globes
 1995,Actor - Supporting Role,Martin Landau,LA Film Critics
 1995,Actor - Supporting Role,Martin Landau,New York Film Critics
@@ -211,7 +250,9 @@ Year,Award,Name,Issuer
 1995,Actress - Leading Role,Jessica Lange,LA Film Critics
 1995,Actress - Leading Role,Jodie Foster,Screen Actors Guild
 1995,Actress - Leading Role,Julianne Moore,Boston Film Critics
+1995,Actress - Leading Role,Linda Fiorntino,Dallas Fort Worth Critics
 1995,Actress - Leading Role,Linda Florentino,New York Film Critics
+1995,Actress - Supporting Role,Dianne West,Dallas Fort Worth Critics
 1995,Actress - Supporting Role,Dianne West,Golden Globes
 1995,Actress - Supporting Role,Dianne West,LA Film Critics
 1995,Actress - Supporting Role,Dianne West,New York Film Critics
@@ -219,6 +260,7 @@ Year,Award,Name,Issuer
 1995,Best Picture,Forrest Gump,Golden Globes-Drama
 1995,Best Picture,Forrest Gump,Producers Guild
 1995,Best Picture,Pulp Fiction,Boston Film Critics
+1995,Best Picture,Pulp Fiction,Dallas Fort Worth Critics
 1995,Best Picture,Pulp Fiction,LA Film Critics
 1995,Best Picture,Quiz Show,New York Film Critics
 1995,Best Picture,Quiz Show,New York Film Critics
@@ -226,15 +268,18 @@ Year,Award,Name,Issuer
 1995,Cinematography,Ed Wood,Boston Film Critics
 1995,Cinematography,Ed Wood,LA Film Critics
 1995,Cinematography,Ed Wood,New York Film Critics
+1995,Cinematography,The Shawshank Redemption,Dallas Fort Worth Critics
 1995,Director,Forrest Gump,Directors Guild
 1995,Director,Forrest Gump,Golden Globes
 1995,Director,Pulp Fiction,Boston Film Critics
+1995,Director,Pulp Fiction,Dallas Fort Worth Critics
 1995,Director,Pulp Fiction,LA Film Critics
 1995,Director,Pulp Fiction,New York Film Critics
 1995,Documentary,Hoop Dreams,Directors Guild
 1995,Documentary,Hoop Dreams,LA Film Critics
 1995,Documentary,Hoop Dreams,New York Film Critics
 1995,Foreign Language Film,Farinelli,Golden Globes
+1995,Foreign Language Film,Three Colors Red,Dallas Fort Worth Critics
 1995,Foreign Language Film,Three Colours Red,Boston Film Critics
 1995,Foreign Language Film,Three Colours Red,LA Film Critics
 1995,Foreign Language Film,Three Colours Red,New York Film Critics
@@ -245,6 +290,7 @@ Year,Award,Name,Issuer
 1995,Screenplay - Adapted,Pulp Fiction,New York Film Critics
 1995,Screenplay - Original,Four Weddings and a Funeral,Writers Guild
 1995,Screenplay - Original,Pulp Fiction,Boston Film Critics
+1995,Screenplay - Original,Pulp Fiction,Dallas Fort Worth Critics
 1995,Screenplay - Original,Pulp Fiction,Golden Globes
 1995,Screenplay - Original,Pulp Fiction,LA Film Critics
 1995,Z Filler Data,Z Filler Data,Z Filler Data
@@ -252,6 +298,7 @@ Year,Award,Name,Issuer
 1996,Actor - Leading Role,John Travolta,Golden Globes-Musical or Comedy
 1996,Actor - Leading Role,Kevin Bacon,Critics Choice
 1996,Actor - Leading Role,Nicolas Cage,Boston Film Critics
+1996,Actor - Leading Role,Nicolas Cage,Dallas Fort Worth Critics
 1996,Actor - Leading Role,Nicolas Cage,Golden Globes-Drama
 1996,Actor - Leading Role,Nicolas Cage,LA Film Critics
 1996,Actor - Leading Role,Nicolas Cage,New York Film Critics
@@ -263,6 +310,8 @@ Year,Award,Name,Issuer
 1996,Actor - Supporting Role,Kevin Spacey,Boston Film Critics
 1996,Actor - Supporting Role,Kevin Spacey,Critics Choice
 1996,Actor - Supporting Role,Kevin Spacey,New York Film Critics
+1996,Actor - Supporting Role,Keving Spacey,Dallas Fort Worth Critics
+1996,Actress - Leading Role,Elisabeth Shue,Dallas Fort Worth Critics
 1996,Actress - Leading Role,Elisabeth Shue,LA Film Critics
 1996,Actress - Leading Role,Jennifer Jason Leigh,New York Film Critics
 1996,Actress - Leading Role,Nicole Kidman,Boston Film Critics
@@ -273,6 +322,7 @@ Year,Award,Name,Issuer
 1996,Actress - Supporting Role,Joan Allen,Boston Film Critics
 1996,Actress - Supporting Role,Joan Allen,LA Film Critics
 1996,Actress - Supporting Role,Mira Sorvino,Critics Choice
+1996,Actress - Supporting Role,Mira Sorvino,Dallas Fort Worth Critics
 1996,Actress - Supporting Role,Mira Sorvino,Golden Globes
 1996,Actress - Supporting Role,Mira Sorvino,New York Film Critics
 1996,Best Picture,Apollo 13,Producers Guild
@@ -280,15 +330,18 @@ Year,Award,Name,Issuer
 1996,Best Picture,Leaving Las Vegas,LA Film Critics
 1996,Best Picture,Leaving Las Vegas,New York Film Critics
 1996,Best Picture,Leaving Las Vegas,New York Film Critics
+1996,Best Picture,Leving Las Vegas,Dallas Fort Worth Critics
 1996,Best Picture,Sense and Sensibility,Boston Film Critics
 1996,Best Picture,Sense and Sensibility,Critics Choice
 1996,Best Picture,Sense and Sensibility,Golden Globes-Drama
+1996,Cinematography,Braveheart,Dallas Fort Worth Critics
 1996,Cinematography,Breaking The Waves,New York Film Critics
 1996,Cinematography,Safe,Boston Film Critics
 1996,Cinematography,Shanghai Trian,LA Film Critics
 1996,Cinematography,Shanghai Trian,New York Film Critics
 1996,Director,Apollo 13,Directors Guild
 1996,Director,Braveheart,Golden Globes
+1996,Director,Leaving Las Vegas,Dallas Fort Worth Critics
 1996,Director,Leaving Las Vegas,LA Film Critics
 1996,Director,Sense and Sensibility,Boston Film Critics
 1996,Director,Sense and Sensibility,New York Film Critics
@@ -296,6 +349,7 @@ Year,Award,Name,Issuer
 1996,Documentary,Crumb,Directors Guild
 1996,Documentary,Crumb,LA Film Critics
 1996,Documentary,Crumb,New York Film Critics
+1996,Foreign Language Film,Les Miserables,Dallas Fort Worth Critics
 1996,Foreign Language Film,Les Miserables,Golden Globes
 1996,Foreign Language Film,Mina Tannenbaum,Boston Film Critics
 1996,Foreign Language Film,The Postman,Critics Choice
@@ -311,16 +365,19 @@ Year,Award,Name,Issuer
 1996,Screenplay - Adapted,Sense and Sensibility,New York Film Critics
 1996,Screenplay - Adapted,Sense and Sensibility,Writers Guild
 1996,Screenplay - Original,Braveheart,Writers Guild
+1996,Screenplay - Original,The Usual Suspects,Dallas Fort Worth Critics
 1996,Z Filler Data,Z Filler Data,Z Filler Data
 1997,AA Filler Data,AA Filler Data,AA Filler Data
 1997,Actor - Leading Role,Geoffrey Rush,Boston Film Critics
 1997,Actor - Leading Role,Geoffrey Rush,Critics Choice
+1997,Actor - Leading Role,Geoffrey Rush,Dallas Fort Worth Critics
 1997,Actor - Leading Role,Geoffrey Rush,Golden Globes-Drama
 1997,Actor - Leading Role,Geoffrey Rush,LA Film Critics
 1997,Actor - Leading Role,Geoffrey Rush,New York Film Critics
 1997,Actor - Leading Role,Geoffrey Rush,Screen Actors Guild
 1997,Actor - Leading Role,Tom Cruise,Golden Globes-Musical or Comedy
 1997,Actor - Supporting Role,Cuba Gooding Jr,Critics Choice
+1997,Actor - Supporting Role,Cuba Gooding Jr,Dallas Fort Worth Critics
 1997,Actor - Supporting Role,Cuba Gooding Jr,Screen Actors Guild
 1997,Actor - Supporting Role,Edward Norton,Boston Film Critics
 1997,Actor - Supporting Role,Edward Norton,Golden Globes
@@ -332,14 +389,17 @@ Year,Award,Name,Issuer
 1997,Actress - Leading Role,Emily Watson,New York Film Critics
 1997,Actress - Leading Role,Frances McDormand,Critics Choice
 1997,Actress - Leading Role,Frances McDormand,Screen Actors Guild
+1997,Actress - Leading Role,Frances McDormnd,Dallas Fort Worth Critics
 1997,Actress - Leading Role,Madonna,Golden Globes-Musical or Comedy
 1997,Actress - Supporting Role,Barbara Hershey,LA Film Critics
 1997,Actress - Supporting Role,Courtney Love,Boston Film Critics
 1997,Actress - Supporting Role,Courtney Love,New York Film Critics
 1997,Actress - Supporting Role,Joan Allen,Critics Choice
+1997,Actress - Supporting Role,Juliette Binoche,Dallas Fort Worth Critics
 1997,Actress - Supporting Role,Lauren Baccall,Golden Globes
 1997,Best Picture,Evita,Golden Globes-Musical or Comedy
 1997,Best Picture,Fargo,Critics Choice
+1997,Best Picture,Fargo,Dallas Fort Worth Critics
 1997,Best Picture,Fargo,New York Film Critics
 1997,Best Picture,Fargo,New York Film Critics
 1997,Best Picture,Secrets and Lies,LA Film Critics
@@ -349,7 +409,9 @@ Year,Award,Name,Issuer
 1997,Cinematography,Dead Man,New York Film Critics
 1997,Cinematography,Michael Collins,LA Film Critics
 1997,Cinematography,The English Patient,Boston Film Critics
+1997,Cinematography,The English Patient,Dallas Fort Worth Critics
 1997,Director,Breaking The Waves,New York Film Critics
+1997,Director,Fargo,Dallas Fort Worth Critics
 1997,Director,Secrets and Lies,Boston Film Critics
 1997,Director,Secrets and Lies,LA Film Critics
 1997,Director,The English Patient,Critics Choice
@@ -362,6 +424,7 @@ Year,Award,Name,Issuer
 1997,Foreign Language Film,A Judgement in Stone,LA Film Critics
 1997,Foreign Language Film,Kolya,Golden Globes
 1997,Foreign Language Film,My Favorite Season,Boston Film Critics
+1997,Foreign Language Film,Prisioner in the Mountains,Dallas Fort Worth Critics
 1997,Foreign Language Film,Ridicule,Critics Choice
 1997,Foreign Language Film,The White Ballroom,New York Film Critics
 1997,Production Design,The Protrait of a Lady,LA Film Critics
@@ -370,6 +433,7 @@ Year,Award,Name,Issuer
 1997,Screenplay - Adapted,Sling Blade,Writers Guild
 1997,Screenplay - Adapted,The English Patient,Critics Choice
 1997,Screenplay - Original,Big Night,Boston Film Critics
+1997,Screenplay - Original,Fargo,Dallas Fort Worth Critics
 1997,Screenplay - Original,Fargo,LA Film Critics
 1997,Screenplay - Original,Fargo,Writers Guild
 1997,Screenplay - Original,Mother,New York Film Critics
@@ -380,11 +444,13 @@ Year,Award,Name,Issuer
 1998,Actor - Leading Role,Jack Nicholson,Critics Choice
 1998,Actor - Leading Role,Jack Nicholson,Golden Globes-Musical or Comedy
 1998,Actor - Leading Role,Jack Nicholson,Screen Actors Guild
+1998,Actor - Leading Role,Peter Fonda,Dallas Fort Worth Critics
 1998,Actor - Leading Role,Peter Fonda,Golden Globes-Drama
 1998,Actor - Leading Role,Peter Fonda,New York Film Critics
 1998,Actor - Leading Role,Robert Duvall,LA Film Critics
 1998,Actor - Leading Role,Robert Duvall,Las Vegas Critics
 1998,Actor - Supporting Role,Anthony Hopkins,Critics Choice
+1998,Actor - Supporting Role,Burt Reynolds,Dallas Fort Worth Critics
 1998,Actor - Supporting Role,Burt Reynolds,Golden Globes
 1998,Actor - Supporting Role,Burt Reynolds,LA Film Critics
 1998,Actor - Supporting Role,Burt Reynolds,Las Vegas Critics
@@ -395,6 +461,7 @@ Year,Award,Name,Issuer
 1998,Actress - Leading Role,Helen Hunt,Screen Actors Guild
 1998,Actress - Leading Role,Helena Bonham Carter,Boston Film Critics
 1998,Actress - Leading Role,Helena Bonham Carter,Critics Choice
+1998,Actress - Leading Role,Helena Bonham Carter,Dallas Fort Worth Critics
 1998,Actress - Leading Role,Helena Bonham Carter,LA Film Critics
 1998,Actress - Leading Role,Helena Bonham Carter,Las Vegas Critics
 1998,Actress - Leading Role,Judi Dench,Golden Globes-Drama
@@ -404,10 +471,12 @@ Year,Award,Name,Issuer
 1998,Actress - Supporting Role,Joan Cusack,New York Film Critics
 1998,Actress - Supporting Role,Julianne Moore,LA Film Critics
 1998,Actress - Supporting Role,Kim Basinger,Golden Globes
+1998,Actress - Supporting Role,Kim Bassinger,Dallas Fort Worth Critics
 1998,Actress - Supporting Role,Sarah Polley,Boston Film Critics
 1998,Best Picture,As Good as it Gets,Golden Globes-Musical or Comedy
 1998,Best Picture,LA Confidential,Boston Film Critics
 1998,Best Picture,LA Confidential,Critics Choice
+1998,Best Picture,LA Confidential,Dallas Fort Worth Critics
 1998,Best Picture,LA Confidential,LA Film Critics
 1998,Best Picture,LA Confidential,New York Film Critics
 1998,Best Picture,LA Confidential,New York Film Critics
@@ -417,11 +486,13 @@ Year,Award,Name,Issuer
 1998,Cinematography,Kundun,Boston Film Critics
 1998,Cinematography,Kundun,New York Film Critics
 1998,Cinematography,LA Confidential,LA Film Critics
+1998,Cinematography,Titanic,Dallas Fort Worth Critics
 1998,Cinematography,Titanic,Las Vegas Critics
 1998,Director,LA Confidential,Boston Film Critics
 1998,Director,LA Confidential,LA Film Critics
 1998,Director,LA Confidential,New York Film Critics
 1998,Director,Titanic,Critics Choice
+1998,Director,Titanic,Dallas Fort Worth Critics
 1998,Director,Titanic,Directors Guild
 1998,Director,Titanic,Golden Globes
 1998,Director,Titanic,Las Vegas Critics
@@ -429,6 +500,7 @@ Year,Award,Name,Issuer
 1998,Documentary,Fast Cheap and Out of Control,New York Film Critics
 1998,Documentary,Riding the Rails,Directors Guild
 1998,Documentary,Riding the Rails,LA Film Critics
+1998,Foreign Language Film,Character,Dallas Fort Worth Critics
 1998,Foreign Language Film,My Life in Pink,Golden Globes
 1998,Foreign Language Film,Ponette,New York Film Critics
 1998,Foreign Language Film,Shall We Dance,Critics Choice
@@ -441,6 +513,7 @@ Year,Award,Name,Issuer
 1998,Score,Titanic,Golden Globes
 1998,Screenplay - Adapted,LA Confidential,Boston Film Critics
 1998,Screenplay - Adapted,LA Confidential,Critics Choice
+1998,Screenplay - Adapted,LA Confidential,Dallas Fort Worth Critics
 1998,Screenplay - Adapted,LA Confidential,LA Film Critics
 1998,Screenplay - Adapted,LA Confidential,Las Vegas Critics
 1998,Screenplay - Adapted,LA Confidential,New York Film Critics
@@ -454,6 +527,7 @@ Year,Award,Name,Issuer
 1999,Actor - Leading Role,Brendan Gleeson,Boston Film Critics
 1999,Actor - Leading Role,Ian McKellen,Critics Choice
 1999,Actor - Leading Role,Ian McKellen,LA Film Critics
+1999,Actor - Leading Role,Jim Carrey,Dallas Fort Worth Critics
 1999,Actor - Leading Role,Jim Carrey,Golden Globes-Drama
 1999,Actor - Leading Role,Michael Caine,Golden Globes-Musical or Comedy
 1999,Actor - Leading Role,Nick Nolte,New York Film Critics
@@ -463,12 +537,14 @@ Year,Award,Name,Issuer
 1999,Actor - Supporting Role,Bill Murray,New York Film Critics
 1999,Actor - Supporting Role,Billy Bob Thorton,Boston Film Critics
 1999,Actor - Supporting Role,Billy Bob Thorton,Critics Choice
+1999,Actor - Supporting Role,Billy Bob Thorton,Dallas Fort Worth Critics
 1999,Actor - Supporting Role,Ed Harris,Golden Globes
 1999,Actor - Supporting Role,Jason Patric,Las Vegas Critics
 1999,Actor - Supporting Role,Robert Duball,Screen Actors Guild
 1999,Actress - Leading Role,Ally Sheedy,LA Film Critics
 1999,Actress - Leading Role,Cameron Diaz,New York Film Critics
 1999,Actress - Leading Role,Cate Blanchett,Critics Choice
+1999,Actress - Leading Role,Cate Blanchett,Dallas Fort Worth Critics
 1999,Actress - Leading Role,Cate Blanchett,Golden Globes-Drama
 1999,Actress - Leading Role,Gwyneth Paltrow,Golden Globes-Musical or Comedy
 1999,Actress - Leading Role,Gwyneth Paltrow,Las Vegas Critics
@@ -476,12 +552,14 @@ Year,Award,Name,Issuer
 1999,Actress - Leading Role,Samantha Morton,Boston Film Critics
 1999,Actress - Supporting Role,Joan Allen,Boston Film Critics
 1999,Actress - Supporting Role,Joan Allen,Critics Choice
+1999,Actress - Supporting Role,Joan Allen,Dallas Fort Worth Critics
 1999,Actress - Supporting Role,Joan Allen,LA Film Critics
 1999,Actress - Supporting Role,Kathy Bates,Las Vegas Critics
 1999,Actress - Supporting Role,Lisa Kudrow,New York Film Critics
 1999,Actress - Supporting Role,Lynn Redgrave,Golden Globes
 1999,Best Picture,Out of Sight,Boston Film Critics
 1999,Best Picture,Saving Private Ryan,Critics Choice
+1999,Best Picture,Saving Private Ryan,Dallas Fort Worth Critics
 1999,Best Picture,Saving Private Ryan,Golden Globes-Drama
 1999,Best Picture,Saving Private Ryan,LA Film Critics
 1999,Best Picture,Saving Private Ryan,New York Film Critics
@@ -489,11 +567,13 @@ Year,Award,Name,Issuer
 1999,Best Picture,Saving Private Ryan,Producers Guild
 1999,Best Picture,Shakespeare in Love,Golden Globes-Musical or Comedy
 1999,Cinematography,Saving Private Ryan,Boston Film Critics
+1999,Cinematography,Saving Private Ryan,Dallas Fort Worth Critics
 1999,Cinematography,Saving Private Ryan,LA Film Critics
 1999,Cinematography,Saving Private Ryan,Las Vegas Critics
 1999,Cinematography,The Thin Red Line,New York Film Critics
 1999,Director,Erin Brockovich,LA Film Critics
 1999,Director,Saving Private Ryan,Critics Choice
+1999,Director,Saving Private Ryan,Dallas Fort Worth Critics
 1999,Director,Saving Private Ryan,Directors Guild
 1999,Director,Saving Private Ryan,Golden Globes
 1999,Director,Saving Private Ryan,LA Film Critics
@@ -507,6 +587,7 @@ Year,Award,Name,Issuer
 1999,Foreign Language Film,A Taste of Cherry,Boston Film Critics
 1999,Foreign Language Film,Central Station,Golden Globes
 1999,Foreign Language Film,Life Is Beautiful,Critics Choice
+1999,Foreign Language Film,Life is Beautiful,Dallas Fort Worth Critics
 1999,Foreign Language Film,Life Is Beautiful,Las Vegas Critics
 1999,Foreign Language Film,The Celebration,LA Film Critics
 1999,Foreign Language Film,The Celebration,New York Film Critics
@@ -523,6 +604,7 @@ Year,Award,Name,Issuer
 1999,Screenplay - Original,Shakespeare in Love,Las Vegas Critics
 1999,Screenplay - Original,Shakespeare in Love,New York Film Critics
 1999,Screenplay - Original,Shakespeare in Love,Writers Guild
+1999,Screenplay - Original,The Truman Show,Dallas Fort Worth Critics
 1999,Song,Freak The Mighty,Las Vegas Critics
 1999,Z Filler Data,Z Filler Data,Z Filler Data
 2000,AA Filler Data,AA Filler Data,AA Filler Data
@@ -531,11 +613,13 @@ Year,Award,Name,Issuer
 2000,Actor - Leading Role,Jim Carrey,Golden Globes-Musical or Comedy
 2000,Actor - Leading Role,Kevin Spacey,Las Vegas Critics
 2000,Actor - Leading Role,Kevin Spacey,Screen Actors Guild
+2000,Actor - Leading Role,Keving Spacey,Dallas Fort Worth Critics
 2000,Actor - Leading Role,Richard Famsworth,New York Film Critics
 2000,Actor - Leading Role,Russell Crowe,Critics Choice
 2000,Actor - Leading Role,Russell Crowe,LA Film Critics
 2000,Actor - Supporting Role,Christopher Plummer,Boston Film Critics
 2000,Actor - Supporting Role,Christopher Plummer,LA Film Critics
+2000,Actor - Supporting Role,Haley Joel Osment,Dallas Fort Worth Critics
 2000,Actor - Supporting Role,Haley Joel Osment,Las Vegas Critics
 2000,Actor - Supporting Role,John Malkovich,New York Film Critics
 2000,Actor - Supporting Role,Michael Caine,Screen Actors Guild
@@ -544,6 +628,7 @@ Year,Award,Name,Issuer
 2000,Actress - Leading Role,Annette Bening,Screen Actors Guild
 2000,Actress - Leading Role,Ellen Burstyn,Boston Film Critics
 2000,Actress - Leading Role,Hilary Swank,Critics Choice
+2000,Actress - Leading Role,Hilary Swank,Dallas Fort Worth Critics
 2000,Actress - Leading Role,Hilary Swank,Golden Globes-Drama
 2000,Actress - Leading Role,Hilary Swank,LA Film Critics
 2000,Actress - Leading Role,Hilary Swank,Las Vegas Critics
@@ -554,16 +639,19 @@ Year,Award,Name,Issuer
 2000,Actress - Supporting Role,Catherine Keener,New York Film Critics
 2000,Actress - Supporting Role,Chloe Sevigny,Boston Film Critics
 2000,Actress - Supporting Role,Chloe Sevigny,LA Film Critics
+2000,Actress - Supporting Role,Julianne Moore,Dallas Fort Worth Critics
 2000,Best Picture,American Beauty,Critics Choice
 2000,Best Picture,American Beauty,Golden Globes-Drama
 2000,Best Picture,American Beauty,Las Vegas Critics
 2000,Best Picture,American Beauty,Producers Guild
+2000,Best Picture,American Beauty ,Dallas Fort Worth Critics
 2000,Best Picture,The Insider,LA Film Critics
 2000,Best Picture,Three Kings,Boston Film Critics
 2000,Best Picture,Topsy Turvy,New York Film Critics
 2000,Best Picture,Topsy Turvy,New York Film Critics
 2000,Best Picture,Toy Story 2,Golden Globes-Musical or Comedy
 2000,Cinematography,Sleepy Hollow,Boston Film Critics
+2000,Cinematography,Snow Falling on Cedars,Dallas Fort Worth Critics
 2000,Cinematography,Snow Falling on the Cedars,Las Vegas Critics
 2000,Cinematography,The Insider,LA Film Critics
 2000,Cinematography,The Straight Story,New York Film Critics
@@ -572,6 +660,7 @@ Year,Award,Name,Issuer
 2000,Director,American Beauty,Directors Guild
 2000,Director,American Beauty,Golden Globes
 2000,Director,American Beauty,LA Film Critics
+2000,Director,American Beauty ,Dallas Fort Worth Critics
 2000,Director,Boys Don't Cry,Las Vegas Critics
 2000,Director,Erin Brockovich,New York Film Critics
 2000,Director,Three Kings,Boston Film Critics
@@ -588,6 +677,7 @@ Year,Award,Name,Issuer
 2000,Foreign Language Film,All About My Mother,LA Film Critics
 2000,Foreign Language Film,All About My Mother,New York Film Critics
 2000,Foreign Language Film,Autumn Tale,Las Vegas Critics
+2000,Foreign Language Film,Run Lola Run,Dallas Fort Worth Critics
 2000,Production Design,Sleepy Hollow,LA Film Critics
 2000,Score,Angela's Ashes,Las Vegas Critics
 2000,Score,Saving Private Ryan,Critics Choice
@@ -600,6 +690,7 @@ Year,Award,Name,Issuer
 2000,Screenplay - Original,American Beauty,Critics Choice
 2000,Screenplay - Original,American Beauty,Golden Globes
 2000,Screenplay - Original,American Beauty,Writers Guild
+2000,Screenplay - Original,American Beauty ,Dallas Fort Worth Critics
 2000,Screenplay - Original,Being John Malkovich,Boston Film Critics
 2000,Screenplay - Original,Being John Malkovich,LA Film Critics
 2000,Screenplay - Original,Being John Malkovich,Las Vegas Critics
@@ -614,8 +705,10 @@ Year,Award,Name,Issuer
 2001,Actor - Leading Role,George Clooney,Golden Globes-Musical or Comedy
 2001,Actor - Leading Role,Michael Douglas,LA Film Critics
 2001,Actor - Leading Role,Russell Crowe,Critics Choice
+2001,Actor - Leading Role,Russell Crowe,Dallas Fort Worth Critics
 2001,Actor - Leading Role,Tom Hanks,Golden Globes-Drama
 2001,Actor - Leading Role,Tom Hanks,New York Film Critics
+2001,Actor - Supporting Role,Albert Finney,Dallas Fort Worth Critics
 2001,Actor - Supporting Role,Albert Finney,Screen Actors Guild
 2001,Actor - Supporting Role,Benicio Del Toro,Golden Globes
 2001,Actor - Supporting Role,Benicio Del Toro,New York Film Critics
@@ -628,11 +721,13 @@ Year,Award,Name,Issuer
 2001,Actress - Leading Role,Julia Roberts,Golden Globes-Drama
 2001,Actress - Leading Role,Julia Roberts,LA Film Critics
 2001,Actress - Leading Role,Julia Roberts,Screen Actors Guild
+2001,Actress - Leading Role,Laura Linney,Dallas Fort Worth Critics
 2001,Actress - Leading Role,Laura Linney,New York Film Critics
 2001,Actress - Leading Role,Renee Zellweger,Golden Globes-Musical or Comedy
 2001,Actress - Supporting Role,Frances McDormand,Boston Film Critics
 2001,Actress - Supporting Role,Frances McDormand,Critics Choice
 2001,Actress - Supporting Role,Frances McDormand,LA Film Critics
+2001,Actress - Supporting Role,Kate Hudson,Dallas Fort Worth Critics
 2001,Actress - Supporting Role,Kate Hudson,Las Vegas Critics
 2001,Actress - Supporting Role,Kate Winslet,Golden Globes
 2001,Actress - Supporting Role,Marcia Gay Harden,New York Film Critics
@@ -643,9 +738,11 @@ Year,Award,Name,Issuer
 2001,Best Picture,Gladiator,Critics Choice
 2001,Best Picture,Gladiator,Golden Globes-Drama
 2001,Best Picture,Gladiator,Producers Guild
+2001,Best Picture,Traffic,Dallas Fort Worth Critics
 2001,Best Picture,Traffic,New York Film Critics
 2001,Best Picture,Traffic,New York Film Critics
 2001,Cinematography,Crouching Tiger Hidden Dragon,Boston Film Critics
+2001,Cinematography,Crouching Tiger Hidden Dragon,Dallas Fort Worth Critics
 2001,Cinematography,Crouching Tiger Hidden Dragon,LA Film Critics
 2001,Cinematography,Crouching Tiger Hidden Dragon,New York Film Critics
 2001,Cinematography,O Brother Where Art Thou,Las Vegas Critics
@@ -655,6 +752,7 @@ Year,Award,Name,Issuer
 2001,Director,Crouching Tiger Hidden Dragon,Golden Globes
 2001,Director,Erin Brockovich,Critics Choice
 2001,Director,Erin Brockovich,Las Vegas Critics
+2001,Director,Traffic,Dallas Fort Worth Critics
 2001,Director,Traffic,LA Film Critics
 2001,Director,Traffic,New York Film Critics
 2001,Documentary,Dark Days,LA Film Critics
@@ -665,6 +763,7 @@ Year,Award,Name,Issuer
 2001,Film Editing,Gladiator,Las Vegas Critics
 2001,Foreign Language Film,Crouching Tiger Hidden Dragon,Boston Film Critics
 2001,Foreign Language Film,Crouching Tiger Hidden Dragon,Critics Choice
+2001,Foreign Language Film,Crouching Tiger Hidden Dragon,Dallas Fort Worth Critics
 2001,Foreign Language Film,Crouching Tiger Hidden Dragon,Golden Globes
 2001,Foreign Language Film,Girl on the Bridge,Las Vegas Critics
 2001,Foreign Language Film,Yi Yi,LA Film Critics
@@ -680,6 +779,7 @@ Year,Award,Name,Issuer
 2001,Screenplay - Adapted,Wonder Boys,Boston Film Critics
 2001,Screenplay - Adapted,Wonder Boys,Las Vegas Critics
 2001,Screenplay - Original,Almost Famous,Critics Choice
+2001,Screenplay - Original,Almost Famous,Dallas Fort Worth Critics
 2001,Screenplay - Original,You Can Count of Me,LA Film Critics
 2001,Screenplay - Original,You Can Count of Me,New York Film Critics
 2001,Screenplay - Original,You can Count of ME,Writers Guild
@@ -692,11 +792,13 @@ Year,Award,Name,Issuer
 2002,Actor - Leading Role,Gene Hackman,Golden Globes-Musical or Comedy
 2002,Actor - Leading Role,Guy Pearce,Las Vegas Critics
 2002,Actor - Leading Role,Russell Crowe,Critics Choice
+2002,Actor - Leading Role,Russell Crowe,Dallas Fort Worth Critics
 2002,Actor - Leading Role,Russell Crowe,Golden Globes-Drama
 2002,Actor - Leading Role,Russell Crowe,Screen Actors Guild
 2002,Actor - Leading Role,Tom Wilkinson,New York Film Critics
 2002,Actor - Supporting Role,Ben Kingsley,Boston Film Critics
 2002,Actor - Supporting Role,Ben Kingsley,Critics Choice
+2002,Actor - Supporting Role,Ben Kingsley,Dallas Fort Worth Critics
 2002,Actor - Supporting Role,Ian McKellen,Screen Actors Guild
 2002,Actor - Supporting Role,Jim Broadbent,Golden Globes
 2002,Actor - Supporting Role,Jim Broadbent,LA Film Critics
@@ -706,6 +808,7 @@ Year,Award,Name,Issuer
 2002,Actress - Leading Role,Halle Berry,Screen Actors Guild
 2002,Actress - Leading Role,Nicole Kidman,Golden Globes-Musical or Comedy
 2002,Actress - Leading Role,Sissy Spacek,Critics Choice
+2002,Actress - Leading Role,Sissy Spacek,Dallas Fort Worth Critics
 2002,Actress - Leading Role,Sissy Spacek,Golden Globes-Drama
 2002,Actress - Leading Role,Sissy Spacek,LA Film Critics
 2002,Actress - Leading Role,Sissy Spacek,New York Film Critics
@@ -715,12 +818,15 @@ Year,Award,Name,Issuer
 2002,Actress - Supporting Role,Jennifer Connelly,Critics Choice
 2002,Actress - Supporting Role,Jennifer Connelly,Golden Globes
 2002,Actress - Supporting Role,Kete Winslet,LA Film Critics
+2002,Actress - Supporting Role,Marissa Tomei,Dallas Fort Worth Critics
 2002,Actress - Supporting Role,Naomi Watts,Las Vegas Critics
 2002,Animated Feature,Shrek,Critics Choice
+2002,Animated Feature,Shrek,Dallas Fort Worth Critics
 2002,Animated Feature,Shrek,LA Film Critics
 2002,Animated Feature,Shrek,Las Vegas Critics
 2002,Animated Feature,Waking Life,New York Film Critics
 2002,Best Picture,A Beautiful Mind,Critics Choice
+2002,Best Picture,A Beautiful Mind,Dallas Fort Worth Critics
 2002,Best Picture,A Beautiful Mind,Golden Globes-Drama
 2002,Best Picture,In the bedroom,LA Film Critics
 2002,Best Picture,Memento,Las Vegas Critics
@@ -730,11 +836,13 @@ Year,Award,Name,Issuer
 2002,Best Picture,Mulholland Drive,New York Film Critics
 2002,Best Picture,Mulholland Drive,New York Film Critics
 2002,Cinematography,In the Mood for Love,New York Film Critics
+2002,Cinematography,The Lord of the Rings the Fellowship of the Ring,Dallas Fort Worth Critics
 2002,Cinematography,The Lord of the Rings The Fellowship of the Ring,Las Vegas Critics
 2002,Cinematography,The Man Who Wasn't There,Boston Film Critics
 2002,Cinematography,The Man Who Wasn't There,LA Film Critics
 2002,Costume Design,The Lord of the Rings The Fellowship of the Ring,Las Vegas Critics
 2002,Director,A Beautiful Mind,Critics Choice
+2002,Director,A Beautiful Mind,Dallas Fort Worth Critics
 2002,Director,A Beautiful Mind,Directors Guild
 2002,Director,Gosford Park,Golden Globes
 2002,Director,Gosford Park,New York Film Critics
@@ -747,6 +855,7 @@ Year,Award,Name,Issuer
 2002,Documentary,The Gleaners and I,New York Film Critics
 2002,Film Editing,Memento,Las Vegas Critics
 2002,Foreign Language Film,Amelie,Critics Choice
+2002,Foreign Language Film,Amelie,Dallas Fort Worth Critics
 2002,Foreign Language Film,In the Mood for Love,New York Film Critics
 2002,Foreign Language Film,Love's a Bitch,Boston Film Critics
 2002,Foreign Language Film,No Man's Land,Golden Globes
@@ -757,6 +866,7 @@ Year,Award,Name,Issuer
 2002,Score,Moulin Rouge,Golden Globes
 2002,Score,The Lord of the Rings The Fellowship of the Ring,LA Film Critics
 2002,Score,The Lord of the Rings The Fellowship of the Ring,Las Vegas Critics
+2002,Screenplay - Adapted,A Beautiful Mind,Dallas Fort Worth Critics
 2002,Screenplay - Adapted,A Beautiful Mind,Golden Globes
 2002,Screenplay - Adapted,A Beautiful Mind,Writers Guild
 2002,Screenplay - Original,Gosford Park,New York Film Critics
@@ -774,6 +884,7 @@ Year,Award,Name,Issuer
 2003,Actor - Leading Role,Daniel Day Lewis,Las Vegas Critics
 2003,Actor - Leading Role,Daniel Day Lewis,New York Film Critics
 2003,Actor - Leading Role,Daniel Day Lewis,Screen Actors Guild
+2003,Actor - Leading Role,Jack Nicholson,Dallas Fort Worth Critics
 2003,Actor - Leading Role,Jack Nicholson,DC Film Critics
 2003,Actor - Leading Role,Jack Nicholson,Golden Globes-Drama
 2003,Actor - Leading Role,Jack Nicholson,LA Film Critics
@@ -781,6 +892,7 @@ Year,Award,Name,Issuer
 2003,Actor - Leading Role,Richard Gere,Golden Globes-Musical or Comedy
 2003,Actor - Supporting Role,Alan Arkin,Boston Film Critics
 2003,Actor - Supporting Role,Chris Cooper,Critics Choice
+2003,Actor - Supporting Role,Chris Cooper,Dallas Fort Worth Critics
 2003,Actor - Supporting Role,Chris Cooper,DC Film Critics
 2003,Actor - Supporting Role,Chris Cooper,Golden Globes
 2003,Actor - Supporting Role,Chris Cooper,LA Film Critics
@@ -791,6 +903,7 @@ Year,Award,Name,Issuer
 2003,Actress - Leading Role,Diane Lane,New York Film Critics
 2003,Actress - Leading Role,Isabelle Huppert,San Francisco Critics
 2003,Actress - Leading Role,Julianne Moore,Critics Choice
+2003,Actress - Leading Role,Julianne Moore,Dallas Fort Worth Critics
 2003,Actress - Leading Role,Julianne Moore,DC Film Critics
 2003,Actress - Leading Role,Julianne Moore,LA Film Critics
 2003,Actress - Leading Role,Nicole Kidman,Golden Globes-Drama
@@ -800,6 +913,7 @@ Year,Award,Name,Issuer
 2003,Actress - Leading Role,Tilda Swinton,Boston Film Critics
 2003,Actress - Supporting Role,Catherine Zeta Jones,Critics Choice
 2003,Actress - Supporting Role,Edie Falco,LA Film Critics
+2003,Actress - Supporting Role,Kathy Bates,Dallas Fort Worth Critics
 2003,Actress - Supporting Role,Kathy Bates,DC Film Critics
 2003,Actress - Supporting Role,Meryl Streep,Golden Globes
 2003,Actress - Supporting Role,Miranda Richardson,San Francisco Critics
@@ -809,10 +923,12 @@ Year,Award,Name,Issuer
 2003,Animated Feature,Lilo and Stitch,DC Film Critics
 2003,Animated Feature,Lilo and Stitch,Las Vegas Critics
 2003,Animated Feature,Spirited Away,Critics Choice
+2003,Animated Feature,Spirited Away,Dallas Fort Worth Critics
 2003,Animated Feature,Spirited Away,LA Film Critics
 2003,Animated Feature,Spirited Away,New York Film Critics
 2003,Best Picture,About Schmidt,LA Film Critics
 2003,Best Picture,Chicago,Critics Choice
+2003,Best Picture,Chicago,Dallas Fort Worth Critics
 2003,Best Picture,Chicago,Golden Globes-Musical or Comedy
 2003,Best Picture,Chicago,Producers Guild
 2003,Best Picture,Confessions of a Dangerous Mind,Las Vegas Critics
@@ -823,6 +939,7 @@ Year,Award,Name,Issuer
 2003,Best Picture,The Pianist,Boston Film Critics
 2003,Best Picture,The Pianist,San Francisco Critics
 2003,Cinematography,Far From Heaven,Boston Film Critics
+2003,Cinematography,Far From Heaven,Dallas Fort Worth Critics
 2003,Cinematography,Far From Heaven,LA Film Critics
 2003,Cinematography,Far From Heaven,New York Film Critics
 2003,Cinematography,Gerry,New York Film Critics
@@ -837,9 +954,11 @@ Year,Award,Name,Issuer
 2003,Director,Gangs of New York,Golden Globes
 2003,Director,Road to Pardition,DC Film Critics
 2003,Director,Talk to Her,LA Film Critics
+2003,Director,The Lord of the Rings the Two Towers,Dallas Fort Worth Critics
 2003,Director,The Lord of the Rings The Two Towers,Las Vegas Critics
 2003,Director,The Pianist,Boston Film Critics
 2003,Documentary,Bowling for Columbine,Critics Choice
+2003,Documentary,Bowling for Columbine,Dallas Fort Worth Critics
 2003,Documentary,Bowling for Columbine,Las Vegas Critics
 2003,Documentary,Rivers and Tides,San Francisco Critics
 2003,Documentary,Standing in the Shadows of Motown,New York Film Critics
@@ -854,6 +973,7 @@ Year,Award,Name,Issuer
 2003,Foreign Language Film,And Your Mother Too,San Francisco Critics
 2003,Foreign Language Film,Talk to Her,Golden Globes
 2003,Foreign Language Film,Y Tu Mama Tambien,Las Vegas Critics
+2003,Foreign Language Film,Y Tu Mama Tamien,Dallas Fort Worth Critics
 2003,Production Design,Frida,Las Vegas Critics
 2003,Production Design,Gangs of New York,LA Film Critics
 2003,Score,25th Hour,Las Vegas Critics
@@ -864,6 +984,7 @@ Year,Award,Name,Issuer
 2003,Screenplay - Adapted,About Schmidt,LA Film Critics
 2003,Screenplay - Adapted,Adaptation,Boston Film Critics
 2003,Screenplay - Adapted,Adaptation,Critics Choice
+2003,Screenplay - Adapted,Adaptation,Dallas Fort Worth Critics
 2003,Screenplay - Adapted,Adaptation,DC Film Critics
 2003,Screenplay - Adapted,Adaptation,New York Film Critics
 2003,Screenplay - Adapted,The Hours,Writers Guild
@@ -882,8 +1003,10 @@ Year,Award,Name,Issuer
 2004,Actor - Leading Role,Bill Murray,San Francisco Critics
 2004,Actor - Leading Role,Johnny Depp,Screen Actors Guild
 2004,Actor - Leading Role,Sean Penn,Critics Choice
+2004,Actor - Leading Role,Sean Penn,Dallas Fort Worth Critics
 2004,Actor - Leading Role,Sean Penn,Golden Globes-Drama
 2004,Actor - Leading Role,Sean Penn,Las Vegas Critics
+2004,Actor - Supporting Role,Alec Baldwin,Dallas Fort Worth Critics
 2004,Actor - Supporting Role,Benicio Del Toro,DC Film Critics
 2004,Actor - Supporting Role,Bill Nighy,LA Film Critics
 2004,Actor - Supporting Role,Eugene Levy,New York Film Critics
@@ -894,6 +1017,7 @@ Year,Award,Name,Issuer
 2004,Actor - Supporting Role,Tim Robbins,Golden Globes
 2004,Actor - Supporting Role,Tim Robbins,Screen Actors Guild
 2004,Actress - Leading Role,Charlize Theron,Critics Choice
+2004,Actress - Leading Role,Charlize Theron,Dallas Fort Worth Critics
 2004,Actress - Leading Role,Charlize Theron,Golden Globes-Drama
 2004,Actress - Leading Role,Charlize Theron,Las Vegas Critics
 2004,Actress - Leading Role,Charlize Theron,San Francisco Critics
@@ -908,10 +1032,12 @@ Year,Award,Name,Issuer
 2004,Actress - Supporting Role,Patricia Clarkson,Boston Film Critics
 2004,Actress - Supporting Role,Patricia Clarkson,San Francisco Critics
 2004,Actress - Supporting Role,Renee Zellweger,Critics Choice
+2004,Actress - Supporting Role,Renee Zellweger,Dallas Fort Worth Critics
 2004,Actress - Supporting Role,Renee Zellweger,Golden Globes
 2004,Actress - Supporting Role,Shohreh Aghdashloo,LA Film Critics
 2004,Actress - Supporting Role,Shoreh Aghdashloo,New York Film Critics
 2004,Animated Feature,Finding Nemo,Critics Choice
+2004,Animated Feature,Finding Nemo,Dallas Fort Worth Critics
 2004,Animated Feature,Finding Nemo,DC Film Critics
 2004,Animated Feature,Finding Nemo,Las Vegas Critics
 2004,Animated Feature,The Triplets of Belleville,LA Film Critics
@@ -922,6 +1048,7 @@ Year,Award,Name,Issuer
 2004,Best Picture,Lost in Translation,San Francisco Critics
 2004,Best Picture,Mystic River,Boston Film Critics
 2004,Best Picture,The Lord of the Rings The Return of the King,Critics Choice
+2004,Best Picture,The Lord of the Rings the Return of the King,Dallas Fort Worth Critics
 2004,Best Picture,The Lord of the Rings The Return of the King,Golden Globes-Drama
 2004,Best Picture,The Lord of the Rings The Return of the King,Las Vegas Critics
 2004,Best Picture,The Lord of the Rings The Return of the King,New York Film Critics
@@ -929,12 +1056,14 @@ Year,Award,Name,Issuer
 2004,Best Picture,The Lord of the Rings The Return of the King,Producers Guild
 2004,Cinematography,Ekephant,New York Film Critics
 2004,Cinematography,Girl with a Pearl Earing,LA Film Critics
+2004,Cinematography,The Lord of the Rings the Return of the King,Dallas Fort Worth Critics
 2004,Cinematography,The Lord of the Rings The Return of the King,Las Vegas Critics
 2004,Cinematography,Winged Migration,Boston Film Critics
 2004,Costume Design,The Lord of the Rings The Return of the King,Las Vegas Critics
 2004,Director,Lost in Translation,Boston Film Critics
 2004,Director,Lost in Translation,New York Film Critics
 2004,Director,The Lord of the Rings The Return of the King,Critics Choice
+2004,Director,The Lord of the Rings the Return of the King,Dallas Fort Worth Critics
 2004,Director,The Lord of the Rings The Return of the King,DC Film Critics
 2004,Director,The Lord of the Rings The Return of the King,Directors Guild
 2004,Director,The Lord of the Rings The Return of the King,Golden Globes
@@ -950,6 +1079,7 @@ Year,Award,Name,Issuer
 2004,Documentary,The Fog of War,DC Film Critics
 2004,Documentary,The Fog of War,LA Film Critics
 2004,Film Editing,Kill Bill Vol 1,Las Vegas Critics
+2004,Foreign Language Film,City of God,Dallas Fort Worth Critics
 2004,Foreign Language Film,City of God,Las Vegas Critics
 2004,Foreign Language Film,City of God,New York Film Critics
 2004,Foreign Language Film,Osama,Golden Globes
@@ -965,6 +1095,7 @@ Year,Award,Name,Issuer
 2004,Score,The Triplets of Belleville,LA Film Critics
 2004,Screenplay - Adapted,American Splendor,LA Film Critics
 2004,Screenplay - Adapted,American Splendor,Writers Guild
+2004,Screenplay - Adapted,The Lord of the Rings the Return of the King,Dallas Fort Worth Critics
 2004,Screenplay - Original,American Splendor,Boston Film Critics
 2004,Screenplay - Original,In America,Critics Choice
 2004,Screenplay - Original,Lost in Translation,DC Film Critics
@@ -985,6 +1116,7 @@ Year,Award,Name,Issuer
 2005,Actor - Leading Role,Jamie Foxx,Screen Actors Guild
 2005,Actor - Leading Role,Leonardo DiCaprio,Golden Globes-Drama
 2005,Actor - Leading Role,Liam Neeson,LA Film Critics
+2005,Actor - Leading Role,Paul Giamatti,Dallas Fort Worth Critics
 2005,Actor - Leading Role,Paul Giamatti,New York Film Critics
 2005,Actor - Leading Role,Paul Giamatti,San Francisco Critics
 2005,Actor - Supporting Role,Clive Owen,Golden Globes
@@ -994,11 +1126,13 @@ Year,Award,Name,Issuer
 2005,Actor - Supporting Role,Morgan Freeman,Screen Actors Guild
 2005,Actor - Supporting Role,Thomas Haden Church,Boston Film Critics
 2005,Actor - Supporting Role,Thomas Haden Church,Critics Choice
+2005,Actor - Supporting Role,Thomas Haden Church,Dallas Fort Worth Critics
 2005,Actor - Supporting Role,Thomas Haden Church,LA Film Critics
 2005,Actor - Supporting Role,Thomas Haden Church,San Francisco Critics
 2005,Actress - Leading Role,Annette Bening,Golden Globes-Musical or Comedy
 2005,Actress - Leading Role,Hilary Swank,Boston Film Critics
 2005,Actress - Leading Role,Hilary Swank,Critics Choice
+2005,Actress - Leading Role,Hilary Swank,Dallas Fort Worth Critics
 2005,Actress - Leading Role,Hilary Swank,Golden Globes-Drama
 2005,Actress - Leading Role,Hilary Swank,Screen Actors Guild
 2005,Actress - Leading Role,Imelda Staunton,DC Film Critics
@@ -1012,14 +1146,17 @@ Year,Award,Name,Issuer
 2005,Actress - Supporting Role,Sharon Warren,Boston Film Critics
 2005,Actress - Supporting Role,Virginia Madison,Critics Choice
 2005,Actress - Supporting Role,Virginia Madison,San Francisco Critics
+2005,Actress - Supporting Role,Virginia Madsen,Dallas Fort Worth Critics
 2005,Actress - Supporting Role,Virginia Madsen,LA Film Critics
 2005,Actress - Supporting Role,Virginia Madsen,New York Film Critics
 2005,Animated Feature,The Incredibles,Critics Choice
+2005,Animated Feature,The Incredibles,Dallas Fort Worth Critics
 2005,Animated Feature,The Incredibles,DC Film Critics
 2005,Animated Feature,The Incredibles,LA Film Critics
 2005,Animated Feature,The Incredibles,Las Vegas Critics
 2005,Animated Feature,The Incredibles,New York Film Critics
 2005,Best Picture,Eternal Sunshine of the Spotless Mind,DC Film Critics
+2005,Best Picture,Million Dollar Baby,Dallas Fort Worth Critics
 2005,Best Picture,Sideways,Boston Film Critics
 2005,Best Picture,Sideways,Critics Choice
 2005,Best Picture,Sideways,Golden Globes-Musical or Comedy
@@ -1031,6 +1168,7 @@ Year,Award,Name,Issuer
 2005,Best Picture,The Aviator,Las Vegas Critics
 2005,Best Picture,The Aviator,Producers Guild
 2005,Cinematography,Collateral,LA Film Critics
+2005,Cinematography,Hero,Dallas Fort Worth Critics
 2005,Cinematography,Hero,New York Film Critics
 2005,Cinematography,House of Flying Daggers,Boston Film Critics
 2005,Cinematography,The Aviator,Las Vegas Critics
@@ -1043,8 +1181,10 @@ Year,Award,Name,Issuer
 2005,Director,Sideways,LA Film Critics
 2005,Director,Sideways,San Francisco Critics
 2005,Director,The Aviator,Critics Choice
+2005,Director,The Aviator,Dallas Fort Worth Critics
 2005,Director,The Aviator,Las Vegas Critics
 2005,Documentary,Born into Brothels,LA Film Critics
+2005,Documentary,Fahreneit 9/11,Dallas Fort Worth Critics
 2005,Documentary,Fahrenheit 9/11,Critics Choice
 2005,Documentary,Fahrenheit 9/11,DC Film Critics
 2005,Documentary,Fahrenheit 9/11,Las Vegas Critics
@@ -1052,6 +1192,7 @@ Year,Award,Name,Issuer
 2005,Documentary,Fahrenheit 9/11,San Francisco Critics
 2005,Documentary,The Story of the Weeping Camel,Directors Guild
 2005,Film Editing,The Aviator,Las Vegas Critics
+2005,Foreign Language Film,A Very Long Engagement,Dallas Fort Worth Critics
 2005,Foreign Language Film,Bad Education,New York Film Critics
 2005,Foreign Language Film,House of Flying Daggers,Boston Film Critics
 2005,Foreign Language Film,House of Flying Daggers,LA Film Critics
@@ -1067,6 +1208,7 @@ Year,Award,Name,Issuer
 2005,Score,The Lord of the Rings The Return of the King,Critics Choice
 2005,Screenplay - Adapted,Sideways,Boston Film Critics
 2005,Screenplay - Adapted,Sideways,Critics Choice
+2005,Screenplay - Adapted,Sideways,Dallas Fort Worth Critics
 2005,Screenplay - Adapted,Sideways,DC Film Critics
 2005,Screenplay - Adapted,Sideways,Golden Globes
 2005,Screenplay - Adapted,Sideways,LA Film Critics
@@ -1087,12 +1229,14 @@ Year,Award,Name,Issuer
 2006,Actor - Leading Role,Joaquin Phoenix,Golden Globes-Musical or Comedy
 2006,Actor - Leading Role,Phillip Seymour Hoffman,Boston Film Critics
 2006,Actor - Leading Role,Phillip Seymour Hoffman,Critics Choice
+2006,Actor - Leading Role,Phillip Seymour Hoffman,Dallas Fort Worth Critics
 2006,Actor - Leading Role,Phillip Seymour Hoffman,DC Film Critics
 2006,Actor - Leading Role,Phillip Seymour Hoffman,Golden Globes-Drama
 2006,Actor - Leading Role,Phillip Seymour Hoffman,LA Film Critics
 2006,Actor - Leading Role,Phillip Seymour Hoffman,Screen Actors Guild
 2006,Actor - Supporting Role,George Clooney,Golden Globes
 2006,Actor - Supporting Role,Kevin Costner,San Francisco Critics
+2006,Actor - Supporting Role,Matt Dillon,Dallas Fort Worth Critics
 2006,Actor - Supporting Role,Matt Dilon,Las Vegas Critics
 2006,Actor - Supporting Role,Paul Giamatti,Boston Film Critics
 2006,Actor - Supporting Role,Paul Giamatti,Critics Choice
@@ -1100,6 +1244,7 @@ Year,Award,Name,Issuer
 2006,Actor - Supporting Role,Paul Giamatti,Screen Actors Guild
 2006,Actor - Supporting Role,William Hurt,LA Film Critics
 2006,Actor - Supporting Role,William Hurt,New York Film Critics
+2006,Actress - Leading Role,Felicity Huffman,Dallas Fort Worth Critics
 2006,Actress - Leading Role,Felicity Huffman,Golden Globes-Drama
 2006,Actress - Leading Role,Reese Witherspoon,Boston Film Critics
 2006,Actress - Leading Role,Reese Witherspoon,Critics Choice
@@ -1114,12 +1259,14 @@ Year,Award,Name,Issuer
 2006,Actress - Supporting Role,Amy Adams,San Francisco Critics
 2006,Actress - Supporting Role,Catherine Keener,Boston Film Critics
 2006,Actress - Supporting Role,Catherine Keener,LA Film Critics
+2006,Actress - Supporting Role,Catherne Keener,Dallas Fort Worth Critics
 2006,Actress - Supporting Role,Frances McDormand,Las Vegas Critics
 2006,Actress - Supporting Role,Maria Bello,New York Film Critics
 2006,Actress - Supporting Role,Michelle Williams,Critics Choice
 2006,Actress - Supporting Role,Rachel Weisz,Golden Globes
 2006,Animated Feature,Howl's Moving Castle,New York Film Critics
 2006,Animated Feature,Wallace and Gromit in The Curse of the Were Rabbit,Critics Choice
+2006,Animated Feature,Wallace and Gromit in The Curse of the Were Rabbit,Dallas Fort Worth Critics
 2006,Animated Feature,Wallace and Gromit in The Curse of the Were Rabbit,DC Film Critics
 2006,Animated Feature,Wallace and Gromit in The Curse of the Were Rabbit,LA Film Critics
 2006,Animated Feature,Wallace and Gromit in The Curse of the Were Rabbit,Las Vegas Critics
@@ -1133,9 +1280,11 @@ Year,Award,Name,Issuer
 2006,Best Picture,Brokeback Mountain,New York Film Critics
 2006,Best Picture,Brokeback Mountain,Producers Guild
 2006,Best Picture,Brokeback Mountain,San Francisco Critics
+2006,Best Picture,Brokeback Mountin,Dallas Fort Worth Critics
 2006,Best Picture,Munich,DC Film Critics
 2006,Best Picture,Walk the Line,Golden Globes-Musical or Comedy
 2006,Cinematography,2046,New York Film Critics
+2006,Cinematography,Brokeback Mountin,Dallas Fort Worth Critics
 2006,Cinematography,Good Night and Good Luck,Boston Film Critics
 2006,Cinematography,Good Night and Good Luck,LA Film Critics
 2006,Cinematography,King Kong,Las Vegas Critics
@@ -1148,6 +1297,7 @@ Year,Award,Name,Issuer
 2006,Director,Brokeback Mountain,Las Vegas Critics
 2006,Director,Brokeback Mountain,New York Film Critics
 2006,Director,Brokeback Mountain,San Francisco Critics
+2006,Director,Brokeback Mountin,Dallas Fort Worth Critics
 2006,Director,Munich,DC Film Critics
 2006,Documentary,Enron The Smartest Guys in the Room,DC Film Critics
 2006,Documentary,Grizzly Man,Directors Guild
@@ -1155,6 +1305,7 @@ Year,Award,Name,Issuer
 2006,Documentary,Grizzly Man,San Francisco Critics
 2006,Documentary,March of the Penguins,Critics Choice
 2006,Documentary,March of the Penguins,Las Vegas Critics
+2006,Documentary,Murderball,Dallas Fort Worth Critics
 2006,Documentary,The White Diamond,New York Film Critics
 2006,Film Editing,King Kong,Las Vegas Critics
 2006,Foreign Language Film,2046,New York Film Critics
@@ -1163,6 +1314,7 @@ Year,Award,Name,Issuer
 2006,Foreign Language Film,Kung Fu Hustle,Boston Film Critics
 2006,Foreign Language Film,Kung Fu Hustle,Critics Choice
 2006,Foreign Language Film,Kung Fu Hustle,Las Vegas Critics
+2006,Foreign Language Film,Paradise Now,Dallas Fort Worth Critics
 2006,Foreign Language Film,Paradise Now,Golden Globes
 2006,Production Design,2046,LA Film Critics
 2006,Production Design,King Kong,Las Vegas Critics
@@ -1173,6 +1325,7 @@ Year,Award,Name,Issuer
 2006,Score,The Aviator,Critics Choice
 2006,Screenplay - Adapted,Brokeback Mountain,Golden Globes
 2006,Screenplay - Adapted,Brokeback Mountain,Writers Guild
+2006,Screenplay - Adapted,Brokeback Mountin,Dallas Fort Worth Critics
 2006,Screenplay - Adapted,Capote,Boston Film Critics
 2006,Screenplay - Adapted,Capote,DC Film Critics
 2006,Screenplay - Adapted,Crash,Critics Choice
@@ -1189,6 +1342,7 @@ Year,Award,Name,Issuer
 2007,AA Filler Data,AA Filler Data,AA Filler Data
 2007,Actor - Leading Role,Forest Whitaker,Boston Film Critics
 2007,Actor - Leading Role,Forest Whitaker,Critics Choice
+2007,Actor - Leading Role,Forest Whitaker,Dallas Fort Worth Critics
 2007,Actor - Leading Role,Forest Whitaker,DC Film Critics
 2007,Actor - Leading Role,Forest Whitaker,Golden Globes-Drama
 2007,Actor - Leading Role,Forest Whitaker,LA Film Critics
@@ -1202,12 +1356,14 @@ Year,Award,Name,Issuer
 2007,Actor - Supporting Role,Eddie Murphy,Critics Choice
 2007,Actor - Supporting Role,Eddie Murphy,Golden Globes
 2007,Actor - Supporting Role,Eddie Murphy,Screen Actors Guild
+2007,Actor - Supporting Role,Jackie Eare Harley,Dallas Fort Worth Critics
 2007,Actor - Supporting Role,Jackie Earle Haley,San Francisco Critics
 2007,Actor - Supporting Role,Jackie Earle Harley,New York Film Critics
 2007,Actor - Supporting Role,Mark Wahlberg,Boston Film Critics
 2007,Actor - Supporting Role,Michael Sheen,LA Film Critics
 2007,Actress - Leading Role,Helen Mirren,Boston Film Critics
 2007,Actress - Leading Role,Helen Mirren,Critics Choice
+2007,Actress - Leading Role,Helen Mirren,Dallas Fort Worth Critics
 2007,Actress - Leading Role,Helen Mirren,DC Film Critics
 2007,Actress - Leading Role,Helen Mirren,Golden Globes-Drama
 2007,Actress - Leading Role,Helen Mirren,LA Film Critics
@@ -1217,6 +1373,7 @@ Year,Award,Name,Issuer
 2007,Actress - Leading Role,Helen Mirren,Screen Actors Guild
 2007,Actress - Leading Role,Meryl Streep,Golden Globes-Musical or Comedy
 2007,Actress - Supporting Role,Adriana Barraza,San Francisco Critics
+2007,Actress - Supporting Role,Cate Blanchett,Dallas Fort Worth Critics
 2007,Actress - Supporting Role,Jennifer Hudson,Critics Choice
 2007,Actress - Supporting Role,Jennifer Hudson,DC Film Critics
 2007,Actress - Supporting Role,Jennifer Hudson,Golden Globes
@@ -1226,6 +1383,7 @@ Year,Award,Name,Issuer
 2007,Actress - Supporting Role,Shareeka Epps,Boston Film Critics
 2007,Animated Feature,Cars,Critics Choice
 2007,Animated Feature,Cars,Golden Globes
+2007,Animated Feature,Happy Feet,Dallas Fort Worth Critics
 2007,Animated Feature,Happy Feet,DC Film Critics
 2007,Animated Feature,Happy Feet,LA Film Critics
 2007,Animated Feature,Happy Feet,New York Film Critics
@@ -1238,9 +1396,11 @@ Year,Award,Name,Issuer
 2007,Best Picture,The Departed,Boston Film Critics
 2007,Best Picture,The Departed,Critics Choice
 2007,Best Picture,The Departed,Las Vegas Critics
+2007,Best Picture,United 93,Dallas Fort Worth Critics
 2007,Best Picture,United 93,DC Film Critics
 2007,Best Picture,United 93,New York Film Critics
 2007,Best Picture,United 93,New York Film Critics
+2007,Cinematography,Apocalypto,Dallas Fort Worth Critics
 2007,Cinematography,Children of Men,LA Film Critics
 2007,Cinematography,Children of Men,Las Vegas Critics
 2007,Cinematography,Pan's Labyrinth,Boston Film Critics
@@ -1248,6 +1408,7 @@ Year,Award,Name,Issuer
 2007,Costume Design,Marie Antoinette,Las Vegas Critics
 2007,Director,The Departed,Boston Film Critics
 2007,Director,The Departed,Critics Choice
+2007,Director,The Departed,Dallas Fort Worth Critics
 2007,Director,The Departed,DC Film Critics
 2007,Director,The Departed,Directors Guild
 2007,Director,The Departed,Golden Globes
@@ -1256,6 +1417,7 @@ Year,Award,Name,Issuer
 2007,Director,United 93,LA Film Critics
 2007,Director,United 93,San Francisco Critics
 2007,Documentary,An Inconvenient Truth,Critics Choice
+2007,Documentary,An Inconvenient Truth,Dallas Fort Worth Critics
 2007,Documentary,An Inconvenient Truth,DC Film Critics
 2007,Documentary,An Inconvenient Truth,LA Film Critics
 2007,Documentary,An Inconvenient Truth,Las Vegas Critics
@@ -1265,6 +1427,7 @@ Year,Award,Name,Issuer
 2007,Film Editing,The Departed,Las Vegas Critics
 2007,Foreign Language Film,Army of Shadows,New York Film Critics
 2007,Foreign Language Film,Letters from Iwo Jima,Critics Choice
+2007,Foreign Language Film,Letters from Iwo Jima,Dallas Fort Worth Critics
 2007,Foreign Language Film,Letters from Iwo Jima,Golden Globes
 2007,Foreign Language Film,Pan's Labyrinth,Boston Film Critics
 2007,Foreign Language Film,Pan's Labyrinth,Las Vegas Critics
@@ -1284,6 +1447,7 @@ Year,Award,Name,Issuer
 2007,Screenplay - Adapted,The Departed,Boston Film Critics
 2007,Screenplay - Adapted,The Departed,Writers Guild
 2007,Screenplay - Original,Little Children,Critics Choice
+2007,Screenplay - Original,Little Miss Sunshine,Dallas Fort Worth Critics
 2007,Screenplay - Original,Little Miss Sunshine,DC Film Critics
 2007,Screenplay - Original,Little Miss Sunshine,Writers Guild
 2007,Screenplay - Original,The Queen,Golden Globes
@@ -1293,7 +1457,9 @@ Year,Award,Name,Issuer
 2007,Visual Effects,Pirates of the Caribbean Dead Man's Chest,Visual Effects Society
 2007,Z Filler Data,Z Filler Data,Z Filler Data
 2008,AA Filler Data,AA Filler Data,AA Filler Data
+2008,Actor - Leading Role,Daniel Day Lewis,Austin Film Critics
 2008,Actor - Leading Role,Daniel Day Lewis,Critics Choice
+2008,Actor - Leading Role,Daniel Day Lewis,Dallas Fort Worth Critics
 2008,Actor - Leading Role,Daniel Day Lewis,Golden Globes-Drama
 2008,Actor - Leading Role,Daniel Day Lewis,Houston Critics
 2008,Actor - Leading Role,Daniel Day Lewis,LA Film Critics
@@ -1304,7 +1470,9 @@ Year,Award,Name,Issuer
 2008,Actor - Leading Role,George Clooney,DC Film Critics
 2008,Actor - Leading Role,George Clooney,San Francisco Critics
 2008,Actor - Leading Role,Johnny Depp,Golden Globes-Musical or Comedy
+2008,Actor - Supporting Role,avier Bardem,Dallas Fort Worth Critics
 2008,Actor - Supporting Role,Casey Affleck,San Francisco Critics
+2008,Actor - Supporting Role,Javier Bardem,Austin Film Critics
 2008,Actor - Supporting Role,Javier Bardem,Boston Film Critics
 2008,Actor - Supporting Role,Javier Bardem,Critics Choice
 2008,Actor - Supporting Role,Javier Bardem,DC Film Critics
@@ -1314,8 +1482,10 @@ Year,Award,Name,Issuer
 2008,Actor - Supporting Role,Javier Bardem,New York Film Critics
 2008,Actor - Supporting Role,Javier Bardem,Screen Actors Guild
 2008,Actor - Supporting Role,Vlad Ivanov,LA Film Critics
+2008,Actress - Leading Role,Ellen Page,Austin Film Critics
 2008,Actress - Leading Role,Ellen Page,Las Vegas Critics
 2008,Actress - Leading Role,Julie Christie,Critics Choice
+2008,Actress - Leading Role,Julie Christie,Dallas Fort Worth Critics
 2008,Actress - Leading Role,Julie Christie,DC Film Critics
 2008,Actress - Leading Role,Julie Christie,Golden Globes-Drama
 2008,Actress - Leading Role,Julie Christie,Houston Critics
@@ -1325,6 +1495,7 @@ Year,Award,Name,Issuer
 2008,Actress - Leading Role,Marion Cotillard,Boston Film Critics
 2008,Actress - Leading Role,Marion Cotillard,Golden Globes-Musical or Comedy
 2008,Actress - Leading Role,Marion Cotillard,LA Film Critics
+2008,Actress - Supporting Role,Allison Janney,Austin Film Critics
 2008,Actress - Supporting Role,Amy Ryan,Boston Film Critics
 2008,Actress - Supporting Role,Amy Ryan,Critics Choice
 2008,Actress - Supporting Role,Amy Ryan,DC Film Critics
@@ -1334,8 +1505,11 @@ Year,Award,Name,Issuer
 2008,Actress - Supporting Role,Amy Ryan,San Francisco Critics
 2008,Actress - Supporting Role,Cate Blanchett,Golden Globes
 2008,Actress - Supporting Role,Cate Blanchett,Las Vegas Critics
+2008,Actress - Supporting Role,Tilda Swinton,Dallas Fort Worth Critics
 2008,Animated Feature,Persepolis,New York Film Critics
+2008,Animated Feature,Ratatouille,Austin Film Critics
 2008,Animated Feature,Ratatouille,Critics Choice
+2008,Animated Feature,Ratatouille,Dallas Fort Worth Critics
 2008,Animated Feature,Ratatouille,DC Film Critics
 2008,Animated Feature,Ratatouille,Golden Globes
 2008,Animated Feature,Ratatouille,LA Film Critics
@@ -1343,6 +1517,7 @@ Year,Award,Name,Issuer
 2008,Best Picture,Attonement,Golden Globes-Drama
 2008,Best Picture,No Country for Old Men,Boston Film Critics
 2008,Best Picture,No Country for Old Men,Critics Choice
+2008,Best Picture,No Country For Old Men,Dallas Fort Worth Critics
 2008,Best Picture,No Country for Old Men,DC Film Critics
 2008,Best Picture,No Country for Old Men,Houston Critics
 2008,Best Picture,No Country for Old Men,Las Vegas Critics
@@ -1351,13 +1526,17 @@ Year,Award,Name,Issuer
 2008,Best Picture,No Country for Old Men,Producers Guild
 2008,Best Picture,Sweeney Todd The Demon Barber of Fleet Street,Golden Globes-Musical or Comedy
 2008,Best Picture,The Assassination of Jesse James by the Coward Robert Ford,San Francisco Critics
+2008,Best Picture,There Will Be Blood,Austin Film Critics
 2008,Best Picture,There Will Be Blood,LA Film Critics
+2008,Cinematography,The Assassination of Jesse James by the Coward Robert Ford,Dallas Fort Worth Critics
 2008,Cinematography,The Assassination of Jesse James by the Coward Robert Ford,Houston Critics
 2008,Cinematography,The Diving Bell and the Butterfly,Boston Film Critics
 2008,Cinematography,The Diving Bell and the Butterfly,LA Film Critics
+2008,Cinematography,There Will Be Blood,Austin Film Critics
 2008,Cinematography,There Will Be Blood,Las Vegas Critics
 2008,Cinematography,There Will Be Blood,New York Film Critics
 2008,Director,No Country for Old Men,Critics Choice
+2008,Director,No Country For Old Men,Dallas Fort Worth Critics
 2008,Director,No Country for Old Men,DC Film Critics
 2008,Director,No Country for Old Men,Directors Guild
 2008,Director,No Country for Old Men,Las Vegas Critics
@@ -1367,6 +1546,7 @@ Year,Award,Name,Issuer
 2008,Director,The Diving Bell and the Butterfly,Boston Film Critics
 2008,Director,The Diving Bell and the Butterfly,Golden Globes
 2008,Director,There Wil be Blood,LA Film Critics
+2008,Director,There Will Be Blood,Austin Film Critics
 2008,Documentary,Ghosts of Cite Soleil,Directors Guild
 2008,Documentary,No End in Sight,LA Film Critics
 2008,Documentary,No End in Sight,New York Film Critics
@@ -1374,8 +1554,12 @@ Year,Award,Name,Issuer
 2008,Documentary,Sicko,Critics Choice
 2008,Documentary,Sicko,DC Film Critics
 2008,Documentary,Sicko,Las Vegas Critics
+2008,Documentary,The King of Kong A Fistful of Quarters,Austin Film Critics
+2008,Documentary,The King of Kong A Fistful of Quarters,Dallas Fort Worth Critics
 2008,Film Editing,The Bourne Ultimatum,Las Vegas Critics
 2008,Foreign Language Film,4 Months 3 Weeks and 2 Days,LA Film Critics
+2008,Foreign Language Film,Black Book,Austin Film Critics
+2008,Foreign Language Film,The Diving Bell and the Butterfly,Dallas Fort Worth Critics
 2008,Foreign Language Film,The Diving BelLAnd the Butterfly,Boston Film Critics
 2008,Foreign Language Film,The Diving BelLAnd the Butterfly,Critics Choice
 2008,Foreign Language Film,The Diving BelLAnd the Butterfly,Golden Globes
@@ -1388,12 +1572,17 @@ Year,Award,Name,Issuer
 2008,Score,Once,LA Film Critics
 2008,Score,The Illusionist,Critics Choice
 2008,Score,There Wil be Blood,Las Vegas Critics
+2008,Score,There Will Be Blood,Austin Film Critics
 2008,Screenplay - Adapted,Away From Her,San Francisco Critics
+2008,Screenplay - Adapted,No Country for Old Men,Austin Film Critics
+2008,Screenplay - Adapted,No Country For Old Men,Dallas Fort Worth Critics
 2008,Screenplay - Adapted,No Country for Old Men,Golden Globes
 2008,Screenplay - Adapted,No Country for Old Men,New York Film Critics
 2008,Screenplay - Adapted,No Country for Old Men,Writers Guild
 2008,Screenplay - Original,Charlie Wilson's War,DC Film Critics
+2008,Screenplay - Original,Juno,Austin Film Critics
 2008,Screenplay - Original,Juno,Critics Choice
+2008,Screenplay - Original,Juno,Dallas Fort Worth Critics
 2008,Screenplay - Original,Juno,DC Film Critics
 2008,Screenplay - Original,Juno,Houston Critics
 2008,Screenplay - Original,Juno,Las Vegas Critics
@@ -1408,15 +1597,19 @@ Year,Award,Name,Issuer
 2009,Actor - Leading Role,Frank Langella,Las Vegas Critics
 2009,Actor - Leading Role,Mickey Rourke,DC Film Critics
 2009,Actor - Leading Role,Mickey Rourke,Golden Globes-Drama
+2009,Actor - Leading Role,Sean Penn,Austin Film Critics
 2009,Actor - Leading Role,Sean Penn,Boston Film Critics
 2009,Actor - Leading Role,Sean Penn,Critics Choice
+2009,Actor - Leading Role,Sean Penn,Dallas Fort Worth Critics
 2009,Actor - Leading Role,Sean Penn,Houston Critics
 2009,Actor - Leading Role,Sean Penn,LA Film Critics
 2009,Actor - Leading Role,Sean Penn,New York Film Critics
 2009,Actor - Leading Role,Sean Penn,San Francisco Critics
 2009,Actor - Leading Role,Sean Penn,Screen Actors Guild
+2009,Actor - Supporting Role,Heath Ledger,Austin Film Critics
 2009,Actor - Supporting Role,Heath Ledger,Boston Film Critics
 2009,Actor - Supporting Role,Heath Ledger,Critics Choice
+2009,Actor - Supporting Role,Heath Ledger,Dallas Fort Worth Critics
 2009,Actor - Supporting Role,Heath Ledger,DC Film Critics
 2009,Actor - Supporting Role,Heath Ledger,Golden Globes
 2009,Actor - Supporting Role,Heath Ledger,Houston Critics
@@ -1425,6 +1618,8 @@ Year,Award,Name,Issuer
 2009,Actor - Supporting Role,Heath Ledger,San Francisco Critics
 2009,Actor - Supporting Role,Heath Ledger,Screen Actors Guild
 2009,Actor - Supporting Role,Josh Brolin,New York Film Critics
+2009,Actress - Leading Role,Anne Hathaway,Austin Film Critics
+2009,Actress - Leading Role,Anne Hathaway,Dallas Fort Worth Critics
 2009,Actress - Leading Role,Anne Hathaway,Houston Critics
 2009,Actress - Leading Role,Kate Winslet,Golden Globes-Drama
 2009,Actress - Leading Role,Kate Winslet,Las Vegas Critics
@@ -1444,9 +1639,13 @@ Year,Award,Name,Issuer
 2009,Actress - Supporting Role,Penelope Cruz,LA Film Critics
 2009,Actress - Supporting Role,Penelope Cruz,New York Film Critics
 2009,Actress - Supporting Role,Rosemarie DeWitt,DC Film Critics
+2009,Actress - Supporting Role,Taraji P Henson,Austin Film Critics
+2009,Actress - Supporting Role,Viola Davis,Dallas Fort Worth Critics
 2009,Actress - Supporting Role,Viola Davis,Houston Critics
 2009,Animated Feature,Up,Producers Guild
+2009,Animated Feature,WALL E,Austin Film Critics
 2009,Animated Feature,WALL E,Critics Choice
+2009,Animated Feature,WALL E,Dallas Fort Worth Critics
 2009,Animated Feature,WALL E,DC Film Critics
 2009,Animated Feature,WALL E,Golden Globes
 2009,Animated Feature,WALL E,Las Vegas Critics
@@ -1458,10 +1657,12 @@ Year,Award,Name,Issuer
 2009,Best Picture,Milk,San Francisco Critics
 2009,Best Picture,Slumdog Millionaire,Boston Film Critics
 2009,Best Picture,Slumdog Millionaire,Critics Choice
+2009,Best Picture,Slumdog Millionaire,Dallas Fort Worth Critics
 2009,Best Picture,Slumdog Millionaire,DC Film Critics
 2009,Best Picture,Slumdog Millionaire,Golden Globes-Drama
 2009,Best Picture,Slumdog Millionaire,Producers Guild
 2009,Best Picture,The Curious Case of Benjamin Button,Houston Critics
+2009,Best Picture,The Dark Knight,Austin Film Critics
 2009,Best Picture,Vicky Christina Barcelona,Golden Globes-Musical or Comedy
 2009,Best Picture,WALL E,LA Film Critics
 2009,Cinematography,Paranoid Park,Boston Film Critics
@@ -1469,18 +1670,24 @@ Year,Award,Name,Issuer
 2009,Cinematography,Still Life,LA Film Critics
 2009,Cinematography,The Curious Case of Benjamin Button,Houston Critics
 2009,Cinematography,The Curious Case of Benjamin Button,Las Vegas Critics
+2009,Cinematography,The Dark Knight,Dallas Fort Worth Critics
+2009,Cinematography,The Fall,Austin Film Critics
 2009,Costume Design,The Curious Case of Benjamin Button,Las Vegas Critics
 2009,Director,Frost/Nixon,Las Vegas Critics
 2009,Director,Happy Go Lucky,New York Film Critics
 2009,Director,Milk,Boston Film Critics
 2009,Director,Milk,San Francisco Critics
 2009,Director,Slumdog Millionaire,Critics Choice
+2009,Director,Slumdog Millionaire,Dallas Fort Worth Critics
 2009,Director,Slumdog Millionaire,DC Film Critics
 2009,Director,Slumdog Millionaire,Directors Guild
 2009,Director,Slumdog Millionaire,Golden Globes
 2009,Director,Slumdog Millionaire,Houston Critics
 2009,Director,Slumdog Millionaire,LA Film Critics
+2009,Director,The Dark Knight,Austin Film Critics
+2009,Documentary,Man on Wire,Austin Film Critics
 2009,Documentary,Man on Wire,Critics Choice
+2009,Documentary,Man on Wire,Dallas Fort Worth Critics
 2009,Documentary,Man on Wire,DC Film Critics
 2009,Documentary,Man on Wire,LA Film Critics
 2009,Documentary,Man on Wire,Las Vegas Critics
@@ -1491,10 +1698,12 @@ Year,Award,Name,Issuer
 2009,Film Editing,Frost/Nixon,Las Vegas Critics
 2009,Film Editing,Slumdog Millionaire,Boston Film Critics
 2009,Foreign Language Film,4 Months 3 Weeks and 2 Days,New York Film Critics
+2009,Foreign Language Film,Let the Right One In,Austin Film Critics
 2009,Foreign Language Film,Let the Right One In,Boston Film Critics
 2009,Foreign Language Film,Let the Right One In,San Francisco Critics
 2009,Foreign Language Film,Mongol The Rise of Ghengis Khan,Las Vegas Critics
 2009,Foreign Language Film,Still Life,LA Film Critics
+2009,Foreign Language Film,Tell No One,Dallas Fort Worth Critics
 2009,Foreign Language Film,Walk the Line,Golden Globes
 2009,Foreign Language Film,Waltz with Bashir,Critics Choice
 2009,Production Design,Synecdoche New York,LA Film Critics
@@ -1503,28 +1712,36 @@ Year,Award,Name,Issuer
 2009,Score,Defiance,Las Vegas Critics
 2009,Score,Slumdog Millionaire,Golden Globes
 2009,Score,Slumdog Millionaire,LA Film Critics
+2009,Score,The Dark Knight,Austin Film Critics
 2009,Score,There Will Be Blood,Critics Choice
 2009,Screenplay - Adapted,Frost/Nixon,Las Vegas Critics
 2009,Screenplay - Adapted,Frost/Nixon,San Francisco Critics
+2009,Screenplay - Adapted,Slumdog Millionaire,Critics Choice
+2009,Screenplay - Adapted,Slumdog Millionaire,Dallas Fort Worth Critics
 2009,Screenplay - Adapted,Slumdog Millionaire,DC Film Critics
 2009,Screenplay - Adapted,Slumdog Millionaire,Golden Globes
 2009,Screenplay - Adapted,Slumdog Millionaire,Houston Critics
 2009,Screenplay - Adapted,Slumdog Millionaire,Writers Guild
-2009,Screenplay - Adapted,Slumdog Millionare,Critics Choice
+2009,Screenplay - Adapted,The Dark Knight,Austin Film Critics
 2009,Screenplay - Original,Happy Go Lucky,LA Film Critics
 2009,Screenplay - Original,Milk,Boston Film Critics
+2009,Screenplay - Original,Milk,Dallas Fort Worth Critics
 2009,Screenplay - Original,Milk,San Francisco Critics
 2009,Screenplay - Original,Milk,Writers Guild
+2009,Screenplay - Original,Synecdoche New York,Austin Film Critics
 2009,Song,Another Way to Die,Las Vegas Critics
 2009,Visual Effects,Iron Man,Las Vegas Critics
 2009,Visual Effects,The Curious Case of Benjamin Button,Visual Effects Society
 2009,Z Filler Data,Z Filler Data,Z Filler Data
 2010,AA Filler Data,AA Filler Data,AA Filler Data
+2010,Actor - Leading Role,Colin Firth,Austin Film Critics
 2010,Actor - Leading Role,Colin Firth,San Francisco Critics
+2010,Actor - Leading Role,George Clooney,Dallas Fort Worth Critics
 2010,Actor - Leading Role,George Clooney,DC Film Critics
 2010,Actor - Leading Role,George Clooney,Houston Critics
 2010,Actor - Leading Role,George Clooney,New York Film Critics
 2010,Actor - Leading Role,Jeff Bridges,Critics Choice
+2010,Actor - Leading Role,Jeff Bridges,Denver Film Critics
 2010,Actor - Leading Role,Jeff Bridges,Golden Globes-Drama
 2010,Actor - Leading Role,Jeff Bridges,LA Film Critics
 2010,Actor - Leading Role,Jeff Bridges,Screen Actors Guild
@@ -1532,18 +1749,24 @@ Year,Award,Name,Issuer
 2010,Actor - Leading Role,Jeremy Renner,Las Vegas Critics
 2010,Actor - Leading Role,Robert Downey Jr,Golden Globes-Musical or Comedy
 2010,Actor - Supporting Role,Christian McKay,San Francisco Critics
+2010,Actor - Supporting Role,Christoph Waltz,Austin Film Critics
 2010,Actor - Supporting Role,Christoph Waltz,Boston Film Critics
 2010,Actor - Supporting Role,Christoph Waltz,Critics Choice
+2010,Actor - Supporting Role,Christoph Waltz,Dallas Fort Worth Critics
 2010,Actor - Supporting Role,Christoph Waltz,DC Film Critics
+2010,Actor - Supporting Role,Christoph Waltz,Denver Film Critics
 2010,Actor - Supporting Role,Christoph Waltz,Golden Globes
 2010,Actor - Supporting Role,Christoph Waltz,Houston Critics
 2010,Actor - Supporting Role,Christoph Waltz,LA Film Critics
 2010,Actor - Supporting Role,Christoph Waltz,Las Vegas Critics
 2010,Actor - Supporting Role,Christoph Waltz,New York Film Critics
 2010,Actor - Supporting Role,Christoph Waltz,Screen Actors Guild
+2010,Actress - Leading Role,Carey  Mulligan,Denver Film Critics
+2010,Actress - Leading Role,Carey Mulligan,Dallas Fort Worth Critics
 2010,Actress - Leading Role,Carey Mulligan,DC Film Critics
 2010,Actress - Leading Role,Carey Mulligan,Houston Critics
 2010,Actress - Leading Role,Gabourey Sidibe,Las Vegas Critics
+2010,Actress - Leading Role,Melanie Laurnt,Austin Film Critics
 2010,Actress - Leading Role,Meryl Streep,Boston Film Critics
 2010,Actress - Leading Role,Meryl Streep,Critics Choice
 2010,Actress - Leading Role,Meryl Streep,Golden Globes-Musical or Comedy
@@ -1552,10 +1775,13 @@ Year,Award,Name,Issuer
 2010,Actress - Leading Role,Sandra Bullock,Golden Globes-Drama
 2010,Actress - Leading Role,Sandra Bullock,Screen Actors Guild
 2010,Actress - Leading Role,Yolande Moreau,LA Film Critics
+2010,Actress - Supporting Role,Anna Kendrick,Austin Film Critics
 2010,Actress - Supporting Role,Anna Kendrick,Houston Critics
 2010,Actress - Supporting Role,Mo'Nique,Boston Film Critics
 2010,Actress - Supporting Role,Mo'Nique,Critics Choice
+2010,Actress - Supporting Role,Mo'Nique,Dallas Fort Worth Critics
 2010,Actress - Supporting Role,Mo'Nique,DC Film Critics
+2010,Actress - Supporting Role,Mo'Nique,Denver Film Critics
 2010,Actress - Supporting Role,Mo'Nique,Golden Globes
 2010,Actress - Supporting Role,Mo'Nique,LA Film Critics
 2010,Actress - Supporting Role,Mo'Nique,Las Vegas Critics
@@ -1565,13 +1791,17 @@ Year,Award,Name,Issuer
 2010,Animated Feature,Fantastic Mr Fox,LA Film Critics
 2010,Animated Feature,Fantastic Mr Fox,Las Vegas Critics
 2010,Animated Feature,Fantastic Mr Fox,New York Film Critics
+2010,Animated Feature,Up,Austin Film Critics
 2010,Animated Feature,Up,Critics Choice
+2010,Animated Feature,Up,Dallas Fort Worth Critics
 2010,Animated Feature,Up,Golden Globes
 2010,Animated Feature,Up in the Air,DC Film Critics
 2010,Best Picture,Avatar,Golden Globes-Drama
 2010,Best Picture,The Hangover,Golden Globes-Musical or Comedy
+2010,Best Picture,The Hurt Locker,Austin Film Critics
 2010,Best Picture,The Hurt Locker,Boston Film Critics
 2010,Best Picture,The Hurt Locker,Critics Choice
+2010,Best Picture,The Hurt Locker,Denver Film Critics
 2010,Best Picture,The Hurt Locker,Houston Critics
 2010,Best Picture,The Hurt Locker,LA Film Critics
 2010,Best Picture,The Hurt Locker,Las Vegas Critics
@@ -1579,30 +1809,39 @@ Year,Award,Name,Issuer
 2010,Best Picture,The Hurt Locker,New York Film Critics
 2010,Best Picture,The Hurt Locker,Producers Guild
 2010,Best Picture,The Hurt Locker,San Francisco Critics
+2010,Best Picture,Up in the Air,Dallas Fort Worth Critics
 2010,Best Picture,Up in the Air,DC Film Critics
 2010,Cinematography,Avatar,Critics Choice
+2010,Cinematography,The Hurt Locker,Austin Film Critics
 2010,Cinematography,The Hurt Locker,Boston Film Critics
 2010,Cinematography,The Hurt Locker,Houston Critics
 2010,Cinematography,The Hurt Locker,Las Vegas Critics
+2010,Cinematography,The Lovel Bones,Dallas Fort Worth Critics
 2010,Cinematography,The White Ribbon,LA Film Critics
 2010,Cinematography,The White Ribbon,New York Film Critics
 2010,Costume Design,Inglorious Bastards,Las Vegas Critics
 2010,Costume Design,The Young Victoria,Critics Choice
 2010,Director,Avatar,Golden Globes
+2010,Director,The Hurt Locker,Austin Film Critics
 2010,Director,The Hurt Locker,Boston Film Critics
 2010,Director,The Hurt Locker,Critics Choice
 2010,Director,The Hurt Locker,DC Film Critics
+2010,Director,The Hurt Locker,Denver Film Critics
 2010,Director,The Hurt Locker,Directors Guild
 2010,Director,The Hurt Locker,Houston Critics
 2010,Director,The Hurt Locker,LA Film Critics
 2010,Director,The Hurt Locker,Las Vegas Critics
 2010,Director,The Hurt Locker,New York Film Critics
 2010,Director,The Hurt Locker,San Francisco Critics
+2010,Director,Up in the Air,Dallas Fort Worth Critics
+2010,Documentary,Anvil The Story of Anvil,Austin Film Critics
 2010,Documentary,Anvill The Story of Anvil,Las Vegas Critics
 2010,Documentary,Anvill The Story of Anvil,San Francisco Critics
 2010,Documentary,Food Inc,DC Film Critics
 2010,Documentary,Our Time and the City,New York Film Critics
 2010,Documentary,The Cove,Critics Choice
+2010,Documentary,The Cove,Dallas Fort Worth Critics
+2010,Documentary,The Cove,Denver Film Critics
 2010,Documentary,The Cove,Directors Guild
 2010,Documentary,The Cove,LA Film Critics
 2010,Film Editing,Avatar,Critics Choice
@@ -1610,10 +1849,13 @@ Year,Award,Name,Issuer
 2010,Film Editing,The Hurt Locker,Las Vegas Critics
 2010,Foreign Language Film,Broken Embrace,Critics Choice
 2010,Foreign Language Film,Red Cliff,Las Vegas Critics
+2010,Foreign Language Film,Sin Nombre,Austin Film Critics
+2010,Foreign Language Film,Sin Nombre,Dallas Fort Worth Critics
 2010,Foreign Language Film,Summer Hours,Boston Film Critics
 2010,Foreign Language Film,Summer Hours,LA Film Critics
 2010,Foreign Language Film,Summer Hours,New York Film Critics
 2010,Foreign Language Film,The White Ribbon,Golden Globes
+2010,Foreign Language Film,Thirst,Denver Film Critics
 2010,Foreign Language Film,You the Living,San Francisco Critics
 2010,Makeup and Hairstyling,District 9,Critics Choice
 2010,Production Design,Avatar,Critics Choice
@@ -1622,12 +1864,16 @@ Year,Award,Name,Issuer
 2010,Production Design,Nine,DC Film Critics
 2010,Score,Crazy Heart,Boston Film Critics
 2010,Score,Crazy Heart,LA Film Critics
-2010,Score,Slumdog Millionare,Critics Choice
+2010,Score,Slumdog Millionaire,Critics Choice
 2010,Score,Star Trek,Las Vegas Critics
+2010,Score,Up,Austin Film Critics
 2010,Score,Up,Golden Globes
 2010,Screenplay - Adapted,In the Loop,New York Film Critics
+2010,Screenplay - Adapted,Up in the Air,Austin Film Critics
 2010,Screenplay - Adapted,Up in the Air,Critics Choice
+2010,Screenplay - Adapted,Up In the Air,Dallas Fort Worth Critics
 2010,Screenplay - Adapted,Up in the Air,DC Film Critics
+2010,Screenplay - Adapted,Up in the Air,Denver Film Critics
 2010,Screenplay - Adapted,Up in the Air,Golden Globes
 2010,Screenplay - Adapted,Up in the Air,Houston Critics
 2010,Screenplay - Adapted,Up in the Air,LA Film Critics
@@ -1637,31 +1883,42 @@ Year,Award,Name,Issuer
 2010,Screenplay - Original,Inglorious Bastards,Critics Choice
 2010,Screenplay - Original,Inglorious Bastards,DC Film Critics
 2010,Screenplay - Original,Inglorious Bastards,San Francisco Critics
+2010,Screenplay - Original,Inglourious Basterds,Austin Film Critics
+2010,Screenplay - Original,Inglourious Basterds,Denver Film Critics
 2010,Screenplay - Original,The Hurt Locker,Writers Guild
+2010,Song,The Weary Kind,Denver Film Critics
 2010,Song,The Weary Kind,Las Vegas Critics
 2010,Visual Effects,Avatar,Critics Choice
 2010,Visual Effects,Avatar,Visual Effects Society
 2010,Visual Effects,Star Trek,Las Vegas Critics
 2010,Z Filler Data,Z Filler Data,Z Filler Data
 2011,AA Filler Data,AA Filler Data,AA Filler Data
+2011,Actor - Leading Role,Colin Firth,Austin Film Critics
 2011,Actor - Leading Role,Colin Firth,Critics Choice
 2011,Actor - Leading Role,Colin Firth,DC Film Critics
+2011,Actor - Leading Role,Colin Firth,Denver Film Critics
 2011,Actor - Leading Role,Colin Firth,Golden Globes-Drama
 2011,Actor - Leading Role,Colin Firth,LA Film Critics
 2011,Actor - Leading Role,Colin Firth,New York Film Critics
 2011,Actor - Leading Role,Colin Firth,San Francisco Critics
 2011,Actor - Leading Role,Colin Firth,Screen Actors Guild
+2011,Actor - Leading Role,James Franco,Central Ohio Film Critics
+2011,Actor - Leading Role,James Franco,Dallas Fort Worth Critics
 2011,Actor - Leading Role,James Franco,Las Vegas Critics
 2011,Actor - Leading Role,Jesse Eisenberg,Boston Film Critics
 2011,Actor - Leading Role,Jesse Eisenberg,Houston Critics
 2011,Actor - Leading Role,Paul Giamatti,Golden Globes-Musical or Comedy
+2011,Actor - Supporting Role,Christian Bale,Austin Film Critics
 2011,Actor - Supporting Role,Christian Bale,Boston Film Critics
 2011,Actor - Supporting Role,Christian Bale,Critics Choice
+2011,Actor - Supporting Role,Christian Bale,Dallas Fort Worth Critics
 2011,Actor - Supporting Role,Christian Bale,DC Film Critics
+2011,Actor - Supporting Role,Christian Bale,Denver Film Critics
 2011,Actor - Supporting Role,Christian Bale,Golden Globes
 2011,Actor - Supporting Role,Christian Bale,Houston Critics
 2011,Actor - Supporting Role,Christian Bale,Las Vegas Critics
 2011,Actor - Supporting Role,Christian Bale,Screen Actors Guild
+2011,Actor - Supporting Role,Geoffrey Rush,Central Ohio Film Critics
 2011,Actor - Supporting Role,John Hawkins,San Francisco Critics
 2011,Actor - Supporting Role,Mark Ruffalo,New York Film Critics
 2011,Actor - Supporting Role,Niels Arestrup,LA Film Critics
@@ -1670,33 +1927,49 @@ Year,Award,Name,Issuer
 2011,Actress - Leading Role,Jennifer Lawrence,DC Film Critics
 2011,Actress - Leading Role,Kim Hye ja,LA Film Critics
 2011,Actress - Leading Role,Michelle Williams,San Francisco Critics
+2011,Actress - Leading Role,Natalie Portman,Austin Film Critics
 2011,Actress - Leading Role,Natalie Portman,Boston Film Critics
+2011,Actress - Leading Role,Natalie Portman,Central Ohio Film Critics
 2011,Actress - Leading Role,Natalie Portman,Critics Choice
+2011,Actress - Leading Role,Natalie Portman,Dallas Fort Worth Critics
+2011,Actress - Leading Role,Natalie Portman,Denver Film Critics
 2011,Actress - Leading Role,Natalie Portman,Golden Globes-Drama
 2011,Actress - Leading Role,Natalie Portman,Houston Critics
 2011,Actress - Leading Role,Natalie Portman,Las Vegas Critics
 2011,Actress - Leading Role,Natalie Portman,Screen Actors Guild
 2011,Actress - Supporting Role,Amy Adams,Las Vegas Critics
+2011,Actress - Supporting Role,Hailee Steinfield,Austin Film Critics
+2011,Actress - Supporting Role,Hailee Steinfield,Central Ohio Film Critics
 2011,Actress - Supporting Role,Hailee Steinfield,Houston Critics
 2011,Actress - Supporting Role,Jacki Weaver,LA Film Critics
 2011,Actress - Supporting Role,Jacki Weaver,San Francisco Critics
 2011,Actress - Supporting Role,Juliette Lewis,Boston Film Critics
 2011,Actress - Supporting Role,Melissa Leo,Critics Choice
+2011,Actress - Supporting Role,Melissa Leo,Dallas Fort Worth Critics
 2011,Actress - Supporting Role,Melissa Leo,DC Film Critics
+2011,Actress - Supporting Role,Melissa Leo,Denver Film Critics
 2011,Actress - Supporting Role,Melissa Leo,Golden Globes
 2011,Actress - Supporting Role,Melissa Leo,New York Film Critics
 2011,Animated Feature,The Illusionist,New York Film Critics
+2011,Animated Feature,Toy Story 3,Austin Film Critics
+2011,Animated Feature,Toy Story 3,Central Ohio Film Critics
 2011,Animated Feature,Toy Story 3,Critics Choice
+2011,Animated Feature,Toy Story 3,Dallas Fort Worth Critics
 2011,Animated Feature,Toy Story 3,DC Film Critics
+2011,Animated Feature,Toy Story 3,Denver Film Critics
 2011,Animated Feature,Toy Story 3,Golden Globes
 2011,Animated Feature,Toy Story 3,LA Film Critics
 2011,Animated Feature,Toy Story 3,Las Vegas Critics
 2011,Animated Feature,Toy Story 3,San Francisco Critics
+2011,Best Picture,Black Swan,Austin Film Critics
+2011,Best Picture,Inception,Central Ohio Film Critics
 2011,Best Picture,The Kids are All Right,Golden Globes-Musical or Comedy
 2011,Best Picture,The King's Speech,Producers Guild
 2011,Best Picture,The Social Network,Boston Film Critics
 2011,Best Picture,The Social Network,Critics Choice
+2011,Best Picture,The Social Network,Dallas Fort Worth Critics
 2011,Best Picture,The Social Network,DC Film Critics
+2011,Best Picture,The Social Network,Denver Film Critics
 2011,Best Picture,The Social Network,Golden Globes-Drama
 2011,Best Picture,The Social Network,Houston Critics
 2011,Best Picture,The Social Network,LA Film Critics
@@ -1704,6 +1977,8 @@ Year,Award,Name,Issuer
 2011,Best Picture,The Social Network,New York Film Critics
 2011,Best Picture,The Social Network,New York Film Critics
 2011,Best Picture,The Social Network,San Francisco Critics
+2011,Cinematography,127 Hours,Dallas Fort Worth Critics
+2011,Cinematography,Black Swan,Austin Film Critics
 2011,Cinematography,Black Swan,LA Film Critics
 2011,Cinematography,Black Swan,New York Film Critics
 2011,Cinematography,Inception,Critics Choice
@@ -1711,33 +1986,46 @@ Year,Award,Name,Issuer
 2011,Cinematography,Inception,Houston Critics
 2011,Cinematography,Inception,Las Vegas Critics
 2011,Cinematography,True Grit,Boston Film Critics
+2011,Cinematography,True Grit,Central Ohio Film Critics
 2011,Costume Design,Alice in Wonderland,Critics Choice
 2011,Costume Design,Alice in Wonderland,Las Vegas Critics
+2011,Director,Black Swan,Austin Film Critics
 2011,Director,Black Swan,San Francisco Critics
+2011,Director,Inception,Central Ohio Film Critics
 2011,Director,The King's Speech,Directors Guild
 2011,Director,The Social Network,Boston Film Critics
 2011,Director,The Social Network,Critics Choice
+2011,Director,The Social Network,Dallas Fort Worth Critics
 2011,Director,The Social Network,DC Film Critics
+2011,Director,The Social Network,Denver Film Critics
 2011,Director,The Social Network,Golden Globes
 2011,Director,The Social Network,Houston Critics
 2011,Director,The Social Network,LA Film Critics
 2011,Director,The Social Network,Las Vegas Critics
 2011,Director,The Social Network,New York Film Critics
 2011,Director,The Social Network,San Francisco Critics
+2011,Documentary,Exit Through the Gift Shop,Austin Film Critics
+2011,Documentary,Exit Through the Gift Shop,Central Ohio Film Critics
 2011,Documentary,Exit Through The Gift Shop,DC Film Critics
+2011,Documentary,Exit Through the Gift Shop,Denver Film Critics
 2011,Documentary,Inside Job,Directors Guild
 2011,Documentary,Inside Job,New York Film Critics
 2011,Documentary,Last Train Home,LA Film Critics
 2011,Documentary,The Tillman Story,San Francisco Critics
 2011,Documentary,Waiting for Superman,Critics Choice
+2011,Documentary,Waiting for Superman,Dallas Fort Worth Critics
 2011,Documentary,Waiting for Superman,Las Vegas Critics
 2011,Film Editing,Black Swan,Boston Film Critics
 2011,Film Editing,Inception,Critics Choice
 2011,Film Editing,Inception,Las Vegas Critics
+2011,Foreign Language Film,A Prophet,Austin Film Critics
+2011,Foreign Language Film,Biutiful,Dallas Fort Worth Critics
 2011,Foreign Language Film,Carlos,LA Film Critics
 2011,Foreign Language Film,Carlos,New York Film Critics
 2011,Foreign Language Film,In a Better World,Golden Globes
 2011,Foreign Language Film,Mother,Boston Film Critics
+2011,Foreign Language Film,Mother,Central Ohio Film Critics
+2011,Foreign Language Film,Mother,Denver Film Critics
 2011,Foreign Language Film,Mother,San Francisco Critics
 2011,Foreign Language Film,The Girl With the Dragon Tattoo,Critics Choice
 2011,Foreign Language Film,The Girl With the Dragon Tattoo,Las Vegas Critics
@@ -1746,27 +2034,39 @@ Year,Award,Name,Issuer
 2011,Production Design,Inception,Critics Choice
 2011,Production Design,Inception,DC Film Critics
 2011,Production Design,Inception,LA Film Critics
+2011,Score,Inception,Central Ohio Film Critics
 2011,Score,Inception,DC Film Critics
 2011,Score,The Social Network,Boston Film Critics
 2011,Score,The Social Network,Golden Globes
 2011,Score,The Social Network,LA Film Critics
 2011,Score,The Social Network,Las Vegas Critics
+2011,Score,Tron Legacy,Austin Film Critics
+2011,Score,Tron Legacy,Denver Film Critics
 2011,Score,Up,Critics Choice
+2011,Screenplay - Adapted,The Social Network,Austin Film Critics
 2011,Screenplay - Adapted,The Social Network,Boston Film Critics
+2011,Screenplay - Adapted,The Social Network,Central Ohio Film Critics
 2011,Screenplay - Adapted,The Social Network,Critics Choice
+2011,Screenplay - Adapted,The Social Network,Dallas Fort Worth Critics
 2011,Screenplay - Adapted,The Social Network,DC Film Critics
+2011,Screenplay - Adapted,The Social Network,Denver Film Critics
 2011,Screenplay - Adapted,The Social Network,Golden Globes
 2011,Screenplay - Adapted,The Social Network,Houston Critics
 2011,Screenplay - Adapted,The Social Network,LA Film Critics
 2011,Screenplay - Adapted,The Social Network,Las Vegas Critics
 2011,Screenplay - Adapted,The Social Network,San Francisco Critics
 2011,Screenplay - Adapted,The Social Network,Writers Guild
+2011,Screenplay - Original,Black Swan,Austin Film Critics
+2011,Screenplay - Original,Inception,Central Ohio Film Critics
+2011,Screenplay - Original,Inception,Dallas Fort Worth Critics
 2011,Screenplay - Original,Inception,DC Film Critics
+2011,Screenplay - Original,Inception,Denver Film Critics
 2011,Screenplay - Original,Inception,Writers Guild
 2011,Screenplay - Original,The Kids are All Right,New York Film Critics
 2011,Screenplay - Original,The King's Speech,Critics Choice
 2011,Screenplay - Original,The King's Speech,San Francisco Critics
 2011,Song,I See the Light,Las Vegas Critics
+2011,Song,If I Rise,Denver Film Critics
 2011,Visual Effects,Inception,Critics Choice
 2011,Visual Effects,Inception,Las Vegas Critics
 2011,Visual Effects,Inception,Visual Effects Society
@@ -1774,8 +2074,10 @@ Year,Award,Name,Issuer
 2012,AA Filler Data,AA Filler Data,AA Filler Data
 2012,Actor - Leading Role,Brad Pitt,Boston Film Critics
 2012,Actor - Leading Role,Brad Pitt,New York Film Critics
+2012,Actor - Leading Role,Bradd Pitt,Denver Film Critics
 2012,Actor - Leading Role,Gary Oldman,San Francisco Critics
 2012,Actor - Leading Role,George Clooney,Critics Choice
+2012,Actor - Leading Role,George Clooney,Dallas Fort Worth Critics
 2012,Actor - Leading Role,George Clooney,DC Film Critics
 2012,Actor - Leading Role,George Clooney,Golden Globes-Drama
 2012,Actor - Leading Role,Jean Dujardim,Golden Globes-Musical or Comedy
@@ -1783,27 +2085,38 @@ Year,Award,Name,Issuer
 2012,Actor - Leading Role,Jean Dujardim,Screen Actors Guild
 2012,Actor - Leading Role,Michael Fassbender,Houston Critics
 2012,Actor - Leading Role,Michael Fassbender,LA Film Critics
+2012,Actor - Leading Role,Michael Shannon,Austin Film Critics
+2012,Actor - Leading Role,Michael Shannon,Central Ohio Film Critics
+2012,Actor - Supporting Role,Albert Brooks,Austin Film Critics
 2012,Actor - Supporting Role,Albert Brooks,Boston Film Critics
 2012,Actor - Supporting Role,Albert Brooks,DC Film Critics
 2012,Actor - Supporting Role,Albert Brooks,Houston Critics
 2012,Actor - Supporting Role,Albert Brooks,Las Vegas Critics
 2012,Actor - Supporting Role,Albert Brooks,New York Film Critics
 2012,Actor - Supporting Role,Albert Brooks,San Francisco Critics
+2012,Actor - Supporting Role,Christopher Plummer,Central Ohio Film Critics
 2012,Actor - Supporting Role,Christopher Plummer,Critics Choice
+2012,Actor - Supporting Role,Christopher Plummer,Dallas Fort Worth Critics
+2012,Actor - Supporting Role,Christopher Plummer,Denver Film Critics
 2012,Actor - Supporting Role,Christopher Plummer,Golden Globes
 2012,Actor - Supporting Role,Christopher Plummer,LA Film Critics
 2012,Actor - Supporting Role,Christopher Plummer,Screen Actors Guild
+2012,Actress - Leading Role,Elziabeth Olsen,Central Ohio Film Critics
+2012,Actress - Leading Role,Meryl Streep,Denver Film Critics
 2012,Actress - Leading Role,Meryl Streep,Golden Globes-Drama
 2012,Actress - Leading Role,Meryl Streep,New York Film Critics
 2012,Actress - Leading Role,Michelle Williams,Boston Film Critics
+2012,Actress - Leading Role,Michelle Williams,Dallas Fort Worth Critics
 2012,Actress - Leading Role,Michelle Williams,DC Film Critics
 2012,Actress - Leading Role,Michelle Williams,Golden Globes-Musical or Comedy
 2012,Actress - Leading Role,Michelle Williams,Las Vegas Critics
+2012,Actress - Leading Role,Tilda Swinton,Austin Film Critics
 2012,Actress - Leading Role,Tilda Swinton,Houston Critics
 2012,Actress - Leading Role,Tilda Swinton,San Francisco Critics
 2012,Actress - Leading Role,Viola Davis,Critics Choice
 2012,Actress - Leading Role,Viola Davis,Screen Actors Guild
 2012,Actress - Leading Role,Yoon Jeon hee,LA Film Critics
+2012,Actress - Supporting Role,Jessica Chastain,Austin Film Critics
 2012,Actress - Supporting Role,Jessica Chastain,LA Film Critics
 2012,Actress - Supporting Role,Jessica Chastain,New York Film Critics
 2012,Actress - Supporting Role,Melissa McCarthy,Boston Film Critics
@@ -1811,13 +2124,22 @@ Year,Award,Name,Issuer
 2012,Actress - Supporting Role,Octavia Spencer,Critics Choice
 2012,Actress - Supporting Role,Octavia Spencer,DC Film Critics
 2012,Actress - Supporting Role,Octavia Spencer,Golden Globes
+2012,Actress - Supporting Role,Shailene Woodley,Dallas Fort Worth Critics
 2012,Actress - Supporting Role,Shailene Woodley,Houston Critics
+2012,Actress - Supporting Role,Shailne Woodley,Central Ohio Film Critics
+2012,Actress - Supporting Role,Shailne Woodley,Denver Film Critics
 2012,Actress - Supporting Role,Vanessa Redgrave,San Francisco Critics
+2012,Animated Feature,Arthur Christmas,Central Ohio Film Critics
+2012,Animated Feature,Rango,Austin Film Critics
 2012,Animated Feature,Rango,Critics Choice
+2012,Animated Feature,Rango,Dallas Fort Worth Critics
 2012,Animated Feature,Rango,DC Film Critics
+2012,Animated Feature,Rango,Denver Film Critics
 2012,Animated Feature,Rango,LA Film Critics
 2012,Animated Feature,Rango,San Francisco Critics
 2012,Animated Feature,The Adventures of Tintin,Golden Globes
+2012,Best Picture,Drive,Central Ohio Film Critics
+2012,Best Picture,Hugo,Austin Film Critics
 2012,Best Picture,The Artist,Boston Film Critics
 2012,Best Picture,The Artist,Critics Choice
 2012,Best Picture,The Artist,DC Film Critics
@@ -1826,12 +2148,17 @@ Year,Award,Name,Issuer
 2012,Best Picture,The Artist,New York Film Critics
 2012,Best Picture,The Artist,New York Film Critics
 2012,Best Picture,The Artist,Producers Guild
+2012,Best Picture,The Descendants,Dallas Fort Worth Critics
 2012,Best Picture,The Descendants,Golden Globes-Drama
 2012,Best Picture,The Descendants,Houston Critics
 2012,Best Picture,The Descendants,LA Film Critics
+2012,Best Picture,The Tree of Life,Denver Film Critics
 2012,Best Picture,The Tree of Life,San Francisco Critics
+2012,Cinematography,The Tree of Life,Austin Film Critics
 2012,Cinematography,The Tree of Life,Boston Film Critics
+2012,Cinematography,The Tree of Life,Central Ohio Film Critics
 2012,Cinematography,The Tree of Life,Critics Choice
+2012,Cinematography,The Tree of Life,Dallas Fort Worth Critics
 2012,Cinematography,The Tree of Life,DC Film Critics
 2012,Cinematography,The Tree of Life,Houston Critics
 2012,Cinematography,The Tree of Life,LA Film Critics
@@ -1839,58 +2166,80 @@ Year,Award,Name,Issuer
 2012,Cinematography,War Horse,Critics Choice
 2012,Costume Design,The Artist,Critics Choice
 2012,Costume Design,The Artist,Las Vegas Critics
+2012,Director,Drive,Austin Film Critics
+2012,Director,Drive,Central Ohio Film Critics
 2012,Director,Drive,Houston Critics
 2012,Director,Drive,Las Vegas Critics
 2012,Director,Hugo,Boston Film Critics
 2012,Director,Hugo,DC Film Critics
 2012,Director,Hugo,Golden Globes
 2012,Director,The Artist,Critics Choice
+2012,Director,The Artist,Denver Film Critics
 2012,Director,The Artist,Directors Guild
 2012,Director,The Artist,New York Film Critics
+2012,Director,The Descendants,Dallas Fort Worth Critics
 2012,Director,The Tree of Life,LA Film Critics
 2012,Director,The Tree of Life,San Francisco Critics
+2012,Documentary,Cave of Forgotten Dreams,Dallas Fort Worth Critics
 2012,Documentary,Cave of Forgotten Dreams,DC Film Critics
 2012,Documentary,Cave of Forgotten Dreams,LA Film Critics
 2012,Documentary,Cave of Forgotten Dreams,New York Film Critics
 2012,Documentary,George Harrison Living in the Material World,Critics Choice
+2012,Documentary,Page One Inside the New York Times,Denver Film Critics
 2012,Documentary,Project Nim,Directors Guild
 2012,Documentary,Project Nim,Las Vegas Critics
+2012,Documentary,Senna,Austin Film Critics
 2012,Documentary,Tabloid,San Francisco Critics
+2012,Documentary,The Cove of Forgotten Dreams,Central Ohio Film Critics
 2012,Film Editing,The Clock,Boston Film Critics
 2012,Film Editing,The Girl With the Dragon Tattoo,Critics Choice
 2012,Foreign Language Film,13 Assassins,Las Vegas Critics
 2012,Foreign Language Film,A Separation,Critics Choice
+2012,Foreign Language Film,A Separation,Dallas Fort Worth Critics
+2012,Foreign Language Film,A Separation,Denver Film Critics
 2012,Foreign Language Film,A Separation,Golden Globes
 2012,Foreign Language Film,A Separation,New York Film Critics
 2012,Foreign Language Film,Certified Copy,San Francisco Critics
 2012,Foreign Language Film,City of Life and Death,LA Film Critics
+2012,Foreign Language Film,I Saw the Devil,Austin Film Critics
 2012,Foreign Language Film,Incendites,Boston Film Critics
+2012,Foreign Language Film,Of Gods and Men,Central Ohio Film Critics
 2012,Makeup and Hairstyling,Harry Potter and the Deathly Hallows Part 2,Critics Choice
 2012,Production Design,Hugo,Critics Choice
 2012,Production Design,Hugo,DC Film Critics
 2012,Production Design,Hugo,LA Film Critics
 2012,Production Design,The Artist,Las Vegas Critics
+2012,Score,Attack the Block,Austin Film Critics
 2012,Score,Drive,Boston Film Critics
+2012,Score,Hanna,Central Ohio Film Critics
 2012,Score,Hanna,LA Film Critics
 2012,Score,The Artist,Boston Film Critics
 2012,Score,The Artist,Critics Choice
 2012,Score,The Artist,DC Film Critics
+2012,Score,The Artist,Denver Film Critics
 2012,Score,The Artist,Golden Globes
 2012,Score,The Artist,Las Vegas Critics
 2012,Screenplay - Adapted,A Separation,LA Film Critics
+2012,Screenplay - Adapted,Drive,Austin Film Critics
 2012,Screenplay - Adapted,Moneyball,Boston Film Critics
 2012,Screenplay - Adapted,Moneyball,Critics Choice
 2012,Screenplay - Adapted,Moneyball,Las Vegas Critics
 2012,Screenplay - Adapted,Moneyball,New York Film Critics
+2012,Screenplay - Adapted,The Descendants,Dallas Fort Worth Critics
 2012,Screenplay - Adapted,The Descendants,DC Film Critics
 2012,Screenplay - Adapted,The Descendants,Houston Critics
 2012,Screenplay - Adapted,The Descendants,Writers Guild
+2012,Screenplay - Adapted,The Girl With the Dragon Tattoo,Central Ohio Film Critics
 2012,Screenplay - Adapted,Tinker Tailor Soldier Spy,San Francisco Critics
 2012,Screenplay - Original,50/50,DC Film Critics
 2012,Screenplay - Original,Margin Call,San Francisco Critics
+2012,Screenplay - Original,Midnight in Paris,Austin Film Critics
 2012,Screenplay - Original,Midnight in Paris,Critics Choice
+2012,Screenplay - Original,Midnight in Paris,Dallas Fort Worth Critics
 2012,Screenplay - Original,Midnight in Paris,Golden Globes
 2012,Screenplay - Original,Midnight in Paris,Writers Guild
+2012,Screenplay - Original,Source Code,Central Ohio Film Critics
+2012,Screenplay - Original,The Descendants,Denver Film Critics
 2012,Song,Man or Muppet,Las Vegas Critics
 2012,Visual Effects,Rise of the Planet of the Apes,Critics Choice
 2012,Visual Effects,Rise of the Planet of the Apes,Las Vegas Critics
@@ -1898,22 +2247,30 @@ Year,Award,Name,Issuer
 2012,Z Filler Data,Z Filler Data,Z Filler Data
 2013,AA Filler Data,AA Filler Data,AA Filler Data
 2013,Actor - Leading Role,Daniel Day Lewis,Boston Film Critics
+2013,Actor - Leading Role,Daniel Day Lewis,Central Ohio Film Critics
 2013,Actor - Leading Role,Daniel Day Lewis,Critics Choice
+2013,Actor - Leading Role,Daniel Day Lewis,Dallas Fort Worth Critics
 2013,Actor - Leading Role,Daniel Day Lewis,DC Film Critics
+2013,Actor - Leading Role,Daniel Day Lewis,Denver Film Critics
 2013,Actor - Leading Role,Daniel Day Lewis,Golden Globes-Drama
 2013,Actor - Leading Role,Daniel Day Lewis,Houston Critics
 2013,Actor - Leading Role,Daniel Day Lewis,Las Vegas Critics
 2013,Actor - Leading Role,Daniel Day Lewis,New York Film Critics
 2013,Actor - Leading Role,Daniel Day Lewis,Screen Actors Guild
 2013,Actor - Leading Role,Hugh Jackman,Golden Globes-Musical or Comedy
+2013,Actor - Leading Role,Joaquin Phoenix,Austin Film Critics
 2013,Actor - Leading Role,Joaquin Phoenix,LA Film Critics
 2013,Actor - Leading Role,Joaquin Phoenix,San Francisco Critics
+2013,Actor - Supporting Role,Christoph Waltz,Austin Film Critics
+2013,Actor - Supporting Role,Christoph Waltz,Central Ohio Film Critics
 2013,Actor - Supporting Role,Christoph Waltz,Golden Globes
 2013,Actor - Supporting Role,Dwight Henry,LA Film Critics
 2013,Actor - Supporting Role,Ezra Miller,Boston Film Critics
 2013,Actor - Supporting Role,Matthew McConaughey,New York Film Critics
 2013,Actor - Supporting Role,Phillip Seymour Hoffman,Critics Choice
 2013,Actor - Supporting Role,Phillip Seymour Hoffman,DC Film Critics
+2013,Actor - Supporting Role,Phillip Seymour Hoffman,Denver Film Critics
+2013,Actor - Supporting Role,Tommy Lee Jones,Dallas Fort Worth Critics
 2013,Actor - Supporting Role,Tommy Lee Jones,Houston Critics
 2013,Actor - Supporting Role,Tommy Lee Jones,Las Vegas Critics
 2013,Actor - Supporting Role,Tommy Lee Jones,San Francisco Critics
@@ -1921,71 +2278,98 @@ Year,Award,Name,Issuer
 2013,Actress - Leading Role,Emmanuelle Riva,Boston Film Critics
 2013,Actress - Leading Role,Emmanuelle Riva,LA Film Critics
 2013,Actress - Leading Role,Emmanuelle Riva,San Francisco Critics
+2013,Actress - Leading Role,Jennifer Lawrence,Austin Film Critics
+2013,Actress - Leading Role,Jennifer Lawrence,Central Ohio Film Critics
+2013,Actress - Leading Role,Jennifer Lawrence,Denver Film Critics
 2013,Actress - Leading Role,Jennifer Lawrence,Golden Globes-Musical or Comedy
 2013,Actress - Leading Role,Jennifer Lawrence,Houston Critics
 2013,Actress - Leading Role,Jennifer Lawrence,LA Film Critics
 2013,Actress - Leading Role,Jennifer Lawrence,Las Vegas Critics
 2013,Actress - Leading Role,Jennifer Lawrence,Screen Actors Guild
 2013,Actress - Leading Role,Jessica Chastain,Critics Choice
+2013,Actress - Leading Role,Jessica Chastain,Dallas Fort Worth Critics
 2013,Actress - Leading Role,Jessica Chastain,DC Film Critics
 2013,Actress - Leading Role,Jessica Chastain,Golden Globes-Drama
 2013,Actress - Leading Role,Rachel Weisz,New York Film Critics
 2013,Actress - Supporting Role,Amy Adams,LA Film Critics
+2013,Actress - Supporting Role,Anne Hathaway,Austin Film Critics
+2013,Actress - Supporting Role,Anne Hathaway,Central Ohio Film Critics
 2013,Actress - Supporting Role,Anne Hathaway,Critics Choice
 2013,Actress - Supporting Role,Anne Hathaway,DC Film Critics
+2013,Actress - Supporting Role,Anne Hathaway,Denver Film Critics
 2013,Actress - Supporting Role,Anne Hathaway,Golden Globes
 2013,Actress - Supporting Role,Anne Hathaway,Houston Critics
 2013,Actress - Supporting Role,Anne Hathaway,Las Vegas Critics
 2013,Actress - Supporting Role,Anne Hathaway,Screen Actors Guild
 2013,Actress - Supporting Role,Helen Hunt,San Francisco Critics
 2013,Actress - Supporting Role,Sally Field,Boston Film Critics
+2013,Actress - Supporting Role,Sally Field,Dallas Fort Worth Critics
 2013,Actress - Supporting Role,Sally Field,New York Film Critics
 2013,Animated Feature,Brave,Golden Globes
 2013,Animated Feature,Frankenweenie,Boston Film Critics
 2013,Animated Feature,Frankenweenie,DC Film Critics
 2013,Animated Feature,Frankenweenie,LA Film Critics
 2013,Animated Feature,Frankenweenie,San Francisco Critics
+2013,Animated Feature,ParaNorman,Central Ohio Film Critics
+2013,Animated Feature,ParaNorman,Dallas Fort Worth Critics
+2013,Animated Feature,ParaNorman,Denver Film Critics
 2013,Animated Feature,ParaNorman,Las Vegas Critics
+2013,Animated Feature,Wreck It Ralph,Austin Film Critics
 2013,Animated Feature,Wreck It Ralph,Critics Choice
 2013,Animated Feature,Wreck It Ralph,Houston Critics
 2013,Animated Feature,Wreck It Ralph,Producers Guild
 2013,Best Picture,Argo,Critics Choice
+2013,Best Picture,Argo,Denver Film Critics
 2013,Best Picture,Argo,Golden Globes-Drama
 2013,Best Picture,Argo,Houston Critics
 2013,Best Picture,Argo,Producers Guild
 2013,Best Picture,Armour,LA Film Critics
 2013,Best Picture,Les Miserables,Golden Globes-Musical or Comedy
 2013,Best Picture,Life of Pi,Las Vegas Critics
+2013,Best Picture,Lincoln,Dallas Fort Worth Critics
+2013,Best Picture,Moonrise Kingdom,Central Ohio Film Critics
 2013,Best Picture,The Master,San Francisco Critics
+2013,Best Picture,Zero Dark Thirty,Austin Film Critics
 2013,Best Picture,Zero Dark Thirty,Boston Film Critics
 2013,Best Picture,Zero Dark Thirty,DC Film Critics
 2013,Best Picture,Zero Dark Thirty,New York Film Critics
 2013,Cinematography,Life of Pi,Critics Choice
+2013,Cinematography,Life of Pi,Dallas Fort Worth Critics
 2013,Cinematography,Life of Pi,DC Film Critics
 2013,Cinematography,Life of Pi,Las Vegas Critics
 2013,Cinematography,Life of Pi,San Francisco Critics
+2013,Cinematography,Skyfall,Central Ohio Film Critics
 2013,Cinematography,Skyfall,Houston Critics
 2013,Cinematography,Skyfall,LA Film Critics
+2013,Cinematography,The Master,Austin Film Critics
 2013,Cinematography,The Master,Boston Film Critics
 2013,Cinematography,Zero Dark Thirty,New York Film Critics
 2013,Costume Design,Anna Karenina,Critics Choice
 2013,Costume Design,Anna Karenina,Las Vegas Critics
 2013,Director,Argo,Critics Choice
+2013,Director,Argo,Denver Film Critics
 2013,Director,Argo,Golden Globes
 2013,Director,Argo,Houston Critics
 2013,Director,Armour,Directors Guild
 2013,Director,Life of Pi,Las Vegas Critics
+2013,Director,Moonrise Kingdom,Central Ohio Film Critics
+2013,Director,The Master,Austin Film Critics
 2013,Director,The Master,LA Film Critics
 2013,Director,Zero Dark Thirty,Boston Film Critics
+2013,Director,Zero Dark Thirty,Dallas Fort Worth Critics
 2013,Director,Zero Dark Thirty,DC Film Critics
 2013,Director,Zero Dark Thirty,New York Film Critics
 2013,Director,Zero Dark Thirty,San Francisco Critics
 2013,Documentary,Bully,DC Film Critics
 2013,Documentary,Bully,Las Vegas Critics
 2013,Documentary,How to Survive a Plague,Boston Film Critics
+2013,Documentary,How to Survive a Plague,Central Ohio Film Critics
+2013,Documentary,Jire Dreams of Sushi,Denver Film Critics
+2013,Documentary,Searching for Sugar Man,Dallas Fort Worth Critics
 2013,Documentary,Searching for Sugar Man,Directors Guild
 2013,Documentary,Searching for Sugar Man,Houston Critics
 2013,Documentary,The Gatekeepers,LA Film Critics
+2013,Documentary,The Imposter,Austin Film Critics
 2013,Documentary,The Waiting Room,San Francisco Critics
 2013,Film Editing,Argo,San Francisco Critics
 2013,Film Editing,Zero Dark Thirty,Boston Film Critics
@@ -1994,13 +2378,17 @@ Year,Award,Name,Issuer
 2013,Film Editing,Zero Dark Thirty,Las Vegas Critics
 2013,Foreign Language Film,Armour,Boston Film Critics
 2013,Foreign Language Film,Armour,Critics Choice
+2013,Foreign Language Film,Armour,Dallas Fort Worth Critics
 2013,Foreign Language Film,Armour,DC Film Critics
+2013,Foreign Language Film,Armour,Denver Film Critics
 2013,Foreign Language Film,Armour,Golden Globes
 2013,Foreign Language Film,Armour,Las Vegas Critics
 2013,Foreign Language Film,Armour,New York Film Critics
 2013,Foreign Language Film,Armour,San Francisco Critics
+2013,Foreign Language Film,Holy Motors,Austin Film Critics
 2013,Foreign Language Film,Holy Motors,Houston Critics
 2013,Foreign Language Film,Holy Motors,LA Film Critics
+2013,Foreign Language Film,The Kid With a Bike,Central Ohio Film Critics
 2013,Makeup and Hairstyling,Cloud Atlas,Critics Choice
 2013,Production Design,Anna Karenina,Critics Choice
 2013,Production Design,Cloud Atlas,DC Film Critics
@@ -2008,27 +2396,40 @@ Year,Award,Name,Issuer
 2013,Production Design,Prometheus,Las Vegas Critics
 2013,Production Design,The Master,LA Film Critics
 2013,Score,Beasts of the Southern Wild,LA Film Critics
+2013,Score,Cloud Atlas,Austin Film Critics
 2013,Score,Cloud Atlas,Houston Critics
 2013,Score,Life of Pi,Golden Globes
 2013,Score,Life of Pi,Las Vegas Critics
 2013,Score,Lincoln,Critics Choice
+2013,Score,Lincoln,Dallas Fort Worth Critics
 2013,Score,Moonrise Kingdom,Boston Film Critics
+2013,Score,Moonrise Kingdom,Central Ohio Film Critics
+2013,Score,The Dark Kinght Rises,Denver Film Critics
 2013,Score,The Master,DC Film Critics
+2013,Screenplay - Adapted,Argo,Austin Film Critics
 2013,Screenplay - Adapted,Argo,LA Film Critics
 2013,Screenplay - Adapted,Argo,Writers Guild
 2013,Screenplay - Adapted,Lincoln,Boston Film Critics
+2013,Screenplay - Adapted,Lincoln,Central Ohio Film Critics
 2013,Screenplay - Adapted,Lincoln,Critics Choice
 2013,Screenplay - Adapted,Lincoln,Houston Critics
 2013,Screenplay - Adapted,Lincoln,New York Film Critics
 2013,Screenplay - Adapted,Lincoln,San Francisco Critics
 2013,Screenplay - Adapted,Silver Linings Playbook,DC Film Critics
+2013,Screenplay - Adapted,Silver Linings Playbook,Denver Film Critics
+2013,Screenplay - Adapted,Zero Dark Thirty,Dallas Fort Worth Critics
 2013,Screenplay - Original,Django Unchained,Critics Choice
+2013,Screenplay - Original,Django Unchained,Dallas Fort Worth Critics
 2013,Screenplay - Original,Django Unchained,Golden Globes
+2013,Screenplay - Original,Looper,Austin Film Critics
 2013,Screenplay - Original,Looper,DC Film Critics
 2013,Screenplay - Original,Looper,Las Vegas Critics
+2013,Screenplay - Original,Moonrise Kingdom,Central Ohio Film Critics
+2013,Screenplay - Original,Moonrise Kingdom,Denver Film Critics
 2013,Screenplay - Original,Zero Dark Thirty,San Francisco Critics
 2013,Screenplay - Original,Zero Dark Thirty,Writers Guild
 2013,Song,Skyfall,Critics Choice
+2013,Song,Skyfall,Denver Film Critics
 2013,Song,Skyfall,Golden Globes
 2013,Song,Skyfall,Houston Critics
 2013,Song,Skyfall,Las Vegas Critics
@@ -2037,31 +2438,43 @@ Year,Award,Name,Issuer
 2013,Z Filler Data,Z Filler Data,Z Filler Data
 2014,AA Filler Data,AA Filler Data,AA Filler Data
 2014,Actor - Leading Role,Bruce Dern,LA Film Critics
+2014,Actor - Leading Role,Chiwetel Ejiofor,Austin Film Critics
 2014,Actor - Leading Role,Chiwetel Ejiofor,Boston Film Critics
 2014,Actor - Leading Role,Chiwetel Ejiofor,DC Film Critics
 2014,Actor - Leading Role,Chiwetel Ejiofor,Houston Critics
 2014,Actor - Leading Role,Chiwetel Ejiofor,San Francisco Critics
+2014,Actor - Leading Role,Cliwetel Ejiofor,Central Ohio Film Critics
 2014,Actor - Leading Role,Leonardo DiCaprio,Golden Globes-Musical or Comedy
 2014,Actor - Leading Role,Matthew McConaughey,Critics Choice
+2014,Actor - Leading Role,Matthew McConaughey,Dallas Fort Worth Critics
 2014,Actor - Leading Role,Matthew McConaughey,Golden Globes-Drama
 2014,Actor - Leading Role,Matthew McConaughey,Las Vegas Critics
 2014,Actor - Leading Role,Matthew McConaughey,Screen Actors Guild
+2014,Actor - Leading Role,Matthey McConaughey,Denver Film Critics
 2014,Actor - Leading Role,Robert Redford,New York Film Critics
+2014,Actor - Supporting Role,James Franco,Central Ohio Film Critics
 2014,Actor - Supporting Role,James Franco,LA Film Critics
 2014,Actor - Supporting Role,James Franco,San Francisco Critics
 2014,Actor - Supporting Role,James Gandolfini,Boston Film Critics
+2014,Actor - Supporting Role,Jared Leto,Austin Film Critics
 2014,Actor - Supporting Role,Jared Leto,Critics Choice
+2014,Actor - Supporting Role,Jared Leto,Dallas Fort Worth Critics
 2014,Actor - Supporting Role,Jared Leto,DC Film Critics
+2014,Actor - Supporting Role,Jared Leto,Denver Film Critics
 2014,Actor - Supporting Role,Jared Leto,Golden Globes
 2014,Actor - Supporting Role,Jared Leto,Houston Critics
 2014,Actor - Supporting Role,Jared Leto,LA Film Critics
 2014,Actor - Supporting Role,Jared Leto,Las Vegas Critics
 2014,Actor - Supporting Role,Jared Leto,New York Film Critics
 2014,Actor - Supporting Role,Jared Leto,Screen Actors Guild
+2014,Actress - Leading Role,Adele Exarchopoulos,Central Ohio Film Critics
 2014,Actress - Leading Role,Amy Adams,Golden Globes-Musical or Comedy
+2014,Actress - Leading Role,Brie Larson,Austin Film Critics
 2014,Actress - Leading Role,Cate Blanchett,Boston Film Critics
 2014,Actress - Leading Role,Cate Blanchett,Critics Choice
+2014,Actress - Leading Role,Cate Blanchett,Dallas Fort Worth Critics
 2014,Actress - Leading Role,Cate Blanchett,DC Film Critics
+2014,Actress - Leading Role,Cate Blanchett,Denver Film Critics
 2014,Actress - Leading Role,Cate Blanchett,Golden Globes-Drama
 2014,Actress - Leading Role,Cate Blanchett,LA Film Critics
 2014,Actress - Leading Role,Cate Blanchett,New York Film Critics
@@ -2069,10 +2482,14 @@ Year,Award,Name,Issuer
 2014,Actress - Leading Role,Cate Blanchett,Screen Actors Guild
 2014,Actress - Leading Role,Emma Thompson,Las Vegas Critics
 2014,Actress - Leading Role,Sandra Bullock,Houston Critics
+2014,Actress - Supporting Role,Jannifer Lawrence,Central Ohio Film Critics
+2014,Actress - Supporting Role,Jannifer Lawrence,Denver Film Critics
 2014,Actress - Supporting Role,Jennifer Lawrence,New York Film Critics
 2014,Actress - Supporting Role,Jennifer Lawrence,San Francisco Critics
 2014,Actress - Supporting Role,June Squibb,Boston Film Critics
+2014,Actress - Supporting Role,Lupita Nyong'o,Austin Film Critics
 2014,Actress - Supporting Role,Lupita Nyong'o,Critics Choice
+2014,Actress - Supporting Role,Lupita Nyong'o,Dallas Fort Worth Critics
 2014,Actress - Supporting Role,Lupita Nyong'o,DC Film Critics
 2014,Actress - Supporting Role,Lupita Nyong'o,Golden Globes
 2014,Actress - Supporting Role,Lupita Nyong'o,Houston Critics
@@ -2080,16 +2497,21 @@ Year,Award,Name,Issuer
 2014,Actress - Supporting Role,Lupita Nyong'o,Las Vegas Critics
 2014,Actress - Supporting Role,Lupita Nyong'o,Screen Actors Guild
 2014,Animated Feature,Ernest Celestine,LA Film Critics
+2014,Animated Feature,Frozen,Austin Film Critics
 2014,Animated Feature,Frozen,Critics Choice
+2014,Animated Feature,Frozen,Dallas Fort Worth Critics
 2014,Animated Feature,Frozen,DC Film Critics
+2014,Animated Feature,Frozen,Denver Film Critics
 2014,Animated Feature,Frozen,Golden Globes
 2014,Animated Feature,Frozen,Houston Critics
 2014,Animated Feature,Frozen,Las Vegas Critics
 2014,Animated Feature,Frozen,Producers Guild
 2014,Animated Feature,Frozen,San Francisco Critics
 2014,Animated Feature,The Wind Rises,Boston Film Critics
+2014,Animated Feature,The Wind Rises,Central Ohio Film Critics
 2014,Best Picture,12 Years a Slave,Boston Film Critics
 2014,Best Picture,12 Years a Slave,Critics Choice
+2014,Best Picture,12 Years a Slave,Dallas Fort Worth Critics
 2014,Best Picture,12 Years a Slave,DC Film Critics
 2014,Best Picture,12 Years a Slave,Golden Globes-Drama
 2014,Best Picture,12 Years a Slave,Houston Critics
@@ -2097,11 +2519,17 @@ Year,Award,Name,Issuer
 2014,Best Picture,12 Years a Slave,San Francisco Critics
 2014,Best Picture,American Hustle,Golden Globes-Musical or Comedy
 2014,Best Picture,American Hustle,New York Film Critics
+2014,Best Picture,Gravity,Central Ohio Film Critics
+2014,Best Picture,Gravity,Denver Film Critics
 2014,Best Picture,Gravity,LA Film Critics
 2014,Best Picture,Gravity,Producers Guild
+2014,Best Picture,Her,Austin Film Critics
 2014,Best Picture,Her,LA Film Critics
+2014,Cinematography,Gravity,Austin Film Critics
 2014,Cinematography,Gravity,Boston Film Critics
+2014,Cinematography,Gravity,Central Ohio Film Critics
 2014,Cinematography,Gravity,Critics Choice
+2014,Cinematography,Gravity,Dallas Fort Worth Critics
 2014,Cinematography,Gravity,DC Film Critics
 2014,Cinematography,Gravity,Houston Critics
 2014,Cinematography,Gravity,LA Film Critics
@@ -2114,7 +2542,11 @@ Year,Award,Name,Issuer
 2014,Director,12 Years a Slave,DC Film Critics
 2014,Director,12 Years a Slave,Las Vegas Critics
 2014,Director,12 Years a Slave,New York Film Critics
+2014,Director,Gravity,Austin Film Critics
+2014,Director,Gravity,Central Ohio Film Critics
 2014,Director,Gravity,Critics Choice
+2014,Director,Gravity,Dallas Fort Worth Critics
+2014,Director,Gravity,Denver Film Critics
 2014,Director,Gravity,Directors Guild
 2014,Director,Gravity,Golden Globes
 2014,Director,Gravity,Houston Critics
@@ -2124,23 +2556,31 @@ Year,Award,Name,Issuer
 2014,Documentary,Blackfish,DC Film Critics
 2014,Documentary,Blackfish,Las Vegas Critics
 2014,Documentary,Stories We Tell,LA Film Critics
+2014,Documentary,The Act of Killing,Austin Film Critics
 2014,Documentary,The Act of Killing,Boston Film Critics
+2014,Documentary,The Act of Killing,Central Ohio Film Critics
+2014,Documentary,The Act of Killing,Denver Film Critics
 2014,Documentary,The Act of Killing,San Francisco Critics
 2014,Documentary,The Square,Directors Guild
+2014,Documentary,Twenty Feet from Stardom,Dallas Fort Worth Critics
 2014,Film Editing,Gravity,Critics Choice
 2014,Film Editing,Gravity,DC Film Critics
 2014,Film Editing,Gravity,LA Film Critics
 2014,Film Editing,Gravity,Las Vegas Critics
 2014,Film Editing,Gravity,San Francisco Critics
 2014,Film Editing,Rush,Boston Film Critics
+2014,Foreign Language Film,Blue is the Warmest Colour,Austin Film Critics
 2014,Foreign Language Film,Blue Is the Warmest Colour,Critics Choice
+2014,Foreign Language Film,Blue is the Warmest Colour,Dallas Fort Worth Critics
 2014,Foreign Language Film,Blue Is the Warmest Colour,LA Film Critics
 2014,Foreign Language Film,Blue Is the Warmest Colour,Las Vegas Critics
 2014,Foreign Language Film,Blue Is the Warmest Colour,New York Film Critics
 2014,Foreign Language Film,Blue Is the Warmest Colour,San Francisco Critics
 2014,Foreign Language Film,The Broken Circle Breakdown,DC Film Critics
+2014,Foreign Language Film,The Grandaster,Denver Film Critics
 2014,Foreign Language Film,The Great Beauty,Golden Globes
 2014,Foreign Language Film,The Hunt,Houston Critics
+2014,Foreign Language Film,The Wind Rises,Central Ohio Film Critics
 2014,Foreign Language Film,Wadjda,Boston Film Critics
 2014,Makeup and Hairstyling,American Hustle,Critics Choice
 2014,Production Design,Gravity,Las Vegas Critics
@@ -2152,23 +2592,35 @@ Year,Award,Name,Issuer
 2014,Score,12 Years a Slave,Las Vegas Critics
 2014,Score,All is Lost,Golden Globes
 2014,Score,Gravity,Critics Choice
+2014,Score,Gravity,Dallas Fort Worth Critics
+2014,Score,Gravity,Denver Film Critics
 2014,Score,Gravity,Houston Critics
+2014,Score,Her,Austin Film Critics
+2014,Score,Her,Central Ohio Film Critics
 2014,Score,Inside Llewyn Davis,Boston Film Critics
 2014,Score,Inside Llewyn Davis,LA Film Critics
+2014,Screenplay - Adapted,12 Years a Slave,Austin Film Critics
 2014,Screenplay - Adapted,12 Years a Slave,Critics Choice
+2014,Screenplay - Adapted,12 Years a Slave,Dallas Fort Worth Critics
 2014,Screenplay - Adapted,12 Years a Slave,DC Film Critics
 2014,Screenplay - Adapted,12 Years a Slave,Houston Critics
 2014,Screenplay - Adapted,12 Years a Slave,San Francisco Critics
 2014,Screenplay - Adapted,Before Midnight,LA Film Critics
 2014,Screenplay - Adapted,Captain Phillips,Writers Guild
+2014,Screenplay - Adapted,The Wolf of Wall Street,Central Ohio Film Critics
+2014,Screenplay - Adapted,The Wolff of Wall Street,Denver Film Critics
+2014,Screenplay - Original,American Hustle,Denver Film Critics
 2014,Screenplay - Original,American Hustle,New York Film Critics
 2014,Screenplay - Original,American Hustle,San Francisco Critics
+2014,Screenplay - Original,Her,Austin Film Critics
+2014,Screenplay - Original,Her,Central Ohio Film Critics
 2014,Screenplay - Original,Her,Critics Choice
 2014,Screenplay - Original,Her,DC Film Critics
 2014,Screenplay - Original,Her,Golden Globes
 2014,Screenplay - Original,Her,Las Vegas Critics
 2014,Screenplay - Original,Her,Writers Guild
 2014,Song,Let it Go,Critics Choice
+2014,Song,Let It Go,Denver Film Critics
 2014,Song,Ordinary Love,Golden Globes
 2014,Song,Please Mr. Kennedy,Houston Critics
 2014,Song,Please Mr. Kennedy,Las Vegas Critics
@@ -2177,11 +2629,15 @@ Year,Award,Name,Issuer
 2014,Visual Effects,Gravity,Visual Effects Society
 2014,Z Filler Data,Z Filler Data,Z Filler Data
 2015,AA Filler Data,AA Filler Data,AA Filler Data
+2015,Actor - Leading Role,Bradley Cooper,Denver Film Critics
+2015,Actor - Leading Role,Davil Oyelowo,Central Ohio Film Critics
 2015,Actor - Leading Role,Eddie Redmayne,Golden Globes-Drama
 2015,Actor - Leading Role,Eddie Redmayne,Screen Actors Guild
+2015,Actor - Leading Role,Jake Gyllenhaal,Austin Film Critics
 2015,Actor - Leading Role,Jake Gyllenhaal,Houston Critics
 2015,Actor - Leading Role,Michael Keaton,Boston Film Critics
 2015,Actor - Leading Role,Michael Keaton,Critics Choice
+2015,Actor - Leading Role,Michael Keaton,Dallas Fort Worth Critics
 2015,Actor - Leading Role,Michael Keaton,DC Film Critics
 2015,Actor - Leading Role,Michael Keaton,Golden Globes-Musical or Comedy
 2015,Actor - Leading Role,Michael Keaton,Las Vegas Critics
@@ -2189,9 +2645,13 @@ Year,Award,Name,Issuer
 2015,Actor - Leading Role,Timothy Spall,New York Film Critics
 2015,Actor - Leading Role,Tom Hardy,LA Film Critics
 2015,Actor - Supporting Role,Edward Norton,San Francisco Critics
+2015,Actor - Supporting Role,J K Simmons,Austin Film Critics
 2015,Actor - Supporting Role,J K Simmons,Boston Film Critics
+2015,Actor - Supporting Role,J K Simmons,Central Ohio Film Critics
 2015,Actor - Supporting Role,J K Simmons,Critics Choice
+2015,Actor - Supporting Role,J K Simmons,Dallas Fort Worth Critics
 2015,Actor - Supporting Role,J K Simmons,DC Film Critics
+2015,Actor - Supporting Role,J K Simmons,Denver Film Critics
 2015,Actor - Supporting Role,J K Simmons,Golden Globes
 2015,Actor - Supporting Role,J K Simmons,Houston Critics
 2015,Actor - Supporting Role,J K Simmons,LA Film Critics
@@ -2199,6 +2659,7 @@ Year,Award,Name,Issuer
 2015,Actor - Supporting Role,J K Simmons,New York Film Critics
 2015,Actor - Supporting Role,J K Simmons,Screen Actors Guild
 2015,Actress - Leading Role,Amy Adams,Golden Globes-Musical or Comedy
+2015,Actress - Leading Role,Essie Davis,Central Ohio Film Critics
 2015,Actress - Leading Role,Julianne Moore,Critics Choice
 2015,Actress - Leading Role,Julianne Moore,DC Film Critics
 2015,Actress - Leading Role,Julianne Moore,Golden Globes-Drama
@@ -2208,20 +2669,31 @@ Year,Award,Name,Issuer
 2015,Actress - Leading Role,Marion Cotillard,Boston Film Critics
 2015,Actress - Leading Role,Marion Cotillard,LA Film Critics
 2015,Actress - Leading Role,Marion Cotillard,New York Film Critics
+2015,Actress - Leading Role,Reese Witherspoon,Dallas Fort Worth Critics
 2015,Actress - Leading Role,Reese Witherspoon,Las Vegas Critics
+2015,Actress - Leading Role,Rosamund Pike,Austin Film Critics
+2015,Actress - Leading Role,Rosamund Pike,Denver Film Critics
 2015,Actress - Supporting Role,Agata Kulesza,LA Film Critics
 2015,Actress - Supporting Role,Emma Stone,Boston Film Critics
+2015,Actress - Supporting Role,Patricia Arquette,Austin Film Critics
 2015,Actress - Supporting Role,Patricia Arquette,Critics Choice
+2015,Actress - Supporting Role,Patricia Arquette,Dallas Fort Worth Critics
 2015,Actress - Supporting Role,Patricia Arquette,DC Film Critics
+2015,Actress - Supporting Role,Patricia Arquette,Denver Film Critics
 2015,Actress - Supporting Role,Patricia Arquette,Golden Globes
 2015,Actress - Supporting Role,Patricia Arquette,Houston Critics
 2015,Actress - Supporting Role,Patricia Arquette,New York Film Critics
 2015,Actress - Supporting Role,Patricia Arquette,San Francisco Critics
 2015,Actress - Supporting Role,Patricia Arquette,Screen Actors Guild
+2015,Actress - Supporting Role,Tilda Swinton,Central Ohio Film Critics
 2015,Actress - Supporting Role,Tilda Swinton,Las Vegas Critics
 2015,Animated Feature,How to Train Your Dragon 2,Golden Globes
+2015,Animated Feature,The Lego Movie,Austin Film Critics
+2015,Animated Feature,The Lego Movie,Central Ohio Film Critics
 2015,Animated Feature,The LEGO Movie,Critics Choice
+2015,Animated Feature,The Lego Movie,Dallas Fort Worth Critics
 2015,Animated Feature,The LEGO Movie,DC Film Critics
+2015,Animated Feature,The Lego Movie,Denver Film Critics
 2015,Animated Feature,The LEGO Movie,Houston Critics
 2015,Animated Feature,The LEGO Movie,Las Vegas Critics
 2015,Animated Feature,The LEGO Movie,New York Film Critics
@@ -2229,8 +2701,11 @@ Year,Award,Name,Issuer
 2015,Animated Feature,The LEGO Movie,San Francisco Critics
 2015,Animated Feature,The Tale of Princess Takahata,Boston Film Critics
 2015,Animated Feature,The Tale of Princess Takahata,LA Film Critics
+2015,Best Picture,American Sniper,Denver Film Critics
+2015,Best Picture,Birdman or (The Unexpected Virtue of Ignorance),Dallas Fort Worth Critics
 2015,Best Picture,Birdman or (The Unexpected Virtue of Ignorance),Las Vegas Critics
 2015,Best Picture,Birdman or (The Unexpected Virtue of Ignorance),Producers Guild
+2015,Best Picture,Boyhood,Austin Film Critics
 2015,Best Picture,Boyhood,Boston Film Critics
 2015,Best Picture,Boyhood,Critics Choice
 2015,Best Picture,Boyhood,DC Film Critics
@@ -2239,41 +2714,57 @@ Year,Award,Name,Issuer
 2015,Best Picture,Boyhood,LA Film Critics
 2015,Best Picture,Boyhood,New York Film Critics
 2015,Best Picture,Boyhood,San Francisco Critics
+2015,Best Picture,Selma,Central Ohio Film Critics
 2015,Best Picture,The Grand Budapest Hotel,Golden Globes-Musical or Comedy
+2015,Cinematography,Birdman or (The Unexpected Virtue of Ignorance),Austin Film Critics
 2015,Cinematography,Birdman or (The Unexpected Virtue of Ignorance),Boston Film Critics
 2015,Cinematography,Birdman or (The Unexpected Virtue of Ignorance),Critics Choice
+2015,Cinematography,Birdman or (The Unexpected Virtue of Ignorance),Dallas Fort Worth Critics
 2015,Cinematography,Birdman or (The Unexpected Virtue of Ignorance),DC Film Critics
+2015,Cinematography,Birdman or (The Unexpected Virtue of Ignorance),Denver Film Critics
 2015,Cinematography,Birdman or (The Unexpected Virtue of Ignorance),Houston Critics
 2015,Cinematography,Birdman or (The Unexpected Virtue of Ignorance),LA Film Critics
 2015,Cinematography,Birdman or (The Unexpected Virtue of Ignorance),Las Vegas Critics
 2015,Cinematography,Ida,San Francisco Critics
+2015,Cinematography,The Grand Budapest Hotel,Central Ohio Film Critics
 2015,Cinematography,The Immigrant,New York Film Critics
 2015,Costume Design,Guardians of the Galaxy,Las Vegas Critics
 2015,Costume Design,The Grand Budapest Hotel,Critics Choice
+2015,Director,Birdman or (The Unexpected Virtue of Ignorance),Dallas Fort Worth Critics
 2015,Director,Birdman or (The Unexpected Virtue of Ignorance),Directors Guild
 2015,Director,Birdman or (The Unexpected Virtue of Ignorance),Las Vegas Critics
+2015,Director,Boyhood,Austin Film Critics
 2015,Director,Boyhood,Boston Film Critics
 2015,Director,Boyhood,Critics Choice
 2015,Director,Boyhood,DC Film Critics
+2015,Director,Boyhood,Denver Film Critics
 2015,Director,Boyhood,Golden Globes
 2015,Director,Boyhood,Houston Critics
 2015,Director,Boyhood,LA Film Critics
 2015,Director,Boyhood,New York Film Critics
 2015,Director,Boyhood,San Francisco Critics
+2015,Director,Selma,Central Ohio Film Critics
+2015,Documentary,CitizenFour,Austin Film Critics
 2015,Documentary,CitizenFour,Boston Film Critics
+2015,Documentary,CitizenFour,Dallas Fort Worth Critics
 2015,Documentary,CitizenFour,Directors Guild
 2015,Documentary,CitizenFour,Houston Critics
 2015,Documentary,CitizenFour,LA Film Critics
 2015,Documentary,CitizenFour,Las Vegas Critics
 2015,Documentary,CitizenFour,San Francisco Critics
+2015,Documentary,Finding Vivian Maier,Central Ohio Film Critics
 2015,Documentary,Life Itself,DC Film Critics
+2015,Documentary,The Overnighters,Denver Film Critics
 2015,Film Editing,Birdman or (The Unexpected Virtue of Ignorance),Critics Choice
 2015,Film Editing,Birdman or (The Unexpected Virtue of Ignorance),DC Film Critics
 2015,Film Editing,Boyhood,Boston Film Critics
 2015,Film Editing,Boyhood,LA Film Critics
 2015,Film Editing,Boyhood,San Francisco Critics
 2015,Film Editing,Edge of Tomorrow,Las Vegas Critics
+2015,Film Editing,Whiplash,Central Ohio Film Critics
+2015,Foreign Language Film,Force Majeure,Austin Film Critics
 2015,Foreign Language Film,Force Majeure,Critics Choice
+2015,Foreign Language Film,Force Majeure,Dallas Fort Worth Critics
 2015,Foreign Language Film,Force Majeure,DC Film Critics
 2015,Foreign Language Film,Force Majeure,Houston Critics
 2015,Foreign Language Film,Ida,LA Film Critics
@@ -2282,34 +2773,48 @@ Year,Award,Name,Issuer
 2015,Foreign Language Film,Ida,San Francisco Critics
 2015,Foreign Language Film,Leviathan,Golden Globes
 2015,Foreign Language Film,The Immigrant Two Days One Night,Boston Film Critics
+2015,Foreign Language Film,Two Days One Night,Denver Film Critics
+2015,Foreign Language Film,We Are the Best,Central Ohio Film Critics
 2015,Makeup and Hairstyling,Guardians of the Galaxy,Critics Choice
 2015,Production Design,The Grand Budapest Hotel,Critics Choice
 2015,Production Design,The Grand Budapest Hotel,DC Film Critics
 2015,Production Design,The Grand Budapest Hotel,LA Film Critics
 2015,Production Design,The Grand Budapest Hotel,Las Vegas Critics
 2015,Production Design,The Grand Budapest Hotel,San Francisco Critics
+2015,Score,Birdman or (The Unexpected Virtue of Ignorance),Austin Film Critics
 2015,Score,Birdman or (The Unexpected Virtue of Ignorance),Critics Choice
+2015,Score,Birdman or (The Unexpected Virtue of Ignorance),Denver Film Critics
 2015,Score,Birdman or (The Unexpected Virtue of Ignorance),Las Vegas Critics
 2015,Score,Inherent Vice,Boston Film Critics
 2015,Score,Inherent Vice,LA Film Critics
+2015,Score,Interstellar,Dallas Fort Worth Critics
+2015,Score,The Grand Budapest Hotel,Central Ohio Film Critics
 2015,Score,The Grand Budapest Hotel,Houston Critics
 2015,Score,The Theory of Everything,Golden Globes
 2015,Score,Under the Skin,DC Film Critics
 2015,Score,Under the Skin,LA Film Critics
+2015,Screenplay - Adapted,Gone Girl,Austin Film Critics
 2015,Screenplay - Adapted,Gone Girl,Critics Choice
 2015,Screenplay - Adapted,Gone Girl,DC Film Critics
+2015,Screenplay - Adapted,Inherent Vice,Denver Film Critics
 2015,Screenplay - Adapted,Inherent Vice,San Francisco Critics
+2015,Screenplay - Adapted,The Imitation Game,Central Ohio Film Critics
 2015,Screenplay - Adapted,The Imitation Game,Writers Guild
 2015,Screenplay - Original,Birdman or (The Unexpected Virtue of Ignorance),Critics Choice
+2015,Screenplay - Original,Birdman or (The Unexpected Virtue of Ignorance),Dallas Fort Worth Critics
 2015,Screenplay - Original,Birdman or (The Unexpected Virtue of Ignorance),DC Film Critics
+2015,Screenplay - Original,Birdman or (The Unexpected Virtue of Ignorance),Denver Film Critics
 2015,Screenplay - Original,Birdman or (The Unexpected Virtue of Ignorance),Golden Globes
 2015,Screenplay - Original,Birdman or (The Unexpected Virtue of Ignorance),Las Vegas Critics
 2015,Screenplay - Original,Birdman or (The Unexpected Virtue of Ignorance),San Francisco Critics
 2015,Screenplay - Original,Boyhood,Boston Film Critics
 2015,Screenplay - Original,Boyhood,Houston Critics
+2015,Screenplay - Original,Nightcrawler,Austin Film Critics
+2015,Screenplay - Original,Selma,Central Ohio Film Critics
 2015,Screenplay - Original,The Grand Budapest Hotel,LA Film Critics
 2015,Screenplay - Original,The Grand Budapest Hotel,New York Film Critics
 2015,Screenplay - Original,The Grand Budapest Hotel,Writers Guild
+2015,Song,Everything Is Awesome,Denver Film Critics
 2015,Song,Everything Is Awesome,Houston Critics
 2015,Song,Glory,Critics Choice
 2015,Song,Glory,Golden Globes
@@ -2319,21 +2824,33 @@ Year,Award,Name,Issuer
 2015,Z Filler Data,Z Filler Data,Z Filler Data
 2016,AA Filler Data,AA Filler Data,AA Filler Data
 2016,Actor - Leading Role,Leonardo DiCaprio,Boston Film Critics
+2016,Actor - Leading Role,Leonardo DiCaprio,Central Ohio Film Critics
 2016,Actor - Leading Role,Leonardo DiCaprio,Critics Choice
+2016,Actor - Leading Role,Leonardo DiCaprio,Dallas Fort Worth Critics
 2016,Actor - Leading Role,Leonardo DiCaprio,DC Film Critics
+2016,Actor - Leading Role,Leonardo DiCaprio,Denver Film Critics
 2016,Actor - Leading Role,Leonardo DiCaprio,Golden Globes-Drama
 2016,Actor - Leading Role,Leonardo DiCaprio,Las Vegas Critics
 2016,Actor - Leading Role,Leonardo DiCaprio,Screen Actors Guild
 2016,Actor - Leading Role,Matt Damon,Golden Globes-Musical or Comedy
+2016,Actor - Leading Role,Michael Fassbender,Austin Film Critics
 2016,Actor - Leading Role,Michael Fassbender,Houston Critics
 2016,Actor - Leading Role,Michael Fassbender,LA Film Critics
+2016,Actor - Supporting Role,Benicio Del Toro,Central Ohio Film Critics
 2016,Actor - Supporting Role,Mark Rylance,Boston Film Critics
 2016,Actor - Supporting Role,Mark Rylance,New York Film Critics
+2016,Actor - Supporting Role,Paul Dano,Dallas Fort Worth Critics
+2016,Actor - Supporting Role,Sylvester Stallone,Austin Film Critics
 2016,Actor - Supporting Role,Sylvester Stallone,Critics Choice
+2016,Actor - Supporting Role,Sylvester Stallone,Denver Film Critics
 2016,Actor - Supporting Role,Sylvester Stallone,Golden Globes
 2016,Actor - Supporting Role,Sylvester Stallone,Las Vegas Critics
 2016,Actor - Supporting Role,Tom Hardy,Houston Critics
+2016,Actress - Leading Role,Brie Larson,Austin Film Critics
+2016,Actress - Leading Role,Brie Larson,Central Ohio Film Critics
 2016,Actress - Leading Role,Brie Larson,Critics Choice
+2016,Actress - Leading Role,Brie Larson,Dallas Fort Worth Critics
+2016,Actress - Leading Role,Brie Larson,Denver Film Critics
 2016,Actress - Leading Role,Brie Larson,Golden Globes-Drama
 2016,Actress - Leading Role,Brie Larson,Houston Critics
 2016,Actress - Leading Role,Brie Larson,Las Vegas Critics
@@ -2344,53 +2861,77 @@ Year,Award,Name,Issuer
 2016,Actress - Leading Role,Saoirse Ronan,DC Film Critics
 2016,Actress - Leading Role,Saoirse Ronan,New York Film Critics
 2016,Actress - Leading Role,Saoirse Ronan,San Francisco Critics
+2016,Actress - Supporting Role,Alicia Vikander,Austin Film Critics
+2016,Actress - Supporting Role,Alicia Vikander,Central Ohio Film Critics
 2016,Actress - Supporting Role,Alicia Vikander,Critics Choice
+2016,Actress - Supporting Role,Alicia Vikander,Denver Film Critics
 2016,Actress - Supporting Role,Alicia Vikander,Screen Actors Guild
 2016,Actress - Supporting Role,Kate Winslet,Golden Globes
+2016,Actress - Supporting Role,Rooney Mara,Dallas Fort Worth Critics
 2016,Actress - Supporting Role,Rooney Mara,Houston Critics
 2016,Animated Feature,Anomalisa,Boston Film Critics
 2016,Animated Feature,Anomalisa,LA Film Critics
 2016,Animated Feature,Anomalisa,San Francisco Critics
+2016,Animated Feature,Inside Out,Austin Film Critics
 2016,Animated Feature,Inside Out,Boston Film Critics
+2016,Animated Feature,Inside Out,Central Ohio Film Critics
 2016,Animated Feature,Inside Out,Critics Choice
+2016,Animated Feature,Inside Out,Dallas Fort Worth Critics
 2016,Animated Feature,Inside Out,DC Film Critics
+2016,Animated Feature,Inside Out,Denver Film Critics
 2016,Animated Feature,Inside Out,Golden Globes
 2016,Animated Feature,Inside Out,Houston Critics
 2016,Animated Feature,Inside Out,Las Vegas Critics
 2016,Animated Feature,Inside Out,New York Film Critics
 2016,Best Picture,Carol,New York Film Critics
+2016,Best Picture,Mad Max: Fury Road,Austin Film Critics
 2016,Best Picture,Spotlight,Boston Film Critics
+2016,Best Picture,Spotlight,Central Ohio Film Critics
 2016,Best Picture,Spotlight,Critics Choice
+2016,Best Picture,Spotlight,Dallas Fort Worth Critics
 2016,Best Picture,Spotlight,DC Film Critics
+2016,Best Picture,Spotlight,Denver Film Critics
 2016,Best Picture,Spotlight,Golden Globes-Drama
 2016,Best Picture,Spotlight,Houston Critics
 2016,Best Picture,Spotlight,LA Film Critics
 2016,Best Picture,Spotlight,Las Vegas Critics
 2016,Best Picture,Spotlight,San Francisco Critics
 2016,Best Picture,The Martian,Golden Globes-Musical or Comedy
+2016,Cinematography,Carol,Austin Film Critics
 2016,Cinematography,Carol,Boston Film Critics
 2016,Cinematography,Carol,New York Film Critics
 2016,Cinematography,Mad Max: Fury Road,LA Film Critics
 2016,Cinematography,Mad Max: Fury Road,San Francisco Critics
+2016,Cinematography,The Revenant,Central Ohio Film Critics
 2016,Cinematography,The Revenant,Critics Choice
+2016,Cinematography,The Revenant,Dallas Fort Worth Critics
 2016,Cinematography,The Revenant,DC Film Critics
 2016,Cinematography,The Revenant,Houston Critics
 2016,Cinematography,The Revenant,Las Vegas Critics
 2016,Costume Design,Mad Max: Fury Road,Critics Choice
 2016,Director,Carol,Boston Film Critics
 2016,Director,Carol,New York Film Critics
+2016,Director,Mad Max: Fury Road,Austin Film Critics
 2016,Director,Mad Max: Fury Road,Critics Choice
 2016,Director,Mad Max: Fury Road,DC Film Critics
+2016,Director,Mad Max: Fury Road,Denver Film Critics
 2016,Director,Mad Max: Fury Road,LA Film Critics
 2016,Director,Mad Max: Fury Road,San Francisco Critics
+2016,Director,Spotlight,Central Ohio Film Critics
 2016,Director,Spotlight,Houston Critics
 2016,Director,Spotlight,Las Vegas Critics
+2016,Director,The Revenant,Dallas Fort Worth Critics
 2016,Director,The Revenant,Directors Guild
 2016,Director,The Revenant,Golden Globes
+2016,Documentary,Amy,Dallas Fort Worth Critics
 2016,Documentary,Amy,DC Film Critics
 2016,Documentary,Amy,Houston Critics
 2016,Documentary,Amy,LA Film Critics
+2016,Documentary,The Look of Silence,Austin Film Critics
+2016,Documentary,The Look of Silence,Central Ohio Film Critics
+2016,Documentary,The Look of Silence,Denver Film Critics
 2016,Film Editing,Mad Max: Fury Road,Boston Film Critics
+2016,Film Editing,Mad Max: Fury Road,Central Ohio Film Critics
 2016,Film Editing,Mad Max: Fury Road,Critics Choice
 2016,Film Editing,Mad Max: Fury Road,DC Film Critics
 2016,Film Editing,Mad Max: Fury Road,LA Film Critics
@@ -2398,8 +2939,12 @@ Year,Award,Name,Issuer
 2016,Film Editing,Mad Max: Fury Road,San Francisco Critics
 2016,Film Editing,The Big Short,LA Film Critics
 2016,Foreign Language Film,Goodnight Monny,Las Vegas Critics
+2016,Foreign Language Film,Phoenix,Central Ohio Film Critics
+2016,Foreign Language Film,Son of Saul,Austin Film Critics
 2016,Foreign Language Film,Son of Saul,Critics Choice
+2016,Foreign Language Film,Son of Saul,Dallas Fort Worth Critics
 2016,Foreign Language Film,Son of Saul,DC Film Critics
+2016,Foreign Language Film,Son of Saul,Denver Film Critics
 2016,Foreign Language Film,Son of Saul,Golden Globes
 2016,Foreign Language Film,Son of Saul,LA Film Critics
 2016,Foreign Language Film,Son of Saul,San Francisco Critics
@@ -2412,78 +2957,113 @@ Year,Award,Name,Issuer
 2016,Production Design,Mad Max: Fury Road,LA Film Critics
 2016,Score,Carol,LA Film Critics
 2016,Score,Sicario,DC Film Critics
+2016,Score,The Hateful Eight,Austin Film Critics
+2016,Score,The Hateful Eight,Central Ohio Film Critics
 2016,Score,The Hateful Eight,Critics Choice
+2016,Score,The Hateful Eight,Denver Film Critics
 2016,Score,The Hateful Eight,Golden Globes
 2016,Score,The Hateful Eight,Houston Critics
 2016,Score,The Hateful Eight,Las Vegas Critics
+2016,Score,The Revenant,Dallas Fort Worth Critics
 2016,Screenplay - Adapted,Brooklyn,San Francisco Critics
 2016,Screenplay - Adapted,Carol,New York Film Critics
+2016,Screenplay - Adapted,Room,Austin Film Critics
+2016,Screenplay - Adapted,Room,Dallas Fort Worth Critics
 2016,Screenplay - Adapted,Room,DC Film Critics
+2016,Screenplay - Adapted,The Big Short,Central Ohio Film Critics
 2016,Screenplay - Adapted,The Big Short,Critics Choice
+2016,Screenplay - Adapted,The Big Short,Denver Film Critics
 2016,Screenplay - Adapted,The Big Short,Writers Guild
 2016,Screenplay - Adapted,The Martian,Las Vegas Critics
+2016,Screenplay - Original,Inside Out,Austin Film Critics
 2016,Screenplay - Original,Inside Out,DC Film Critics
 2016,Screenplay - Original,Spotlight,Boston Film Critics
+2016,Screenplay - Original,Spotlight,Central Ohio Film Critics
 2016,Screenplay - Original,Spotlight,Critics Choice
+2016,Screenplay - Original,Spotlight,Dallas Fort Worth Critics
+2016,Screenplay - Original,Spotlight,Denver Film Critics
 2016,Screenplay - Original,Spotlight,Houston Critics
 2016,Screenplay - Original,Spotlight,LA Film Critics
 2016,Screenplay - Original,Spotlight,Las Vegas Critics
 2016,Screenplay - Original,Spotlight,Writers Guild
+2016,Song,See You Again,Denver Film Critics
 2016,Song,Writing's On the Wall,Golden Globes
 2016,Visual Effects,Mad Max: Fury Road,Critics Choice
+2016,Visual Effects,Mad Max: Fury Road,Denver Film Critics
 2016,Visual Effects,Mad Max: Fury Road,Las Vegas Critics
 2016,Visual Effects,Star Wars The Force Awakens,Visual Effects Society
 2016,Z Filler Data,Z Filler Data,Z Filler Data
 2017,AA Filler Data,AA Filler Data,AA Filler Data
+2017,Actor - Leading Role,Casey Affleck,Austin Film Critics
 2017,Actor - Leading Role,Casey Affleck,Boston Film Critics
 2017,Actor - Leading Role,Casey Affleck,Critics Choice
+2017,Actor - Leading Role,Casey Affleck,Dallas Fort Worth Critics
 2017,Actor - Leading Role,Casey Affleck,DC Film Critics
+2017,Actor - Leading Role,Casey Affleck,Denver Film Critics
 2017,Actor - Leading Role,Casey Affleck,Golden Globes-Drama
 2017,Actor - Leading Role,Casey Affleck,Houston Critics
 2017,Actor - Leading Role,Casey Affleck,Las Vegas Critics
 2017,Actor - Leading Role,Casey Affleck,New York Film Critics
+2017,Actor - Leading Role,Denzel Washington,Central Ohio Film Critics
 2017,Actor - Leading Role,Denzel Washington,San Francisco Critics
 2017,Actor - Leading Role,Denzel Washington,Screen Actors Guild
 2017,Actor - Leading Role,Ryan Gosling,Golden Globes-Musical or Comedy
 2017,Actor - Supporting Role,Aaron Taylor Johnson,Golden Globes
 2017,Actor - Supporting Role,Jeff Bridges,Houston Critics
+2017,Actor - Supporting Role,Mahershala Ali,Austin Film Critics
 2017,Actor - Supporting Role,Mahershala Ali,Boston Film Critics
+2017,Actor - Supporting Role,Mahershala Ali,Central Ohio Film Critics
 2017,Actor - Supporting Role,Mahershala Ali,Critics Choice
+2017,Actor - Supporting Role,Mahershala Ali,Dallas Fort Worth Critics
 2017,Actor - Supporting Role,Mahershala Ali,DC Film Critics
+2017,Actor - Supporting Role,Mahershala Ali,Denver Film Critics
 2017,Actor - Supporting Role,Mahershala Ali,LA Film Critics
 2017,Actor - Supporting Role,Mahershala Ali,New York Film Critics
 2017,Actor - Supporting Role,Mahershala Ali,Screen Actors Guild
 2017,Actor - Supporting Role,Michael Shannon,Las Vegas Critics
 2017,Actress - Leading Role,Emma Stone,Golden Globes-Musical or Comedy
 2017,Actress - Leading Role,Emma Stone,Screen Actors Guild
+2017,Actress - Leading Role,Isabelle Huppert,Austin Film Critics
 2017,Actress - Leading Role,Isabelle Huppert,Boston Film Critics
 2017,Actress - Leading Role,Isabelle Huppert,Golden Globes-Drama
 2017,Actress - Leading Role,Isabelle Huppert,LA Film Critics
 2017,Actress - Leading Role,Isabelle Huppert,New York Film Critics
 2017,Actress - Leading Role,Isabelle Huppert,San Francisco Critics
 2017,Actress - Leading Role,Natalie Portman,Critics Choice
+2017,Actress - Leading Role,NAtalie Portman,Dallas Fort Worth Critics
 2017,Actress - Leading Role,Natalie Portman,DC Film Critics
+2017,Actress - Leading Role,Natalie Portman,Denver Film Critics
 2017,Actress - Leading Role,Natalie Portman,Houston Critics
 2017,Actress - Leading Role,Natalie Portman,Las Vegas Critics
+2017,Actress - Leading Role,Rebeca Hall,Central Ohio Film Critics
+2017,Actress - Supporting Role,Lily Gladstone,Central Ohio Film Critics
 2017,Actress - Supporting Role,Michelle Williams,New York Film Critics
+2017,Actress - Supporting Role,Viola Davis,Austin Film Critics
 2017,Actress - Supporting Role,Viola Davis,Boston Film Critics
 2017,Actress - Supporting Role,Viola Davis,Critics Choice
+2017,Actress - Supporting Role,Viola Davis,Dallas Fort Worth Critics
 2017,Actress - Supporting Role,Viola Davis,DC Film Critics
+2017,Actress - Supporting Role,Viola Davis,Denver Film Critics
 2017,Actress - Supporting Role,Viola Davis,Golden Globes
 2017,Actress - Supporting Role,Viola Davis,Houston Critics
 2017,Actress - Supporting Role,Viola Davis,LA Film Critics
 2017,Actress - Supporting Role,Viola Davis,Las Vegas Critics
 2017,Actress - Supporting Role,Viola Davis,San Francisco Critics
 2017,Actress - Supporting Role,Viola Davis,Screen Actors Guild
+2017,Animated Feature,Kubo and the Two Strings,Austin Film Critics
+2017,Animated Feature,Kubo and the Two Strings,Central Ohio Film Critics
 2017,Animated Feature,Kubo and the Two Strings,DC Film Critics
 2017,Animated Feature,Kubo and the Two Strings,Houston Critics
 2017,Animated Feature,Kubo and the Two Strings,Las Vegas Critics
 2017,Animated Feature,The Red Turtle,San Francisco Critics
 2017,Animated Feature,Zootopia,Critics Choice
+2017,Animated Feature,Zootopia,Dallas Fort Worth Critics
+2017,Animated Feature,Zootopia,Denver Film Critics
 2017,Animated Feature,Zootopia,Golden Globes
 2017,Animated Feature,Zootopia,New York Film Critics
 2017,Animated Feature,Zootopia,Producers Guild
 2017,Best Picture,La La Land,Boston Film Critics
+2017,Best Picture,La La Land,Central Ohio Film Critics
 2017,Best Picture,La La Land,Critics Choice
 2017,Best Picture,La La Land,DC Film Critics
 2017,Best Picture,La La Land,Golden Globes-Musical or Comedy
@@ -2491,9 +3071,15 @@ Year,Award,Name,Issuer
 2017,Best Picture,La La Land,Las Vegas Critics
 2017,Best Picture,La La Land,New York Film Critics
 2017,Best Picture,La La Land,Producers Guild
+2017,Best Picture,Moonlight,Austin Film Critics
+2017,Best Picture,Moonlight,Dallas Fort Worth Critics
+2017,Best Picture,Moonlight,Denver Film Critics
 2017,Best Picture,Moonlight,Golden Globes-Drama
 2017,Best Picture,Moonlight,LA Film Critics
 2017,Best Picture,Moonlight,San Francisco Critics
+2017,Cinematography,La La Land,Austin Film Critics
+2017,Cinematography,La La Land,Central Ohio Film Critics
+2017,Cinematography,La La Land,Dallas Fort Worth Critics
 2017,Cinematography,La La Land,DC Film Critics
 2017,Cinematography,La La Land,Houston Critics
 2017,Cinematography,La La Land,Las Vegas Critics
@@ -2503,6 +3089,7 @@ Year,Award,Name,Issuer
 2017,Cinematography,Zootopia,Golden Globes
 2017,Costume Design,Jackie,Critics Choice
 2017,Director,La La Land,Boston Film Critics
+2017,Director,La La Land,Central Ohio Film Critics
 2017,Director,La La Land,Critics Choice
 2017,Director,La La Land,DC Film Critics
 2017,Director,La La Land,Directors Guild
@@ -2510,6 +3097,9 @@ Year,Award,Name,Issuer
 2017,Director,La La Land,Golden Globes
 2017,Director,La La Land,Houston Critics
 2017,Director,La La Land,Las Vegas Critics
+2017,Director,Moonlight,Austin Film Critics
+2017,Director,Moonlight,Dallas Fort Worth Critics
+2017,Director,Moonlight,Denver Film Critics
 2017,Director,Moonlight,LA Film Critics
 2017,Director,Moonlight,New York Film Critics
 2017,Director,Moonlight,San Francisco Critics
@@ -2517,14 +3107,23 @@ Year,Award,Name,Issuer
 2017,Documentary,I Am Not Your Negro,LA Film Critics
 2017,Documentary,I Am Not Your Negro,San Francisco Critics
 2017,Documentary,OJ Made in America,Boston Film Critics
+2017,Documentary,OJ Made in America,Central Ohio Film Critics
+2017,Documentary,OJ Made in America,Denver Film Critics
 2017,Documentary,OJ Made in America,Houston Critics
 2017,Documentary,OJ Made in America,Las Vegas Critics
 2017,Documentary,OJ Made in America,New York Film Critics
 2017,Documentary,OJ Made in America,Producers Guild
+2017,Documentary,Tower,Austin Film Critics
+2017,Documentary,Tower,Dallas Fort Worth Critics
 2017,Film Editing,La La Land,Boston Film Critics
+2017,Film Editing,La La Land,Central Ohio Film Critics
 2017,Film Editing,La La Land,Critics Choice
 2017,Film Editing,La La Land,DC Film Critics
 2017,Film Editing,Moonlight,San Francisco Critics
+2017,Foreign Language Film,The Handmaiden,Austin Film Critics
+2017,Foreign Language Film,The Handmaiden,Dallas Fort Worth Critics
+2017,Foreign Language Film,Toni Erdmann,Central Ohio Film Critics
+2017,Foreign Language Film,Toni Erdmann,Denver Film Critics
 2017,Foreign Language Film,Toni Erdmann,New York Film Critics
 2017,Makeup and Hairstyling,Jackie,Critics Choice
 2017,Production Design,La La Land,Critics Choice
@@ -2532,19 +3131,32 @@ Year,Award,Name,Issuer
 2017,Production Design,La La Land,Houston Critics
 2017,Score,Jackie,Boston Film Critics
 2017,Score,Jackie,San Francisco Critics
+2017,Score,La La Land,Austin Film Critics
+2017,Score,La La Land,Central Ohio Film Critics
 2017,Score,La La Land,Critics Choice
+2017,Score,La La Land,Dallas Fort Worth Critics
+2017,Score,La La Land,Denver Film Critics
 2017,Score,La La Land,Golden Globes
 2017,Score,La La Land,Houston Critics
 2017,Score,La La Land,LA Film Critics
 2017,Score,La La Land,Las Vegas Critics
 2017,Screenplay - Adapted,Arrival,Critics Choice
+2017,Screenplay - Adapted,Arrival,Writers Guild
+2017,Screenplay - Adapted,Moonlight,Austin Film Critics
+2017,Screenplay - Adapted,Moonlight,Austin Film Critics
+2017,Screenplay - Adapted,Moonlight,Central Ohio Film Critics
+2017,Screenplay - Adapted,Moonlight,Dallas Fort Worth Critics
+2017,Screenplay - Adapted,Moonlight,Denver Film Critics
 2017,Screenplay - Adapted,Moonlight,Writers Guild
+2017,Screenplay - Original,Hell or High Water,Central Ohio Film Critics
+2017,Screenplay - Original,Hell or High Water,Denver Film Critics
 2017,Screenplay - Original,Hell or High Water,Houston Critics
 2017,Screenplay - Original,La La Land,Critics Choice
 2017,Screenplay - Original,La La Land,DC Film Critics
 2017,Screenplay - Original,La La Land,Golden Globes
 2017,Screenplay - Original,La La Land,Las Vegas Critics
 2017,Screenplay - Original,Manchester by the Sea,Boston Film Critics
+2017,Screenplay - Original,Manchester by the Sea,Dallas Fort Worth Critics
 2017,Screenplay - Original,Manchester by the Sea,New York Film Critics
 2017,Screenplay - Original,Manchester by the Sea,San Francisco Critics
 2017,Screenplay - Original,The Lobster,LA Film Critics
@@ -2552,6 +3164,8 @@ Year,Award,Name,Issuer
 2017,Song,City of Stars,Golden Globes
 2017,Song,City of Stars,Houston Critics
 2017,Song,City of Stars,Las Vegas Critics
+2017,Song,Drive It Like You Stole It,Denver Film Critics
+2017,Visual Effects,Doctor Strange,Denver Film Critics
 2017,Visual Effects,The Jungle Book,Critics Choice
 2017,Visual Effects,The Jungle Book,Visual Effects Society
 2017,Z Filler Data,Z Filler Data,Z Filler Data

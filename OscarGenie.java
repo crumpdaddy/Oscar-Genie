@@ -4,7 +4,7 @@ import java.io.File;
 /** This has the main class that has UI and runs 
 * OscarGenieDriver methods and outpus results. 
 * @author Ryan Crumpler
-* @version 14.8.17
+* @version 15.8.17
 */
 public class OscarGenie {
     private static int maxYear = 2017;
@@ -19,7 +19,7 @@ public class OscarGenie {
         int award = 0;
         Scanner scan = new Scanner(System.in);
         OscarGenieDriver myNoms = new OscarGenieDriver();
-        myNoms.setup(minYear,maxYear, .2);
+        myNoms.setup(minYear, maxYear);
         String[] awardList = myNoms.getAwardList();
         System.out.println("Welcome to Oscar Genie by Ryan Crumpler\n");
         do {
