@@ -25,7 +25,7 @@ public class OscarGenie {
         do {
             System.out.println("Please enter a year " + minYear + "-"
                     + maxYear + " to predict"
-                    + "\n Press 'I' for Info about this program\n"
+                    + "\nPress 'I' for Info about this program and it's total accuracy\n"
                     + "Press 'H' for Help\nPress 'Q' to Quit");
             boolean invalid = true;
             yearIn = scan.nextLine();

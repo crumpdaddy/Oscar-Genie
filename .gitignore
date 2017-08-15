@@ -12,3 +12,7 @@ Oscar Genie.gpj
 *.iml
 
 *.md
+
+*.MF
+
+out/artifacts/Oscar_Genie_jar/Oscar-Genie.jar

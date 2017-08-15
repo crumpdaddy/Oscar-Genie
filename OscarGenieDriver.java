@@ -5,6 +5,8 @@ import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
 
 /** This program is the driver that carries out all methods 
 * to determine chance of winning an oscar.
@@ -146,7 +148,8 @@ public class OscarGenieDriver {
      * @throws IOException for scanner
      */
     public void readNominee(String fileNameIn) throws IOException {
-        Scanner scanFile = new Scanner(new File(fileNameIn));
+        InputStreamReader isr = new InputStreamReader(getClass().getResourceAsStream(fileNameIn));
+        BufferedReader br = new BufferedReader(isr);
         HashMap<String, Nomination> nomMap = new HashMap<String, Nomination>();
         HashMap<String, Nomination> cloneMap = new HashMap<String, Nomination>();
         HashMap<String, String> winners = new HashMap<String, String>();
@@ -154,6 +157,7 @@ public class OscarGenieDriver {
         HashMap<String, HashMap<String, Nomination>> nomineeMap = new HashMap<String, HashMap<String, Nomination>>();
         HashMap<String, HashMap<String, Nomination>> cloneMap2 = new HashMap<String, HashMap<String, Nomination>>();
         ArrayList<String> awardOrg = new ArrayList<String>();
+        Scanner scanFile = new Scanner(br);
         boolean nextLine = true;
         award = scanFile.nextLine();
         String won = "";
@@ -229,7 +233,9 @@ public class OscarGenieDriver {
      * @throws IOException for scanner
      */
     public void readCalculations(String fileNameIn) throws IOException {
-        Scanner scanFile = new Scanner(new File(fileNameIn));
+        InputStreamReader isr = new InputStreamReader(getClass().getResourceAsStream(fileNameIn));
+        BufferedReader br = new BufferedReader(isr);
+        Scanner scanFile = new Scanner(br);
         HashMap<String, Double> orgCount = new HashMap<String, Double>();
         HashMap<String, Nomination> nominees = new HashMap<String, Nomination>();
         HashMap<String, HashMap<String, Nomination>> nominationsByAward = new HashMap<String, HashMap<String, Nomination>>();
@@ -846,19 +852,19 @@ public class OscarGenieDriver {
         for (int i = 0; i < awardList.length; i++) {
             try {
                 output += "The actual winner for " + awardList[i] + " is "
-                        + winners.get(awardList[i]) + ":\n";
+                        + winners.get(awardList[i]) + ": ";
                 if (predictedWinners.get(awardList[i]).getAwardOrg().size() <= 1) {
                     output += "Oscar Genie did not have enough data "
                             + "to predict this\n";
                 }
                 else if (predictedWinners.get(awardList[i]).getName().equalsIgnoreCase(
                         winners.get(awardList[i]))) {
-                    output += " Oscar Genie correctly predicted this winner\n";
+                    output += "Oscar Genie correctly predicted this winner\n";
                     correct++;
                     count++;
                 }
                 else {
-                    output += " Oscar Genie did not predict this winner\n";
+                    output += "Oscar Genie did not predict this winner\n";
                     count++;
                 }
             }
@@ -881,9 +887,9 @@ public class OscarGenieDriver {
     public String printHelp() {
         String output = "Enter either the number "
                 + "corresponding to the selection you wish to "
-                + "predict or\nyou can enter the name of the award\n"
+                + "predict or ou can enter the name of the award\n"
                 + "Case does not matter\n"
-                + "please email any bugs or errors "
+                + "Please email any bugs or errors "
                 + "to rjcrumpler1@me.com";
         return output;
     }
@@ -905,10 +911,9 @@ public class OscarGenieDriver {
                 + "winners\nfor each category It then weights each "
                 + "source and makes a prediction\nbased on all the "
                 + "sources and outputs the results.\n***Please Note***\n"
-                + "Generally an output of\n0.00% indicates insufficient"
-                + "\ndata for that nominee\nIf there is only data for 1"
-                + " nominee, Oscar Genie considers\nthat award "
-                + "to have insufficient data";
+                + "If there is only data for 1 nominee, Oscar Genie considers\nthat award "
+                + "to have insufficient data and does not count\n"
+                + "it as either correct or incorrect";
         return output;
     }
 }
