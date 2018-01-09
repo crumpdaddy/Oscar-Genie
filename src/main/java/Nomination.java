@@ -1,17 +1,17 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 /** This program defines the  nomination object.
- *  This is used for actors as well as film objects
  * @author Ryan Crumpler
- * @version 28.12.17
+ * @version 30.12.17
  */
-public class Nomination {
-    private String name, percent;
-    private double coefficient;
-    private ArrayList<String> awardOrg;
-    private HashMap<String, Integer> keywordMap;
-    private int id;
+public class Nomination implements Serializable {
+    protected String name, percent;
+    protected double coefficient;
+    protected ArrayList<String> awardOrg;
+    protected HashMap<String, Double> keywordMap;
+    protected int id;
 
     /**
     * @param nameIn is title of film or name of actor/actress
@@ -22,6 +22,9 @@ public class Nomination {
       name = nameIn;
       coefficient = coefficientIn;
       awardOrg = awardOrgIn;
+      keywordMap = new HashMap<>();
+      id = -1;
+      awardOrg = new ArrayList<>();
    }
     /**
     * @return the title of film or actor
@@ -101,7 +104,7 @@ public class Nomination {
      * Returns a HashMAp of all keywords for a movie and their frequency
      * @return HAshMap of keywords
      */
-    public HashMap<String, Integer> getKeywordMap() {
+    public HashMap<String, Double> getKeywordMap() {
         return keywordMap;
     }
 
@@ -114,7 +117,7 @@ public class Nomination {
             keywordMap.put(keywordIn, keywordMap.get(keywordIn) + 1);
         }
         else {
-            keywordMap.put(keywordIn, 1);
+        keywordMap.put(keywordIn, 1.0);
         }
     }
 
@@ -137,7 +140,7 @@ public class Nomination {
      * @param keywordIn keyword to check frequency of
      * @return frequency of keyword
      */
-    public int getFrequency(String keywordIn) {
+    public double getFrequency(String keywordIn) {
         if (containsKeyword(keywordIn)) {
             return keywordMap.get(keywordIn);
         }

@@ -1,10 +1,11 @@
+import com.omertron.themoviedbapi.MovieDbException;
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.File;
 /** This has the main class that has UI and runs 
-* OscarGenieDriver methods and outpus results. 
+* OscarGenieDriver methods and outputs results.
 * @author Ryan Crumpler
-* @version 15.8.17
+* @version 31.12.17
 */
 public class OscarGenie {
     private static int maxYear = 2017;
@@ -13,13 +14,24 @@ public class OscarGenie {
      * * @throws IOException for scanner
      * * @param args command line arguments
      * */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException, MovieDbException {
         File file = new File("");
         String yearIn, goBack, info, category, aString, back = "";
         int award = 0;
         Scanner scan = new Scanner(System.in);
         OscarGenieDriver myNoms = new OscarGenieDriver();
-        myNoms.setup(minYear, maxYear);
+        if (args.length == 0) {
+            myNoms.setup(minYear, maxYear);
+            //myNoms.initialSetup(minYear, maxYear);
+        }
+        else {
+            if (args[0].equalsIgnoreCase("true")) {
+                myNoms.initialSetup(minYear, maxYear);
+            }
+            else {
+                myNoms.setup(minYear, maxYear);
+            }
+        }
         String[] awardList = myNoms.getAwardList();
         System.out.println("Welcome to Oscar Genie by Ryan Crumpler\n");
         do {

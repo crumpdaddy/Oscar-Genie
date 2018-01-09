@@ -1,18 +1,64 @@
 
-*.gpj
+.idea/artifacts/Oscar_Genie_jar.xml
 
-*.gpj
+.idea/checkstyle-idea.xml
 
-Oscar Genie.gpj
+.idea/compiler.xml
+
+.idea/dictionaries/rjcru.xml
+
+.idea/inspectionProfiles/profiles_settings.xml
+
+.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_7_1.xml
+
+.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_7_1.xml
+
+.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_7_1.xml
+
+.idea/libraries/Maven__com_omertron_themoviedbapi_4_3.xml
+
+.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml
+
+.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml
+
+.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml
+
+.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_1.xml
+
+.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_3.xml
+
+.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml
+
+.idea/libraries/Maven__org_slf4j_slf4j_simple_1_6_1.xml
+
+.idea/libraries/Maven__org_yamj_api_common_2_0.xml
+
+.idea/misc.xml
+
+.idea/modules.xml
+
+.idea/vcs.xml
+
+.idea/workspace.xml
+
+.idea/workspace (Ryans-MacBook-Pro-3.local's conflicted copy 2018-01-08).xml
+
+src/main/resources/META-INF/MANIFEST.MF
 
 *.class
 
-*.xml
+target/allWinners.ser
 
-*.iml
+target/classes/META-INF/allWinners.ser
 
-*.md
+target/classes/META-INF/MANIFEST.MF
 
-*.MF
+target/classes/META-INF/nomineesByYear.ser
 
-out/artifacts/Oscar_Genie_jar/Oscar-Genie.jar
+target/META-INF/MANIFEST.MF
+
+target/nomineesByYear.ser
+
+src/main/resources/META-INF/nomineesByYear.ser
+
+target/Oscar-Genie.jar
