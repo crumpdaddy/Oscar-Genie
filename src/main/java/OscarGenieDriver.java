@@ -42,7 +42,7 @@ public class OscarGenieDriver {
      */
     private static int maxCount = 50;
     private static int maxCountKW = 20;
-    private static double kwScalar = 1;
+    private static double kwScalar = .5;
 
     private static String api = "8aaacb1ccfa4a6da21625ef28c28c413";
 
@@ -52,6 +52,7 @@ public class OscarGenieDriver {
     private int minYear, maxYear, calculatingYear;
 
     private double scalar, calcCount;
+    private boolean calculatingFuture;
     protected String name, award, movie, nominee, organization, percent;
 
     /**
@@ -104,25 +105,35 @@ public class OscarGenieDriver {
      * @param maxYear last year to predict results for
      * @throws IOException for scanner
      */
-    public void setup(int minYear, int maxYear) throws IOException, ClassNotFoundException {
-        setMinMaxYear(minYear, maxYear);
+    public void setup(int minYear, int maxYear, int calculatingYear) throws IOException, MovieDbException {
+        setMinMaxYear(minYear, maxYear, calculatingYear);
         setScalar(.07);
-        deserializeMap();
+        try {
+            deserializeMap();
+        }
+        catch (ClassNotFoundException e ) {
+            readNominee("all_nominations.csv");
+            updateExtras();
+            serilizeMap();
+        }
         readCalculations("all_calculations.csv");
         setWinnerKeyWords();
         kalmanFilterAwards();
         kalmanFilterKeywords();
         getProbability();
+        System.out.println("test");
     }
 
-    public void initialSetup(int minYear, int maxYear) throws IOException, MovieDbException {
-        setMinMaxYear(minYear, maxYear);
+    public void initialSetup(int minYear, int maxYear, int calculatingYear) throws IOException, MovieDbException {
+        setMinMaxYear(minYear, maxYear, calculatingYear);
         setScalar(.07);
         readNominee("all_nominations.csv");
         updateExtras();
         serilizeMap();
         readCalculations("all_calculations.csv");
         kalmanFilterAwards();
+        kalmanFilterKeywords();
+        //getProbability();
         getProbability();
     }
 
@@ -143,9 +154,18 @@ public class OscarGenieDriver {
      * @param minYearIn first year to preform calculations on
      * @param maxYearIn last year to preform calculations on
      */
-    public void setMinMaxYear(int minYearIn, int maxYearIn) {
+    public void setMinMaxYear(int minYearIn, int maxYearIn, int calculatingYearIn) {
         minYear = minYearIn;
         maxYear = maxYearIn;
+        if (calculatingYearIn == 0 || maxYearIn == calculatingYearIn) {
+            calculatingYear = maxYear;
+            calculatingFuture = false;
+        }
+        else {
+            calculatingYear = calculatingYearIn;
+            calculatingFuture= true;
+        }
+
     }
 
     /**
@@ -230,7 +250,12 @@ public class OscarGenieDriver {
                 }
                 won = scanNominee.next();
                 if (won.equalsIgnoreCase("Yes")) {
-                    winners.put(award, name);
+                    if (calculatingFuture && year != calculatingYear) {
+                        winners.put(award, name);
+                    }
+                    else if (!calculatingFuture) {
+                        winners.put(award, name);
+                    }
                 }
             }
         }
@@ -308,7 +333,7 @@ public class OscarGenieDriver {
                 }
                 name = scanProbability.next();
                 organization = scanProbability.next();
-                if (Arrays.asList(orgList).contains(organization) && year != calculatingYear) {
+                if (Arrays.asList(orgList).contains(organization)) {
                     kalKey = organization + " " + award;
                     try {
                         kalCount = orgCount.get(kalKey);
@@ -412,7 +437,7 @@ public class OscarGenieDriver {
      * @throws MovieDbException
      */
     public void updateExtras() throws MovieDbException {
-        for (int i = minYear; i <= maxYear; i++) {
+        for (int i = minYear; i <= calculatingYear; i++) {
             System.out.println("Processing Data For " + i);
             for (int j = 0; j < awardList.length; j++) {
                 HashMap<String, HashMap<String, Nomination>> nomsByAward = nomineesByYear.get(i);
@@ -501,6 +526,7 @@ public class OscarGenieDriver {
             //InputStream fis = getClass().getResourceAsStream("allWinners.ser");
             FileInputStream fis = new FileInputStream("allWinners.ser");
             //FileInputStream fis = new FileInputStream("allWinners.ser");
+
             ObjectInputStream ois = new ObjectInputStream(fis);
             allWinners = (HashMap) ois.readObject();
             ois.close();
@@ -526,7 +552,7 @@ public class OscarGenieDriver {
         HashMap<String, Nomination> nominations = new HashMap<String, Nomination>();
         HashMap<String, HashMap<String, Nomination>> nominationsByAward = new HashMap<String, HashMap<String, Nomination>>();
         ArrayList<String> awardOrg = new ArrayList<String>();
-        for (int i = minYear; i <= maxYear; i++) {
+        for (int i = minYear; i <= calculatingYear; i++) {
             nominationsByAward = nomineesByYear.get(i);
             nominations = nominationsByAward.get(awardIn);
             try {
@@ -545,7 +571,7 @@ public class OscarGenieDriver {
                     }
                     String k = i + " " + awardIn + " " + n.getName();
                     kalmanMapKW.put(k, coef);
-                    n.setCoefficient(coef);
+                    //n.setCoefficient(coef);
                     nominations.put(n.getName(), n);
                 }
             }
@@ -612,7 +638,7 @@ public class OscarGenieDriver {
      * @param award name of award
      */
     public void addKWcoef(String award) {
-        for (int i = minYear; i <= maxYear; i++) {
+        for (int i = minYear; i <= calculatingYear; i++) {
             HashMap<String, HashMap<String, Nomination>> nomineesByAward = nomineesByYear.get(i);
             HashMap<String, Nomination> noms = nomineesByAward.get(award);
             HashMap<String, Double> awardKWs = winnerKeywords.get(award);
@@ -971,7 +997,7 @@ public class OscarGenieDriver {
         HashMap<Integer, String> output = new HashMap<Integer, String>();
         HashMap<String, Nomination> nominations = new HashMap<String, Nomination>();
         HashMap<String, HashMap<String, Nomination>> nominationsByAward = new HashMap<String, HashMap<String, Nomination>>();
-        for (int j = minYear; j <= maxYear; j++) {
+        for (int j = minYear; j <= calculatingYear; j++) {
             nominationsByAward = nomineesByYear.get(j);
             nominations = nominationsByAward.get(awardIn);
             Nomination highestCoeff = new Nomination("", 0, "", null);
@@ -1070,7 +1096,7 @@ public class OscarGenieDriver {
         HashMap<String, HashMap<String, Nomination>> nominationsByAward = new HashMap<String, HashMap<String, Nomination>>();
         ArrayList<String> awardOrg = new ArrayList<String>();
         DecimalFormat numFmt = new DecimalFormat("#00.00");
-        for (int i = minYear; i <= maxYear; i++) {
+        for (int i = minYear; i <= calculatingYear; i++) {
             nominationsByAward = nomineesByYear.get(i);
             HashMap<String, Nomination> highest = new HashMap<String, Nomination>();
             for (int j = 0; j < awardList.length; j++) {
@@ -1087,7 +1113,6 @@ public class OscarGenieDriver {
                         else {
                             n.setCoefficient(0.0);
                         }
-
                     }
                 }
                 catch (NullPointerException e) {
@@ -1306,10 +1331,6 @@ public class OscarGenieDriver {
             try {
                 output += "The actual winner for " + awardList[i] + " is "
                         + winners.get(awardList[i]) + ": ";
-               // if (predictedWinners.get(awardList[i]).getAwardOrg().size() <= 1) {
-                   // output += "Oscar Genie did not have enough data "
-                  //          + "to predict this\n";
-                //}
                 if (predictedWinners.get(awardList[i]).getName().equalsIgnoreCase(
                         winners.get(awardList[i]))) {
                     output += "Oscar Genie correctly predicted this winner\n";

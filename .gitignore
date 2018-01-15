@@ -62,3 +62,13 @@ target/nomineesByYear.ser
 src/main/resources/META-INF/nomineesByYear.ser
 
 target/Oscar-Genie.jar
+
+.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_5.xml
+
+.idea/libraries/Maven__log4j_log4j_1_2_17.xml
+
+.idea/libraries/Maven__log4j_log4j_1_2_17.xml
+
+Oscar-Genie.iml
+
+target/classes/all_nominations.csv

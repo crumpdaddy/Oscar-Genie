@@ -59,9 +59,6 @@ Year,Category,Nominee,Additional Info,Won
 1991,Foreign Language Film,Ju Dou,NONE,No
 1991,Foreign Language Film,Open Doors,NONE,No
 1991,Foreign Language Film,The Nasty Girl,NONE,No
-1991,Makeup and Hairstyling,Cyrano de Bergerac,NONE,No
-1991,Makeup and Hairstyling,Dick Tracy,NONE,Yes
-1991,Makeup and Hairstyling,Edward Scissorhands,NONE,No
 1991,Production Design,Cyrano de Bergerac,NONE,No
 1991,Production Design,Dances With Wolves,NONE,No
 1991,Production Design,Dick Tracy,NONE,Yes
@@ -149,9 +146,6 @@ Year,Category,Nominee,Additional Info,Won
 1992,Foreign Language Film,Raise the Red Lantern,NONE,No
 1992,Foreign Language Film,The Elementary School,NONE,No
 1992,Foreign Language Film,The Ox,NONE,No
-1992,Makeup and Hairstyling,Hook,NONE,No
-1992,Makeup and Hairstyling,Star Trek VI The Undiscovered Country,NONE,No
-1992,Makeup and Hairstyling,Terminator 2 Judgment Day,NONE,Yes
 1992,Production Design,Barton Fink,NONE,No
 1992,Production Design,Bugsy,NONE,Yes
 1992,Production Design,Hook,NONE,No
@@ -241,9 +235,6 @@ Year,Category,Nominee,Additional Info,Won
 1993,Foreign Language Film,Daens,NONE,No
 1993,Foreign Language Film,Indochine,NONE,Yes
 1993,Foreign Language Film,Schtonk!,NONE,No
-1993,Makeup and Hairstyling,Batman Returns,NONE,No
-1993,Makeup and Hairstyling,Bram Stoker's Dracula,NONE,Yes
-1993,Makeup and Hairstyling,Hoffa,NONE,No
 1993,Production Design,Bram Stoker's Dracula,NONE,No
 1993,Production Design,Chaplin,NONE,No
 1993,Production Design,Howards End,NONE,Yes
@@ -332,9 +323,6 @@ Year,Category,Nominee,Additional Info,Won
 1994,Foreign Language Film,Hedd Wyn,NONE,No
 1994,Foreign Language Film,The Scent of Green Papaya,NONE,No
 1994,Foreign Language Film,The Wedding Banquet,NONE,No
-1994,Makeup and Hairstyling,Mrs Doubtfire,NONE,Yes
-1994,Makeup and Hairstyling,Philadelphia,NONE,No
-1994,Makeup and Hairstyling,Schindler's List,NONE,No
 1994,Production Design,Addams Family Values,NONE,No
 1994,Production Design,Orlando,NONE,No
 1994,Production Design,Schindler's List,NONE,Yes
@@ -425,9 +413,6 @@ Year,Category,Nominee,Additional Info,Won
 1995,Foreign Language Film,Eat Drink Man Woman,NONE,No
 1995,Foreign Language Film,Farinelli Il Castrato,NONE,No
 1995,Foreign Language Film,Strawberry and Chocolate,NONE,No
-1995,Makeup and Hairstyling,Ed Wood,NONE,Yes
-1995,Makeup and Hairstyling,Forrest Gump,NONE,No
-1995,Makeup and Hairstyling,Mary Shelley's Frankenstein,NONE,No
 1995,Production Design,Bullets over Broadway,NONE,No
 1995,Production Design,Forrest Gump,NONE,No
 1995,Production Design,Interview with the Vampire,NONE,No
@@ -518,9 +503,6 @@ Year,Category,Nominee,Additional Info,Won
 1996,Foreign Language Film,Dust of Life,NONE,No
 1996,Foreign Language Film,O Quatrilho,NONE,No
 1996,Foreign Language Film,The Star Maker,NONE,No
-1996,Makeup and Hairstyling,Braveheart,NONE,Yes
-1996,Makeup and Hairstyling,My Family Mi Familia,NONE,No
-1996,Makeup and Hairstyling,Roommates,NONE,No
 1996,Production Design,A Little Princess,NONE,No
 1996,Production Design,Apollo 13,NONE,No
 1996,Production Design,Babe,NONE,No
@@ -615,9 +597,6 @@ Year,Category,Nominee,Additional Info,Won
 1997,Foreign Language Film,Prisoner of the Mountains,NONE,No
 1997,Foreign Language Film,Ridicule,NONE,No
 1997,Foreign Language Film,The Other Side of Sunday,NONE,No
-1997,Makeup and Hairstyling,Ghosts of Mississippi,NONE,No
-1997,Makeup and Hairstyling,Star Trek First Contact,NONE,No
-1997,Makeup and Hairstyling,The Nutty Professor,NONE,Yes
 1997,Production Design,Evita,NONE,No
 1997,Production Design,Hamlet,NONE,No
 1997,Production Design,The Birdcage,NONE,No
@@ -713,9 +692,6 @@ Year,Category,Nominee,Additional Info,Won
 1998,Foreign Language Film,Four Days in September,NONE,No
 1998,Foreign Language Film,Secrets of the Heart,NONE,No
 1998,Foreign Language Film,The Thief,NONE,No
-1998,Makeup and Hairstyling,Men in Black,NONE,Yes
-1998,Makeup and Hairstyling,Mrs Brown,NONE,No
-1998,Makeup and Hairstyling,Titanic,NONE,No
 1998,Production Design,Gattaca,NONE,No
 1998,Production Design,Kundun,NONE,No
 1998,Production Design,LA Confidential,NONE,No
@@ -809,9 +785,6 @@ Year,Category,Nominee,Additional Info,Won
 1999,Foreign Language Film,Life Is Beautiful,NONE,Yes
 1999,Foreign Language Film,Tango,NONE,No
 1999,Foreign Language Film,The Grandfather,NONE,No
-1999,Makeup and Hairstyling,Elizabeth,NONE,Yes
-1999,Makeup and Hairstyling,Saving Private Ryan,NONE,No
-1999,Makeup and Hairstyling,Shakespeare in Love,NONE,No
 1999,Production Design,Elizabeth,NONE,No
 1999,Production Design,Pleasantville,NONE,No
 1999,Production Design,Saving Private Ryan,NONE,No
@@ -905,10 +878,6 @@ Year,Category,Nominee,Additional Info,Won
 2000,Foreign Language Film,East West,NONE,No
 2000,Foreign Language Film,Solomon and Gaenor,NONE,No
 2000,Foreign Language Film,Under the Sun,NONE,No
-2000,Makeup and Hairstyling,Austin Powers The Spy Who Shagged Me,NONE,No
-2000,Makeup and Hairstyling,Bicentennial Man,NONE,No
-2000,Makeup and Hairstyling,Life,NONE,No
-2000,Makeup and Hairstyling,Topsy Turvy,NONE,Yes
 2000,Production Design,Anna and the King,NONE,No
 2000,Production Design,Sleepy Hollow,NONE,Yes
 2000,Production Design,The Cider House Rules,NONE,No
@@ -998,9 +967,6 @@ Year,Category,Nominee,Additional Info,Won
 2001,Foreign Language Film,Divided We Fall,NONE,No
 2001,Foreign Language Film,Everybody Famous!,NONE,No
 2001,Foreign Language Film,The Taste of Others,NONE,No
-2001,Makeup and Hairstyling,Dr Seuss' How the Grinch Stole Christmas,NONE,Yes
-2001,Makeup and Hairstyling,Shadow of the Vampire,NONE,No
-2001,Makeup and Hairstyling,The Cell,NONE,No
 2001,Production Design,Crouching Tiger Hidden Dragon,NONE,Yes
 2001,Production Design,Dr Seuss' How the Grinch Stole Christmas,NONE,No
 2001,Production Design,Gladiator,NONE,No
@@ -1092,9 +1058,6 @@ Year,Category,Nominee,Additional Info,Won
 2002,Foreign Language Film,Lagaan,NONE,No
 2002,Foreign Language Film,No Man's Land,NONE,Yes
 2002,Foreign Language Film,Son of the Bride,NONE,No
-2002,Makeup and Hairstyling,A Beautiful Mind,NONE,No
-2002,Makeup and Hairstyling,Moulin Rouge,NONE,No
-2002,Makeup and Hairstyling,The Lord of the Rings The Fellowship of the Ring,NONE,Yes
 2002,Production Design,Amelie,NONE,No
 2002,Production Design,Gosford Park,NONE,No
 2002,Production Design,Harry Potter and the Sorcerer's Stone,NONE,No
@@ -1189,8 +1152,6 @@ Year,Category,Nominee,Additional Info,Won
 2003,Foreign Language Film,Nowhere in Africa,NONE,Yes
 2003,Foreign Language Film,The Man without a Past,NONE,No
 2003,Foreign Language Film,Zus Zo,NONE,No
-2003,Makeup and Hairstyling,Frida,NONE,Yes
-2003,Makeup and Hairstyling,The Time Machine,NONE,No
 2003,Production Design,Chicago,NONE,Yes
 2003,Production Design,Frida,NONE,No
 2003,Production Design,Gangs of New York,NONE,No
@@ -1282,9 +1243,6 @@ Year,Category,Nominee,Additional Info,Won
 2004,Foreign Language Film,The Twilight Samurai,NONE,No
 2004,Foreign Language Film,Twin Sisters,NONE,No
 2004,Foreign Language Film,Zelary,NONE,No
-2004,Makeup and Hairstyling,Master and Commander The Far Side of the World,NONE,No
-2004,Makeup and Hairstyling,Pirates of the Caribbean The Curse of the Black Pearl,NONE,No
-2004,Makeup and Hairstyling,The Lord of the Rings The Return of the King,NONE,Yes
 2004,Production Design,Girl with a Pearl Earring,NONE,No
 2004,Production Design,Master and Commander The Far Side of the World,NONE,No
 2004,Production Design,Seabiscuit,NONE,No
@@ -1378,9 +1336,6 @@ Year,Category,Nominee,Additional Info,Won
 2005,Foreign Language Film,The Chorus,NONE,No
 2005,Foreign Language Film,The Sea Inside,NONE,Yes
 2005,Foreign Language Film,Yesterday,NONE,No
-2005,Makeup and Hairstyling,Lemony Snicket's A Series of Unfortunate Events,NONE,Yes
-2005,Makeup and Hairstyling,The Passion of the Christ,NONE,No
-2005,Makeup and Hairstyling,The Sea Inside,NONE,No
 2005,Production Design,A Very Long Engagement,NONE,No
 2005,Production Design,Finding Neverland,NONE,No
 2005,Production Design,Lemony Snicket's A Series of Unfortunate Events,NONE,No
@@ -1471,9 +1426,6 @@ Year,Category,Nominee,Additional Info,Won
 2006,Foreign Language Film,Paradise Now,NONE,No
 2006,Foreign Language Film,Sophie Scholl The Final Days,NONE,No
 2006,Foreign Language Film,Tsotsi,NONE,Yes
-2006,Makeup and Hairstyling,Cinderella Man,NONE,No
-2006,Makeup and Hairstyling,Star Wars Episode III Revenge of the Sith,NONE,No
-2006,Makeup and Hairstyling,The Chronicles of Narnia The Lion the Witch and the Wardrobe,NONE,Yes
 2006,Production Design,Good Night and Good Luck,NONE,No
 2006,Production Design,Harry Potter and the Goblet of Fire,NONE,No
 2006,Production Design,King Kong,NONE,No
@@ -1564,9 +1516,6 @@ Year,Category,Nominee,Additional Info,Won
 2007,Foreign Language Film,Pan's Labyrinth,NONE,No
 2007,Foreign Language Film,The Lives of Others,NONE,Yes
 2007,Foreign Language Film,Water,NONE,No
-2007,Makeup and Hairstyling,Apocalypto,NONE,No
-2007,Makeup and Hairstyling,Click,NONE,No
-2007,Makeup and Hairstyling,Pan's Labyrinth,NONE,Yes
 2007,Production Design,Dreamgirls,NONE,No
 2007,Production Design,Pan's Labyrinth,NONE,Yes
 2007,Production Design,Pirates of the Caribbean Dead Man's Chest,NONE,No
@@ -1659,9 +1608,6 @@ Year,Category,Nominee,Additional Info,Won
 2008,Foreign Language Film,Katyn,NONE,No
 2008,Foreign Language Film,Mongol,NONE,No
 2008,Foreign Language Film,The Counterfeiters,NONE,Yes
-2008,Makeup and Hairstyling,La Vie en Rose,NONE,Yes
-2008,Makeup and Hairstyling,Norbit,NONE,No
-2008,Makeup and Hairstyling,Pirates of the Caribbean At World's End,NONE,No
 2008,Production Design,American Gangster,NONE,No
 2008,Production Design,Atonement,NONE,No
 2008,Production Design,Sweeney Todd The Demon Barber of Fleet Street,NONE,Yes
@@ -1754,9 +1700,6 @@ Year,Category,Nominee,Additional Info,Won
 2009,Foreign Language Film,The Baader Meinhof Complex,NONE,No
 2009,Foreign Language Film,The Class,NONE,No
 2009,Foreign Language Film,Waltz with Bashir,NONE,No
-2009,Makeup and Hairstyling,Hellboy II The Golden Army,NONE,No
-2009,Makeup and Hairstyling,The Curious Case of Benjamin Button,NONE,Yes
-2009,Makeup and Hairstyling,The Dark Knight,NONE,No
 2009,Production Design,Changeling,NONE,No
 2009,Production Design,Revolutionary Road,NONE,No
 2009,Production Design,The Curious Case of Benjamin Button,NONE,Yes
@@ -1855,9 +1798,6 @@ Year,Category,Nominee,Additional Info,Won
 2010,Foreign Language Film,The Milk of Sorrow,NONE,No
 2010,Foreign Language Film,The Secret in Their Eyes,NONE,Yes
 2010,Foreign Language Film,The White Ribbon,NONE,No
-2010,Makeup and Hairstyling,Il Divo,NONE,No
-2010,Makeup and Hairstyling,Star Trek,NONE,Yes
-2010,Makeup and Hairstyling,The Young Victoria,NONE,No
 2010,Production Design,Avatar,NONE,Yes
 2010,Production Design,Nine,NONE,No
 2010,Production Design,Sherlock Holmes,NONE,No
@@ -1956,9 +1896,6 @@ Year,Category,Nominee,Additional Info,Won
 2011,Foreign Language Film,In a Better World,NONE,Yes
 2011,Foreign Language Film,Incendies,NONE,No
 2011,Foreign Language Film,Outside the Law,NONE,No
-2011,Makeup and Hairstyling,Barney's Version,NONE,No
-2011,Makeup and Hairstyling,The Way Back,NONE,No
-2011,Makeup and Hairstyling,The Wolfman,NONE,Yes
 2011,Production Design,Alice in Wonderland,NONE,Yes
 2011,Production Design,Harry Potter and the Deathly Hallows Part 1,NONE,No
 2011,Production Design,Inception,NONE,No
@@ -2054,9 +1991,6 @@ Year,Category,Nominee,Additional Info,Won
 2012,Foreign Language Film,Footnote,NONE,No
 2012,Foreign Language Film,In Darkness,NONE,No
 2012,Foreign Language Film,Monsieur Lazhar,NONE,No
-2012,Makeup and Hairstyling,Albert Nobbs,NONE,No
-2012,Makeup and Hairstyling,Harry Potter and the Deathly Hallows Part 2,NONE,No
-2012,Makeup and Hairstyling,The Iron Lady,NONE,Yes
 2012,Production Design,Harry Potter and the Deathly Hallows Part 2,NONE,No
 2012,Production Design,Hugo,NONE,Yes
 2012,Production Design,Midnight in Paris,NONE,No
@@ -2150,9 +2084,6 @@ Year,Category,Nominee,Additional Info,Won
 2013,Foreign Language Film,Kon Tiki,NONE,No
 2013,Foreign Language Film,No,NONE,No
 2013,Foreign Language Film,War Witch,NONE,No
-2013,Makeup and Hairstyling,Hitchcock,NONE,No
-2013,Makeup and Hairstyling,Les Miserables,NONE,Yes
-2013,Makeup and Hairstyling,The Hobbit An Unexpected Journey,NONE,No
 2013,Production Design,Anna Karenina,NONE,No
 2013,Production Design,Les Miserables,NONE,No
 2013,Production Design,Life of Pi,NONE,No
@@ -2250,9 +2181,6 @@ Year,Category,Nominee,Additional Info,Won
 2014,Foreign Language Film,The Great Beauty,NONE,Yes
 2014,Foreign Language Film,The Hunt,NONE,No
 2014,Foreign Language Film,The Missing Picture,NONE,No
-2014,Makeup and Hairstyling,Dallas Buyers Club,NONE,Yes
-2014,Makeup and Hairstyling,Jackass Presents Bad Grandpa,NONE,No
-2014,Makeup and Hairstyling,The Lone Ranger,NONE,No
 2014,Production Design,12 Years a Slave,NONE,No
 2014,Production Design,American Hustle,NONE,No
 2014,Production Design,Gravity,NONE,No
@@ -2348,9 +2276,6 @@ Year,Category,Nominee,Additional Info,Won
 2015,Foreign Language Film,Tangerines,NONE,No
 2015,Foreign Language Film,Timbuktu,NONE,No
 2015,Foreign Language Film,Wild Tales,NONE,No
-2015,Makeup and Hairstyling,Foxcatcher,NONE,No
-2015,Makeup and Hairstyling,Guardians of the Galaxy,NONE,No
-2015,Makeup and Hairstyling,The Grand Budapest Hotel,NONE,Yes
 2015,Production Design,Interstellar,NONE,No
 2015,Production Design,Into the Woods,NONE,No
 2015,Production Design,Mr Turner,NONE,No
@@ -2446,9 +2371,6 @@ Year,Category,Nominee,Additional Info,Won
 2016,Foreign Language Film,Mustang,NONE,No
 2016,Foreign Language Film,Son of Saul,NONE,Yes
 2016,Foreign Language Film,Theeb,NONE,No
-2016,Makeup and Hairstyling,Mad Max: Fury Road,NONE,Yes
-2016,Makeup and Hairstyling,THE 100 YEAR OLD MAN WHO CLIMBED OUT THE WINDOW AND DISAPPEARED,NONE,No
-2016,Makeup and Hairstyling,The Revenant,NONE,No
 2016,Production Design,Bridge of Spies,NONE,No
 2016,Production Design,Mad Max: Fury Road,NONE,Yes
 2016,Production Design,The Danish Girl,NONE,No
@@ -2545,10 +2467,6 @@ Year,Category,Nominee,Additional Info,Won
 2017,Foreign Language Film,Tanna,NONE,No
 2017,Foreign Language Film,The Salesman,NONE,Yes
 2017,Foreign Language Film,Toni Erdmann,NONE,No
-2017,Makeup and Hairstyling,A Man Called Ove,NONE,No
-2017,Makeup and Hairstyling,Star Trek Beyond,NONE,No
-2017,Makeup and Hairstyling,Suicide Squad,NONE,Yes
-2017,Production Design,Arrival,NONE,No
 2017,Production Design,Fantastic Beasts and Where to Find Them,NONE,No
 2017,Production Design,Hail Caesar,NONE,No
 2017,Production Design,La La Land,NONE,Yes

@@ -8,8 +8,9 @@ import java.io.File;
 * @version 31.12.17
 */
 public class OscarGenie {
-    private static int maxYear = 2017;
+    private static int maxYear = 2016;
     private static int minYear = 1991;
+    private static int calculatingYear = 2017;
     /**
      * * @throws IOException for scanner
      * * @param args command line arguments
@@ -21,22 +22,22 @@ public class OscarGenie {
         Scanner scan = new Scanner(System.in);
         OscarGenieDriver myNoms = new OscarGenieDriver();
         if (args.length == 0) {
-            myNoms.setup(minYear, maxYear);
+            myNoms.setup(minYear, maxYear, calculatingYear);
             //myNoms.initialSetup(minYear, maxYear);
         }
         else {
-            if (args[0].equalsIgnoreCase("true")) {
-                myNoms.initialSetup(minYear, maxYear);
+            if (args[0].equalsIgnoreCase("-t")) {
+                myNoms.initialSetup(minYear, maxYear, calculatingYear);
             }
             else {
-                myNoms.setup(minYear, maxYear);
+                myNoms.setup(minYear, maxYear, calculatingYear);
             }
         }
         String[] awardList = myNoms.getAwardList();
         System.out.println("Welcome to Oscar Genie by Ryan Crumpler\n");
         do {
             System.out.println("Please enter a year " + minYear + "-"
-                    + maxYear + " to predict"
+                    + calculatingYear + " to predict"
                     + "\nPress 'I' for Info about this program and it's total accuracy\n"
                     + "Press 'H' for Help\nPress 'Q' to Quit");
             boolean invalid = true;
@@ -47,7 +48,7 @@ public class OscarGenie {
             }
             catch (NumberFormatException e) {
             }
-            if (year >= minYear && year <= maxYear) {
+            if (year >= minYear && year <= calculatingYear) {
                 String menu = "";
                 menu += "Enter title of the award or its corresponding number you want to predict:\n";
                 for (int i = 0; i < awardList.length; i++) {
@@ -116,7 +117,7 @@ public class OscarGenie {
                         do {
                             System.out.println("Press 'E' to go Back");
                             info = scan.nextLine().toUpperCase();
-                            if (info.equals("I")) {
+                            if (info.equals("I")) {// && (year < calculatingYear || calculatingYear == maxYear)) {
                                 do {
                                     System.out.println(myNoms.allDetails(year));
                                     System.out.println("Press 'E' to go Back");
