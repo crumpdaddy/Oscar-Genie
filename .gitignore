@@ -72,3 +72,9 @@ target/Oscar-Genie.jar
 Oscar-Genie.iml
 
 target/classes/all_nominations.csv
+
+.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml
+
+Oscar-Genie.iml
+
+target/classes/all_nominations.csv
