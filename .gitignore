@@ -88,3 +88,5 @@ Oscar-Genie.iml
 target/classes/all_nominations.csv
 
 Oscar-Genie.iml
+
+target/classes/all_calculations.csv
