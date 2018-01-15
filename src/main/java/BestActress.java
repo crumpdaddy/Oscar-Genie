@@ -1,18 +1,19 @@
 import java.io.Serializable;
-import java.util.ArrayList;
 
+/**
+ * This program defines the BestActress object
+ * @author Ryan Crumpler
+ * @version 15.1.18
+ */
 public class BestActress extends Nomination implements Serializable {
-    protected String movie;
+    private String movie;
     /**
      * @param nameIn is first and last name of actress
-     * @param coefficientIn is constant used to determine actress'
      * likelihood of winning calculated through other awards
      * @param movieIn is the movie that the actor/actress appeared in
-     * @param percentIn is the actress' chance of winning an Oscar
      */
-    public BestActress(String nameIn, double coefficientIn, String percentIn, ArrayList<String> awardOrgIn,
-                     String movieIn) {
-        super(nameIn, coefficientIn, percentIn, awardOrgIn);
+    public BestActress(String nameIn, String movieIn) {
+        super(nameIn);
         movie = movieIn;
     }
 

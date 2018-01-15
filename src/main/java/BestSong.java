@@ -1,17 +1,15 @@
 import java.io.Serializable;
-import java.util.ArrayList;
 
 /**
  * This program defines the BestSong object
  * @author Ryan Crumpler
- * @version 30.12.17
+ * @version 15.1.18
  */
 public class BestSong extends Nomination  implements Serializable {
     protected String movie;
 
-    public BestSong(String nameIn, double coefficientIn, String percentIn, ArrayList<String> awardOrgIn,
-                    String movieIn) {
-        super(nameIn, coefficientIn, percentIn, awardOrgIn);
+    public BestSong(String nameIn, String movieIn) {
+        super(nameIn);
         movie = movieIn;
     }
 

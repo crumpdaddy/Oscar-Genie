@@ -1,36 +1,67 @@
 import com.omertron.themoviedbapi.MovieDbException;
 import java.util.Scanner;
 import java.io.IOException;
-import java.io.File;
-/** This has the main class that has UI and runs 
+/** This has the main class that has UI and runs
 * OscarGenieDriver methods and outputs results.
 * @author Ryan Crumpler
-* @version 31.12.17
+* @version 15.1.18
 */
 public class OscarGenie {
-    private static int maxYear = 2016;
-    private static int minYear = 1991;
-    private static int calculatingYear = 2017;
+
     /**
      * * @throws IOException for scanner
      * * @param args command line arguments
      * */
     public static void main(String[] args) throws IOException, ClassNotFoundException, MovieDbException {
-        File file = new File("");
-        String yearIn, goBack, info, category, aString, back = "";
+        int maxYear = 2017;
+        int minYear = 1991;
+        int calculatingYear = 2017;
+        String yearIn, info, category, aString, back = "";
         int award = 0;
         Scanner scan = new Scanner(System.in);
         OscarGenieDriver myNoms = new OscarGenieDriver();
         if (args.length == 0) {
-            myNoms.setup(minYear, maxYear, calculatingYear);
-            //myNoms.initialSetup(minYear, maxYear);
+            myNoms.setup(minYear, maxYear, calculatingYear, false);
         }
-        else {
+        else if (args.length == 1){
             if (args[0].equalsIgnoreCase("-t")) {
                 myNoms.initialSetup(minYear, maxYear, calculatingYear);
             }
+            else if (args[0].equalsIgnoreCase("-i")) {
+                myNoms.setup(minYear, maxYear, calculatingYear, false);
+            }
             else {
-                myNoms.setup(minYear, maxYear, calculatingYear);
+                System.out.println(args[0] + " is not a recognized parameter");
+                myNoms.setup(minYear, maxYear, calculatingYear, false);
+            }
+        }
+        else if (args.length == 3) {
+            minYear = Integer.parseInt((args[0]));
+            maxYear = Integer.parseInt((args[1]));
+            calculatingYear = Integer.parseInt((args[2]));
+            myNoms.setup(minYear, maxYear, calculatingYear, false);
+
+        }
+        else if (args.length == 4) {
+            if (args[0].equalsIgnoreCase("-t")) {
+                minYear = Integer.parseInt((args[1]));
+                maxYear = Integer.parseInt((args[2]));
+                calculatingYear = Integer.parseInt((args[3]));
+                myNoms.initialSetup(minYear, maxYear, calculatingYear);
+
+            }
+            else if (args[0].equalsIgnoreCase("-i")) {
+                minYear = Integer.parseInt((args[1]));
+                maxYear = Integer.parseInt((args[2]));
+                calculatingYear = Integer.parseInt((args[3]));
+                myNoms.setup(minYear, maxYear, calculatingYear, true);
+            }
+            else {
+                System.out.println(args[0] + " is not a recognized parameter");
+                minYear = Integer.parseInt((args[1]));
+                maxYear = Integer.parseInt((args[2]));
+                calculatingYear = Integer.parseInt((args[3]));
+                myNoms.setup(minYear, maxYear, calculatingYear, false);
             }
         }
         String[] awardList = myNoms.getAwardList();

@@ -1,24 +1,20 @@
 import java.io.Serializable;
-import java.util.ArrayList;
 
 /** This program defines the BestActor object.
  *
  * @author Ryan Crumpler
- * @version 30.12.17
+ * @version 15.1.18
  */
 
 public class BestActor extends Nomination implements Serializable {
    protected String movie;
    /**
     * @param nameIn is first and last name of the actor
-    * @param coefficientIn is constant used to determine actor's
     * likelihood of winning calculated through other awards
     * @param movieIn is the movie that the actor appeared in
-    * @param percentIn is the actor's chance of winning an Oscar
     */
-   public BestActor(String nameIn, double coefficientIn, String percentIn, ArrayList<String> awardOrgIn,
-                    String movieIn) {
-      super(nameIn, coefficientIn, percentIn, awardOrgIn);
+   public BestActor(String nameIn, String movieIn) {
+      super(nameIn);
       movie = movieIn;
    }
 

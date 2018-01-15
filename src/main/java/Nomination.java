@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 /** This program defines the  nomination object.
  * @author Ryan Crumpler
- * @version 30.12.17
+ * @version 15.1.18
  */
 public class Nomination implements Serializable {
     protected String name, percent;
@@ -15,14 +15,12 @@ public class Nomination implements Serializable {
 
     /**
     * @param nameIn is title of film or name of actor/actress
-    * @param coefficientIn is constant used to determine the likelihood of winning calculated through other awards
-    * @param percentIn is percent chance of winning
     */
-    public Nomination(String nameIn, double coefficientIn, String percentIn, ArrayList<String> awardOrgIn) {
+    public Nomination(String nameIn) {
       name = nameIn;
-      coefficient = coefficientIn;
-      awardOrg = awardOrgIn;
+      coefficient = 0.0;
       keywordMap = new HashMap<>();
+      percent = "0.0";
       id = -1;
       awardOrg = new ArrayList<>();
    }
