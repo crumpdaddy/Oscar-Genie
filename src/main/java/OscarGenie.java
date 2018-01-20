@@ -28,7 +28,7 @@ public class OscarGenie {
                 myNoms.initialSetup(minYear, maxYear, calculatingYear);
             }
             else if (args[0].equalsIgnoreCase("-i")) {
-                myNoms.setup(minYear, maxYear, calculatingYear, false);
+                myNoms.setup(minYear, maxYear, calculatingYear, true);
             }
             else {
                 System.out.println(args[0] + " is not a recognized parameter");
