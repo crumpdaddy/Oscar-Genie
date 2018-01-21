@@ -4,19 +4,19 @@ import java.util.HashMap;
 
 /** This program defines the  nomination object.
  * @author Ryan Crumpler
- * @version 15.1.18
+ * @version 20.1.18
  */
 public class Nomination implements Serializable {
-    protected String name, percent;
-    protected double coefficient;
-    protected ArrayList<String> awardOrg;
-    protected HashMap<String, Double> keywordMap;
-    protected int id;
+    private String name, percent;
+    private double coefficient;
+    private ArrayList<String> awardOrg;
+    private HashMap<String, Double> keywordMap;
+    private int id;
 
     /**
     * @param nameIn is title of film or name of actor/actress
     */
-    public Nomination(String nameIn) {
+    Nomination(String nameIn) {
       name = nameIn;
       coefficient = 0.0;
       keywordMap = new HashMap<>();
@@ -34,6 +34,7 @@ public class Nomination implements Serializable {
     * sets name of movie.
     * @param nameIn is movie nominated.
     */
+    @SuppressWarnings("unused")
     public void setName(String nameIn) {
       name = nameIn;
    }
@@ -115,7 +116,7 @@ public class Nomination implements Serializable {
             keywordMap.put(keywordIn, keywordMap.get(keywordIn) + 1);
         }
         else {
-        keywordMap.put(keywordIn, 1.0);
+            keywordMap.put(keywordIn, 1.0);
         }
     }
 
@@ -124,13 +125,8 @@ public class Nomination implements Serializable {
      * @param keywordIn keyword to check if is present
      * @return boolean if keyword is present
      */
-    public boolean containsKeyword(String keywordIn) {
-        if (keywordMap.containsKey(keywordIn)) {
-            return true;
-        }
-        else {
-            return false;
-        }
+    private boolean containsKeyword(String keywordIn) {
+        return keywordMap.containsKey(keywordIn);
     }
 
     /**
@@ -138,24 +134,22 @@ public class Nomination implements Serializable {
      * @param keywordIn keyword to check frequency of
      * @return frequency of keyword
      */
+    @SuppressWarnings("unused")
     public double getFrequency(String keywordIn) {
         if (containsKeyword(keywordIn)) {
             return keywordMap.get(keywordIn);
         }
-        else {
-            return 0;
-        }
+        return 0;
     }
 
     /**
     * prints out the info of film, the title of the film
     * and its chance of winning an Oscar.
-    * @return string containing all data of film
+    * @return string contaiing all data of film
     */
     public String toString() {
-      String output = "\"" + getName() + "\" has a "
+      return "\"" + getName() + "\" has a "
               + getPercent() + "% chance of winning an Oscar";
-      return output;
    }
 
 }

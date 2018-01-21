@@ -3,7 +3,7 @@ import java.io.Serializable;
 /**
  * This program defines the BestActress object
  * @author Ryan Crumpler
- * @version 15.1.18
+ * @version 20.1.18
  */
 public class BestActress extends Nomination implements Serializable {
     private String movie;
@@ -12,7 +12,7 @@ public class BestActress extends Nomination implements Serializable {
      * likelihood of winning calculated through other awards
      * @param movieIn is the movie that the actor/actress appeared in
      */
-    public BestActress(String nameIn, String movieIn) {
+    BestActress(String nameIn, String movieIn) {
         super(nameIn);
         movie = movieIn;
     }
@@ -28,6 +28,7 @@ public class BestActress extends Nomination implements Serializable {
      * sets movie actress was in.
      * @param movieIn is movie that actress was in
      */
+    @SuppressWarnings("unused")
     public void setMovie(String movieIn) {
         movie = movieIn;
     }
@@ -37,11 +38,9 @@ public class BestActress extends Nomination implements Serializable {
      * @return string containing all data of actress
      */
     public String toString() {
-        String output = "";
-        output = getName() + " has a "
+        return getName() + " has a "
                 + getPercent() + "% chance of winning an Oscar for her role in \""
                 + getMovie() + "\"";
-        return output;
     }
 
 }

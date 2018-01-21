@@ -3,12 +3,12 @@ import java.io.Serializable;
 /**
  * This program defines the BestSong object
  * @author Ryan Crumpler
- * @version 15.1.18
+ * @version 20.1.18
  */
 public class BestSong extends Nomination  implements Serializable {
-    protected String movie;
+    private String movie;
 
-    public BestSong(String nameIn, String movieIn) {
+    BestSong(String nameIn, String movieIn) {
         super(nameIn);
         movie = movieIn;
     }
@@ -24,6 +24,7 @@ public class BestSong extends Nomination  implements Serializable {
      * sets movie for the song.
      * @param movieIn is movie that song was in
      */
+    @SuppressWarnings("unused")
     public void setMovie(String movieIn) {
         movie = movieIn;
     }
@@ -33,9 +34,7 @@ public class BestSong extends Nomination  implements Serializable {
      * @return string containing all data of song
      */
     public String toString() {
-        String output = "";
-        output = "The Song \"" + getName() + "\" in the movie "
+        return "The Song \"" + getName() + "\" in the movie "
                 + getMovie() + " has a " + getPercent() + "% chance of winning";
-        return output;
     }
 }

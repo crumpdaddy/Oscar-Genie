@@ -1,10 +1,9 @@
 import com.omertron.themoviedbapi.MovieDbException;
 import java.util.Scanner;
-import java.io.IOException;
 /** This has the main class that has UI and runs
 * OscarGenieDriver methods and outputs results.
 * @author Ryan Crumpler
-* @version 15.1.18
+* @version 20.1.18
 */
 public class OscarGenie {
 
@@ -12,11 +11,11 @@ public class OscarGenie {
      * * @throws IOException for scanner
      * * @param args command line arguments
      * */
-    public static void main(String[] args) throws IOException, ClassNotFoundException, MovieDbException {
+    public static void main(String[] args) throws MovieDbException {
         int maxYear = 2017;
         int minYear = 1991;
         int calculatingYear = 2017;
-        String yearIn, info, category, aString, back = "";
+        String yearIn, info, category, aString, back;
         int award = 0;
         Scanner scan = new Scanner(System.in);
         OscarGenieDriver myNoms = new OscarGenieDriver();
@@ -71,22 +70,20 @@ public class OscarGenie {
                     + calculatingYear + " to predict"
                     + "\nPress 'I' for Info about this program and it's total accuracy\n"
                     + "Press 'H' for Help\nPress 'Q' to Quit");
-            boolean invalid = true;
             yearIn = scan.nextLine();
             int year = 0;
             try {
                 year = Integer.parseInt(yearIn);
             }
-            catch (NumberFormatException e) {
+            catch (NumberFormatException ignored) {
             }
             if (year >= minYear && year <= calculatingYear) {
-                String menu = "";
-                menu += "Enter title of the award or its corresponding number you want to predict:\n";
+                StringBuilder menu = new StringBuilder();
+                menu.append("Enter title of the award or its corresponding number you want to predict:\n");
                 for (int i = 0; i < awardList.length; i++) {
-                    menu += i + 1 + " - " + awardList[i] + "\n";
+                    menu.append(i + 1).append(" - ").append(awardList[i]).append("\n");
                 }
-                menu += (awardList.length + 1) + " - All to generate all winners\n"
-                        + (awardList.length + 2) + " - Year to select new year";
+                menu.append(awardList.length + 1).append(" - All to generate all winners\n").append(awardList.length + 2).append(" - Year to select new year");
                 do {
                     System.out.println(menu);
                     aString = scan.nextLine();
@@ -164,7 +161,6 @@ public class OscarGenie {
             }
             else if (yearIn.equalsIgnoreCase("H")) {
                 System.out.println(myNoms.printHelp());
-                invalid = false;
                 do {
                     System.out.println("Press 'E' to go Back");
                     yearIn = scan.nextLine().toUpperCase();
@@ -173,7 +169,6 @@ public class OscarGenie {
             }
             else if (yearIn.equalsIgnoreCase("I")) {
                 System.out.println(myNoms.printInfo());
-                invalid = false;
                 do {
                     System.out.println("Press 'E' to go Back");
                     yearIn = scan.nextLine().toUpperCase();
@@ -184,7 +179,7 @@ public class OscarGenie {
                 System.out.println("Ending program");
                 System.exit(0);
             }
-            else if (invalid) {
+            else {
                 System.out.println("Invalid Year");
             }
         }
