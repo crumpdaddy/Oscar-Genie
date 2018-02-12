@@ -2880,6 +2880,7 @@ Year,Award,Name,Issuer
 2016,Animated Feature,Inside Out,Dallas Fort Worth Critics
 2016,Animated Feature,Inside Out,DC Film Critics
 2016,Animated Feature,Inside Out,Denver Film Critics
+2016,Animated Feature,Inside Out,Producers Guild
 2016,Animated Feature,Inside Out,Golden Globes
 2016,Animated Feature,Inside Out,Houston Critics
 2016,Animated Feature,Inside Out,Las Vegas Critics
@@ -2897,6 +2898,7 @@ Year,Award,Name,Issuer
 2016,Best Picture,Spotlight,LA Film Critics
 2016,Best Picture,Spotlight,Las Vegas Critics
 2016,Best Picture,Spotlight,San Francisco Critics
+2016,Best Picture,The Big Short,Producers Guild
 2016,Best Picture,The Martian,Golden Globes-Musical or Comedy
 2016,Cinematography,Carol,Austin Film Critics
 2016,Cinematography,Carol,Boston Film Critics
@@ -3171,3 +3173,197 @@ Year,Award,Name,Issuer
 2017,Visual Effects,The Jungle Book,Visual Effects Society
 2017,Z Filler Data,Z Filler Data,Z Filler Data
 2018,AA Filler Data,AA Filler Data,AA Filler Data
+2018,Actor - Leading Role,Andy Serkis,San Francisco Critics
+2018,Actor - Leading Role,Daniel Kaluuya,Boston Film Critics
+2018,Actor - Leading Role,Daniel Kaluuya,Las Vegas Critics
+2018,Actor - Leading Role,Gary Oldman,Central Ohio Film Critics
+2018,Actor - Leading Role,Gary Oldman,Critics Choice
+2018,Actor - Leading Role,Gary Oldman,Dallas Fort Worth Critics
+2018,Actor - Leading Role,Gary Oldman,DC Film Critics
+2018,Actor - Leading Role,Gary Oldman,Denver Film Critics
+2018,Actor - Leading Role,Gary Oldman,Golden Globes-Drama
+2018,Actor - Leading Role,Gary Oldman,LA Film Critics
+2018,Actor - Leading Role,Gary Oldman,Screen Actors Guild
+2018,Actor - Leading Role,James Franco,Golden Globes-Musical or Comedy
+2018,Actor - Leading Role,James Franco,Houston Critics
+2018,Actor - Leading Role,Timothee Chalamet,Austin Film Critics
+2018,Actor - Leading Role,Timothee Chalamet,New York Film Critics
+2018,Actor - Supporting Role,Michael Stuhlbarg,LA Film Critics
+2018,Actor - Supporting Role,Sam Rockwell,Critics Choice
+2018,Actor - Supporting Role,Sam Rockwell,Dallas Fort Worth Critics
+2018,Actor - Supporting Role,Sam Rockwell,DC Film Critics
+2018,Actor - Supporting Role,Sam Rockwell,Golden Globes
+2018,Actor - Supporting Role,Sam Rockwell,Houston Critics
+2018,Actor - Supporting Role,Sam Rockwell,Las Vegas Critics
+2018,Actor - Supporting Role,Sam Rockwell,Screen Actors Guild
+2018,Actor - Supporting Role,Willem Dafoe,Austin Film Critics
+2018,Actor - Supporting Role,Willem Dafoe,Boston Film Critics
+2018,Actor - Supporting Role,Willem Dafoe,Central Ohio Film Critics
+2018,Actor - Supporting Role,Willem Dafoe,Denver Film Critics
+2018,Actor - Supporting Role,Willem Dafoe,New York Film Critics
+2018,Actor - Supporting Role,Willem Dafoe,San Francisco Critics
+2018,Actress - Leading Role,Frances McDormand,Austin Film Critics
+2018,Actress - Leading Role,Frances McDormand,Critics Choice
+2018,Actress - Leading Role,Frances McDormand,DC Film Critics
+2018,Actress - Leading Role,Frances McDormand,Golden Globes-Drama
+2018,Actress - Leading Role,Frances McDormand,Las Vegas Critics
+2018,Actress - Leading Role,Frances McDormand,Screen Actors Guild
+2018,Actress - Leading Role,Margot Robbie,San Francisco Critics
+2018,Actress - Leading Role,Sally Hawkins,Boston Film Critics
+2018,Actress - Leading Role,Sally Hawkins,Central Ohio Film Critics
+2018,Actress - Leading Role,Sally Hawkins,Dallas Fort Worth Critics
+2018,Actress - Leading Role,Sally Hawkins,Houston Critics
+2018,Actress - Leading Role,Sally Hawkins,LA Film Critics
+2018,Actress - Leading Role,Saoirse Ronan,Denver Film Critics
+2018,Actress - Leading Role,Saoirse Ronan,Golden Globes-Musical or Comedy
+2018,Actress - Leading Role,Saoirse Ronan,New York Film Critics
+2018,Actress - Supporting Role,Allison Janney,Austin Film Critics
+2018,Actress - Supporting Role,Allison Janney,Critics Choice
+2018,Actress - Supporting Role,Allison Janney,Dallas Fort Worth Critics
+2018,Actress - Supporting Role,Allison Janney,Denver Film Critics
+2018,Actress - Supporting Role,Allison Janney,Golden Globes
+2018,Actress - Supporting Role,Allison Janney,Houston Critics
+2018,Actress - Supporting Role,Allison Janney,LA Film Critics
+2018,Actress - Supporting Role,Allison Janney,Screen Actors Guild
+2018,Actress - Supporting Role,Laurie Metcalf,Boston Film Critics
+2018,Actress - Supporting Role,Laurie Metcalf,Central Ohio Film Critics
+2018,Actress - Supporting Role,Laurie Metcalf,DC Film Critics
+2018,Actress - Supporting Role,Laurie Metcalf,Las Vegas Critics
+2018,Actress - Supporting Role,Laurie Metcalf,San Francisco Critics
+2018,Actress - Supporting Role,Tiffany Haddish,New York Film Critics
+2018,Animated Feature,Coco,Austin Film Critics
+2018,Animated Feature,Coco,Boston Film Critics
+2018,Animated Feature,Coco,Central Ohio Film Critics
+2018,Animated Feature,Coco,Critics Choice
+2018,Animated Feature,Coco,Dallas Fort Worth Critics
+2018,Animated Feature,Coco,DC Film Critics
+2018,Animated Feature,Coco,Denver Film Critics
+2018,Animated Feature,Coco,Golden Globes
+2018,Animated Feature,Coco,Houston Critics
+2018,Animated Feature,Coco,LA Film Critics
+2018,Animated Feature,Coco,Las Vegas Critics
+2018,Animated Feature,Coco,New York Film Critics
+2018,Animated Feature,Coco,Producers Guild
+2018,Animated Feature,Coco,San Francisco Critics
+2018,Best Picture,Get Out,Austin Film Critics
+2018,Best Picture,Get Out,DC Film Critics
+2018,Best Picture,Lady Bird,Central Ohio Film Critics
+2018,Best Picture,Lady Bird,Denver Film Critics
+2018,Best Picture,Lady Bird,Golden Globes-Musical or Comedy
+2018,Best Picture,Lady Bird,Houston Critics
+2018,Best Picture,Lady Bird,New York Film Critics
+2018,Best Picture,Phantom Thread,Boston Film Critics
+2018,Best Picture,The Florida Project,San Francisco Critics
+2018,Best Picture,The Shape of Water,Critics Choice
+2018,Best Picture,The Shape of Water,Dallas Fort Worth Critics
+2018,Best Picture,The Shape of Water,LA Film Critics
+2018,Best Picture,The Shape of Water,Producers Guild
+2018,Best Picture,Three Billboards Outside Ebbing Missouri,Golden Globes-Drama
+2018,Best Picture,Three Billboards Outside Ebbing Missouri,Las Vegas Critics
+2018,Cinematography,Blade Runner 2049,Austin Film Critics
+2018,Cinematography,Blade Runner 2049,Central Ohio Film Critics
+2018,Cinematography,Blade Runner 2049,Critics Choice
+2018,Cinematography,Blade Runner 2049,Houston Critics
+2018,Cinematography,Blade Runner 2049,LA Film Critics
+2018,Cinematography,Blade Runner 2049,Las Vegas Critics
+2018,Cinematography,Blade Runner 2049,San Francisco Critics
+2018,Cinematography,Dunkirk,Boston Film Critics
+2018,Cinematography,Mudbound,New York Film Critics
+2018,Cinematography,The Shape of Water,Dallas Fort Worth Critics
+2018,Costume Design,Blade Runner 2049,Las Vegas Critics
+2018,Costume Design,Phantom Thread,Critics Choice
+2018,Director,Dunkirk,DC Film Critics
+2018,Director,Dunkirk,Denver Film Critics
+2018,Director,Lady Bird,Central Ohio Film Critics
+2018,Director,Lady Bird,Houston Critics
+2018,Director,Lady Bird,LA Film Critics
+2018,Director,Phantom Thread,Boston Film Critics
+2018,Director,The Florida Project,New York Film Critics
+2018,Director,The Shape of Water,Austin Film Critics
+2018,Director,The Shape of Water,Critics Choice
+2018,Director,The Shape of Water,Dallas Fort Worth Critics
+2018,Director,The Shape of Water,Directors Guild
+2018,Director,The Shape of Water,Golden Globes
+2018,Director,The Shape of Water,LA Film Critics
+2018,Director,The Shape of Water,Las Vegas Critics
+2018,Director,The Shape of Water,San Francisco Critics
+2018,Documentary,City of Ghosts,Dallas Fort Worth Critics
+2018,Documentary,Dawson City Frozen Time,Boston Film Critics
+2018,Documentary,Faces Places,Austin Film Critics
+2018,Documentary,Faces Places,Central Ohio Film Critics
+2018,Documentary,Faces Places,Denver Film Critics
+2018,Documentary,Faces Places,New York Film Critics
+2018,Documentary,Faces Places,San Francisco Critics
+2018,Documentary,Jane,DC Film Critics
+2018,Documentary,Jane,Houston Critics
+2018,Documentary,Jane,LA Film Critics
+2018,Documentary,Jane,Producers Guild
+2018,Documentary,Jim and Andy the Great Beyond,LA Film Critics
+2018,Film Editing,A Ghost Story,Boston Film Critics
+2018,Film Editing,Baby Driver,Central Ohio Film Critics
+2018,Film Editing,Baby Driver,Critics Choice
+2018,Film Editing,Baby Driver,DC Film Critics
+2018,Film Editing,Baby Driver,LA Film Critics
+2018,Film Editing,Baby Driver,San Francisco Critics
+2018,Film Editing,Dunkirk,Critics Choice
+2018,Foreign Language Film,BPM,Central Ohio Film Critics
+2018,Foreign Language Film,BPM,DC Film Critics
+2018,Foreign Language Film,BPM,New York Film Critics
+2018,Foreign Language Film,BPM,San Francisco Critics
+2018,Foreign Language Film,First They Killed My Father,Las Vegas Critics
+2018,Foreign Language Film,In the Fade,Critics Choice
+2018,Foreign Language Film,In the Fade,Golden Globes
+2018,Foreign Language Film,Okja,Austin Film Critics
+2018,Foreign Language Film,The Square,Boston Film Critics
+2018,Foreign Language Film,The Square,Dallas Fort Worth Critics
+2018,Foreign Language Film,The Square,LA Film Critics
+2018,Foreign Language Film,Thelma,Denver Film Critics
+2018,Foreign Language Film,Thelma,Houston Critics
+2018,Production Design,Blade Runner 2049,DC Film Critics
+2018,Production Design,Blade Runner 2049,Las Vegas Critics
+2018,Production Design,The Shape of Water,Critics Choice
+2018,Production Design,The Shape of Water,San Francisco Critics
+2018,Score,Blade Runner 2049,DC Film Critics
+2018,Score,Dunkirk,Denver Film Critics
+2018,Score,Phantom Thread,Boston Film Critics
+2018,Score,Phantom Thread,San Francisco Critics
+2018,Score,The Shape of Water,Austin Film Critics
+2018,Score,The Shape of Water,Central Ohio Film Critics
+2018,Score,The Shape of Water,Critics Choice
+2018,Score,The Shape of Water,Dallas Fort Worth Critics
+2018,Score,The Shape of Water,Golden Globes
+2018,Score,The Shape of Water,Houston Critics
+2018,Score,The Shape of Water,LA Film Critics
+2018,Screenplay - Adapted,Call Me By Your Name,Austin Film Critics
+2018,Screenplay - Adapted,Call Me By Your Name,Critics Choice
+2018,Screenplay - Adapted,Call Me By Your Name,Denver Film Critics
+2018,Screenplay - Adapted,Call Me By Your Name,Las Vegas Critics
+2018,Screenplay - Adapted,Call Me By Your Name,San Francisco Critics
+2018,Screenplay - Adapted,Call Me By Your Name,Writers Guild
+2018,Screenplay - Adapted,Molly's Game,LA Film Critics
+2018,Screenplay - Adapted,Mudbound,Central Ohio Film Critics
+2018,Screenplay - Adapted,Mudbound,DC Film Critics
+2018,Screenplay - Original,Get Out,Austin Film Critics
+2018,Screenplay - Original,Get Out,Central Ohio Film Critics
+2018,Screenplay - Original,Get Out,Critics Choice
+2018,Screenplay - Original,Get Out,DC Film Critics
+2018,Screenplay - Original,Get Out,Denver Film Critics
+2018,Screenplay - Original,Get Out,LA Film Critics
+2018,Screenplay - Original,Get Out,San Francisco Critics
+2018,Screenplay - Original,Get Out,Writers Guild
+2018,Screenplay - Original,Lady Bird,Boston Film Critics
+2018,Screenplay - Original,Lady Bird,Dallas Fort Worth Critics
+2018,Screenplay - Original,Lady Bird,Houston Critics
+2018,Screenplay - Original,Phantom Thread,New York Film Critics
+2018,Screenplay - Original,Three Billboards Outside Ebbing Missouri,Golden Globes
+2018,Screenplay - Original,Three Billboards Outside Ebbing Missouri,Las Vegas Critics
+2018,Song,Remember Me,Critics Choice
+2018,Song,Remember Me,Denver Film Critics
+2018,Song,Remember Me,Houston Critics
+2018,Song,This Is Me,Golden Globes
+2018,Visual Effects,Blade Runner 2049,Houston Critics
+2018,Visual Effects,Blade Runner 2049,Las Vegas Critics
+2018,Visual Effects,War for the Planet of the Apes,Critics Choice
+2018,Visual Effects,War for the Planet of the Apes,LA Film Critics
+2018,Z Filler Data,Z Filler Data,Z Filler Data
+2019,AA Filler Data,AA Filler Data,AA Filler Data

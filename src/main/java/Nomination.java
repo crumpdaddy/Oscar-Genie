@@ -8,7 +8,7 @@ import java.util.HashMap;
  */
 public class Nomination implements Serializable {
     private String name, percent;
-    private double coefficient;
+    private double coefficientKW, coefficientAward, coefficient;
     private ArrayList<String> awardOrg;
     private HashMap<String, Double> keywordMap;
     private int id;
@@ -18,6 +18,8 @@ public class Nomination implements Serializable {
     */
     Nomination(String nameIn) {
       name = nameIn;
+      coefficientKW = 0.0;
+      coefficientAward = 0.0;
       coefficient = 0.0;
       keywordMap = new HashMap<>();
       percent = "0.0";
@@ -42,17 +44,52 @@ public class Nomination implements Serializable {
     /**
     * @return the coefficient used to calculate chance of winning
     */
-    public double getCoefficient() {
-      return coefficient;
+    public double getCoefficientKW() {
+      return coefficientKW;
    }
 
     /**
     * sets the coefficient used to calculate chance of winning.
     * @param coefficientIn is coefficient for calculations
     */
-    public void setCoefficient(double coefficientIn) {
-      coefficient = coefficientIn;
+    public void setCoefficientKW(double coefficientIn) {
+      coefficientKW = coefficientIn;
    }
+
+    /**
+     * @return the coefficient used to calculate chance of winning
+     */
+    public double getCoefficientAward() {
+        return coefficientAward;
+    }
+
+    /**
+     * sets the coefficient used to calculate chance of winning.
+     * @param coefficientIn is coefficient for calculations
+     */
+    public void setCoefficientAward(double coefficientIn) {
+        coefficientAward = coefficientIn;
+    }
+
+    /**
+     * Adds award and keyword coefficients
+     */
+    public void setCoefficient() {
+       // if (coefficientAward > 0) { //coefficientKW * .5)  {
+            coefficient = coefficientKW + (coefficientAward);
+        //}
+        //else {
+          //  coefficient = 0;
+       // }
+    }
+
+    /**
+     *
+     * @return the coefficient
+     */
+    public double getCoefficient() {
+        return coefficient;
+    }
 
     /**
     * @return the percent chance of winning
@@ -140,6 +177,10 @@ public class Nomination implements Serializable {
             return keywordMap.get(keywordIn);
         }
         return 0;
+    }
+
+    public void setFrequency(String keywordIn, double freqIn) {
+        keywordMap.put(keywordIn, freqIn);
     }
 
     /**

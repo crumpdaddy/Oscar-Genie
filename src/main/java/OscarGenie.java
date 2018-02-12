@@ -3,7 +3,7 @@ import java.util.Scanner;
 /** This has the main class that has UI and runs
 * OscarGenieDriver methods and outputs results.
 * @author Ryan Crumpler
-* @version 20.1.18
+* @version 12.2.18
 */
 public class OscarGenie {
 
@@ -14,11 +14,12 @@ public class OscarGenie {
     public static void main(String[] args) throws MovieDbException {
         int maxYear = 2017;
         int minYear = 1991;
-        int calculatingYear = 2017;
+        int calculatingYear = 2018;
         String yearIn, info, category, aString, back;
         int award = 0;
         Scanner scan = new Scanner(System.in);
         OscarGenieDriver myNoms = new OscarGenieDriver();
+        System.out.println("Loading...");
         if (args.length == 0) {
             myNoms.setup(minYear, maxYear, calculatingYear, false);
         }
@@ -64,7 +65,7 @@ public class OscarGenie {
             }
         }
         String[] awardList = myNoms.getAwardList();
-        System.out.println("Welcome to Oscar Genie by Ryan Crumpler\n");
+        System.out.println("\n\n\nWelcome to Oscar Genie by Ryan Crumpler\n");
         do {
             System.out.println("Please enter a year " + minYear + "-"
                     + calculatingYear + " to predict"

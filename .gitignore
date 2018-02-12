@@ -107,3 +107,13 @@ target/classes/all_calculations.csv
 
 .idea/libraries/Maven__org_slf4j_slf4j_api_1_7_16.xml
 .idea/uiDesigner.xml
+
+target/classes/allWinners.ser
+
+target/classes/nomineesByYear.ser
+
+.idea/libraries/Maven__org_tensorflow_libtensorflow_1_5_0.xml
+
+.idea/libraries/Maven__org_tensorflow_tensorflow_1_5_0.xml
+
+.idea/libraries/Maven__org_tensorflow_libtensorflow_jni_1_5_0.xml
