@@ -22,7 +22,7 @@ The min year is the first year to read from the CSVs, note the earliest valid ye
 
 The max year is the latest year you now you have the winners for, this is currently 2017
 
-The calculating year is they year you do not know the winners for yet, the current parameter is 2017 as the nominees for 2018 are not yet announced.
+The calculating year is they year you do not know the winners for yet, the current parameter is 2018 
 
 You can simulate how well the program predicts previous years by entering the year you want to predict for the current year, and one year before the current year for the max year, and 1991 for min year. This will predict the winners for the current year you selected without checking the program against the known winners.
 
