@@ -44,6 +44,7 @@ public class Nomination implements Serializable {
     /**
     * @return the coefficient used to calculate chance of winning
     */
+    @SuppressWarnings("unused")
     public double getCoefficientKW() {
       return coefficientKW;
    }
@@ -59,6 +60,7 @@ public class Nomination implements Serializable {
     /**
      * @return the coefficient used to calculate chance of winning
      */
+    @SuppressWarnings("unused")
     public double getCoefficientAward() {
         return coefficientAward;
     }

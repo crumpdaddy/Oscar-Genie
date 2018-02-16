@@ -3,7 +3,7 @@ import java.util.Scanner;
 /** This has the main class that has UI and runs
 * OscarGenieDriver methods and outputs results.
 * @author Ryan Crumpler
-* @version 12.2.18
+* @version 16.2.18
 */
 public class OscarGenie {
 
@@ -141,21 +141,30 @@ public class OscarGenie {
                     }
                     else if (award == awardList.length + 1) {
                         System.out.println(myNoms.generateAll(year));
-                        System.out.println("Press 'I' to to see correct "
-                                + "winners and to see Oscar Genie accuracy");
-                        do {
-                            System.out.println("Press 'E' to go Back");
-                            info = scan.nextLine().toUpperCase();
-                            if (info.equals("I")) {// && (year < calculatingYear || calculatingYear == maxYear)) {
-                                do {
-                                    System.out.println(myNoms.allDetails(year));
-                                    System.out.println("Press 'E' to go Back");
-                                    info = scan.nextLine().toUpperCase();
+                        if (year <= maxYear) {
+                            System.out.println("Press 'I' to to see correct "
+                                    + "winners and to see Oscar Genie accuracy");
+                            do {
+                                System.out.println("Press 'E' to go Back");
+                                info = scan.nextLine().toUpperCase();
+                                if (info.equals("I")) {// && (year < calculatingYear || calculatingYear == maxYear)) {
+                                    do {
+                                        System.out.println(myNoms.allDetails(year));
+                                        System.out.println("Press 'E' to go Back");
+                                        info = scan.nextLine().toUpperCase();
+                                    }
+                                    while (!info.equals("E"));
                                 }
-                                while (!info.equals("E"));
                             }
+                            while (!info.equals("E"));
                         }
-                        while (!info.equals("E"));
+                        else {
+                            do {
+                                System.out.println("Press 'E' to go Back");
+                                info = scan.nextLine().toUpperCase();
+                            }
+                            while (!info.equals("E"));
+                        }
                     }
                 }
                 while (award != awardList.length + 2 || !aString.equalsIgnoreCase("year"));
