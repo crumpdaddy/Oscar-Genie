@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Oscar-Genie
 Developed by Ryan Crumpler
 
@@ -106,4 +105,3 @@ java -jar Oscar-Genie.jar -t 1991 2016 2017
 
 
 
->>>>>>> origin/master
