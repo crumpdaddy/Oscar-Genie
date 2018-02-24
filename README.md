@@ -51,7 +51,6 @@ java -jar Oscar-Genie.jar -t 1991 2016 2017
 
 
 
-=======
 # Oscar-Genie
 Developed by Ryan Crumpler
 
@@ -102,6 +101,9 @@ or
 
 java -jar Oscar-Genie.jar -t 1991 2016 2017
 
+# Examples on how to run program:
+Download the EXE (its not a virus, I promise)
+http://ge.tt/1Miw0io2
 
 
 
