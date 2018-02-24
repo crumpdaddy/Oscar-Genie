@@ -26,7 +26,7 @@ The calculating year is they year you do not know the winners for yet, the curre
 
 You can simulate how well the program predicts previous years by entering the year you want to predict for the current year, and one year before the current year for the max year, and 1991 for min year. This will predict the winners for the current year you selected without checking the program against the known winners.
 
-# Examples on how to run program:
+# Download the EXE:
 If the ser files are in same directory as the jar:
 java -jar Oscar-Genie.jar
 
