@@ -77,12 +77,7 @@ public class Nomination implements Serializable {
      * Adds award and keyword coefficients
      */
     public void setCoefficient() {
-       // if (coefficientAward > 0) { //coefficientKW * .5)  {
-            coefficient = coefficientKW + (coefficientAward);
-        //}
-        //else {
-          //  coefficient = 0;
-       // }
+        coefficient = coefficientKW + (coefficientAward);
     }
 
     /**

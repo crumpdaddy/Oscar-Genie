@@ -12,7 +12,7 @@ public class OscarGenie {
      * * @param args command line arguments
      * */
     public static void main(String[] args) throws MovieDbException {
-        int maxYear = 2017;
+        int maxYear = 2018;
         int minYear = 1991;
         int calculatingYear = 2018;
         String yearIn, info, category, aString, back;
@@ -141,13 +141,13 @@ public class OscarGenie {
                     }
                     else if (award == awardList.length + 1) {
                         System.out.println(myNoms.generateAll(year));
-                        if (year <= maxYear) {
+                        if (year <= maxYear + 1) {
                             System.out.println("Press 'I' to to see correct "
                                     + "winners and to see Oscar Genie accuracy");
                             do {
                                 System.out.println("Press 'E' to go Back");
                                 info = scan.nextLine().toUpperCase();
-                                if (info.equals("I")) {// && (year < calculatingYear || calculatingYear == maxYear)) {
+                                if (info.equals("I")) {
                                     do {
                                         System.out.println(myNoms.allDetails(year));
                                         System.out.println("Press 'E' to go Back");

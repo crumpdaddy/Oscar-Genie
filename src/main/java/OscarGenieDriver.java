@@ -576,12 +576,11 @@ public class OscarGenieDriver {
                     for (String anAwardOrg : awardOrg) {
                         kalKey = anAwardOrg + " " + awardIn;
                         try {
-                            //coef += Math.pow(kalmanMap.get(kalKey), 2);
                             coef += kalmanMap.get(kalKey);
                         } catch (NullPointerException ignored) {
                         }
                     }
-                    n.setCoefficientAward(coef); //+ n.getAwardOrg().size() * .1);
+                    n.setCoefficientAward(coef);
                     n.setCoefficient();
                     nominations.put(n.getName(), n);
                 }
@@ -1142,7 +1141,9 @@ public class OscarGenieDriver {
         }
         perc = correct / count;
         perc = perc * 100;
-        output.append("Oscar Genie was able to predict ").append(correct).append(" out of ").append(count).append(" which is ").append(numFmt.format(perc)).append("% of winners it had data for\n");
+        output.append("Oscar Genie was able to predict ").append(correct).append(
+                " out of ").append(count).append(" which is ").append(numFmt.format(perc)).append(
+                        "% of winners it had data for\n");
         return output.toString();
     }
 
@@ -1203,5 +1204,4 @@ public class OscarGenieDriver {
             System.out.println(word + " " + kws.get(word));
         }
     }
-
 }
