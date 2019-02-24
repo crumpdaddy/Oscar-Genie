@@ -98,7 +98,8 @@ public class OscarGenieDriver {
      * @throws  MovieDbException for TMDB
      */
     public void setup(int minYear, int maxYear, int calculatingYear, boolean internal) throws MovieDbException {
-        setMinMaxYear(minYear, maxYear, calculatingYear);
+        //setMinMaxYear(minYear, maxYear, calculatingYear);
+        setMinMaxYear(minYear, 2018, 2018);
         try {
             deserializeMap(internal);
         }
@@ -110,8 +111,16 @@ public class OscarGenieDriver {
         readCalculations();
         setWinnerKeyWords();
         addAllKWcoef();
+        //Iterator it = kalmanMap.entrySet().iterator();
+       // while (it.hasNext()) {
+         //   Map.Entry pair = (Map.Entry)it.next();
+           // System.out.println(pair.getKey() + " = " + pair.getValue());
+            //it.remove(); // avoids a ConcurrentModificationException
+        //}
+        //getWinnersNoFilter();
         kalmanFilterAwards();
         getProbability();
+        int x = 0;
     }
 
 
@@ -343,7 +352,7 @@ public class OscarGenieDriver {
                         nominees.put(name, n);
                         awardOrg.clear();
                         winners = allWinners.get(year);
-                        if (winners.get(award).equalsIgnoreCase(name)) {
+                        if (winners.get(award).equalsIgnoreCase(name) && year != maxYear + 1) {
                             try {
                                 kal = kalmanMap.get(kalKey);
                                 kal += 1;
@@ -577,7 +586,8 @@ public class OscarGenieDriver {
                         kalKey = anAwardOrg + " " + awardIn;
                         try {
                             coef += kalmanMap.get(kalKey);
-                        } catch (NullPointerException ignored) {
+                        }
+                        catch (NullPointerException ignored) {
                         }
                     }
                     n.setCoefficientAward(coef);
@@ -671,6 +681,13 @@ public class OscarGenieDriver {
 
     // KalMan Filtering Methods
 
+    private void getWinnersNoFilter() {
+        for (String anAwardList : awardList) {
+            award = anAwardList;
+            setCalculationsCoef(anAwardList);
+        }
+    }
+
     /**
      * Recursive method to adjust the initial coefficients to better predict the winners.
      * It gets a value from the kalman map and increases it by the scalar,
@@ -704,7 +721,6 @@ public class OscarGenieDriver {
                 boolean go = true;
                 while (go) {
                     if (calcCount == prevCalcCount) {
-
                         while (calcCount == prevCalcCount && count <= maxCount / 10) {
                             prevCalcCount = calcCount;
                             adjusted = adjustKalmanMapAwards(kalKey, true);
@@ -936,7 +952,8 @@ public class OscarGenieDriver {
                         Nomination n = nominations.get(key);
                         totalcoef += n.getCoefficient();
                     }
-                } catch (NullPointerException ignored) {
+                }
+                catch (NullPointerException ignored) {
                 }
                 try {
                     double perc;

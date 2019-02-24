@@ -12,7 +12,7 @@ public class OscarGenie {
      * * @param args command line arguments
      * */
     public static void main(String[] args) throws MovieDbException {
-        int maxYear = 2018;
+        int maxYear = 2017;
         int minYear = 1991;
         int calculatingYear = 2018;
         String yearIn, info, category, aString, back;
