@@ -117,3 +117,8 @@ target/classes/nomineesByYear.ser
 .idea/libraries/Maven__org_tensorflow_tensorflow_1_5_0.xml
 
 .idea/libraries/Maven__org_tensorflow_libtensorflow_jni_1_5_0.xml
+.idea/encodings.xml
+.DS_Store
+target/classes/all_calculations_conflict-20190224-131840.csv
+src/main/resources/all_calculations_conflict-20190224-131840.csv
+.idea/encodings.xml
